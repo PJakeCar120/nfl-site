@@ -1,87 +1,96 @@
-import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import Papa from 'papaparse';
-import { Document, Page, pdfjs } from 'react-pdf';
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import Papa from "papaparse";
 
 const projects = {
+  // 🔢 QB Rankings
   qb2024: {
-    title: '2024 Analytical Quarterback Score Rankings',
-    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 250 DBs)',
-    csvUrl: '/assets/QBScoreResults2024.csv',
+    title: "2024 QB Score Rankings",
+    description: "QB model results: all stats in percentiles (min 250 dropbacks).",
+    csvUrl: "/assets/QBScoreResults2024.csv",
   },
   qb2023: {
-    title: '2023 Analytical Quarterback Score Rankings',
-    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 250 DBs)',
-    csvUrl: '/assets/QBScoreResults2023.csv',
+    title: "2023 QB Score Rankings",
+    description: "QB model results: all stats in percentiles (min 250 dropbacks).",
+    csvUrl: "/assets/QBScoreResults2023.csv",
   },
   qb2022: {
-    title: '2022 Analytical Quarterback Score Rankings',
-    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 250 DBs)',
-    csvUrl: '/assets/QBScoreResults2022.csv',
+    title: "2022 QB Score Rankings",
+    description: "QB model results: all stats in percentiles (min 250 dropbacks).",
+    csvUrl: "/assets/QBScoreResults2022.csv",
   },
   qb2021: {
-    title: '2021 Analytical Quarterback Score Rankings',
-    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 250 DBs)',
-    csvUrl: '/assets/QBScoreResults2021.csv',
+    title: "2021 QB Score Rankings",
+    description: "QB model results: all stats in percentiles (min 250 dropbacks).",
+    csvUrl: "/assets/QBScoreResults2021.csv",
   },
+
+  // 🧤 WR Rankings
   wr2024: {
-    title: '2024 WR Advanced Wide Receiver Score Rankings',
-    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 30 targets)',
-    csvUrl: '/assets/WRScoreResults2024.csv',
+    title: "2024 WR Score Rankings",
+    description: "WR model results: all stats in percentiles (min 30 targets).",
+    csvUrl: "/assets/WRScoreResults2024.csv",
   },
   wr2023: {
-    title: '2023 WR Advanced Wide Receiver Score Rankings',
-    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 30 targets)',
-    csvUrl: '/assets/WRScoreResults2023.csv',
+    title: "2023 WR Score Rankings",
+    description: "WR model results: all stats in percentiles (min 30 targets).",
+    csvUrl: "/assets/WRScoreResults2023.csv",
   },
   wr2022: {
-    title: '2022 WR Advanced Wide Receiver Score Rankings',
-    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 30 targets)',
-    csvUrl: '/assets/WRScoreResults2022.csv',
+    title: "2022 WR Score Rankings",
+    description: "WR model results: all stats in percentiles (min 30 targets).",
+    csvUrl: "/assets/WRScoreResults2022.csv",
   },
   wr2021: {
-    title: '2021 WR Advanced Wide Receiver Score Rankings',
-    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 30 targets)',
-    csvUrl: '/assets/WRScoreResults2021.csv',
+    title: "2021 WR Score Rankings",
+    description: "WR model results: all stats in percentiles (min 30 targets).",
+    csvUrl: "/assets/WRScoreResults2021.csv",
   },
+
+  // 📚 Research PDFs
   bdb2025: {
-    title: 'Big Data Bowl 2025',
-    description: 'Motion: A Defensive Perspective',
-    pdfUrl: '/assets/BDB2025-14.pdf',
+    title: "Big Data Bowl 2025",
+    description: "Motion: A Defensive Perspective",
+    pdfUrl: "/assets/BDB2025.pdf",
+  },
+  ohc: {
+    title: "The Argument for Offensive Head Coaches",
+    description: "Exploring why offensive HCs dominate modern football.",
+    pdfUrl: "/assets/OHC.pdf",
   },
   "2025coaches": {
-    title: '2025 NFL Head Coaching Candidate Rankings',
-    description: 'Personal Opinion',
-    pdfUrl: '/assets/NFL Head Coaching Candidates 2025 2.pdf',
+    title: "2025 NFL Head Coaching Candidate Rankings",
+    description: "Personal opinion and early tiers.",
+    pdfUrl: "/assets/NFLHeadCoachCandidates2025.pdf",
   },
   draftroi: {
-    title: 'NFL Draft ROI Report',
-    description: 'First Round Picks by Position (2013-2019)',
-    pdfUrl: '/assets/NFL First Round Draft Pick ROI 2013-2019 Report.pdf',
+    title: "NFL Draft ROI Report",
+    description: "Return on Investment by Position (2013–2019)",
+    pdfUrl: "/assets/NFLDraftROI2013-2019.pdf",
   },
+
+  // 🎥 Video
   offseasonTutorial: {
-    title: 'Offseason Dashboard Tutorial',
-    description: '2-minute dashboard walkthrough video',
-    videoUrl: '/assets/OffseasonDashboardTutorial.mp4',
+    title: "Offseason Dashboard Tutorial",
+    description: "2-minute walkthrough of my draft/free agency dashboard.",
+    videoUrl: "/assets/OffseasonDashboardTutorial.mp4",
   },
 };
 
 const getColorScale = (value, colMin, colMax) => {
   const num = parseFloat(value);
-  if (isNaN(num)) return 'inherit';
+  if (isNaN(num)) return "inherit";
   const percent = Math.max(0, Math.min(1, (num - colMin) / (colMax - colMin)));
   const red = Math.round(255 * (1 - percent));
   const green = Math.round(255 * percent);
   return `rgb(${red}, ${green}, 100)`;
 };
 
-const ProjectPage = () => {
+export default function ProjectPage() {
   const { id } = useParams();
   const project = projects[id];
   const [csvData, setCsvData] = useState([]);
-  const [numPages, setNumPages] = useState(null);
+  const [pdfError, setPdfError] = useState(false);
 
   useEffect(() => {
     if (project?.csvUrl) {
@@ -93,104 +102,134 @@ const ProjectPage = () => {
     }
   }, [project]);
 
-  if (!project) return <div className="p-6">Project not found.</div>;
+  if (!project) return <div className="p-6 text-lg">Project not found.</div>;
 
-  // Video view
   if (project.videoUrl) {
     return (
       <div className="p-6">
         <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
         <p className="text-gray-700 mb-6">{project.description}</p>
-        <video
-          controls
-          className="w-full h-auto object-contain"
-          style={{ maxHeight: '80vh' }}
-        >
-          <source src={project.videoUrl} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div className="w-full max-w-4xl mx-auto">
+          <video
+            controls
+            className="w-full h-auto rounded-lg shadow-md object-contain"
+            style={{ maxHeight: '80vh' }}
+          >
+            <source src={project.videoUrl} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     );
   }
+  
+  
 
-  // PDF view
+
+
+   
+  // 📄 PDF view
   if (project.pdfUrl) {
     return (
       <div className="p-6">
         <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
         <p className="text-gray-700 mb-6">{project.description}</p>
-        <div className="w-full flex flex-col items-center gap-4">
-          <Document
-            file={project.pdfUrl}
-            onLoadSuccess={({ numPages }) => setNumPages(numPages)}
-            loading={<p>Loading PDF...</p>}
-            error={<p className="text-red-600">Failed to load PDF.</p>}
-          >
-            {Array.from({ length: numPages }, (_, i) => (
-              <Page key={i + 1} pageNumber={i + 1} scale={1.0} />
-            ))}
-          </Document>
-        </div>
+
+        {!pdfError ? (
+          <div className="w-full border rounded overflow-hidden" style={{ height: "90vh" }}>
+            <iframe
+              src={project.pdfUrl}
+              title="PDF Viewer"
+              width="100%"
+              height="100%"
+              onError={() => setPdfError(true)}
+              className="rounded"
+            />
+          </div>
+        ) : (
+          <div className="mt-6 p-4 border border-red-300 bg-red-50 rounded text-red-700">
+            Failed to load PDF.
+            <a
+              href={project.pdfUrl}
+              download
+              className="ml-2 underline text-blue-600"
+            >
+              Click here to download
+            </a>
+          </div>
+        )}
+
+        <a
+          href={project.pdfUrl}
+          download
+          className="mt-4 inline-block text-blue-600 underline"
+        >
+          📥 Download PDF
+        </a>
       </div>
     );
   }
 
-  // CSV view
-  return (
-    <div className="p-6 overflow-x-auto">
-      <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
-      <p className="text-gray-700 mb-6">{project.description}</p>
-      {csvData.length > 0 && (() => {
-        const headers = Object.keys(csvData[0]);
-        const columnStats = {};
-        headers.forEach((header) => {
-          if (header === 'Name') return;
-          const values = csvData.map(row => parseFloat(row[header])).filter(v => !isNaN(v));
-          columnStats[header] = {
-            min: Math.min(...values),
-            max: Math.max(...values),
-          };
-        });
-        return (
-          <table className="table-fixed w-full border border-gray-300 text-sm">
-            <thead className="bg-gray-100">
-              <tr>
-                {headers.map((key) => (
-                  <th
-                    key={key}
-                    className="border px-2 py-2 text-left w-[120px] overflow-hidden truncate font-mono"
-                  >
-                    {key}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {csvData.map((row, i) => (
-                <tr key={i} className="odd:bg-white even:bg-gray-50">
-                  {headers.map((key, j) => {
-                    const value = row[key];
-                    const bgColor = key !== 'Name'
+  // 📊 CSV view
+  if (project.csvUrl && csvData.length > 0) {
+    const headers = Object.keys(csvData[0]);
+    const columnStats = {};
+    headers.forEach((header) => {
+      if (header === "Name") return;
+      const values = csvData.map((row) => parseFloat(row[header])).filter((v) => !isNaN(v));
+      columnStats[header] = {
+        min: Math.min(...values),
+        max: Math.max(...values),
+      };
+    });
+
+    return (
+      <div className="p-6 overflow-x-auto">
+        <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
+        <p className="text-gray-700 mb-6">{project.description}</p>
+        <table className="table-fixed w-full border border-gray-300 text-sm">
+          <thead className="bg-gray-100">
+            <tr>
+              {headers.map((key) => (
+                <th
+                  key={key}
+                  className="border px-2 py-2 text-left w-[120px] truncate font-mono"
+                >
+                  {key}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {csvData.map((row, i) => (
+              <tr key={i} className="odd:bg-white even:bg-gray-50">
+                {headers.map((key, j) => {
+                  const value = row[key];
+                  const bgColor =
+                    key !== "Name"
                       ? getColorScale(value, columnStats[key].min, columnStats[key].max)
                       : undefined;
-                    return (
-                      <td
-                        key={j}
-                        className="border px-2 py-2 text-sm text-gray-800 w-[120px] overflow-hidden truncate font-mono"
-                        style={{ backgroundColor: bgColor }}
-                      >
-                        {value}
-                      </td>
-                    );
-                  })}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        );
-      })()}
+                  return (
+                    <td
+                      key={j}
+                      className="border px-2 py-2 text-sm text-gray-800 w-[120px] truncate font-mono"
+                      style={{ backgroundColor: bgColor }}
+                    >
+                      {value}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
+
+  return (
+    <div className="p-6 text-lg text-gray-600">
+      No viewable content available for this project.
     </div>
   );
-};
-
-export default ProjectPage;
+}
