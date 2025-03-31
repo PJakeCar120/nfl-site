@@ -8,13 +8,43 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 const projects = {
   qb2024: {
     title: '2024 Analytical Quarterback Score Rankings',
-    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 10 games)',
-    csvUrl: '/assets/QBScoreResults.csv',
+    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 250 DBs)',
+    csvUrl: '/assets/QBScoreResults2024.csv',
+  },
+  qb2023: {
+    title: '2023 Analytical Quarterback Score Rankings',
+    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 250 DBs)',
+    csvUrl: '/assets/QBScoreResults2023.csv',
+  },
+  qb2022: {
+    title: '2022 Analytical Quarterback Score Rankings',
+    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 250 DBs)',
+    csvUrl: '/assets/QBScoreResults2022.csv',
+  },
+  qb2021: {
+    title: '2021 Analytical Quarterback Score Rankings',
+    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 250 DBs)',
+    csvUrl: '/assets/QBScoreResults2021.csv',
   },
   wr2024: {
     title: '2024 WR Advanced Wide Receiver Score Rankings',
     description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 30 targets)',
     csvUrl: '/assets/WRScoreResults2024.csv',
+  },
+  wr2023: {
+    title: '2023 WR Advanced Wide Receiver Score Rankings',
+    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 30 targets)',
+    csvUrl: '/assets/WRScoreResults2023.csv',
+  },
+  wr2022: {
+    title: '2022 WR Advanced Wide Receiver Score Rankings',
+    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 30 targets)',
+    csvUrl: '/assets/WRScoreResults2022.csv',
+  },
+  wr2021: {
+    title: '2021 WR Advanced Wide Receiver Score Rankings',
+    description: 'My Model’s Rankings and Advanced Analytics (all stats converted to percentiles, minimum 30 targets)',
+    csvUrl: '/assets/WRScoreResults2021.csv',
   },
   bdb2025: {
     title: 'Big Data Bowl 2025',
