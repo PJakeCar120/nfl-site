@@ -1,9 +1,79 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import Papa from "papaparse";
+
+const YEARS = ["2021", "2022", "2023", "2024"];
+const POSITIONS = ["WR", "QB", "CB"];
 
 const Home = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [allData, setAllData] = useState([]);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const loadData = async () => {
+      const combined = [];
+      await Promise.all(
+        POSITIONS.flatMap((pos) =>
+          YEARS.map(
+            (year) =>
+              new Promise((resolve) => {
+                Papa.parse(`/assets/${pos}ScoreResults${year}.csv`, {
+                  download: true,
+                  header: true,
+                  complete: (res) => {
+                    res.data.forEach((row) => {
+                      if (row.Name) {
+                        combined.push({
+                          name: row.Name,
+                          year,
+                          position: pos,
+                          rank: row.Rank,
+                        });
+                      }
+                    });
+                    resolve();
+                  },
+                });
+              })
+          )
+        )
+      );
+      setAllData(combined);
+    };
+
+    loadData();
+  }, []);
+
+  const handleSearch = () => {
+    const term = searchTerm.toLowerCase().trim();
+    const results = allData.filter((p) =>
+      p.name.toLowerCase().includes(term)
+    );
+    navigate("/player", { state: { results, searchTerm } });
+  };
+
   return (
     <div className="bg-gray-50 min-h-screen">
       <div className="max-w-4xl mx-auto px-4 pt-6 pb-16">
+        {/* Search bar */}
+        <div className="flex items-center mb-8">
+          <input
+            type="text"
+            placeholder="Search players..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="flex-grow p-2 border rounded-l shadow text-sm"
+          />
+          <button
+            onClick={handleSearch}
+            className="p-2 bg-blue-600 text-white text-sm rounded-r hover:bg-blue-700"
+          >
+            🔍
+          </button>
+        </div>
+
+        {/* Intro */}
         <h1 className="text-sm font-bold text-gray-800 mb-2">
           My name is Jake Cardonick and I am a third-year college student at the University of Chicago 
           majoring in Statistics, Economics, and Data Science. You can call me Jake – or another nerd ruining sports.
@@ -16,7 +86,7 @@ const Home = () => {
         </p>
 
         <p className="text-sm text-gray-600 mt-10">
-          You can also follow me on{" "}
+          You can also follow me on Twitter at{" "}
           <a
             href="https://twitter.com/JakeCar120"
             target="_blank"
@@ -28,6 +98,7 @@ const Home = () => {
           for more football takes and nerdy insights.
         </p>
 
+        {/* Projects */}
         <div className="mt-10">
           <h2 className="text-base font-semibold mb-2 text-gray-800">📌 Featured Projects</h2>
           <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
@@ -42,8 +113,8 @@ const Home = () => {
               </Link>
             </li>
             <li>
-              <Link to="/projects/bdb2025" className="underline text-blue-600 hover:text-blue-800 transition">
-                Big Data Bowl 2025
+              <Link to="/projects/cb2024" className="underline text-blue-600 hover:text-blue-800 transition">
+                2024 CB Rankings
               </Link>
             </li>
             <li>
@@ -53,12 +124,18 @@ const Home = () => {
             </li>
             <li>
               <Link to="/projects/contract-market" className="underline text-blue-600 hover:text-blue-800 transition">
-                Contract Market Explorer
+                Positional Contract Markets
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects/bdb2025" className="underline text-blue-600 hover:text-blue-800 transition">
+                Big Data Bowl 2025
               </Link>
             </li>
           </ul>
         </div>
 
+        {/* Philosophy */}
         <div className="mt-10">
           <h2 className="text-base font-semibold mb-2 text-gray-800">🏗️ My Thoughts on How to Build a Successful NFL Franchise</h2>
           <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">

@@ -8,6 +8,8 @@ import ContractsPage from "./pages/ContractsPage";
 import PlayerComparison from "./pages/PlayerComparison";
 import ContractMarket from "./pages/ContractMarket";
 import DraftPreviews from "./pages/DraftPreviews";
+import PlayerPage from "./pages/PlayerPage"; // Adjust path if needed
+
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
         <Route path="/draft-previews" element={<DraftPreviews />} />
         <Route path="/projects/similarity" element={<PlayerComparison />} />
         <Route path="/projects/contract-market" element={<ContractMarket />} />
+        <Route path="/player" element={<PlayerPage />} />
+
       </Routes>
     </Router>
   );

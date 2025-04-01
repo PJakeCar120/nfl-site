@@ -71,34 +71,30 @@ const projects = {
   // 📚 Research PDFs
   bdb2025: {
     title: "Big Data Bowl 2025",
-    description: "Motion: A Defensive Perspective",
     pdfUrl: "/assets/BDB2025.pdf",
   },
   ohc: {
     title: "The Argument for Offensive Head Coaches",
-    description: "Exploring why offensive HCs dominate modern football.",
     pdfUrl: "/assets/OHC.pdf",
   },
   "2025coaches": {
     title: "2025 NFL Head Coaching Candidate Rankings",
-    description: "Personal opinion and early tiers.",
     pdfUrl: "/assets/NFLHeadCoachCandidates2025.pdf",
   },
   draftroi: {
     title: "NFL Draft ROI Report",
-    description: "Return on Investment by Position (2013–2019)",
     pdfUrl: "/assets/NFLDraftROI2013-2019.pdf",
   },
 
   // 🎥 Video
   offseasonTutorial: {
     title: "Offseason Dashboard Tutorial",
-    description: "2-minute walkthrough of my draft/free agency dashboard.",
     videoUrl: "/assets/OffseasonDashboardTutorial.mp4",
   },
 };
 
-const getColorScale = (value, colMin, colMax) => {
+const getColorScale = (value, colMin, colMax, key) => {
+  if (key === "Name" || key === "Rank") return undefined;
   const num = parseFloat(value);
   if (isNaN(num)) return "inherit";
   const percent = Math.max(0, Math.min(1, (num - colMin) / (colMax - colMin)));
@@ -106,6 +102,7 @@ const getColorScale = (value, colMin, colMax) => {
   const green = Math.round(255 * percent);
   return `rgb(${red}, ${green}, 100)`;
 };
+
 
 export default function ProjectPage() {
   const { id } = useParams();
@@ -258,7 +255,7 @@ if (project.pdfUrl) {
               <tr key={i} className="odd:bg-white even:bg-gray-50">
                 {headers.map((key, j) => {
                   const value = row[key];
-                  const bgColor =
+                  const bgColor = getColorScale(value, columnStats[key]?.min, columnStats[key]?.max, key);
                     key !== "Name"
                       ? getColorScale(value, columnStats[key].min, columnStats[key].max)
                       : undefined;
