@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -30,29 +32,29 @@ const Home = () => {
           <h2 className="text-base font-semibold mb-2 text-gray-800">📌 Featured Projects</h2>
           <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
             <li>
-              <a href="/projects/qb2024" className="underline text-blue-600 hover:text-blue-800 transition">
+              <Link to="/projects/qb2024" className="underline text-blue-600 hover:text-blue-800 transition">
                 2024 QB Rankings
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/projects/wr2024" className="underline text-blue-600 hover:text-blue-800 transition">
+              <Link to="/projects/wr2024" className="underline text-blue-600 hover:text-blue-800 transition">
                 2024 WR Rankings
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/projects/bdb2025" className="underline text-blue-600 hover:text-blue-800 transition">
+              <Link to="/projects/bdb2025" className="underline text-blue-600 hover:text-blue-800 transition">
                 Big Data Bowl 2025
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/projects/similarity" className="underline text-blue-600 hover:text-blue-800 transition">
+              <Link to="/projects/similarity" className="underline text-blue-600 hover:text-blue-800 transition">
                 Player Similarity Tool
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/projects/contract-market" className="underline text-blue-600 hover:text-blue-800 transition">
+              <Link to="/projects/contract-market" className="underline text-blue-600 hover:text-blue-800 transition">
                 Contract Market Explorer
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

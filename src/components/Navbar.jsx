@@ -8,13 +8,13 @@ export default function Navbar() {
           🏈 Football Analytics Nerd
         </Link>
         <nav className="space-x-4">
-          <Link to="/" className="hover:underline">Home</Link>
-          <Link to="/rankings" className="hover:underline">Rankings</Link>
-          <Link to="/research" className="hover:underline">Research</Link>
-          <Link to="/contracts" className="hover:underline">Extension Projections</Link>
-          <Link to="/compare" className="hover:underline">Compare Players</Link>
-          <Link to="/contract-market" className="hover:underline">Contract Market</Link>
-          <Link to="/draft-previews" className="hover:underline">Draft Previews</Link>
+          <Link to="/"><button className="hover:underline">Home</button></Link>
+          <Link to="/rankings"><button className="hover:underline">Rankings</button></Link>
+          <Link to="/research"><button className="hover:underline">Research</button></Link>
+          <Link to="/contracts"><button className="hover:underline">Extension Projections</button></Link>
+          <Link to="/compare"><button className="hover:underline">Compare Players</button></Link>
+          <Link to="/contract-market"><button className="hover:underline">Contract Market</button></Link>
+          <Link to="/draft-previews"><button className="hover:underline">Draft Previews</button></Link>
         </nav>
       </div>
     </header>

@@ -157,6 +157,8 @@ if (project.videoUrl) {
 
 // 📄 PDF view
 if (project.pdfUrl) {
+  const isMobile = window.innerWidth <= 768;
+
   return (
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
@@ -167,22 +169,32 @@ if (project.pdfUrl) {
           className="w-full border rounded overflow-auto"
           style={{
             height: "90vh",
-            overflow: "scroll",
             WebkitOverflowScrolling: "touch",
           }}
         >
-          <iframe
-            src={project.pdfUrl}
-            title="PDF Viewer"
-            width="100%"
-            height="1500px"
-            onError={() => setPdfError(true)}
-            className="rounded"
-            style={{
-              border: "none",
-              display: "block",
-            }}
-          />
+          {isMobile ? (
+            <embed
+              src={project.pdfUrl}
+              type="application/pdf"
+              width="100%"
+              height="100%"
+              onError={() => setPdfError(true)}
+              style={{ display: "block" }}
+            />
+          ) : (
+            <iframe
+              src={project.pdfUrl}
+              title="PDF Viewer"
+              width="100%"
+              height="100%"
+              onError={() => setPdfError(true)}
+              className="rounded"
+              style={{
+                border: "none",
+                display: "block",
+              }}
+            />
+          )}
         </div>
       ) : (
         <div className="mt-6 p-4 border border-red-300 bg-red-50 rounded text-red-700">
