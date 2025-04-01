@@ -5,6 +5,7 @@ import ProjectPage from "./pages/ProjectPage";
 import RankingsPage from "./pages/RankingsPage";
 import ResearchPage from "./pages/ResearchPage";
 import ContractsPage from "./pages/ContractsPage";
+import PlayerComparison from "./pages/PlayerComparison";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/rankings" element={<RankingsPage />} />
         <Route path="/research" element={<ResearchPage />} />
         <Route path="/contracts" element={<ContractsPage />} />
+        <Route path="/compare" element={<PlayerComparison />} />
       </Routes>
     </Router>
   );

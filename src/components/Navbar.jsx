@@ -12,6 +12,7 @@ export default function Navbar() {
           <Link to="/rankings"><button className="hover:underline">Rankings</button></Link>
           <Link to="/research"><button className="hover:underline">Research</button></Link>
           <Link to="/contracts"><button className="hover:underline">Contracts</button></Link>
+          <Link to="/compare"><button className="hover:underline">Compare Players</button></Link>
         </nav>
       </div>
     </header>

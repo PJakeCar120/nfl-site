@@ -1,4 +1,4 @@
-Name,AWRS_percentile,AY_perc,YPRR_perc,YAC/REC_perc,TM TD %_perc,1D/RR_perc,CC %_perc,RATE_perc,YPTOE_perc,SLOT RTE %_percentile,RecYDS/G_perc,CR %_perc
+Name,Analytical Wide Receiver Score (AWRS),Air Yards,Yards per Route Run,Yards After Catch per Reception,Team TD %,First Downs per Route Run,Contested Catch %,QB Rating When Targeted,Yards per Target Over Expectation,Slot Rate,Receiving YPG,Catch Rate
 Nico Collins,100,70.5,99.1,96,82.1,96.4,84.4,99.1,97.8,84.4,94.6,90.2
 Brandon Aiyuk,99.1,92.4,98.2,65.2,64.7,99.1,90.2,97.3,99.1,75,92.9,87.5
 D.J. Moore,98.2,96.4,88.4,85.7,95.1,89.7,83,89.7,89.7,78.6,91.1,85.3
