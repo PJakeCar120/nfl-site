@@ -66,6 +66,26 @@ const projects = {
     description: "CB model results: all stats in percentiles except ACS (min 200 coverage snaps).",
     csvUrl: "/assets/CBScoreResults2021.csv",
   },
+  s2024: {
+    title: "2024 S Score Rankings",
+    description: "S model results: all stats in percentiles except ACS (min 250 snaps).",
+    csvUrl: "/assets/SScoreResults2024.csv",
+  },
+  s2023: {
+    title: "2023 S Score Rankings",
+    description: "S model results: all stats in percentiles except ACS (min 250 snaps).",
+    csvUrl: "/assets/SScoreResults2023.csv",
+  },
+  s2022: {
+    title: "2022 S Score Rankings",
+    description: "S model results: all stats in percentiles except ACS (min 250 snaps).",
+    csvUrl: "/assets/SScoreResults2022.csv",
+  },
+  s2021: {
+    title: "2021 S Score Rankings",
+    description: "S model results: all stats in percentiles except ACS (min 250 snaps).",
+    csvUrl: "/assets/SScoreResults2021.csv",
+  },
 
 
   // 📚 Research PDFs

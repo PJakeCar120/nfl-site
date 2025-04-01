@@ -35,7 +35,17 @@ export default function RankingsPage() {
             <li><Link to="/projects/cb2021">2021 CB Rankings</Link></li>
           </ul>
         </div>
+        <div>
+          <h2 className="text-xl font-semibold mb-2">Safeties</h2>
+          <ul className="list-disc ml-6 text-blue-500 space-y-1">
+            <li><Link to="/projects/s2024">2024 S Rankings</Link></li>
+            <li><Link to="/projects/s2023">2023 S Rankings</Link></li>
+            <li><Link to="/projects/s2022">2022 S Rankings</Link></li>
+            <li><Link to="/projects/s2021">2021 S Rankings</Link></li>
+          </ul>
+        </div>
       </div>
     </div>
+    
   );
 }

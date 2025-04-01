@@ -50,6 +50,16 @@ const CB_COLS = [
   "Tackles"
 ];
 
+const S_COLS = [
+  "Analytical Safety Score (ASS)",
+  "Forced Fumbles per Snap",
+  "Interceptions per Snap",
+  "Sacks per Snap",	
+  "Missed Tackle Rate",
+  "QB Rating Against",
+  "Snap Count"
+];
+
 export default function PlayerComparison() {
   const [position, setPosition] = useState("");
   const [dataByYear, setDataByYear] = useState({});
@@ -81,7 +91,13 @@ export default function PlayerComparison() {
   }, [position]);
 
   const COLUMNS =
-    position === "WR" ? WR_COLS : position === "QB" ? QB_COLS : CB_COLS;
+    position === "WR"
+      ? WR_COLS
+      : position === "QB"
+      ? QB_COLS
+      : position === "CB"
+      ? CB_COLS
+      : S_COLS;
 
   const allPlayers = years
     .flatMap((year) =>
@@ -152,12 +168,11 @@ export default function PlayerComparison() {
           }}
           className="p-2 border rounded"
         >
-          <option value="" disabled>
-            Select Position
-          </option>
+          <option value="" disabled>Select Position</option>
           <option value="QB">QB</option>
           <option value="WR">WR</option>
           <option value="CB">CB</option>
+          <option value="S">S</option>
         </select>
       </div>
 

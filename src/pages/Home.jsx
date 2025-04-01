@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Papa from "papaparse";
 
 const YEARS = ["2021", "2022", "2023", "2024"];
-const POSITIONS = ["WR", "QB", "CB"];
+const POSITIONS = ["QB", "WR", "CB", "S"];
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -120,6 +120,11 @@ const Home = () => {
                 2024 CB Rankings
               </Link>
             </li>
+            <li>
+              <Link to="/projects/s2024" className="underline text-blue-600 hover:text-blue-800 transition">
+                2024 S Rankings
+              </Link>
+              </li>
             <li>
               <Link to="/projects/similarity" className="underline text-blue-600 hover:text-blue-800 transition">
                 Player Similarity Tool
