@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const researchProjects = [
+const Research = [
   { id: "bdb2025", title: "Big Data Bowl 2025" },
   { id: "2025coaches", title: "2025 NFL Head Coaching Candidate Rankings" },
   { id: "draftroi", title: "What NFL Positions Have the Highest Return on 1st Round Picks (2013–2019)?" },
@@ -11,9 +11,9 @@ const researchProjects = [
 export default function ResearchPage() {
   return (
     <div className="px-6 py-8 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6">📚 Research Projects</h1>
+      <h1 className="text-3xl font-bold mb-6">📚  Research </h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2">
-        {researchProjects.map(({ id, title }) => (
+        {Research.map(({ id, title }) => (
           <Link
             key={id}
             to={`/projects/${id}`}

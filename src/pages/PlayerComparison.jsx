@@ -34,6 +34,22 @@ const QB_COLS = [
   "Int/G"
 ];
 
+const CB_COLS = [
+  "Analytical Cornerback Score (ACS)",
+  "Coverage Snaps per Reception",
+  "QB Rating Against",
+  "Yards Allowed per Snap",
+  "Forced Incompletion Rate",
+  "Interceptions",
+  "Catch Rate Allowed",
+  "Missed Tackle Rate",
+  "Penalties per Snap",
+  "TDs Allowed per Snap",
+  "Coverage Snaps",
+  "Slot Coverage Snaps",
+  "Tackles"
+];
+
 export default function PlayerComparison() {
   const [position, setPosition] = useState("");
   const [dataByYear, setDataByYear] = useState({});
@@ -64,7 +80,8 @@ export default function PlayerComparison() {
     fetchData();
   }, [position]);
 
-  const COLUMNS = position === "WR" ? WR_COLS : QB_COLS;
+  const COLUMNS =
+    position === "WR" ? WR_COLS : position === "QB" ? QB_COLS : CB_COLS;
 
   const allPlayers = years
     .flatMap((year) =>
@@ -78,7 +95,9 @@ export default function PlayerComparison() {
   const getStatsVector = (row) => COLUMNS.map((col) => parseFloat(row[col]));
 
   const computeSimilarity = (v1, v2) => {
-    const dist = Math.sqrt(v1.reduce((sum, val, i) => sum + (val - v2[i]) ** 2, 0));
+    const dist = Math.sqrt(
+      v1.reduce((sum, val, i) => sum + (val - v2[i]) ** 2, 0)
+    );
     return 100 * (1 - dist / Math.sqrt(v1.length * (100 ** 2)));
   };
 
@@ -138,6 +157,7 @@ export default function PlayerComparison() {
           </option>
           <option value="QB">QB</option>
           <option value="WR">WR</option>
+          <option value="CB">CB</option>
         </select>
       </div>
 

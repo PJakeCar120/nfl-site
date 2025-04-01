@@ -3,11 +3,12 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import ProjectPage from "./pages/ProjectPage";
 import RankingsPage from "./pages/RankingsPage";
-import ResearchPage from "./pages/ResearchPage";
+import Research from "./pages/Research";
 import ContractsPage from "./pages/ContractsPage";
 import PlayerComparison from "./pages/PlayerComparison";
 import ContractMarket from "./pages/ContractMarket";
 import DraftPreviews from "./pages/DraftPreviews";
+
 
 function App() {
   return (
@@ -17,11 +18,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects/:id" element={<ProjectPage />} />
         <Route path="/rankings" element={<RankingsPage />} />
-        <Route path="/research" element={<ResearchPage />} />
+        <Route path="/research" element={<Research />} />
         <Route path="/contract-market" element={<ContractMarket />} />
         <Route path="/contracts" element={<ContractsPage />} />
         <Route path="/compare" element={<PlayerComparison />} />
         <Route path="/draft-previews" element={<DraftPreviews />} />
+        <Route path="/projects/similarity" element={<PlayerComparison />} />
+        <Route path="/projects/contract-market" element={<ContractMarket />} />
       </Routes>
     </Router>
   );
@@ -32,4 +35,7 @@ export default App;
 
 
 // Inside your Routes:
+
+
+
 

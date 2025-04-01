@@ -6,46 +6,67 @@ const projects = {
   // 🔢 QB Rankings
   qb2024: {
     title: "2024 QB Score Rankings",
-    description: "QB model results: all stats in percentiles (min 250 dropbacks).",
+    description: "QB model results: all stats in percentiles except AQR (min 250 dropbacks).",
     csvUrl: "/assets/QBScoreResults2024.csv",
   },
   qb2023: {
     title: "2023 QB Score Rankings",
-    description: "QB model results: all stats in percentiles (min 250 dropbacks).",
+    description: "QB model results: all stats in percentiles except AQR (min 250 dropbacks).",
     csvUrl: "/assets/QBScoreResults2023.csv",
   },
   qb2022: {
     title: "2022 QB Score Rankings",
-    description: "QB model results: all stats in percentiles (min 250 dropbacks).",
+    description: "QB model results: all stats in percentiles except AQR (min 250 dropbacks).",
     csvUrl: "/assets/QBScoreResults2022.csv",
   },
   qb2021: {
     title: "2021 QB Score Rankings",
-    description: "QB model results: all stats in percentiles (min 250 dropbacks).",
+    description: "QB model results: all stats in percentiles except AQR (min 250 dropbacks).",
     csvUrl: "/assets/QBScoreResults2021.csv",
   },
 
   // 🧤 WR Rankings
   wr2024: {
     title: "2024 WR Score Rankings",
-    description: "WR model results: all stats in percentiles (min 30 targets).",
+    description: "WR model results: all stats in percentiles except AWRS (min 30 targets).",
     csvUrl: "/assets/WRScoreResults2024.csv",
   },
   wr2023: {
     title: "2023 WR Score Rankings",
-    description: "WR model results: all stats in percentiles (min 30 targets).",
+    description: "WR model results: all stats in percentiles except AWRS (min 30 targets).",
     csvUrl: "/assets/WRScoreResults2023.csv",
   },
   wr2022: {
     title: "2022 WR Score Rankings",
-    description: "WR model results: all stats in percentiles (min 30 targets).",
+    description: "WR model results: all stats in percentiles except AWRS (min 30 targets).",
     csvUrl: "/assets/WRScoreResults2022.csv",
   },
   wr2021: {
     title: "2021 WR Score Rankings",
-    description: "WR model results: all stats in percentiles (min 30 targets).",
+    description: "WR model results: all stats in percentiles except AWRS (min 30 targets).",
     csvUrl: "/assets/WRScoreResults2021.csv",
   },
+  cb2024: {
+    title: "2024 CB Score Rankings",
+    description: "CB model results: all stats in percentiles except ACS (min 200 coverage snaps).",
+    csvUrl: "/assets/CBScoreResults2024.csv",
+  },
+  cb2023: {
+    title: "2023 CB Score Rankings",
+    description: "CB model results: all stats in percentiles except ACS (min 200 coverage snaps).",
+    csvUrl: "/assets/CBScoreResults2023.csv",
+  },
+  cb2022: {
+    title: "2022 CB Score Rankings",
+    description: "CB model results: all stats in percentiles except ACS (min 200 coverage snaps).",
+    csvUrl: "/assets/CBScoreResults2022.csv",
+  },
+  cb2021: {
+    title: "2021 CB Score Rankings",
+    description: "CB model results: all stats in percentiles except ACS (min 200 coverage snaps).",
+    csvUrl: "/assets/CBScoreResults2021.csv",
+  },
+
 
   // 📚 Research PDFs
   bdb2025: {

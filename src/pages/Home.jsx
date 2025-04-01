@@ -2,15 +2,77 @@ const Home = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
       <div className="max-w-4xl mx-auto px-4 pt-6 pb-16">
-        <h1 className="text-xl font-bold text-gray-800 mb-2">
+        <h1 className="text-sm font-bold text-gray-800 mb-2">
           My name is Jake Cardonick and I am a third-year college student at the University of Chicago 
-          majoring in Statistics, Economics, and Data Science. You can call me Jake, or another nerd ruining sports.
+          majoring in Statistics, Economics, and Data Science. You can call me Jake – or another nerd ruining sports.
         </h1>
+
         <p className="text-gray-600 mt-4 text-base leading-relaxed">
           I'm currently looking for an internship from the beginning of August through the end of September.
           If interested, please email <strong>jcardonick@uchicago.edu</strong>.
           I love talking football — feel free to reach out with any questions, improvements, or future projects you'd like to see.
         </p>
+
+        <p className="text-sm text-gray-600 mt-10">
+          You can also follow me on{" "}
+          <a
+            href="https://twitter.com/JakeCar120"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 hover:text-blue-800 transition"
+          >
+            @JakeCar120
+          </a>{" "}
+          for more football takes and nerdy insights.
+        </p>
+
+        <div className="mt-10">
+          <h2 className="text-base font-semibold mb-2 text-gray-800">📌 Featured Projects</h2>
+          <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+            <li>
+              <a href="/projects/qb2024" className="underline text-blue-600 hover:text-blue-800 transition">
+                2024 QB Rankings
+              </a>
+            </li>
+            <li>
+              <a href="/projects/wr2024" className="underline text-blue-600 hover:text-blue-800 transition">
+                2024 WR Rankings
+              </a>
+            </li>
+            <li>
+              <a href="/projects/bdb2025" className="underline text-blue-600 hover:text-blue-800 transition">
+                Big Data Bowl 2025
+              </a>
+            </li>
+            <li>
+              <a href="/projects/similarity" className="underline text-blue-600 hover:text-blue-800 transition">
+                Player Similarity Tool
+              </a>
+            </li>
+            <li>
+              <a href="/projects/contract-market" className="underline text-blue-600 hover:text-blue-800 transition">
+                Contract Market Explorer
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="mt-10">
+          <h2 className="text-base font-semibold mb-2 text-gray-800">🏗️ My Thoughts on How to Build a Successful NFL Franchise</h2>
+          <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+            <li>Think long-term.</li>
+            <li>Win on the margins.</li>
+            <li>Consider positional value.</li>
+            <li>Don’t be reactionary.</li>
+            <li>Know you can never have enough linemen.</li>
+            <li>Value cash today more than cash tomorrow.</li>
+            <li>Know coaches matter more than you’d think.</li>
+            <li>Know pressure wins championships.</li>
+            <li>Extend players early.</li>
+            <li>Chase upside.</li>
+            <li>Trade back in the draft.</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
