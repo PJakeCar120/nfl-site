@@ -3,33 +3,52 @@ import Papa from "papaparse";
 import Select from "react-select";
 
 const years = ["2024", "2023", "2022", "2021"];
-const WR_PERCENTILE_COLS = [
-    "Analytical Wide Receiver Score (AWRS)",
-    "Air Yards",
-    "Yards per Route Run",
-    "Yards After Catch per Reception",
-    "Team TD %",
-    "First Downs per Route Run",
-    "Contested Catch %",
-    "QB Rating When Targeted",
-    "Yards per Target Over Expectation",
-    "Slot Rate",
-    "Receiving YPG",
-    "Catch Rate"
-  ];
+
+const WR_COLS = [
+  "Analytical Wide Receiver Score (AWRS)",
+  "Air Yards",
+  "Yards per Route Run",
+  "Yards After Catch per Reception",
+  "Team TD %",
+  "First Downs per Route Run",
+  "Contested Catch %",
+  "QB Rating When Targeted",
+  "Yards per Target Over Expectation",
+  "Slot Rate",
+  "Receiving YPG",
+  "Catch Rate"
+];
+
+const QB_COLS = [
+  "Analytical Quarterback Score (AQS)",
+  "Comp. % Over Expected",
+  "Hero Throw %",
+  "Turnover Worthy Throw %",
+  "Pressure Sack Rate",
+  "Drop %",
+  "Rush YPG",
+  "Adj. Comp %",
+  "Pass TD/G",
+  "Rush TD/G",
+  "Fum/G",
+  "Int/G"
+];
 
 export default function PlayerComparison() {
+  const [position, setPosition] = useState("");
   const [dataByYear, setDataByYear] = useState({});
   const [selectedPlayer, setSelectedPlayer] = useState(null);
   const [similarPlayers, setSimilarPlayers] = useState([]);
 
   useEffect(() => {
+    if (!position) return;
+
     const fetchData = async () => {
       const allData = {};
       await Promise.all(
         years.map((year) =>
           new Promise((resolve) => {
-            Papa.parse(`/assets/WRScoreResults${year}.csv`, {
+            Papa.parse(`/assets/${position}ScoreResults${year}.csv`, {
               download: true,
               header: true,
               complete: (result) => {
@@ -43,17 +62,20 @@ export default function PlayerComparison() {
       setDataByYear(allData);
     };
     fetchData();
-  }, []);
+  }, [position]);
 
-  const allPlayers = years.flatMap((year) =>
-    (dataByYear[year] || []).map((row) => ({
-      label: `${row.Name} (${year})`,
-      value: { name: row.Name, year },
-    }))
-  ).sort((a, b) => a.label.localeCompare(b.label));
+  const COLUMNS = position === "WR" ? WR_COLS : QB_COLS;
 
-  const getStatsVector = (row) =>
-    WR_PERCENTILE_COLS.map((col) => parseFloat(row[col]));
+  const allPlayers = years
+    .flatMap((year) =>
+      (dataByYear[year] || []).map((row) => ({
+        label: `${row.Name} (${year})`,
+        value: { name: row.Name, year },
+      }))
+    )
+    .sort((a, b) => a.label.localeCompare(b.label));
+
+  const getStatsVector = (row) => COLUMNS.map((col) => parseFloat(row[col]));
 
   const computeSimilarity = (v1, v2) => {
     const dist = Math.sqrt(v1.reduce((sum, val, i) => sum + (val - v2[i]) ** 2, 0));
@@ -64,20 +86,22 @@ export default function PlayerComparison() {
     const { name, year } = option.value;
     const baseRow = (dataByYear[year] || []).find((r) => r.Name === name);
     const baseVec = getStatsVector(baseRow);
-
     if (baseVec.includes(NaN)) return;
 
-    const allOthers = years.flatMap((y) =>
-      (dataByYear[y] || []).map((r) => ({
-        name: r.Name,
-        year: y,
-        vec: getStatsVector(r),
-      }))
-    ).filter((r) =>
-      !(r.name === name && r.year === year) &&
-      r.vec.length === baseVec.length &&
-      !r.vec.includes(NaN)
-    );
+    const allOthers = years
+      .flatMap((y) =>
+        (dataByYear[y] || []).map((r) => ({
+          name: r.Name,
+          year: y,
+          vec: getStatsVector(r),
+        }))
+      )
+      .filter(
+        (r) =>
+          !(r.name === name && r.year === year) &&
+          r.vec.length === baseVec.length &&
+          !r.vec.includes(NaN)
+      );
 
     const distances = allOthers.map((r) => ({
       name: r.name,
@@ -96,14 +120,56 @@ export default function PlayerComparison() {
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold mb-6">🔍 WR Similarity Tool</h2>
+      <h2 className="text-3xl font-bold mb-6">🔍 Player Similarity Tool</h2>
 
-      <Select
-        options={allPlayers}
-        onChange={handleSelect}
-        placeholder="Select a WR season"
-        className="mb-8"
-      />
+      <div className="mb-4">
+        <label className="font-semibold mr-2">Select Position:</label>
+        <select
+          value={position}
+          onChange={(e) => {
+            setPosition(e.target.value);
+            setSelectedPlayer(null);
+            setSimilarPlayers([]);
+          }}
+          className="p-2 border rounded"
+        >
+          <option value="" disabled>
+            Select Position
+          </option>
+          <option value="QB">QB</option>
+          <option value="WR">WR</option>
+        </select>
+      </div>
+
+      {position && (
+        <Select
+          options={allPlayers}
+          onChange={handleSelect}
+          placeholder={`Select a ${position} season`}
+          className="mb-8"
+          styles={{
+            control: (base) => ({
+              ...base,
+              backgroundColor: "#f9fafb",
+              color: "#000",
+            }),
+            singleValue: (base) => ({
+              ...base,
+              color: "#000",
+            }),
+            menu: (base) => ({
+              ...base,
+              backgroundColor: "#fff",
+              color: "#000",
+            }),
+            option: (base, state) => ({
+              ...base,
+              backgroundColor: state.isFocused ? "#e5e7eb" : "#fff",
+              color: "#000",
+            }),
+          }}
+        />
+      )}
 
       {selectedPlayer && (
         <div>

@@ -104,39 +104,58 @@ export default function ProjectPage() {
 
   if (!project) return <div className="p-6 text-lg">Project not found.</div>;
 
-  if (project.videoUrl) {
-    return (
-      <div className="p-6">
-        <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
-        <p className="text-gray-700 mb-6">{project.description}</p>
-        <div className="w-full max-w-4xl mx-auto">
+
+// 🎥 Video view
+if (project.videoUrl) {
+  return (
+    <div className="p-6">
+      <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
+      <p className="text-gray-700 mb-6">{project.description}</p>
+
+      <div className="w-full overflow-x-auto flex justify-center">
+        <div
+          style={{
+            transform: "scale(0.85)",
+            transformOrigin: "top center",
+          }}
+        >
           <video
             controls
-            className="w-full h-auto rounded-lg shadow-md object-contain"
-            style={{ maxHeight: '80vh' }}
+            className="rounded-lg shadow-md"
+            style={{ width: "1000px", maxWidth: "100%" }}
           >
             <source src={project.videoUrl} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
       </div>
-    );
-  }
-  
-  
+    </div>
+  );
+}
 
+// 📄 PDF view
+if (project.pdfUrl) {
+  return (
+    <div className="p-6">
+      <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
+      <p className="text-gray-700 mb-6">{project.description}</p>
 
-
-   
-  // 📄 PDF view
-  if (project.pdfUrl) {
-    return (
-      <div className="p-6">
-        <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
-        <p className="text-gray-700 mb-6">{project.description}</p>
-
-        {!pdfError ? (
-          <div className="w-full border rounded overflow-hidden" style={{ height: "90vh" }}>
+      {!pdfError ? (
+        <div
+          className="w-full border rounded overflow-auto"
+          style={{
+            height: "90vh",
+            WebkitOverflowScrolling: "touch", // for iOS smooth scroll
+          }}
+        >
+          <div
+            style={{
+              transform: "scale(0.75)", // zoomed out slightly more
+              transformOrigin: "top center",
+              width: "100%",
+              height: "100%",
+            }}
+          >
             <iframe
               src={project.pdfUrl}
               title="PDF Viewer"
@@ -144,31 +163,39 @@ export default function ProjectPage() {
               height="100%"
               onError={() => setPdfError(true)}
               className="rounded"
+              style={{
+                border: "none",
+                display: "block",
+              }}
             />
           </div>
-        ) : (
-          <div className="mt-6 p-4 border border-red-300 bg-red-50 rounded text-red-700">
-            Failed to load PDF.
-            <a
-              href={project.pdfUrl}
-              download
-              className="ml-2 underline text-blue-600"
-            >
-              Click here to download
-            </a>
-          </div>
-        )}
+        </div>
+      ) : (
+        <div className="mt-6 p-4 border border-red-300 bg-red-50 rounded text-red-700">
+          Failed to load PDF.
+          <a
+            href={project.pdfUrl}
+            download
+            className="ml-2 underline text-blue-600"
+          >
+            Click here to download
+          </a>
+        </div>
+      )}
 
-        <a
-          href={project.pdfUrl}
-          download
-          className="mt-4 inline-block text-blue-600 underline"
-        >
-          📥 Download PDF
-        </a>
-      </div>
-    );
-  }
+      <a
+        href={project.pdfUrl}
+        download
+        className="mt-4 inline-block text-blue-600 underline"
+      >
+        📥 Download PDF
+      </a>
+    </div>
+  );
+}
+
+
+
 
   // 📊 CSV view
   if (project.csvUrl && csvData.length > 0) {
