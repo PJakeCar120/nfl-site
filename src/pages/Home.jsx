@@ -63,6 +63,9 @@ const Home = () => {
             placeholder="Search players..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") handleSearch();
+            }}
             className="flex-grow p-2 border rounded-l shadow text-sm"
           />
           <button
