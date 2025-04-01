@@ -154,6 +154,7 @@ if (project.videoUrl) {
   );
 }
 
+
 // 📄 PDF view
 if (project.pdfUrl) {
   return (
@@ -166,30 +167,22 @@ if (project.pdfUrl) {
           className="w-full border rounded overflow-auto"
           style={{
             height: "90vh",
-            WebkitOverflowScrolling: "touch", // for iOS smooth scroll
+            overflow: "scroll",
+            WebkitOverflowScrolling: "touch",
           }}
         >
-          <div
+          <iframe
+            src={project.pdfUrl}
+            title="PDF Viewer"
+            width="100%"
+            height="1500px"
+            onError={() => setPdfError(true)}
+            className="rounded"
             style={{
-              transform: "scale(0.75)", // zoomed out slightly more
-              transformOrigin: "top center",
-              width: "100%",
-              height: "100%",
+              border: "none",
+              display: "block",
             }}
-          >
-            <iframe
-              src={project.pdfUrl}
-              title="PDF Viewer"
-              width="100%"
-              height="100%"
-              onError={() => setPdfError(true)}
-              className="rounded"
-              style={{
-                border: "none",
-                display: "block",
-              }}
-            />
-          </div>
+          />
         </div>
       ) : (
         <div className="mt-6 p-4 border border-red-300 bg-red-50 rounded text-red-700">
