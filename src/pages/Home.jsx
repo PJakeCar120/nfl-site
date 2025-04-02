@@ -168,15 +168,13 @@ const Home = () => {
         </div>
 
         {/* Bottom-right aligned image inside content */}
-        <div className="flex justify-end mt-10">
           <img
             src="/assets/FootballAnalyticsNerd.png"
             alt="Football Analytics Nerd"
-            className="w-12 h-12"
-          />
+            style={{ width: "500px", height: "500px", position: "fixed", bottom: "2rem", right: "2rem", zIndex: 50 }}
+            />
         </div>
       </div>
-    </div>
   );
 };
 
