@@ -55,7 +55,7 @@ const Home = () => {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 pt-6 pb-16">
+      <div className="max-w-4xl mx-auto px-6 pt-6 pb-16">
         {/* Search bar */}
         <div className="flex items-center mb-8">
           <input
@@ -130,7 +130,7 @@ const Home = () => {
               <Link to="/projects/s2024" className="underline text-blue-600 hover:text-blue-800 transition">
                 2024 S Rankings
               </Link>
-              </li>
+            </li>
             <li>
               <Link to="/projects/similarity" className="underline text-blue-600 hover:text-blue-800 transition">
                 Player Similarity Tool
@@ -166,14 +166,16 @@ const Home = () => {
             <li>Trade back in the draft.</li>
           </ul>
         </div>
-      </div>
 
-      {/* Image in the bottom right corner */}
-      <img
-        src="/assets/FootballAnalyticsNerd.png"
-        alt="Football Analytics Nerd"
-        className="bottom-right-logo"
-      />
+        {/* Bottom-right aligned image inside content */}
+        <div className="flex justify-end mt-10">
+          <img
+            src="/assets/FootballAnalyticsNerd.png"
+            alt="Football Analytics Nerd"
+            className="w-12 h-12"
+          />
+        </div>
+      </div>
     </div>
   );
 };

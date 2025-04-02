@@ -30,7 +30,7 @@ body {
   place-items: center; */
   min-width: 320px;
   min-height: 100vh;
-  padding: 0;
+  padding: 0 3rem;
 }
 
 h1 {
