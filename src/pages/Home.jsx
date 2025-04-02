@@ -174,9 +174,9 @@ const Home = () => {
             alt="Football Analytics Nerd"
             className="bottom-image"
             style={{
-              width: "500px",
-              height: "500px",
-              objectFit: "contain",
+      width: "500px",
+      height: "500px",
+      objectFit: "contain",
             }}
           />
          </div>
