@@ -172,12 +172,10 @@ const Home = () => {
           <img
             src="/assets/FootballAnalyticsNerd.png"
             alt="Football Analytics Nerd"
+            className="bottom-image"
             style={{
               width: "500px",
               height: "500px",
-              position: "absolute",
-              right: "-5rem",
-              bottom: "0",
               objectFit: "contain",
             }}
           />

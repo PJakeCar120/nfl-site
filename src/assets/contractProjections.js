@@ -242,7 +242,7 @@ const contractProjections = {
   • **My projection: 3 years for $37M**  
   Would make Otton the 8th highest-paid TE in the NFL.`,
   
-    "Trey Mcbride": `NFL Extension Candidate: #Cardinals Trey Mcbride
+    "Trey McBride": `NFL Extension Candidate: #Cardinals Trey McBride
   
   Comparables (age at signing):
   • T.J. Hockenson (26): 7.34% cap at signing

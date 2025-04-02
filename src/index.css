@@ -79,3 +79,17 @@ html, body {
   position: relative;
   overflow-x: hidden;
 }
+
+.bottom-image {
+  position: absolute;
+  right: -5rem;
+  bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .bottom-image {
+    position: static;
+    display: block;
+    margin: 2rem auto 0 auto;
+  }
+}
