@@ -168,13 +168,22 @@ const Home = () => {
         </div>
 
         {/* Bottom-right aligned image inside content */}
+        <div style={{ position: "relative", height: "0px" }}>
           <img
             src="/assets/FootballAnalyticsNerd.png"
             alt="Football Analytics Nerd"
-            style={{ width: "500px", height: "500px", position: "fixed", bottom: "2rem", right: "2rem", zIndex: 50 }}
-            />
-        </div>
+            style={{
+              width: "500px",
+              height: "500px",
+              position: "absolute",
+              right: "-5rem",
+              bottom: "0",
+              objectFit: "contain",
+            }}
+          />
+         </div>
       </div>
+    </div>
   );
 };
 
