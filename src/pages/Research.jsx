@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const Research = [
-  { id: "bdb2025", title: "Big Data Bowl 2025" },
+  { id: "offseasonTutorial", title: "Offseason Dashboard Tutorial" },
   { id: "2025coaches", title: "2025 NFL Head Coaching Candidate Rankings" },
   { id: "draftroi", title: "What NFL Positions Have the Highest Return on 1st Round Picks (2013–2019)?" },
-  { id: "offseasonTutorial", title: "Offseason Dashboard Tutorial" },
+  { id: "bdb2025", title: "Big Data Bowl 2025" },
   { id: "ohc", title: "The Argument for Offensive Head Coaches" },
 ];
 

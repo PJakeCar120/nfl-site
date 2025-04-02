@@ -167,6 +167,13 @@ const Home = () => {
           </ul>
         </div>
       </div>
+
+      {/* Image in the bottom right corner */}
+      <img
+        src="/assets/FootballAnalyticsNerd.png"
+        alt="Football Analytics Nerd"
+        className="bottom-right-logo"
+      />
     </div>
   );
 };
