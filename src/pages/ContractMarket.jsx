@@ -5,7 +5,7 @@ const ContractMarket = () => {
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-4">📊 Contract Market</h1>
       <p className="mb-6">
-        Explore the top 50 NFL contracts by cap percentage. Use the dropdown in the chart to switch between QB and RB.
+        Explore the top 50 NFL contracts by cap percentage at signing at each position. Use the dropdown below the chart to switch positions.
       </p>
 
       <iframe
