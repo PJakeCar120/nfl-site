@@ -8,9 +8,7 @@ import ContractsPage from "./pages/ContractsPage";
 import PlayerComparison from "./pages/PlayerComparison";
 import ContractMarket from "./pages/ContractMarket";
 import DraftPreviews from "./pages/DraftPreviews";
-import PlayerPage from "./pages/PlayerPage"; // Adjust path if needed
-
-
+import PlayerPage from "./pages/PlayerPage";
 
 function App() {
   return (
@@ -28,18 +26,9 @@ function App() {
         <Route path="/projects/similarity" element={<PlayerComparison />} />
         <Route path="/projects/contract-market" element={<ContractMarket />} />
         <Route path="/player" element={<PlayerPage />} />
-
       </Routes>
     </Router>
   );
 }
 
 export default App;
-
-
-
-// Inside your Routes:
-
-
-
-

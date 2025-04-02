@@ -27,6 +27,16 @@ export default function RankingsPage() {
         </div>
 
         <div>
+          <h2 className="text-xl font-semibold mb-2">Tight Ends</h2>
+          <ul className="list-disc ml-6 text-blue-500 space-y-1">
+            <li><Link to="/projects/te2024">2024 TE Rankings</Link></li>
+            <li><Link to="/projects/te2023">2023 TE Rankings</Link></li>
+            <li><Link to="/projects/te2022">2022 TE Rankings</Link></li>
+            <li><Link to="/projects/te2021">2021 TE Rankings</Link></li>
+          </ul>
+        </div>
+
+        <div>
           <h2 className="text-xl font-semibold mb-2">Cornerbacks</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-1">
             <li><Link to="/projects/cb2024">2024 CB Rankings</Link></li>

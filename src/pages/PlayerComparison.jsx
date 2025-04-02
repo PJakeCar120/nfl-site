@@ -4,20 +4,41 @@ import Select from "react-select";
 
 const years = ["2024", "2023", "2022", "2021"];
 
+
+const TE_COLS = [
+  "Analytical Tight End Score (ATES)",
+  "First Downs per Route Run",
+  "Receiving Yards per Game",
+  "Yards per Route Run",
+  "Missed Tackles Forced per Reception",
+  "Drop Rate",
+  "Run Block Grade",
+  "Yards per Target Over Expectation",
+  "Yards After Catch per Reception",
+  "Pass Block Grade",
+  "TDs per Route Run",
+  "Contested Catch Rate"
+];
+
+
 const WR_COLS = [
   "Analytical Wide Receiver Score (AWRS)",
-  "Air Yards",
   "Yards per Route Run",
-  "Yards After Catch per Reception",
-  "Team TD %",
+  "Receiving YPG",
   "First Downs per Route Run",
-  "Contested Catch %",
-  "QB Rating When Targeted",
+  "Air Yards",
+  "TDs per Route Run",
   "Yards per Target Over Expectation",
   "Slot Rate",
-  "Receiving YPG",
-  "Catch Rate"
+  "Yards After Catch per Reception",
+  "Contested Catch %",
+  "QB Rating When Targeted",
+  "Missed Tackles Forced per Reception"
 ];
+
+
+
+
 
 const QB_COLS = [
   "Analytical Quarterback Score (AQS)",
@@ -91,13 +112,17 @@ export default function PlayerComparison() {
   }, [position]);
 
   const COLUMNS =
-    position === "WR"
-      ? WR_COLS
-      : position === "QB"
-      ? QB_COLS
-      : position === "CB"
-      ? CB_COLS
-      : S_COLS;
+  position === "WR"
+    ? WR_COLS
+    : position === "QB"
+    ? QB_COLS
+    : position === "CB"
+    ? CB_COLS
+    : position === "S"
+    ? S_COLS
+    : TE_COLS;
+
+
 
   const allPlayers = years
     .flatMap((year) =>
@@ -171,6 +196,7 @@ export default function PlayerComparison() {
           <option value="" disabled>Select Position</option>
           <option value="QB">QB</option>
           <option value="WR">WR</option>
+          <option value="TE">TE</option>
           <option value="CB">CB</option>
           <option value="S">S</option>
         </select>

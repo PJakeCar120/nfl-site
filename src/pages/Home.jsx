@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Papa from "papaparse";
 
 const YEARS = ["2021", "2022", "2023", "2024"];
-const POSITIONS = ["QB", "WR", "CB", "S"];
+const POSITIONS = ["QB", "WR", "TE", "CB", "S"];
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -85,7 +85,8 @@ const Home = () => {
         <p className="text-gray-600 mt-4 text-base leading-relaxed">
           I'm currently looking for an internship from the beginning of August through the end of September.
           If interested, please email <strong>jcardonick@uchicago.edu</strong>.
-          I love talking football — feel free to reach out with any questions, improvements, or future projects you'd like to see.
+          I love talking football — feel free to reach out with any questions, improvements, or future projects you'd like to see. 
+          Note: All data is sourced from FantasyPoints and ProFootballFocus. 
         </p>
 
         <p className="text-sm text-gray-600 mt-10">
@@ -113,6 +114,11 @@ const Home = () => {
             <li>
               <Link to="/projects/wr2024" className="underline text-blue-600 hover:text-blue-800 transition">
                 2024 WR Rankings
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects/te2024" className="underline text-blue-600 hover:text-blue-800 transition">
+                2024 TE Rankings
               </Link>
             </li>
             <li>

@@ -12,7 +12,7 @@ export default function Navbar() {
           <Link to="/rankings"><button className="hover:underline">Rankings</button></Link>
           <Link to="/research"><button className="hover:underline">Research</button></Link>
           <Link to="/contracts"><button className="hover:underline">Extension Projections</button></Link>
-          <Link to="/compare"><button className="hover:underline">Compare Players</button></Link>
+          <Link to="/compare"><button className="hover:underline">Player Similarity Comparisons</button></Link>
           <Link to="/contract-market"><button className="hover:underline">Contract Market</button></Link>
           <Link to="/draft-previews"><button className="hover:underline">Draft Previews</button></Link>
         </nav>
