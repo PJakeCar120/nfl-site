@@ -14,7 +14,8 @@ export default function Navbar() {
           <Link to="/contracts"><button className="hover:text-blue-600">Extension Projections</button></Link>
           <Link to="/compare"><button className="hover:text-blue-600">Player Similarity Comparisons</button></Link>
           <Link to="/contract-market"><button className="hover:text-blue-600">Contract Market</button></Link>
-          <Link to="/draft-previews"><button className="hover:text-blue-600">Draft Previews</button></Link>
+          <Link to="/draft-page"><button className="hover:text-blue-600">Draft Center</button></Link>
+          <Link to="/draft-previews"><button className="hover:text-blue-600">Team Draft Previews</button></Link>
         </nav>
       </div>
     </header>

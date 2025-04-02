@@ -9,6 +9,7 @@ import PlayerComparison from "./pages/PlayerComparison";
 import ContractMarket from "./pages/ContractMarket";
 import DraftPreviews from "./pages/DraftPreviews";
 import PlayerPage from "./pages/PlayerPage";
+import DraftPage from "./pages/DraftPage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/projects/similarity" element={<PlayerComparison />} />
         <Route path="/projects/contract-market" element={<ContractMarket />} />
         <Route path="/player" element={<PlayerPage />} />
+        <Route path="/draft-page" element={<DraftPage />} />
       </Routes>
     </Router>
   );
