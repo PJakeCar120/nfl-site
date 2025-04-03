@@ -4,8 +4,21 @@ const DraftPage = () => {
   return (
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-4">📈 Draft Center</h1>
+
       <p className="mb-6">
-        Explore each NFL team's total draft capital, per the Jimmy Johnson model. SOON TO COME: positional strength draft rankings.
+        Chart 1: Strength of each position in the early rounds of this year's NFL Draft, per Grinding the Mocks. Chart 2: NFL team's total draft capital, per the Jimmy Johnson model.
+      </p>
+
+      <p className="mb-6">
+        <strong>HUGE shoutout to Ben Robinson for the data.</strong> Check out his site –{" "}
+        <a
+          href="https://grindingthemocks.shinyapps.io/Dashboard/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 underline"
+        >
+          https://grindingthemocks.shinyapps.io/Dashboard/
+        </a>
       </p>
 
       <iframe
