@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Papa from "papaparse";
 
@@ -6,9 +6,7 @@ const YEARS = ["2021", "2022", "2023", "2024"];
 const POSITIONS = ["QB", "RB", "WR", "TE", "CB", "S"];
 
 const Home = () => {
-  const [searchTerm, setSearchTerm] = useState("");
   const [allData, setAllData] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const loadData = async () => {
@@ -30,11 +28,11 @@ const Home = () => {
                           name: row.Name,
                           rank: row.Rank,
                           ...Object.fromEntries(
-                            Object.entries(row).filter(([key]) => key !== "Name" && key !== "Rank")
+                            Object.entries(row).filter(
+                              ([key]) => key !== "Name" && key !== "Rank"
+                            )
                           ),
                         });
-                        
-
                       }
                     });
                     resolve();
@@ -50,41 +48,13 @@ const Home = () => {
     loadData();
   }, []);
 
-  const handleSearch = () => {
-    const term = searchTerm.toLowerCase().trim();
-    const results = allData.filter((p) =>
-      p.name.toLowerCase().includes(term)
-    );
-    navigate("/player", { state: { results, searchTerm } });
-  };
-
   return (
     <div className="bg-gray-50 min-h-screen">
       <div className="max-w-4xl mx-auto px-6 pt-6 pb-16">
-        {/* Search bar */}
-        <div className="flex items-center mb-8">
-          <input
-            type="text"
-            placeholder="Search players..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") handleSearch();
-            }}
-            className="flex-grow p-2 border rounded-l shadow text-sm"
-          />
-          <button
-            onClick={handleSearch}
-            className="p-2 bg-blue-600 text-white text-sm rounded-r hover:bg-blue-700"
-          >
-            🔍
-          </button>
-        </div>
-
         {/* Intro */}
         <h1 className="text-sm font-bold text-gray-800 mb-2">
           My name is Jake Cardonick and I am a third-year college student at the University of Chicago 
-          majoring in Statistics, Economics, and Data Science. You can call me Jake – or another nerd ruining sports.
+          majoring in Statistics, Economics, and Data Science. You can call me Jake – or another nerd ruining sports.
         </h1>
 
         <p className="text-gray-600 mt-4 text-base leading-relaxed">
@@ -184,12 +154,12 @@ const Home = () => {
             alt="Football Analytics Nerd"
             className="bottom-image"
             style={{
-      width: "500px",
-      height: "500px",
-      objectFit: "contain",
+              width: "500px",
+              height: "500px",
+              objectFit: "contain",
             }}
           />
-         </div>
+        </div>
       </div>
     </div>
   );

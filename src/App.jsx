@@ -8,8 +8,10 @@ import ContractsPage from "./pages/ContractsPage";
 import PlayerComparison from "./pages/PlayerComparison";
 import ContractMarket from "./pages/ContractMarket";
 import DraftPreviews from "./pages/DraftPreviews";
-import PlayerPage from "./pages/PlayerPage";
+import PlayerPage from "./pages/SearchResults";
 import DraftPage from "./pages/DraftPage";
+import SearchResults from "./pages/SearchResults"; // ✅ CORRECT
+
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
         <Route path="/projects/contract-market" element={<ContractMarket />} />
         <Route path="/player" element={<PlayerPage />} />
         <Route path="/draft-page" element={<DraftPage />} />
+        <Route path="/search" element={<SearchResults />} />
       </Routes>
     </Router>
   );
