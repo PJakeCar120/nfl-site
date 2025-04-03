@@ -77,7 +77,7 @@ button:focus-visible {
 
 html, body {
   position: relative;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 .bottom-image {
@@ -101,3 +101,8 @@ html, body {
 }
 
 
+
+.scroll-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}

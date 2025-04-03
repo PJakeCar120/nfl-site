@@ -8,14 +8,14 @@ export default function Navbar() {
           🏈 Football Analytics Nerd
         </Link>
         <nav className="space-x-4 text-blue-800 font-medium text-sm">
-          <Link to="/"><button className="hover:text-blue-600">Home</button></Link>
-          <Link to="/rankings"><button className="hover:text-blue-600">Rankings</button></Link>
-          <Link to="/research"><button className="hover:text-blue-600">Research</button></Link>
-          <Link to="/contracts"><button className="hover:text-blue-600">Extension Projections</button></Link>
-          <Link to="/compare"><button className="hover:text-blue-600">Player Similarity Comparisons</button></Link>
-          <Link to="/contract-market"><button className="hover:text-blue-600">Contract Market</button></Link>
-          <Link to="/draft-page"><button className="hover:text-blue-600">Draft Center</button></Link>
-          <Link to="/draft-previews"><button className="hover:text-blue-600">Team Draft Previews</button></Link>
+        <Link to="/"><button className="hover:text-blue-600">Home</button></Link>
+        <Link to="/rankings"><button className="hover:text-blue-600">Rankings</button></Link>
+        <Link to="/compare"><button className="hover:text-blue-600">Player Similarity Comparisons</button></Link>
+        <Link to="/draft-page"><button className="hover:text-blue-600">Draft Center</button></Link>
+        <Link to="/contract-market"><button className="hover:text-blue-600">Contract Market</button></Link>
+        <Link to="/contracts"><button className="hover:text-blue-600">Extension Projections</button></Link>
+        <Link to="/draft-previews"><button className="hover:text-blue-600">Team Draft Previews</button></Link>
+        <Link to="/research"><button className="hover:text-blue-600">Research</button></Link>     
         </nav>
       </div>
     </header>
