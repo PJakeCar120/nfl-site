@@ -25,11 +25,16 @@ const Home = () => {
                     res.data.forEach((row) => {
                       if (row.Name) {
                         combined.push({
-                          name: row.Name,
                           year,
                           position: pos,
+                          name: row.Name,
                           rank: row.Rank,
+                          ...Object.fromEntries(
+                            Object.entries(row).filter(([key]) => key !== "Name" && key !== "Rank")
+                          ),
                         });
+                        
+
                       }
                     });
                     resolve();
