@@ -24,6 +24,26 @@ const projects = {
     description: "QB model results: all stats in percentiles except AQR (min 250 dropbacks).",
     csvUrl: "/assets/QBScoreResults2021.csv",
   },
+  rb2024: {
+    title: "2024 RB Score Rankings",
+    description: "RB model results: all stats in percentiles except AQR (min 50 rushes).",
+    csvUrl: "/assets/RBScoreResults2024.csv",
+  },
+  rb2023: {
+    title: "2023 RB Score Rankings",
+    description: "RB model results: all stats in percentiles except AQR (min 50 rushes).",
+    csvUrl: "/assets/RBScoreResults2023.csv",
+  },
+  rb2022: {
+    title: "2022 RB Score Rankings",
+    description: "RB model results: all stats in percentiles except AQR (min 50 rushes).",
+    csvUrl: "/assets/RBScoreResults2022.csv",
+  },
+  rb2021: {
+    title: "2021 RB Score Rankings",
+    description: "RB model results: all stats in percentiles except AQR (min 50 rushes).",
+    csvUrl: "/assets/RBScoreResults2021.csv",
+  },
 
   // 🧤 WR Rankings
   wr2024: {

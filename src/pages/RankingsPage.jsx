@@ -17,6 +17,16 @@ export default function RankingsPage() {
         </div>
 
         <div>
+          <h2 className="text-xl font-semibold mb-2">Running Backs</h2>
+          <ul className="list-disc ml-6 text-blue-500 space-y-1">
+            <li><Link to="/projects/rb2024">2024 RB Rankings</Link></li>
+            <li><Link to="/projects/rb2023">2023 RB Rankings</Link></li>
+            <li><Link to="/projects/rb2022">2022 RB Rankings</Link></li>
+            <li><Link to="/projects/rb2021">2021 RB Rankings</Link></li>
+          </ul>
+        </div>
+
+        <div>
           <h2 className="text-xl font-semibold mb-2">Wide Receivers</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-1">
             <li><Link to="/projects/wr2024">2024 WR Rankings</Link></li>

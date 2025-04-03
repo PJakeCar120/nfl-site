@@ -4,9 +4,8 @@ import Select from "react-select";
 
 const years = ["2024", "2023", "2022", "2021"];
 
-
+// Define stat columns (excluding analytical score columns)
 const TE_COLS = [
-  "Analytical Tight End Score (ATES)",
   "First Downs per Route Run",
   "Receiving Yards per Game",
   "Yards per Route Run",
@@ -20,9 +19,7 @@ const TE_COLS = [
   "Contested Catch Rate"
 ];
 
-
 const WR_COLS = [
-  "Analytical Wide Receiver Score (AWRS)",
   "Yards per Route Run",
   "Receiving YPG",
   "First Downs per Route Run",
@@ -36,12 +33,7 @@ const WR_COLS = [
   "Missed Tackles Forced per Reception"
 ];
 
-
-
-
-
 const QB_COLS = [
-  "Analytical Quarterback Score (AQS)",
   "Comp. % Over Expected",
   "Hero Throw %",
   "Turnover Worthy Throw %",
@@ -56,7 +48,6 @@ const QB_COLS = [
 ];
 
 const CB_COLS = [
-  "Analytical Cornerback Score (ACS)",
   "Coverage Snaps per Reception",
   "QB Rating Against",
   "Yards Allowed per Snap",
@@ -72,14 +63,37 @@ const CB_COLS = [
 ];
 
 const S_COLS = [
-  "Analytical Safety Score (ASS)",
   "Forced Fumbles per Snap",
   "Interceptions per Snap",
-  "Sacks per Snap",	
+  "Sacks per Snap",
   "Missed Tackle Rate",
   "QB Rating Against",
   "Snap Count"
 ];
+
+const RB_COLS = [
+  "Explosive Run %",
+  "Attempts per Game",
+  "Receiving Yards per Game",
+  "Yards Before Contact per Run",
+  "Touchdowns per Game",
+  "Missed Tackles Forced per Attempt",
+  "PFF Pass Blocking Grade",
+  "Stuffed Run %"
+];
+
+// Define weights in same order as columns
+const QB_WEIGHTS = [2, 4, 6, 5, 1, 2, 4, 4.5, 1, 1, 3];
+
+const RB_WEIGHTS = [7, 7, 5, 4, 3, 2, 2, 1];
+
+const WR_WEIGHTS = [8, 7, 6, 5, 5, 3, 3, 2, 2, 2, 1];
+
+const TE_WEIGHTS = [14, 14, 12, 5, 5, 5, 4, 3, 3, 1, 1];
+
+const CB_WEIGHTS = [5, 16, 22, 3, 12, 1, 9, 1, 1, 20, 5, 1];
+
+const S_WEIGHTS = [2, 6, 7, 1, 6, 6];
 
 export default function PlayerComparison() {
   const [position, setPosition] = useState("");
@@ -112,17 +126,30 @@ export default function PlayerComparison() {
   }, [position]);
 
   const COLUMNS =
-  position === "WR"
-    ? WR_COLS
-    : position === "QB"
-    ? QB_COLS
-    : position === "CB"
-    ? CB_COLS
-    : position === "S"
-    ? S_COLS
-    : TE_COLS;
+    position === "WR"
+      ? WR_COLS
+      : position === "QB"
+      ? QB_COLS
+      : position === "CB"
+      ? CB_COLS
+      : position === "S"
+      ? S_COLS
+      : position === "RB"
+      ? RB_COLS
+      : TE_COLS;
 
-
+  const WEIGHTS =
+    position === "WR"
+      ? WR_WEIGHTS
+      : position === "QB"
+      ? QB_WEIGHTS
+      : position === "CB"
+      ? CB_WEIGHTS
+      : position === "S"
+      ? S_WEIGHTS
+      : position === "RB"
+      ? RB_WEIGHTS
+      : TE_WEIGHTS;
 
   const allPlayers = years
     .flatMap((year) =>
@@ -135,11 +162,12 @@ export default function PlayerComparison() {
 
   const getStatsVector = (row) => COLUMNS.map((col) => parseFloat(row[col]));
 
-  const computeSimilarity = (v1, v2) => {
-    const dist = Math.sqrt(
-      v1.reduce((sum, val, i) => sum + (val - v2[i]) ** 2, 0)
-    );
-    return 100 * (1 - dist / Math.sqrt(v1.length * (100 ** 2)));
+  const computeSimilarity = (v1, v2, weights) => {
+    const weightedSum = v1.reduce((sum, val, i) => {
+      const weight = weights?.[i] ?? 1;
+      return sum + weight * (val - v2[i]) ** 2;
+    }, 0);
+    return 100 * (1 - Math.sqrt(weightedSum) / Math.sqrt(v1.length * (100 ** 2)));
   };
 
   const handleSelect = (option) => {
@@ -166,7 +194,7 @@ export default function PlayerComparison() {
     const distances = allOthers.map((r) => ({
       name: r.name,
       year: r.year,
-      similarity: computeSimilarity(baseVec, r.vec),
+      similarity: computeSimilarity(baseVec, r.vec, WEIGHTS),
     }));
 
     const sorted = distances
@@ -195,6 +223,7 @@ export default function PlayerComparison() {
         >
           <option value="" disabled>Select Position</option>
           <option value="QB">QB</option>
+          <option value="RB">RB</option>
           <option value="WR">WR</option>
           <option value="TE">TE</option>
           <option value="CB">CB</option>

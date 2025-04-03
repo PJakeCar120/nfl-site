@@ -112,6 +112,11 @@ const Home = () => {
               </Link>
             </li>
             <li>
+              <Link to="/projects/rb2024" className="underline text-blue-600 hover:text-blue-800 transition">
+                2024 RB Rankings
+              </Link>
+            </li>
+            <li>
               <Link to="/projects/wr2024" className="underline text-blue-600 hover:text-blue-800 transition">
                 2024 WR Rankings
               </Link>
