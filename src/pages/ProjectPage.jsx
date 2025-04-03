@@ -6,42 +6,42 @@ const projects = {
   // 🔢 QB Rankings
   qb2024: {
     title: "2024 QB Score Rankings",
-    description: "QB model results: all stats in percentiles except AQR (min 250 dropbacks).",
+    description: "QB model results: all stats in percentiles except AQS (min 250 dropbacks).",
     csvUrl: "/assets/QBScoreResults2024.csv",
   },
   qb2023: {
     title: "2023 QB Score Rankings",
-    description: "QB model results: all stats in percentiles except AQR (min 250 dropbacks).",
+    description: "QB model results: all stats in percentiles except AQS (min 250 dropbacks).",
     csvUrl: "/assets/QBScoreResults2023.csv",
   },
   qb2022: {
     title: "2022 QB Score Rankings",
-    description: "QB model results: all stats in percentiles except AQR (min 250 dropbacks).",
+    description: "QB model results: all stats in percentiles except AQS (min 250 dropbacks).",
     csvUrl: "/assets/QBScoreResults2022.csv",
   },
   qb2021: {
     title: "2021 QB Score Rankings",
-    description: "QB model results: all stats in percentiles except AQR (min 250 dropbacks).",
+    description: "QB model results: all stats in percentiles except AQS (min 250 dropbacks).",
     csvUrl: "/assets/QBScoreResults2021.csv",
   },
   rb2024: {
     title: "2024 RB Score Rankings",
-    description: "RB model results: all stats in percentiles except AQR (min 50 rushes).",
+    description: "RB model results: all stats in percentiles except ARBS (min 50 rushes).",
     csvUrl: "/assets/RBScoreResults2024.csv",
   },
   rb2023: {
     title: "2023 RB Score Rankings",
-    description: "RB model results: all stats in percentiles except AQR (min 50 rushes).",
+    description: "RB model results: all stats in percentiles except ARBS (min 50 rushes).",
     csvUrl: "/assets/RBScoreResults2023.csv",
   },
   rb2022: {
     title: "2022 RB Score Rankings",
-    description: "RB model results: all stats in percentiles except AQR (min 50 rushes).",
+    description: "RB model results: all stats in percentiles except ARBS (min 50 rushes).",
     csvUrl: "/assets/RBScoreResults2022.csv",
   },
   rb2021: {
     title: "2021 RB Score Rankings",
-    description: "RB model results: all stats in percentiles except AQR (min 50 rushes).",
+    description: "RB model results: all stats in percentiles except ARBS (min 50 rushes).",
     csvUrl: "/assets/RBScoreResults2021.csv",
   },
 
@@ -68,22 +68,22 @@ const projects = {
   },
   te2024: {
     title: "2024 TE Score Rankings",
-    description: "TE model results: all stats in percentiles except AWRS (min 200 routes).",
+    description: "TE model results: all stats in percentiles except ATES (min 200 routes).",
     csvUrl: "/assets/TEScoreResults2024.csv",
   },
   te2023: {
     title: "2023 TE Score Rankings",
-    description: "TE model results: all stats in percentiles except AWRS (min 200 routes).",
+    description: "TE model results: all stats in percentiles except ATES (min 200 routes).",
     csvUrl: "/assets/TEScoreResults2023.csv",
   },
   te2022: {
     title: "2022 TE Score Rankings",
-    description: "TE model results: all stats in percentiles except AWRS (min 200 routes).",
+    description: "TE model results: all stats in percentiles except ATES (min 200 routes).",
     csvUrl: "/assets/TEScoreResults2022.csv",
   },
   te2021: {
     title: "2021 TE Score Rankings",
-    description: "TE model results: all stats in percentiles except AWRS (min 200 routes).",
+    description: "TE model results: all stats in percentiles except ATES (min 200 routes).",
     csvUrl: "/assets/TEScoreResults2021.csv",
   },
   cb2024: {
@@ -108,22 +108,22 @@ const projects = {
   },
   s2024: {
     title: "2024 S Score Rankings",
-    description: "S model results: all stats in percentiles except ACS (min 250 snaps).",
+    description: "S model results: all stats in percentiles except ASS (min 250 snaps).",
     csvUrl: "/assets/SScoreResults2024.csv",
   },
   s2023: {
     title: "2023 S Score Rankings",
-    description: "S model results: all stats in percentiles except ACS (min 250 snaps).",
+    description: "S model results: all stats in percentiles except ASS (min 250 snaps).",
     csvUrl: "/assets/SScoreResults2023.csv",
   },
   s2022: {
     title: "2022 S Score Rankings",
-    description: "S model results: all stats in percentiles except ACS (min 250 snaps).",
+    description: "S model results: all stats in percentiles except ASS (min 250 snaps).",
     csvUrl: "/assets/SScoreResults2022.csv",
   },
   s2021: {
     title: "2021 S Score Rankings",
-    description: "S model results: all stats in percentiles except ACS (min 250 snaps).",
+    description: "S model results: all stats in percentiles except ASS (min 250 snaps).",
     csvUrl: "/assets/SScoreResults2021.csv",
   },
 
