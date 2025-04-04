@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Papa from "papaparse";
 
 const YEARS = ["2021", "2022", "2023", "2024"];
-const POSITIONS = ["QB", "RB", "WR", "TE", "CB", "S"];
+const POSITIONS = ["QB", "RB", "WR", "TE", "DI", "CB", "S"];
 
 export default function SearchResults() {
   const [searchTerm, setSearchTerm] = useState("");
