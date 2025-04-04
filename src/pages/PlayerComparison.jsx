@@ -82,6 +82,23 @@ const RB_COLS = [
   "Stuffed Run %"
 ];
 
+const IDL_COLS = [
+  "Pass Rush Win Rate",
+  "Hurries per Snap",
+  "Hits per Snap",
+  "Sacks per Snap",
+  "Pass Snaps/Game",
+  "Pressures per Snap",
+  "Average Depth of Tackle",
+  "Forced Fumbles per Snap",
+  "Run Snaps/Game",
+  "Tackles per Snap",
+  "Stops per Snap"
+];
+
+const IDL_WEIGHTS = [40, 30, 26, 20, 30, 10, 10, 6, 16, 8, 5];
+
+
 // Define weights in same order as columns
 const QB_WEIGHTS = [2, 4, 6, 5, 1, 2, 4, 4.5, 1, 1, 3];
 
@@ -104,12 +121,24 @@ export default function PlayerComparison() {
   useEffect(() => {
     if (!position) return;
 
+    const positionToFilePrefix = {
+      IDL: "DI",
+      QB: "QB",
+      RB: "RB",
+      WR: "WR",
+      TE: "TE",
+      CB: "CB",
+      S: "S",
+    };
+    
+
+
     const fetchData = async () => {
       const allData = {};
       await Promise.all(
         years.map((year) =>
           new Promise((resolve) => {
-            Papa.parse(`/assets/${position}ScoreResults${year}.csv`, {
+            Papa.parse(`/assets/${positionToFilePrefix[position]}ScoreResults${year}.csv`, {
               download: true,
               header: true,
               complete: (result) => {
@@ -136,6 +165,8 @@ export default function PlayerComparison() {
       ? S_COLS
       : position === "RB"
       ? RB_COLS
+      : position === "IDL"
+      ? IDL_COLS
       : TE_COLS;
 
   const WEIGHTS =
@@ -149,7 +180,10 @@ export default function PlayerComparison() {
       ? S_WEIGHTS
       : position === "RB"
       ? RB_WEIGHTS
+      : position === "IDL"
+      ? IDL_WEIGHTS
       : TE_WEIGHTS;
+
 
   const allPlayers = years
     .flatMap((year) =>
@@ -226,6 +260,7 @@ export default function PlayerComparison() {
           <option value="RB">RB</option>
           <option value="WR">WR</option>
           <option value="TE">TE</option>
+          <option value="IDL">IDL</option>
           <option value="CB">CB</option>
           <option value="S">S</option>
         </select>

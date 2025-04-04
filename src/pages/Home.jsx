@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Papa from "papaparse";
 
 const YEARS = ["2021", "2022", "2023", "2024"];
-const POSITIONS = ["QB", "RB", "WR", "TE", "CB", "S"];
+const POSITIONS = ["QB", "RB", "WR", "TE", "IDL", "CB", "S"];
 
 const Home = () => {
   const [allData, setAllData] = useState([]);
@@ -99,6 +99,11 @@ const Home = () => {
             <li>
               <Link to="/projects/te2024" className="underline text-blue-600 hover:text-blue-800 transition">
                 2024 TE Rankings
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects/idl2024" className="underline text-blue-600 hover:text-blue-800 transition">
+                2024 IDL Rankings
               </Link>
             </li>
             <li>

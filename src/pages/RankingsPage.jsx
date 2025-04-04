@@ -47,6 +47,16 @@ export default function RankingsPage() {
         </div>
 
         <div>
+          <h2 className="text-xl font-semibold mb-2">Interior Defensive Line</h2>
+          <ul className="list-disc ml-6 text-blue-500 space-y-1">
+            <li><Link to="/projects/idl2024">2024 IDL Rankings</Link></li>
+            <li><Link to="/projects/idl2023">2023 IDL Rankings</Link></li>
+            <li><Link to="/projects/idl2022">2022 IDL Rankings</Link></li>
+            <li><Link to="/projects/idl2021">2021 IDL Rankings</Link></li>
+          </ul>
+        </div>
+
+        <div>
           <h2 className="text-xl font-semibold mb-2">Cornerbacks</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-1">
             <li><Link to="/projects/cb2024">2024 CB Rankings</Link></li>

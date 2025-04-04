@@ -86,6 +86,27 @@ const projects = {
     description: "TE model results: all stats in percentiles except ATES (min 200 routes).",
     csvUrl: "/assets/TEScoreResults2021.csv",
   },
+  idl2024: {
+    title: "2024 IDL Score Rankings",
+    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run block snaps).",
+    csvUrl: "/assets/DIScoreResults2024.csv",
+  },
+  idl2023: {
+    title: "2023 IDL Score Rankings",
+    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run block snaps).",
+    csvUrl: "/assets/DIScoreResults2023.csv",
+  },
+  idl2022: {
+    title: "2022 IDL Score Rankings",
+    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run block snaps).",
+    csvUrl: "/assets/DIScoreResults2022.csv",
+  },
+  idl2021: {
+    title: "2021 IDL Score Rankings",
+    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run block snaps).",
+    csvUrl: "/assets/DIScoreResults2021.csv",
+  },
+ 
   cb2024: {
     title: "2024 CB Score Rankings",
     description: "CB model results: all stats in percentiles except ACS (min 200 coverage snaps).",
