@@ -334,10 +334,13 @@ if (project.pdfUrl) {
       };
     });
     return (
-      <div className="p-6 overflow-x-auto">
-        <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
-        <p className="text-gray-700 mb-6">{project.description}</p>
-        <table className="min-w-full border border-gray-300 text-sm">
+  <div className="p-6">
+    <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
+    <p className="text-gray-700 mb-6">{project.description}</p>
+
+    <div className="overflow-x-auto">
+      <div style={{ maxHeight: "75vh", overflowY: "auto" }}>
+        <table className="min-w-full border border-gray-300 text-sm ranking-table">
           <thead className="bg-gray-100">
             <tr>
               {headers.map((key) => (
@@ -355,10 +358,12 @@ if (project.pdfUrl) {
               <tr key={i} className="odd:bg-white even:bg-gray-50">
                 {headers.map((key, j) => {
                   const value = row[key];
-                  const bgColor = getColorScale(value, columnStats[key]?.min, columnStats[key]?.max, key);
-                    key !== "Name"
-                      ? getColorScale(value, columnStats[key].min, columnStats[key].max)
-                      : undefined;
+                  const bgColor = getColorScale(
+                    value,
+                    columnStats[key]?.min,
+                    columnStats[key]?.max,
+                    key
+                  );
                   return (
                     <td
                       key={j}
@@ -374,12 +379,8 @@ if (project.pdfUrl) {
           </tbody>
         </table>
       </div>
-    );
-  }
-
-  return (
-    <div className="p-6 text-lg text-gray-600">
-      No viewable content available for this project.
     </div>
-  );
+    </div>
+);
+}
 }
