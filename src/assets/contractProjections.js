@@ -8,7 +8,7 @@ const contractProjections = {
   
   AAV Range: $26.8M–$28.3M  
   • Spotrac projection: 4 years for $64.6M  
-  • **My projection: 4 years for $110M**  
+  • **My projection: 4 years for $110M (9.85%)**  
   Would make Cross the 4th highest-paid OT in the NFL by AAV.`,
   
     "Connor McGovern": `NFL Extension Candidate: #Bills Connor McGovern
@@ -21,7 +21,7 @@ const contractProjections = {
   
   AAV Range: $6.5M–$7.7M  
   • Spotrac projection: 3 years, $23.2M  
-  • **My projection: 3 years, $21.3M**  
+  • **My projection: 3 years, $21.3M (2.54%)**  
   Would be the 8th highest-paid C in the NFL by AAV.`,
   
     "Devin Lloyd": `NFL Extension Candidate: #Jaguars Devin Lloyd
@@ -34,7 +34,7 @@ const contractProjections = {
   
   AAV Range: $12.4M–$15M  
   • Spotrac projection: 3 years for $27.3M  
-  • **My projection: 3 years for $43.8M**  
+  • **My projection: 3 years for $43.8M (5.23%)**  
   Would make Lloyd the 7th highest-paid ILB in the NFL by AAV.`,
   
     "George Kittle": `NFL Extension Candidate: #49ers George Kittle
@@ -45,7 +45,7 @@ const contractProjections = {
   
   AAV Range: $18.7M– $20.2M  
   • Spotrac projection: 2 years for $32.6M  
-  • **My projection: 3 years for $58.3M**  
+  • **My projection: 3 years for $58.3M (6.96%)**  
   Would make Kittle the highest-paid TE in the NFL by AAV.`,
   
     "Jakobi Meyers": `NFL Extension Candidate: #Raiders Jakobi Meyers
@@ -57,7 +57,7 @@ const contractProjections = {
   Obviously, this is a gross interval. Meyers fits in a dead zone in the WR market.  
   AAV Range: $16.2M–$21.7M  
   • Spotrac projection: 2 years for $34.8M  
-  • **My projection: 3 years for $59.6M**  
+  • **My projection: 3 years for $59.6M (7.12%)**  
   Would make Meyers the 20th highest-paid WR in the NFL by AAV.`,
   
     "James Cook": `NFL Extension Candidate: #Bills James Cook
@@ -69,7 +69,7 @@ const contractProjections = {
   
   AAV Range: $9.1M–$13.1M  
   • Spotrac projection: 4 years, $40.8M  
-  • **My projection: 4 years, $49.2M**  
+  • **My projection: 4 years, $49.2M (4.41%)**  
   Would be the 4th highest-paid RB in the NFL.`,
   
     "Joe Thuney": `NFL Extension Candidate: #Bears Joe Thuney
@@ -79,7 +79,7 @@ const contractProjections = {
   
   This is the first time I've only had one comparable for a player, but Thuney profiles VERY similar to Martin. This puts Thuney at $22.9M AAV.  
   • Spotrac projection: 2 years for $40.6M  
-  • **My projection: 2 years for $45.8M**  
+  • **My projection: 2 years for $45.8M (8.20%)**  
   Would make Thuney the 2nd highest-paid OG in the NFL.`,
   
     "Kaleb McGary": `NFL Extension Candidate: #Falcons Kaleb McGary
@@ -93,7 +93,7 @@ const contractProjections = {
   
   AAV Range: $20M–$22.4M  
   • Spotrac projection: 3 years for $51.8M  
-  • **My projection: 3 years for $65.7M**  
+  • **My projection: 3 years for $65.7M (7.84%)**  
   Would make McGary the 8th highest-paid OT in the NFL.`,
   
     "Kenneth Walker": `NFL Extension Candidate: #Seahawks Kenneth Walker
@@ -106,7 +106,7 @@ const contractProjections = {
   AAV Range: $9.1M–$13.1M  
   I lean much stronger towards the Jacobs side of the interval here.  
   • Spotrac projection: 4 years for $41.6M  
-  • **My projection: 4 years for $49.2M**  
+  • **My projection: 4 years for $49.2M (4.41%)**  
   Would make Walker the 4th highest-paid RB in the NFL by AAV.`,
   
     "Kerby Joseph": `NFL Extension Candidate: #Lions Kerby Joseph
@@ -120,7 +120,7 @@ const contractProjections = {
   AAV Range: $18.3M–$25.7M  
   • Spotrac projection: 4 years, $92.9M  
   Joseph is one of the trickier projections. Last season, he was the best S in football. However, his first two seasons were not nearly at the same level as this year.  
-  • **My projection: 4 years for $91.6M**  
+  • **My projection: 4 years for $91.6 (8.20%)M**  
   Would make Joseph the highest-paid S in the NFL by AAV.`,
   
     "Kwity Paye": `NFL Extension Candidate: #Colts Kwity Paye
@@ -133,7 +133,7 @@ const contractProjections = {
   
   AAV Range: $15.3M–$16.4M  
   • Spotrac projection: 4 years for $59.4M  
-  • **My projection: 4 years for $65.1M**  
+  • **My projection: 4 years for $65.1M (5.83%)**  
   Would make Paye the 19th highest-paid EDGE in the NFL by AAV.`,
   
     "Kyle Hamilton": `NFL Extension Candidate: #Ravens Kyle Hamilton
@@ -145,7 +145,7 @@ const contractProjections = {
   
   AAV Range: $22.97M–$25.7M  
   • Spotrac projection: 3 years for $60.8M  
-  • **My projection: 4 years for $98M**  
+  • **My projection: 4 years for $98M (8.78%)**  
   Would make Hamilton the highest-paid S in the NFL by AAV.`,
   
     "Micah Parsons": `NFL Extension Candidate: #Cowboys Micah Parsons
@@ -181,8 +181,8 @@ const contractProjections = {
   
   AAV Range: $26.2M–$28.2M  
   • Spotrac projection: 3 years for $73M  
-  • **My projection: 4 years for $107.2M**  
-  Would make McDuffie the highest-paid CB in the NFL by AAV.`,
+  • **My projection: 4 years for $107.2M (9.60%)**  
+  Would make McDuffie the 2nd highest-paid CB in the NFL by AAV.`,
   
     "Tyler Linderbaum": `NFL Extension Candidate: #Ravens Tyler Linderbaum
   
@@ -193,7 +193,7 @@ const contractProjections = {
   
   AAV Range: $16.1M–$20.7M  
   • Spotrac projection: 3 years for $48.2M  
-  • **My projection: 4 years for $73.9M**  
+  • **My projection: 4 years for $73.9M (6.62%)**  
   Would make Linderbaum the highest-paid C in the NFL by AAV.`,
   
     "Tyler Smith": `NFL Extension Candidate: #Cowboys Tyler Smith
@@ -204,7 +204,7 @@ const contractProjections = {
   
   AAV Range: $19.7M–$20.2M  
   • Spotrac projection: 4 years for $76.4M  
-  • **My projection: 4 years for $80.4M**  
+  • **My projection: 4 years for $80.4M (7.20%)**  
   Would make Smith the 4th highest-paid OG in the NFL by AAV.`,
 
     "Aidan Hutchinson": `NFL Extension Candidate: #Lions Aidan Hutchinson
@@ -216,7 +216,7 @@ const contractProjections = {
   This puts Hutchinson between $35.2M–$42.2M AAV. The timing of this contract will be very important. If signed this offseason, it will be closer to Garrett. If signed next offseason, it will be closer to Bosa. I believe he will be extended this offseason.
   
   • Spotrac projection: 4 years for $122.1M  
-  • **My projection: 5 years for $183M**  
+  • **My projection: 5 years for $183M (13.11%)**  
   Would make Hutchinson the 2nd highest-paid EDGE in the NFL by AAV.`,
   
     "Rasheed Walker": `NFL Extension Candidate: #Packers Rasheed Walker
@@ -228,7 +228,7 @@ const contractProjections = {
   
   AAV Range: $16.4M–$19M  
   • Spotrac projection: 4 years for $71.2M  
-  • **My projection: 3 years for $55.3M**  
+  • **My projection: 3 years for $55.3M (6.60%)**  
   Would make Walker the 20th highest-paid OT in the NFL.`,
   
     "Cade Otton": `NFL Extension Candidate: #Buccaneers Cade Otton
@@ -239,7 +239,7 @@ const contractProjections = {
   
   AAV Range: $11.5M–$13.2M  
   • Spotrac projection: 3 years for $36.6M  
-  • **My projection: 3 years for $37M**  
+  • **My projection: 3 years for $37M (4.42%)**  
   Would make Otton the 8th highest-paid TE in the NFL.`,
   
     "Trey McBride": `NFL Extension Candidate: #Cardinals Trey McBride
@@ -252,8 +252,12 @@ const contractProjections = {
   
   AAV Range: $20.5M–$21.8M  
   • Spotrac projection: 4 years for $71.8M  
-  • **My projection: 4 years for $78M**  
-  Would make Mcbride the highest-paid TE in the NFL by AAV.`,
+  • **My projection: 4 years for $78M (6.98%)**  
+  Would make Mcbride the highest-paid TE in the NFL by AAV.
+
+  **Update: McBride signed for 4 years, $76M. I think this is a great contract for Arizona, as I predicted on March 12th (https://x.com/JakeCar120/status/1899845574116974717): "This projection would have McBride at 6.98% of the cap, below my interval. However, I suspect that because McBride will still become the highest-paid TE ever, he will accept less than I believe to be his fair market-value.**"`,
+
+  
   
     "Cam Jurgens": `NFL Extension Candidate: #Eagles Cam Jurgens
   
@@ -264,7 +268,7 @@ const contractProjections = {
   
   AAV Range: $10.7M–$13.7M  
   • Spotrac projection: 3 years for $24.9M  
-  • **My projection: 3 years for $33.6M**  
+  • **My projection: 3 years for $33.6M (4.01%)**  
   Would make Jurgens the 6th highest-paid C in the NFL.`,
   
     "Bernhard Raimann": `NFL Extension Candidate: #Colts Bernhard Raimann
@@ -275,7 +279,7 @@ const contractProjections = {
   
   AAV Range: $24M–$29.4M  
   • Spotrac projection: 3 years for $61.9M  
-  • **My projection: 4 years for $102.2M**  
+  • **My projection: 4 years for $102.2M (9.15%)**  
   Would make Raimann the 5th highest-paid OT in the NFL.`,
   
     "Zach Tom": `NFL Extension Candidate: #Packers Zach Tom
@@ -287,7 +291,7 @@ const contractProjections = {
   
   AAV Range: $26.8M–$28.3M  
   • Spotrac projection: 4 years for $86.7M  
-  • **My projection: 4 years for $111.7M**  
+  • **My projection: 4 years for $111.7M (10.00%)**  
   Would make Tom the 3rd highest-paid OT in the NFL.`,
   
     "Nik Bonitto": `NFL Extension Candidate: #Broncos Nik Bonitto
@@ -299,7 +303,7 @@ const contractProjections = {
   
   This puts Bonitto between $20M–$21.1M AAV. 
   • Spotrac projection: 4 years for $102M  
-  • **My projection: 4 years for $84.4M**  
+  • **My projection: 4 years for $84.4M (7.56%)**  
   This would make Bonitto the 10th highest-paid EDGE in the NFL.`,
     
     "Kyler Gordon": `NFL Extension Candidate: #Bears Kyler Gordon
@@ -311,7 +315,7 @@ const contractProjections = {
   
   This puts Gordon between $10.9M–$12M AAV. 
   • Spotrac projection: 3 years for $33.4M  
-  • **My projection: 3 years for $35.1M**`,
+  • **My projection: 3 years for $35.1M (4.19%)**`,
     
     "Rashawn Slater": `NFL Extension Candidate: #Chargers Rashawn Slater
   
@@ -323,7 +327,7 @@ const contractProjections = {
   
   This puts Slater between $28.4M–$30.7M AAV. 
   • Spotrac projection: 5 years for $127.5M  
-  • **My projection: 5 years for $142M**  
+  • **My projection: 5 years for $142M (10.17%)**  
   This would make Slater the highest-paid OT in the NFL by AAV.`,
     
     "Garrett Wilson": `NFL Extension Candidate: #Jets Garrett Wilson
@@ -336,7 +340,7 @@ const contractProjections = {
   
   This puts Wilson between $26.5M–$32M AAV. 
   • Spotrac projection: 3 years for $69.7M  
-  • **My projection: 3 years for $92.6M**  
+  • **My projection: 3 years for $92.6M (11.06%)**  
   This would make Wilson the 4th highest-paid WR in the NFL by AAV.`
   };
   
