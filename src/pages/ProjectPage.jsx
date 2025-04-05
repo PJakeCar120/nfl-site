@@ -9,165 +9,165 @@ const projects = {
   // 🔢 QB Rankings
   qb2024: {
     title: "2024 QB Score Rankings",
-    description: "QB model results: all stats in percentiles except AQS (min 250 dropbacks).",
+    description: "QB model results: all stats in percentiles except AQS (min 250 dropbacks). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/QBScoreResults2024.csv",
   },
   qb2023: {
     title: "2023 QB Score Rankings",
-    description: "QB model results: all stats in percentiles except AQS (min 250 dropbacks).",
+    description: "QB model results: all stats in percentiles except AQS (min 250 dropbacks). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/QBScoreResults2023.csv",
   },
   qb2022: {
     title: "2022 QB Score Rankings",
-    description: "QB model results: all stats in percentiles except AQS (min 250 dropbacks).",
+    description: "QB model results: all stats in percentiles except AQS (min 250 dropbacks). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/QBScoreResults2022.csv",
   },
   qb2021: {
     title: "2021 QB Score Rankings",
-    description: "QB model results: all stats in percentiles except AQS (min 250 dropbacks).",
+    description: "QB model results: all stats in percentiles except AQS (min 250 dropbacks). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/QBScoreResults2021.csv",
   },
   rb2024: {
     title: "2024 RB Score Rankings",
-    description: "RB model results: all stats in percentiles except ARBS (min 50 rushes).",
+    description: "RB model results: all stats in percentiles except ARBS (min 50 rushes). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/RBScoreResults2024.csv",
   },
   rb2023: {
     title: "2023 RB Score Rankings",
-    description: "RB model results: all stats in percentiles except ARBS (min 50 rushes).",
+    description: "RB model results: all stats in percentiles except ARBS (min 50 rushes). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/RBScoreResults2023.csv",
   },
   rb2022: {
     title: "2022 RB Score Rankings",
-    description: "RB model results: all stats in percentiles except ARBS (min 50 rushes).",
+    description: "RB model results: all stats in percentiles except ARBS (min 50 rushes). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/RBScoreResults2022.csv",
   },
   rb2021: {
     title: "2021 RB Score Rankings",
-    description: "RB model results: all stats in percentiles except ARBS (min 50 rushes).",
+    description: "RB model results: all stats in percentiles except ARBS (min 50 rushes). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/RBScoreResults2021.csv",
   },
 
   // 🧤 WR Rankings
   wr2024: {
     title: "2024 WR Score Rankings",
-    description: "WR model results: all stats in percentiles except AWRS (min 30 targets).",
+    description: "WR model results: all stats in percentiles except AWRS (min 30 targets). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/WRScoreResults2024.csv",
   },
   wr2023: {
     title: "2023 WR Score Rankings",
-    description: "WR model results: all stats in percentiles except AWRS (min 30 targets).",
+    description: "WR model results: all stats in percentiles except AWRS (min 30 targets). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/WRScoreResults2023.csv",
   },
   wr2022: {
     title: "2022 WR Score Rankings",
-    description: "WR model results: all stats in percentiles except AWRS (min 30 targets).",
+    description: "WR model results: all stats in percentiles except AWRS (min 30 targets). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/WRScoreResults2022.csv",
   },
   wr2021: {
     title: "2021 WR Score Rankings",
-    description: "WR model results: all stats in percentiles except AWRS (min 30 targets).",
+    description: "WR model results: all stats in percentiles except AWRS (min 30 targets). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/WRScoreResults2021.csv",
   },
   te2024: {
     title: "2024 TE Score Rankings",
-    description: "TE model results: all stats in percentiles except ATES (min 200 routes).",
+    description: "TE model results: all stats in percentiles except ATES (min 200 routes). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/TEScoreResults2024.csv",
   },
   te2023: {
     title: "2023 TE Score Rankings",
-    description: "TE model results: all stats in percentiles except ATES (min 200 routes).",
+    description: "TE model results: all stats in percentiles except ATES (min 200 routes). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/TEScoreResults2023.csv",
   },
   te2022: {
     title: "2022 TE Score Rankings",
-    description: "TE model results: all stats in percentiles except ATES (min 200 routes).",
+    description: "TE model results: all stats in percentiles except ATES (min 200 routes). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/TEScoreResults2022.csv",
   },
   te2021: {
     title: "2021 TE Score Rankings",
-    description: "TE model results: all stats in percentiles except ATES (min 200 routes).",
+    description: "TE model results: all stats in percentiles except ATES (min 200 routes). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/TEScoreResults2021.csv",
   },
   idl2024: {
     title: "2024 IDL Score Rankings",
-    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run stop snaps).",
+    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run stop snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/DIScoreResults2024.csv",
   },
   idl2023: {
     title: "2023 IDL Score Rankings",
-    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run stop snaps).",
+    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run stop snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/DIScoreResults2023.csv",
   },
   idl2022: {
     title: "2022 IDL Score Rankings",
-    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run stop snaps).",
+    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run stop snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/DIScoreResults2022.csv",
   },
   idl2021: {
     title: "2021 IDL Score Rankings",
-    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run stop snaps).",
+    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run stop snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/DIScoreResults2021.csv",
   },
   edge2024: {
     title: "2024 EDGE Score Rankings",
-    description: "EDGE model results: all stats in percentiles except AES (min 100 pass rush, run stop snaps).",
+    description: "EDGE model results: all stats in percentiles except AES (min 100 pass rush, run stop snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/EDScoreResults2024.csv",
   },
   edge2023: {
     title: "2023 EDGE Score Rankings",
-    description: "EDGE model results: all stats in percentiles except AES (min 100 pass rush, run stop snaps).",
+    description: "EDGE model results: all stats in percentiles except AES (min 100 pass rush, run stop snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/EDScoreResults2023.csv",
   },
   edge2022: {
     title: "2022 EDGE Score Rankings",
-    description: "EDGE model results: all stats in percentiles except AES (min 100 pass rush, run stop snaps).",
+    description: "EDGE model results: all stats in percentiles except AES (min 100 pass rush, run stop snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/EDScoreResults2022.csv",
   },
   edge2021: {
     title: "2021 EDGE Score Rankings",
-    description: "EDGE model results: all stats in percentiles except AES (min 100 pass rush, run stop snaps).",
+    description: "EDGE model results: all stats in percentiles except AES (min 100 pass rush, run stop snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/EDScoreResults2021.csv",
   },
  
   cb2024: {
     title: "2024 CB Score Rankings",
-    description: "CB model results: all stats in percentiles except ACS (min 200 coverage snaps).",
+    description: "CB model results: all stats in percentiles except ACS (min 200 coverage snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/CBScoreResults2024.csv",
   },
   cb2023: {
     title: "2023 CB Score Rankings",
-    description: "CB model results: all stats in percentiles except ACS (min 200 coverage snaps).",
+    description: "CB model results: all stats in percentiles except ACS (min 200 coverage snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/CBScoreResults2023.csv",
   },
   cb2022: {
     title: "2022 CB Score Rankings",
-    description: "CB model results: all stats in percentiles except ACS (min 200 coverage snaps).",
+    description: "CB model results: all stats in percentiles except ACS (min 200 coverage snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/CBScoreResults2022.csv",
   },
   cb2021: {
     title: "2021 CB Score Rankings",
-    description: "CB model results: all stats in percentiles except ACS (min 200 coverage snaps).",
+    description: "CB model results: all stats in percentiles except ACS (min 200 coverage snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/CBScoreResults2021.csv",
   },
   s2024: {
     title: "2024 S Score Rankings",
-    description: "S model results: all stats in percentiles except ASS (min 250 snaps).",
+    description: "S model results: all stats in percentiles except ASS (min 250 snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/SScoreResults2024.csv",
   },
   s2023: {
     title: "2023 S Score Rankings",
-    description: "S model results: all stats in percentiles except ASS (min 250 snaps).",
+    description: "S model results: all stats in percentiles except ASS (min 250 snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/SScoreResults2023.csv",
   },
   s2022: {
     title: "2022 S Score Rankings",
-    description: "S model results: all stats in percentiles except ASS (min 250 snaps).",
+    description: "S model results: all stats in percentiles except ASS (min 250 snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/SScoreResults2022.csv",
   },
   s2021: {
     title: "2021 S Score Rankings",
-    description: "S model results: all stats in percentiles except ASS (min 250 snaps).",
+    description: "S model results: all stats in percentiles except ASS (min 250 snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily.",
     csvUrl: "/assets/SScoreResults2021.csv",
   },
 
@@ -180,10 +180,6 @@ const projects = {
   ohc: {
     title: "The Argument for Offensive Head Coaches",
     pdfUrl: "/assets/OHC.pdf",
-  },
-  "2025coaches": {
-    title: "2025 NFL Head Coaching Candidate Rankings",
-    pdfUrl: "/assets/NFLHeadCoachCandidates2025.pdf",
   },
   draftroi: {
     title: "NFL Draft ROI Report",
