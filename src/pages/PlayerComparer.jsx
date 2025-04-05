@@ -9,7 +9,7 @@ const filePrefixMap = {
 };
 
 export default function WhoBetta() {
-  const [position, setPosition] = useState("WR");
+  const [position, setPosition] = useState("");
   const [allData, setAllData] = useState([]);
 
   const [search1, setSearch1] = useState("");
@@ -20,6 +20,8 @@ export default function WhoBetta() {
   const [year2, setYear2] = useState("");
 
   useEffect(() => {
+    if (!position || !filePrefixMap[position]) return;
+
     const loadData = async () => {
       const combined = [];
       await Promise.all(
@@ -58,7 +60,9 @@ export default function WhoBetta() {
   const filteredNames = Array.from(new Set(allData.map((p) => p.Name)));
 
   const getAvailableYears = (name) =>
-    Array.from(new Set(allData.filter((p) => p.Name === name).map((p) => p.year)));
+    YEARS.filter((year) =>
+      allData.some((p) => p.Name === name && p.year === year)
+    );
 
   const p1 = selected1 && year1 ? getPlayer(selected1, year1) : null;
   const p2 = selected2 && year2 ? getPlayer(selected2, year2) : null;
@@ -90,6 +94,7 @@ export default function WhoBetta() {
           onChange={(e) => setPosition(e.target.value)}
           className="p-3 text-base border rounded shadow"
         >
+          <option value="">Select Position</option>
           {POSITIONS.map((pos) => (
             <option key={pos}>{pos}</option>
           ))}
@@ -105,14 +110,11 @@ export default function WhoBetta() {
             placeholder="Search Player 1"
             value={search1}
             onChange={(e) => {
-              setSearch1(e.target.value);
-              setSelected1("");
+              const input = e.target.value;
+              setSearch1(input);
+              const match = filteredNames.find(n => n.toLowerCase() === input.toLowerCase());
+              if (match) setSelected1(match);
               setYear1("");
-            }}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" && getAvailableYears(search1).length) {
-                setSelected1(search1);
-              }
             }}
             className="w-full p-4 text-lg border rounded-l shadow text-center"
           />
@@ -158,14 +160,11 @@ export default function WhoBetta() {
             placeholder="Search Player 2"
             value={search2}
             onChange={(e) => {
-              setSearch2(e.target.value);
-              setSelected2("");
+              const input = e.target.value;
+              setSearch2(input);
+              const match = filteredNames.find(n => n.toLowerCase() === input.toLowerCase());
+              if (match) setSelected2(match);
               setYear2("");
-            }}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" && getAvailableYears(search2).length) {
-                setSelected2(search2);
-              }
             }}
             className="w-full p-4 text-lg border rounded-l shadow text-center"
           />
