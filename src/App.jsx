@@ -11,6 +11,7 @@ import DraftPreviews from "./pages/DraftPreviews";
 import PlayerPage from "./pages/SearchResults";
 import DraftPage from "./pages/DraftPage";
 import SearchResults from "./pages/SearchResults"; // ✅ CORRECT
+import WhoBetta from "./pages/PlayerComparer";
 
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
         <Route path="/player" element={<PlayerPage />} />
         <Route path="/draft-page" element={<DraftPage />} />
         <Route path="/search" element={<SearchResults />} />
+        <Route path="/whobetta" element={<WhoBetta />} />
+
       </Routes>
     </Router>
   );
