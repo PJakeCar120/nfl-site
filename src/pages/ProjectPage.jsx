@@ -2,6 +2,9 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Papa from "papaparse";
 
+
+
+
 const projects = {
   // 🔢 QB Rankings
   qb2024: {
@@ -211,6 +214,20 @@ export default function ProjectPage() {
   const [csvData, setCsvData] = useState([]);
   const [pdfError, setPdfError] = useState(false);
 
+  // ✅ MOVE THESE INSIDE THE FUNCTION COMPONENT
+  const [sortColumn, setSortColumn] = useState(null);
+  const [sortOrder, setSortOrder] = useState("asc");
+
+  const sortedData = [...csvData].sort((a, b) => {
+    if (!sortColumn) return 0;
+    const aVal = parseFloat(a[sortColumn]) || a[sortColumn];
+    const bVal = parseFloat(b[sortColumn]) || b[sortColumn];
+  
+    if (aVal < bVal) return sortOrder === "asc" ? -1 : 1;
+    if (aVal > bVal) return sortOrder === "asc" ? 1 : -1;
+    return 0;
+  });
+
   useEffect(() => {
     if (project?.csvUrl) {
       Papa.parse(project.csvUrl, {
@@ -345,16 +362,25 @@ if (project.pdfUrl) {
             <tr>
               {headers.map((key) => (
                 <th
-                  key={key}
-                  className="border px-4 py-2 text-left whitespace-nowrap font-mono"
-                >
-                  {key}
-                </th>
+                key={key}
+                onClick={() => {
+                  if (sortColumn === key) {
+                    setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+                  } else {
+                    setSortColumn(key);
+                    setSortOrder("desc");
+                  }
+                }}
+                className="border px-4 py-2 text-left whitespace-nowrap font-mono cursor-pointer hover:bg-gray-200"
+              >
+                {key} {sortColumn === key ? (sortOrder === "asc" ? "↑" : "↓") : ""}
+              </th>
+              
               ))}
             </tr>
           </thead>
           <tbody>
-            {csvData.map((row, i) => (
+            {sortedData.map((row, i) => (
               <tr key={i} className="odd:bg-white even:bg-gray-50">
                 {headers.map((key, j) => {
                   const value = row[key];
