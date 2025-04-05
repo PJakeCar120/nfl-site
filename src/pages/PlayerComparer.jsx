@@ -75,7 +75,6 @@ export default function WhoBetta() {
       : [];
 
   const getColor = (key, value) => {
-    if (key.toLowerCase().includes("aqs")) return "";
     const num = parseFloat(value);
     if (isNaN(num)) return "";
     const pct = Math.max(0, Math.min(1, num / 100));
