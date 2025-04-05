@@ -98,6 +98,22 @@ const IDL_COLS = [
 
 const IDL_WEIGHTS = [40, 30, 26, 20, 30, 10, 10, 6, 16, 8, 5];
 
+const EDGE_COLS = [
+  "Sacks per Snap",
+  "Pass Snaps per Game",
+  "Hurries per Snap",
+  "Pass Rush Win Rate",
+  "Forced Fumbles per Snap",
+  "Hits per Snap",
+  "Run Snaps per Game",
+  "Avg Depth of Tackle",
+  "Tackles per Snap",
+  "Pressures per Snap",
+  "Stop %"
+];
+
+const EDGE_WEIGHTS = [20, 22, 11, 14, 8, 5, 12, 5, 5, 4, 4]; // match your `edge_weights` values
+
 
 // Define weights in same order as columns
 const QB_WEIGHTS = [2, 4, 6, 5, 1, 2, 4, 4.5, 1, 1, 3];
@@ -123,6 +139,7 @@ export default function PlayerComparison() {
 
     const positionToFilePrefix = {
       IDL: "DI",
+      EDGE: "ED",
       QB: "QB",
       RB: "RB",
       WR: "WR",
@@ -155,34 +172,39 @@ export default function PlayerComparison() {
   }, [position]);
 
   const COLUMNS =
-    position === "WR"
-      ? WR_COLS
-      : position === "QB"
-      ? QB_COLS
-      : position === "CB"
-      ? CB_COLS
-      : position === "S"
-      ? S_COLS
-      : position === "RB"
-      ? RB_COLS
-      : position === "IDL"
-      ? IDL_COLS
-      : TE_COLS;
+  position === "WR"
+    ? WR_COLS
+    : position === "QB"
+    ? QB_COLS
+    : position === "CB"
+    ? CB_COLS
+    : position === "S"
+    ? S_COLS
+    : position === "RB"
+    ? RB_COLS
+    : position === "IDL"
+    ? IDL_COLS
+    : position === "EDGE"
+    ? EDGE_COLS
+    : TE_COLS;
 
-  const WEIGHTS =
-    position === "WR"
-      ? WR_WEIGHTS
-      : position === "QB"
-      ? QB_WEIGHTS
-      : position === "CB"
-      ? CB_WEIGHTS
-      : position === "S"
-      ? S_WEIGHTS
-      : position === "RB"
-      ? RB_WEIGHTS
-      : position === "IDL"
-      ? IDL_WEIGHTS
-      : TE_WEIGHTS;
+const WEIGHTS =
+  position === "WR"
+    ? WR_WEIGHTS
+    : position === "QB"
+    ? QB_WEIGHTS
+    : position === "CB"
+    ? CB_WEIGHTS
+    : position === "S"
+    ? S_WEIGHTS
+    : position === "RB"
+    ? RB_WEIGHTS
+    : position === "IDL"
+    ? IDL_WEIGHTS
+    : position === "EDGE"
+    ? EDGE_WEIGHTS
+    : TE_WEIGHTS;
+
 
 
   const allPlayers = years
@@ -261,6 +283,7 @@ export default function PlayerComparison() {
           <option value="WR">WR</option>
           <option value="TE">TE</option>
           <option value="IDL">IDL</option>
+          <option value="EDGE">EDGE</option>
           <option value="CB">CB</option>
           <option value="S">S</option>
         </select>

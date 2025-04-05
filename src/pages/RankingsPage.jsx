@@ -55,6 +55,15 @@ export default function RankingsPage() {
             <li><Link to="/projects/idl2021">2021 IDL Rankings</Link></li>
           </ul>
         </div>
+        <div>
+          <h2 className="text-xl font-semibold mb-2">EDGES</h2>
+          <ul className="list-disc ml-6 text-blue-500 space-y-1">
+            <li><Link to="/projects/edge2024">2024 EDGE Rankings</Link></li>
+            <li><Link to="/projects/edge2023">2023 EDGE Rankings</Link></li>
+            <li><Link to="/projects/edge2022">2022 EDGE Rankings</Link></li>
+            <li><Link to="/projects/edge2021">2021 EDGE Rankings</Link></li>
+          </ul>
+        </div>
 
         <div>
           <h2 className="text-xl font-semibold mb-2">Cornerbacks</h2>

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Papa from "papaparse";
 
 const YEARS = ["2021", "2022", "2023", "2024"];
-const POSITIONS = ["QB", "RB", "WR", "TE", "DI", "CB", "S"];
+const POSITIONS = ["QB", "RB", "WR", "TE", "DI", "EDGE", "CB", "S"];
 
 export default function SearchResults() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -17,7 +17,19 @@ export default function SearchResults() {
           YEARS.map(
             (year) =>
               new Promise((resolve) => {
-                Papa.parse(`/assets/${pos}ScoreResults${year}.csv`, {
+                const positionToFilePrefix = {
+                  IDL: "DIScore",
+                  EDGE: "EDScore",
+                  QB: "QBScore",
+                  RB: "RBScore",
+                  WR: "WRScore",
+                  TE: "TEScore",
+                  CB: "CBScore",
+                  S: "SScore"
+                };
+                
+                Papa.parse(`/assets/${positionToFilePrefix[pos]}Results${year}.csv`, {
+                
                   download: true,
                   header: true,
                   complete: (res) => {

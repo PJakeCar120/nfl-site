@@ -88,23 +88,43 @@ const projects = {
   },
   idl2024: {
     title: "2024 IDL Score Rankings",
-    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run block snaps).",
+    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run stop snaps).",
     csvUrl: "/assets/DIScoreResults2024.csv",
   },
   idl2023: {
     title: "2023 IDL Score Rankings",
-    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run block snaps).",
+    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run stop snaps).",
     csvUrl: "/assets/DIScoreResults2023.csv",
   },
   idl2022: {
     title: "2022 IDL Score Rankings",
-    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run block snaps).",
+    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run stop snaps).",
     csvUrl: "/assets/DIScoreResults2022.csv",
   },
   idl2021: {
     title: "2021 IDL Score Rankings",
-    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run block snaps).",
+    description: "IDL model results: all stats in percentiles except AIS (min 150 pass rush, run stop snaps).",
     csvUrl: "/assets/DIScoreResults2021.csv",
+  },
+  edge2024: {
+    title: "2024 EDGE Score Rankings",
+    description: "EDGE model results: all stats in percentiles except AES (min 100 pass rush, run stop snaps).",
+    csvUrl: "/assets/EDScoreResults2024.csv",
+  },
+  edge2023: {
+    title: "2023 EDGE Score Rankings",
+    description: "EDGE model results: all stats in percentiles except AES (min 100 pass rush, run stop snaps).",
+    csvUrl: "/assets/EDScoreResults2023.csv",
+  },
+  edge2022: {
+    title: "2022 EDGE Score Rankings",
+    description: "EDGE model results: all stats in percentiles except AES (min 100 pass rush, run stop snaps).",
+    csvUrl: "/assets/EDScoreResults2022.csv",
+  },
+  edge2021: {
+    title: "2021 EDGE Score Rankings",
+    description: "EDGE model results: all stats in percentiles except AES (min 100 pass rush, run stop snaps).",
+    csvUrl: "/assets/EDScoreResults2021.csv",
   },
  
   cb2024: {
