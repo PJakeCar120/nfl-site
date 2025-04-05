@@ -4,13 +4,13 @@ const previews = {
   Lions: `NFL Draft Preview: #Lions
 Picks: 28, 60, 102, 130, 196, 228, 244
 
-Weaknesses: OG, EDGE, ILB
+Needs: OG, EDGE, ILB
 OG: They lost Kevin Zeitler in FA this offseason. Graham Glasgow also had a down year in 2024. Glasgow, 32, has no guaranteed money in 2026 and likely won't be part of their long-term plans. 
 They took Christian Mahogany in the 6th round last year and he looked good in very limited action.
 EDGE: They released Za'Darius Smith. Josh Paschal returns as an option, but he had a weak year. They brought back Marcus Davenport on a $2.5M contract. They certainly need to add here.
 ILB: Jack Campbell will be one of the starters here long-term. Alex Anzalone is 30 and his contract expires at the end of the year. They could look to replace him.
 
-Outside of the weaknesses above, they're loaded with star power at almost every position. They could also look to add a WR early. Some may point to CB, but they just paid Reed and drafted 
+Outside of the needs above, they're loaded with star power at almost every position. They could also look to add a WR early. Some may point to CB, but they just paid Reed and drafted 
 Arnold 24th and Rakestraw 61st last year. Arnold struggled, but truthfully he was put in a very tough spot for a rookie. They could also add to the IDL. D.J. Reader's contract expires at the 
 end of the year.
 
@@ -22,7 +22,7 @@ Sample mock draft:
   Commanders: `NFL Draft Preview: #Commanders
 Picks: 29, 61, 128, 205, 245
 
-Weaknesses: OT, OG, EDGE, S
+Needs: OT, OG, EDGE, S
 OT: Wylie is a weak starter. At 31 years old, his contract expires at the end of the season. How Washington sees Coleman will affect this.
 OG: Allegretti is a below-average starter. He's 29 years old, and just signed with Washington for 3 years, $16M last year. He has no guaranteed money in 2026.
 EDGE: This may be the weakest EDGE room in the entire NFL. Armstrong is a fine starter. Outside of him they essentially have nothing. They better address the position early.
@@ -41,8 +41,8 @@ Sample mock draft:
   Bills: `NFL Draft Preview: #Bills
 Picks: 30, 56, 62, 109, 132, 169, 170, 173, 177, 206
 
-Weaknesses: WR, OG, DT, CB, S
-WR: 854 vacated snaps from Mack Hollins, 319 vacated from Amari Cooper. They added Josh Palmer, and Keon Coleman should get a boost this season. Still, the group is weak on the outside.
+Needs: WR, OG, DT, CB, S
+WR: 854 vacated snaps from Mack Hollins, 319 vacated from Amari Cooper. They added Josh Palmer, and Keon Coleman should get a boost this season. Still, the group could use help on the outside.
 OG: David Edwards' 2 year $6M contract expires at the end of the year. He's fine, but an improvement would be nice.
 DT: DaQuan Jones was fine last season, but an impact guy to pair with Oliver would really help out this team. They added Ogunjobi, but that's really a rotational piece. Both guys' deals 
 expire at the end of the season.
@@ -53,11 +53,11 @@ probably suffice.
 Since 2015, the Bills have selected the following positions in the 1st round: EDGE, CB, QB, ILB, DT, EDGE, CB, TE. Compared to other teams, they're more willing to draft 
 non-premium positions.
 
-Pick 30: "Weaknesses" aside, the Bills have one of the top 3 QBs in the NFL. They can trust Josh Allen to support an elite offense with what he currently has. Thus, we turn to the 
-defensive side of the ball. This first round pick should probably be defensive line. I think they're weaker at DT than EDGE, but I could see either. CB or S is an option as well, 
+Pick 30: "Needs" aside, the Bills have one of the top QBs in the NFL. They can trust Josh Allen to support an elite offense with what he currently has. Thus, we turn to the 
+defensive side of the ball. This first round pick should probably be defensive line. I think they have a bigger need at DT than EDGE, but I could see either. CB or S is an option as well, 
 but they just invested a lot of money in Benford and S in the first-round is questionable positional-value wise.
 
-Picks 56, 62: Any of the weaknesses work here. They have a lot of options and can go pseudo-BPA. They could also theoretically trade Cook and go RB here if contract negotiations go south.
+Picks 56, 62: Any of the needs work here. They have a lot of options and can go pseudo-BPA. They could also theoretically trade Cook and go RB here if contract negotiations go south.
 
 Sample mock draft:
 30. Walter Nolen, DT, Ole Miss
@@ -67,7 +67,7 @@ Sample mock draft:
   Chiefs: `NFL Draft Preview: #Chiefs
 Picks: 31, 63, 66, 95, 133, 226, 251, 257
 
-Roster Holes:
+Needs:
 RB – Clear weak spot
 OT – Both Moore and Taylor have contracts the Chiefs can get out of relatively easily following the season.
 OG – Kingsley was drafted 63rd last season and is still just 22 years old. I'd like to see them give him a shot here.
@@ -90,9 +90,9 @@ Sample mock draft:
   Eagles: `NFL Draft Preview: #Eagles
 Draft Picks: 32, 64, 96, 134, 161, 164, 165, 168
 
-Weaknesses: WR3, TE (if Goedert moved), OG, DE, EDGE, CB, S
+Needs: WR3, TE (if Goedert moved), OG, DE, EDGE, CB, S
 
-At each of these weaknesses, the Eagles have young, unproven players (WR Dotson, OGs Steen, Green, DE Ojomo, EDGEs Hunt, Ojulari, Huff, CB Ringo, S Brown).
+At each of these needs, the Eagles have young, unproven players (WR Dotson, OGs Steen, Green, DE Ojomo, EDGEs Hunt, Ojulari, Huff, CB Ringo, S Brown).
 
 Over the next month, you will see a lot of mock drafts with the Eagles taking S. Here are the Eagles 1st round picks since 2015: WR, QB, DE, OT, WR, WR, DT, DE, EDGE, CB. So, don't 
 hold your breath.
@@ -106,7 +106,7 @@ Pick 64 and on: The board opens up now. Eagles 2nd round picks since 2015: CB, C
 
 The Eagles excel at not having any "massive" needs heading into the draft. This year, there are probably a couple more question marks than normal.
 
-2024 Snaps by "Weaknesses":
+2024 Snaps by "Needs":
 
 WR3 Dotson: 674
 OG Steen: 315, Green: 592
