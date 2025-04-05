@@ -18,7 +18,7 @@ export default function SearchResults() {
             (year) =>
               new Promise((resolve) => {
                 const positionToFilePrefix = {
-                  IDL: "DIScore",
+                  DI: "DIScore",
                   EDGE: "EDScore",
                   QB: "QBScore",
                   RB: "RBScore",
@@ -37,7 +37,7 @@ export default function SearchResults() {
                       if (row.Name) {
                         combined.push({
                           year,
-                          position: pos,
+                          position: pos === "DI" ? "IDL" : pos, // convert DI -> IDL
                           name: row.Name,
                           rank: row.Rank,
                           ...Object.fromEntries(
@@ -46,6 +46,7 @@ export default function SearchResults() {
                             )
                           ),
                         });
+                        
                       }
                     });
                     resolve();
