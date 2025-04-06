@@ -190,6 +190,40 @@ Sample mock draft:
 90. Jacob Parrish, CB, Kansas State
 101. Jared Ivey, EDGE, Ole Miss`,
 
+Texans: `NFL Draft Preview: #Texans
+Picks: 25, 58, 79, 89, 166, 236, 241
+
+Needs: RB, WR, OL, IDL
+
+RB: Joe Mixon is already 28 and has no guaranteed money in 2026. They could look to add a backup this season to eventually take over. 
+
+WR: Outside of Nico Collins, the future of the WR room is very much in doubt. Christian Kirk's contract expires following this season, and we don't know when or even if Tank Dell will be healthy 
+again. For this season, they'll need another outside WR with Collins being one and Kirk in the slot. 
+
+OL: Given Tytus Howard and Juice Scruggs' abilities to play multiple positions, this is a sort of "combo need" for Houston. With that being said, here is how I see the Texans' most optimal path 
+forward at OL: draft good players. Cam Robinson, Tytus Howard, Blake Fisher, and Juice Scruggs are all passable starters. 
+
+IDL: I'm a big fan of the veteran IDL on Houston, with my model having the following ranks among IDL: Rankins #26, Settle #27, and Edwards #34. Still, all 3 are on the older side with contracts 
+expiring this year except for Edwards on a two-year deal. 
+
+First Round Pick History under Nick Caserio: CB, OG, QB, EDGE
+
+Mock Draft:
+25. Josh Simmons, OT, Ohio State
+58. Tate Ratledge, OG, Georgia
+79. Shemar Turner, DT, Texas A&M
+89. Savion Williams, WR, TCU
+
+Possible starting OL with this mock draft: 
+LT: Cam Robinson
+LG: Tytus Howard
+C: Juice Scruggs
+RG: Tate Ratledge
+RT: Josh Simmons
+
+Blake Fisher could also start over Cam Robinson, with Simmons at LT and Fisher at RT.`,
+
+
 };
 
 const DraftPreviews = () => {
