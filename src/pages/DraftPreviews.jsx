@@ -5,9 +5,12 @@ const previews = {
 Picks: 28, 60, 102, 130, 196, 228, 244
 
 Needs: OG, EDGE, ILB
+
 OG: They lost Kevin Zeitler in FA this offseason. Graham Glasgow also had a down year in 2024. Glasgow, 32, has no guaranteed money in 2026 and likely won't be part of their long-term plans. 
 They took Christian Mahogany in the 6th round last year and he looked good in very limited action.
+
 EDGE: They released Za'Darius Smith. Josh Paschal returns as an option, but he had a weak year. They brought back Marcus Davenport on a $2.5M contract. They certainly need to add here.
+
 ILB: Jack Campbell will be one of the starters here long-term. Alex Anzalone is 30 and his contract expires at the end of the year. They could look to replace him.
 
 Outside of the needs above, they're loaded with star power at almost every position. They could also look to add a WR early. Some may point to CB, but they just paid Reed and drafted 
@@ -23,9 +26,13 @@ Sample mock draft:
 Picks: 29, 61, 128, 205, 245
 
 Needs: OT, OG, EDGE, S
+
 OT: Wylie is a weak starter. At 31 years old, his contract expires at the end of the season. How Washington sees Coleman will affect this.
+
 OG: Allegretti is a below-average starter. He's 29 years old, and just signed with Washington for 3 years, $16M last year. He has no guaranteed money in 2026.
+
 EDGE: This may be the weakest EDGE room in the entire NFL. Armstrong is a fine starter. Outside of him they essentially have nothing. They better address the position early.
+
 S: They lost Chinn (1209 snaps) and didn't bring in a legitimate replacement. They'll have to add someone here.
 
 Pick 29: Offensive line or defensive line. I'll say it for most teams, but especially in Washington's case they badly need it. Wylie and Allegretti aren't terrible, but they aren't long-term 
@@ -42,11 +49,16 @@ Sample mock draft:
 Picks: 30, 56, 62, 109, 132, 169, 170, 173, 177, 206
 
 Needs: WR, OG, DT, CB, S
+
 WR: 854 vacated snaps from Mack Hollins, 319 vacated from Amari Cooper. They added Josh Palmer, and Keon Coleman should get a boost this season. Still, the group could use help on the outside.
+
 OG: David Edwards' 2 year $6M contract expires at the end of the year. He's fine, but an improvement would be nice.
+
 DT: DaQuan Jones was fine last season, but an impact guy to pair with Oliver would really help out this team. They added Ogunjobi, but that's really a rotational piece. Both guys' deals 
 expire at the end of the season.
+
 CB: 996 vacated snaps from Rasul Douglas. They didn't really address the hole in free agency. This is a pretty glaring need.
+
 S: Both starters, Hamlin and Rapp, return. Both are on cheap deals, so it'd be nice to at least add some competition. They also took Bishop 60th last year, so a mid-round pick would 
 probably suffice.
 
@@ -68,11 +80,15 @@ Sample mock draft:
 Picks: 31, 63, 66, 95, 133, 226, 251, 257
 
 Needs:
-RB – Clear weak spot
-OT – Both Moore and Taylor have contracts the Chiefs can get out of relatively easily following the season.
-OG – Kingsley was drafted 63rd last season and is still just 22 years old. I'd like to see them give him a shot here.
-DT – Need a replacement for Wharton
-S – Reid departed, but it seems the team is confident in Jaden Hicks, who looked very strong in 330 snaps last season
+
+RB: Clear weak spot
+
+OT: Both Moore and Taylor have contracts the Chiefs can get out of relatively easily following the season.
+
+OG: Kingsley was drafted 63rd last season and is still just 22 years old. I'd like to see them give him a shot here.
+
+DT: Need a replacement for Wharton
+S: Reid departed, but it seems the team is confident in Jaden Hicks, who looked very strong in 330 snaps last season
 
 Since 2015, the Chiefs have selected the following positions in the 1st round: CB, QB, RB, CB, EDGE, EDGE, WR.
 
@@ -122,7 +138,7 @@ Sample mock draft:
 64. Omarr Norman-Lott, DT, Tennessee
 96. Jaylen Reed, S, Penn State `,
 
-Ravens: `NFL Draft Preview: #Ravens
+  Ravens: `NFL Draft Preview: #Ravens
 Picks: 27, 59, 91, 129, 136, 176, 183, 203, 210, 212, 243
 
 Needs: WR, OG, DLine, ILB, CB
@@ -149,39 +165,63 @@ Sample mock draft:
 27. Shavon Revel, CB, East Carolina
 59. Jonah Savaiinaea, OG, Arizona
 91. Kyle Kennard, EDGE, South Carolina`,
-  
+
+Rams: `NFL Draft Preview: #Rams
+Picks: 26, 90, 101, 127, 190, 195, 201, 202
+
+Needs: TE, OT, EDGE, ILB, CB
+
+TE: 32 year-old Tyler Higbee's contract expires after this season. Colby Parkinson has no guaranteed money after this season, as well. 
+
+OT: Preferential decision here. They just locked up Alaric Jackson long-term. 32 year-old Rob Havenstein's contract expires after this season, but he's still playing at a high level. 
+They could extend Havenstein or opt to look for a new, long-term solution. 
+
+EDGE: Michael Hoecht left in Free Agency, vacating 705 snaps. They haven't brought in anyone to replace him. 
+
+ILB: Christian Rozeboom left in Free Agency, vacating 956 snaps. They replaced him with Nate Landman, but this is quite a weak group with Landman and Speights. 
+
+CB: I happen to be higher on this CB group than most, ranking Darious Williams 37th and Cobie Durant 14th among CBs in 2024. Still, the 32 year-old Williams has no guaranteed money past 
+this season and Ahkello Witherspoon, who played 599 snaps last season, was my 86th ranked CB. 
+
+First Round Pick History under Les Snead: EDGE, WR, ILB, OT, IDL, RB, QB, EDGE
+
+Sample mock draft:
+26. Josh Simmons, OT, Ohio State
+90. Jacob Parrish, CB, Kansas State
+101. Jared Ivey, EDGE, Ole Miss`,
 
 };
 
 const DraftPreviews = () => {
-    const [team, setTeam] = useState("");
-  
-    return (
-      <div className="p-6 max-w-4xl mx-auto text-white">
-        <h1 className="text-3xl font-bold mb-4">📘 NFL Draft Previews</h1>
-  
-        <select
-          value={team}
-          onChange={(e) => setTeam(e.target.value)}
-          className="mb-6 px-3 py-2 border rounded shadow bg-black text-white"
-        >
-          <option value="" disabled>
-            Select a Team
+  const [team, setTeam] = useState("");
+
+  return (
+    <div className="p-6 max-w-4xl mx-auto text-white">
+      <h1 className="text-3xl font-bold mb-4">📘 NFL Draft Previews</h1>
+
+      <select
+        value={team}
+        onChange={(e) => setTeam(e.target.value)}
+        className="mb-6 px-3 py-2 border rounded shadow bg-black text-white"
+      >
+        <option value="" disabled>
+          Select a Team
+        </option>
+        {Object.keys(previews).sort().map((t) => (
+          <option key={t} value={t}>
+            {t}
           </option>
-          {Object.keys(previews).map((t) => (
-            <option key={t} value={t}>
-              {t}
-            </option>
-          ))}
-        </select>
-  
-        {team && (
-          <pre className="whitespace-pre-wrap break-words text-lg leading-relaxed">
-            {previews[team]}
-          </pre>
-        )}
-      </div>
-    );
-  };
+        ))}
+      </select>
+
+      {team && (
+        <pre className="whitespace-pre-wrap break-words text-lg leading-relaxed">
+          {previews[team]}
+        </pre>
+      )}
+    </div>
+  );
+};
+
   
   export default DraftPreviews;
