@@ -121,6 +121,36 @@ Sample mock draft:
 32. Mike Green, EDGE, Marshall
 64. Omarr Norman-Lott, DT, Tennessee
 96. Jaylen Reed, S, Penn State `,
+
+Ravens: `NFL Draft Preview: #Ravens
+Picks: 27, 59, 91, 129, 136, 176, 183, 203, 210, 212, 243
+
+Needs: WR, OG, DLine, ILB, CB
+
+WR: Nelson Agholor vacates 466 snaps. They signed DeAndre Hopkins to a 1 year $5M deal, but long-term they need a replacement on the outside.
+
+OG: They're pretty weak at both spots here after losing Patrick Mekari.
+
+DLine: No team rotates defensive line quite like the Ravens. They have 2 studs at IDL with 27 year-old Madubuike (my #14/102 qualifying IDL) and 25 year-old Jones (#33/102). 
+They played Broderick Washington 490 snaps and he graded as my #84/102 IDL, so an improvement there would be nice. EDGE-wise, 34 year-old Van Noy (#29/115) and Oweh (#30/115) both had strong years. 
+Tavius Robinson (#101/115) played 548 snaps, so some competition would be nice. Of course, Baltimore could just be more restrictive with their snaps next season.
+
+ILB: Some competition for Trenton Simpson would be nice after they benched him late last season.
+
+CB: Last year's rookie Nate Wiggins had a fantastic rookie year (my #19/116 CBs), so he'll be a strength. Marlon Humphrey will man the nickel, and they'll need a replacement at outside CB 
+for Brandon Stephens' 1135 vacated snaps. They signed 30 year-old Chidobe Awuzie in free agency so they have a competent option, but surely they'll be looking for something more long-term. 
+Also important to remember they play in a division with Chase, Higgins, Metcalf, Pickens, and Jeudy.
+
+First Round Pick History under Eric DeCosta: WR, ILB, WR, EDGE, S, C, WR, CB
+
+Quick note: I see a lot of sites with Safety listed as a need. I had 25 year-old Ar'Darius Washington as my #30 ranked S last year, so I disagree pretty strongly on that front.
+
+Sample mock draft:
+27. Shavon Revel, CB, East Carolina
+59. Jonah Savaiinaea, OG, Arizona
+91. Kyle Kennard, EDGE, South Carolina`,
+  
+
 };
 
 const DraftPreviews = () => {
