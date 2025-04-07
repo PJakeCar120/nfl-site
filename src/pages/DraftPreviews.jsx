@@ -223,6 +223,79 @@ RT: Josh Simmons
 
 Blake Fisher could also start over Cam Robinson, with Simmons at LT and Fisher at RT.`,
 
+Vikings: `NFL Draft Preview: #Vikings
+Picks: 24, 97, 139, 187
+
+Needs: OG, IDL, S
+
+OG: Blake Brandel really struggled last season. An improvement would be hugely beneficial. This is the only significant need on offense.
+
+IDL: Harrison Phillips has no guaranteed money after this season and has struggled the past few years, ranking #78 among IDL in my model in 2024.
+
+S: Camryn Bynum walked, vacating 1060 snaps. They don’t currently have a replacement unless they shuffle the secondary around to leave a hole at outside CB or Nickel. I’m assuming that they will 
+keep Murphy Jr. on the outside this year, however.
+
+Note: Many will point to CB as a need. I had Isaiah Rodgers, who was very solid in limited reps, as my #43 CB last season. I think he’ll be solid in the CB2 role this year.
+
+First Round Pick History under Kwesi Adofo-Mensah: S, WR, QB, EDGE
+
+I don’t attempt to predict draft day trades, but I do think it would make a lot of sense for Minnesota to move down this year.
+
+Mock Draft:
+24. Nick Emmanwori, S, South Carolina
+97. Deone Walker, IDL, Kentucky`,
+
+Packers: `NFL Draft Preview: #Packers
+Picks: 23, 54, 87, 124, 159, 198, 237, 250
+
+Needs: WR, IDL, EDGE, CB
+
+WR: Jayden Reed graded out as my #26 WR last season, so he’ll confidently man the slot next season. However, they’re weak on the outside. Christian Watson was my #25, but he’ll likely miss time 
+and has generally struggled to stay on the field. Romeo Doubs was my #35, and Dontayvion Wicks struggled, ranking #63. They have depth here, but they could use a more dominant outside WR.
+
+IDL: The Packers are still looking for a more consistent piece next to Kenny Clark. Personally, I like Devonte Wyatt, who graded as my #16 DT in 2023 and didn’t play enough in 2024 to qualify. 
+Unfortunately, the Packers don’t seem as convinced as I am.
+
+EDGE: Another place where they are looking for more consistency across from Rashan Gary. Kingsley Enagbare graded as my #80 EDGE last season, and Lukas Van Ness was my #86 EDGE, so I 
+wouldn’t hold my breath on a breakout season.
+
+CB: I’m going to make the safe assumption that Jaire Alexander will not be a Packer next season. That leaves the Packers with Keisean Nixon and Carrington Valentine on the outside. I’m actually 
+a big fan of both, with Nixon as my #22 CB last season and Valentine as my #27. Still, they’ll want to add another guy here.
+
+First Round Pick History under Brian Gutekunst: CB, EDGE, S, QB, CB, ILB, IDL, EDGE, OG
+
+Sample Mock Draft:
+23. Walter Nolen, IDL, Ole Miss
+54. J.T. Tuimoloau, EDGE, Ohio State
+87. Savion Williams, WR, TCU`,
+
+Chargers: `NFL Draft Preview: #Chargers
+Picks: 22, 55, 86, 125, 158, 181, 199, 209, 214, 256
+
+Needs: RB, WR, IOL, IDL, EDGE
+
+RB: The Chargers thrive on running the ball, so they’ll want to add a compliment and successor to Najee Harris. Luckily, this is a deep draft, so they’ll have plenty of options.
+
+WR: Slot WR Ladd McConkey will be their top target again next year. Quentin Johnston showed massive improvement this season, going from my #91 WR as a rookie to #22 this year. Still, they’ll 
+need another Outside WR after vacating 616 snaps from Josh Palmer.
+
+IOL: The Chargers could opt to find a long-term replacement for Bradley Bozeman. Because Zion Johnson has the ability to move to Center, this means they could draft either a Center or Guard.
+
+IDL: This group could use a lot of work. The projected starters ranked the following in my model last season among IDL: Da’Shawn Hand #71, Teair Tart #44, Otito Ogbonnia #81. Furthermore, not a 
+single one is signed past this season. I think this is by far the weakest position group on the team.
+
+EDGE: Joey Bosa left in Free Agency, vacating 502 snaps. They haven’t added a replacement, so they’ll need another rotational EDGE at some point.
+
+The Chargers could also add a TE or CB early. Really, they’re looking at straight BPA. For a playoff team, they have quite a few holes.
+
+First Round Pick History under Joe Hortiz: OT
+
+Sample Mock Draft:
+22. Kenneth Grant, IDL, Michigan
+55. TreVeyon Henderson, RB, Ohio State
+86. Kyle Kennard, EDGE, South Carolina`,
+
+
 
 };
 
