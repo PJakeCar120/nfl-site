@@ -112,6 +112,27 @@ const EDGE_COLS = [
   "Stop %"
 ];
 
+const ILB_COLS = [
+  "Hurries per Rush",
+  "Pass Rush Snaps",
+  "Pass Rush Win Rate",
+  "Sacks per Rush",
+  "Pressures per Rush",
+  "Run Snaps per Game",
+  "Forced Fumbles per Run Snap",
+  "Stop %",
+  "Tackles per Run Snap",
+  "Coverage Snaps per Game",
+  "Snaps per Reception",
+  "INTs per Coverage Snap",
+  "Avg Depth of Tackle",
+  "QB Rating Against",
+  "Yards per Coverage Snap"
+];
+
+const ILB_WEIGHTS = [15, 15, 25, 35, 40, 50, 10, 195, 35, 125, 10, 174, 25, 40, 105];
+
+
 const EDGE_WEIGHTS = [20, 22, 11, 14, 8, 5, 12, 5, 5, 4, 4]; // match your `edge_weights` values
 
 
@@ -139,6 +160,7 @@ export default function PlayerComparison() {
 
     const positionToFilePrefix = {
       IDL: "DI",
+      ILB: "ILB", 
       EDGE: "ED",
       QB: "QB",
       RB: "RB",
@@ -171,6 +193,7 @@ export default function PlayerComparison() {
     fetchData();
   }, [position]);
 
+
   const COLUMNS =
   position === "WR"
     ? WR_COLS
@@ -186,6 +209,8 @@ export default function PlayerComparison() {
     ? IDL_COLS
     : position === "EDGE"
     ? EDGE_COLS
+    : position === "ILB"
+    ? ILB_COLS
     : TE_COLS;
 
 const WEIGHTS =
@@ -203,7 +228,10 @@ const WEIGHTS =
     ? IDL_WEIGHTS
     : position === "EDGE"
     ? EDGE_WEIGHTS
+    : position === "ILB"
+    ? ILB_WEIGHTS
     : TE_WEIGHTS;
+
 
 
 
@@ -223,8 +251,14 @@ const WEIGHTS =
       const weight = weights?.[i] ?? 1;
       return sum + weight * (val - v2[i]) ** 2;
     }, 0);
-    return 100 * (1 - Math.sqrt(weightedSum) / Math.sqrt(v1.length * (100 ** 2)));
+  
+    const maxDistance = Math.sqrt(
+      weights.reduce((sum, w) => sum + w * 100 ** 2, 0)
+    );
+  
+    return 100 * (1 - Math.sqrt(weightedSum) / maxDistance);
   };
+  
 
   const handleSelect = (option) => {
     const { name, year } = option.value;
@@ -284,6 +318,7 @@ const WEIGHTS =
           <option value="TE">TE</option>
           <option value="IDL">IDL</option>
           <option value="EDGE">EDGE</option>
+          <option value="ILB">ILB</option>
           <option value="CB">CB</option>
           <option value="S">S</option>
         </select>
