@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Papa from "papaparse";
 
 const YEARS = ["2021", "2022", "2023", "2024"];
-const POSITIONS = ["QB", "RB", "WR", "TE", "DI", "EDGE", "CB", "S"];
+const POSITIONS = ["QB", "RB", "WR", "TE", "DI", "EDGE", "ILB", "CB", "S"];
 
 export default function SearchResults() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -19,6 +19,7 @@ export default function SearchResults() {
               new Promise((resolve) => {
                 const positionToFilePrefix = {
                   DI: "DIScore",
+                  ILB: "ILBScore",
                   EDGE: "EDScore",
                   QB: "QBScore",
                   RB: "RBScore",

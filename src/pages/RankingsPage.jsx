@@ -64,6 +64,15 @@ export default function RankingsPage() {
             <li><Link to="/projects/edge2021">2021 EDGE Rankings</Link></li>
           </ul>
         </div>
+        <div>
+          <h2 className="text-xl font-semibold mb-2">Inside Linebackers</h2>
+          <ul className="list-disc ml-6 text-blue-500 space-y-1">
+            <li><Link to="/projects/ilb2024">2024 ILB Rankings</Link></li>
+            <li><Link to="/projects/ilb2023">2023 ILB Rankings</Link></li>
+            <li><Link to="/projects/ilb2022">2022 ILB Rankings</Link></li>
+            <li><Link to="/projects/ilb2021">2021 ILB Rankings</Link></li>
+          </ul>
+        </div>
 
         <div>
           <h2 className="text-xl font-semibold mb-2">Cornerbacks</h2>

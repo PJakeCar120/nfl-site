@@ -129,6 +129,26 @@ const projects = {
     description: "EDGE model results: all stats in percentiles except AES (min 100 pass rush, run stop snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily. It is meant to serve as an overall season grade.",
     csvUrl: "/assets/EDScoreResults2021.csv",
   },
+  ilb2024: {
+    title: "2024 ILB Score Rankings",
+    description: "ILB model results: all stats in percentiles except AIS (min 100 coverage, run stop snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily. It is meant to serve as an overall season grade.",
+    csvUrl: "/assets/ILBScoreResults2024.csv",
+  },
+  ilb2023: {
+    title: "2023 ILB Score Rankings",
+    description: "ILB model results: all stats in percentiles except AIS (min 100 coverage, run stop snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily. It is meant to serve as an overall season grade.",
+    csvUrl: "/assets/ILBScoreResults2023.csv",
+  },
+  ilb2022: {
+    title: "2022 ILB Score Rankings",
+    description: "ILB model results: all stats in percentiles except AIS (min 100 coverage, run stop snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily. It is meant to serve as an overall season grade.",
+    csvUrl: "/assets/ILBScoreResults2022.csv",
+  },
+  ilb2021: {
+    title: "2021 ILB Score Rankings",
+    description: "ILB model results: all stats in percentiles except AIS (min 100 coverage, run stop snaps). The Analytical Score uses my custom formula, weighting the most important stats more heavily. It is meant to serve as an overall season grade.",
+    csvUrl: "/assets/ILBScoreResults2021.csv",
+  },
  
   cb2024: {
     title: "2024 CB Score Rankings",
