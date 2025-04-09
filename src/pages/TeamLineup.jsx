@@ -21,8 +21,8 @@ const teams = {
       DT1: "Jalen Carter",
       NT: "Jordan Davis",
       DT2: "Mario Ojomo",
-      EDGE1: "Nolan Smith Jr.",
-      ILB1: "Zach Baun",
+      EDGE1: "Nolan Smith",
+      ILB1: "Zack Baun",
       ILB2: "Nakobe Dean",
       EDGE2: "Jalyx Hunt",
       CB1: "Quinyon Mitchell",
@@ -168,7 +168,7 @@ Sample mock draft:
       { position: "WR", name: "Curtis Samuel" },
       { position: "DT", name: "Larry Ogunjobi" },
       { position: "EDGE", name: "Michael Hoecht" },
-      { position: "EDGE", name: "E.J. Epenesa" },
+      { position: "EDGE", name: "A.J. Epenesa" },
       { position: "ILB", name: "Dorian Williams" },
       { position: "NB", name: "Cam Lewis" },
       { position: "S", name: "Cole Bishop" },
@@ -203,6 +203,130 @@ Sample mock draft:
   56. Darien Porter, CB, Iowa State
   62. Tate Ratledge, OG, Georgia`,
   },  
+  Commanders: {
+    offense: {
+      QB: "Jayden Daniels",
+      RB: "Brian Robinson",
+      WR1: "Terry McLaurin",
+      WR2: "Deebo Samuel",
+      SWR: "Luke McCaffrey",
+      TE: "Zach Ertz",
+      LT: "Laremy Tunsil",
+      LG: "Nick Allegretti",
+      C: "Tyler Biadasz",
+      RG: "Sam Cosmi",
+      RT: "Andrew Wylie",
+    },
+    defense: {
+      EDGE1: "Dorance Armstrong",
+      DT1: "Daron Payne",
+      DT2: "Javon Kinlaw",
+      EDGE2: "Clelin Ferrell",
+      ILB1: "Bobby Wagner",
+      ILB2: "Frankie Luvu",
+      CB1: "Mike Sainristil",
+      FS: "Quan Martin",
+      SS: "Will Harris",
+      CB2: "Marshon Lattimore",
+      NB: "Noah Igbinoghene",
+    },
+    backups: [
+      { position: "QB", name: "Marcus Mariota" },
+      { position: "RB", name: "Austin Ekeler" },
+      { position: "WR", name: "Noah Brown" },
+      { position: "WR", name: "K.J. Osborn" },
+      { position: "DT", name: "Jer'Zhan Newton" },
+      { position: "DT", name: "Eddie Goldman" },
+      { position: "EDGE", name: "Deatrich Wise Jr." },
+      { position: "EDGE", name: "Jacob Martin" },
+      { position: "S", name: "Percy Butler" },
+      { position: "NB", name: "Jonathan Jones" },
+    ],
+    draftPreview: `NFL Draft Preview: Commanders
+  Picks: 29, 61, 128, 205, 245
+  
+  Needs: OT, OG, EDGE, S
+  
+  OT: Wylie is a weak starter. At 31 years old, his contract expires at the end of the season. How Washington sees Coleman will affect this.
+  
+  OG: Allegretti is a below-average starter. He's 29 years old, and just signed with Washington for 3 years, $16M last year. He has no guaranteed money in 2026.
+  
+  EDGE: This may be the weakest EDGE room in the entire NFL. Armstrong is a fine starter. Outside of him they essentially have nothing. They better address the position early.
+  
+  S: They lost Chinn (1209 snaps) and didn't bring in a legitimate replacement. They'll have to add someone here.
+  
+  Pick 29: Offensive line or defensive line. I'll say it for most teams, but especially in Washington's case they badly need it. Wylie and Allegretti aren't terrible, but they aren't long-term 
+  solutions either – Is Coleman? The EDGE room is terrible.
+  
+  Pick 61: More of the same. They need to add to the lines. They could look S here too. If they go EDGE R1, I could also see them adding a weapon here for Daniels. He loves Ertz, but Ertz is 34. 
+  That will also depend on Sinnott's development. Deebo may only be a one-year stopgap as well, so WR is in play. Even RB is possible if someone slips.
+  
+  Sample mock draft:
+  29: Mike Green, EDGE, Marshall
+  61. Marcus Mbow, OG, Purdue`,
+  },
+
+  Lions: {
+    offense: {
+      QB: "Jared Goff",
+      RB: "Jahmyr Gibbs",
+      WR1: "Jameson Williams",
+      WR2: "Tim Patrick",
+      SWR: "Amon-Ra St. Brown",
+      TE: "Sam Laporta",
+      LT: "Taylor Decker",
+      LG: "Graham Glasgow",
+      C: "Frank Ragnow",
+      RG: "Christian Mahogany",
+      RT: "Penei Sewell",
+    },
+    defense: {
+      EDGE1: "Aidan Hutchinson",
+      NT: "DJ Reader",
+      DT: "Alim McNeill",
+      EDGE2: "Josh Paschal",
+      ILB1: "Jack Campbell",
+      ILB2: "Alex Anzalone",
+      CB1: "Terrion Arnold",
+      FS: "Kerby Joseph",
+      SS: "Brian Branch",
+      CB2: "D.J. Reed",
+      NB: "Amik Robertson",
+    },
+    backups: [
+      { position: "RB", name: "David Montgomery" },
+      { position: "WR", name: "Kalif Raymond" },
+      { position: "TE", name: "Brock Wright" },
+      { position: "DT", name: "Levi Onwuzurike" },
+      { position: "NT", name: "Roy Lopez" },
+      { position: "EDGE", name: "Al-Quadin Muhammad" },
+      { position: "ILB", name: "Malcolm Rodriguez" },
+      { position: "CB", name: "Ennis Rakestraw Jr." },
+      { position: "NB", name: "Avonte Maddox" },
+    ],
+    draftPreview: `NFL Draft Preview: Lions
+  Picks: 28, 60, 102, 130, 196, 228, 244
+  
+  Needs: OG, EDGE, ILB
+  
+  OG: They lost Kevin Zeitler in FA this offseason. Graham Glasgow also had a down year in 2024. Glasgow, 32, has no guaranteed money in 2026 and likely won't be part of their long-term plans. 
+  They took Christian Mahogany in the 6th round last year and he looked good in very limited action.
+  
+  EDGE: They released Za'Darius Smith. Josh Paschal returns as an option, but he had a weak year. They brought back Marcus Davenport on a $2.5M contract. They certainly need to add here.
+  
+  ILB: Jack Campbell will be one of the starters here long-term. Alex Anzalone is 30 and his contract expires at the end of the year. They could look to replace him.
+  
+  Outside of the needs above, they're loaded with star power at almost every position. They could also look to add a WR early. Some may point to CB, but they just paid Reed and drafted 
+  Arnold 24th and Rakestraw 61st last year. Arnold struggled, but truthfully he was put in a very tough spot for a rookie. They could also add to the IDL. D.J. Reader's contract expires at the 
+  end of the year.
+  
+  Sample mock draft:
+  28. Nic Scourton, EDGE, Texas A&M
+  60. Alfred Collins, DT, Texas
+  102. Jackson Slater, OG, Sacramento State`,
+  },
+  
+  
 };
 
 export default function TeamLineup() {
