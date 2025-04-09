@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import Papa from "papaparse";
+import { useLocation } from "react-router-dom";
 
 const YEARS = ["2021", "2022", "2023", "2024"];
 const POSITIONS = ["QB", "RB", "WR", "TE", "DI", "EDGE", "ILB", "CB", "S"];
 
 export default function SearchResults() {
+  const location = useLocation();
   const [searchTerm, setSearchTerm] = useState("");
   const [allData, setAllData] = useState([]);
   const [results, setResults] = useState([]);
@@ -28,9 +30,8 @@ export default function SearchResults() {
                   CB: "CBScore",
                   S: "SScore"
                 };
-                
+
                 Papa.parse(`/assets/${positionToFilePrefix[pos]}Results${year}.csv`, {
-                
                   download: true,
                   header: true,
                   complete: (res) => {
@@ -47,7 +48,6 @@ export default function SearchResults() {
                             )
                           ),
                         });
-                        
                       }
                     });
                     resolve();
@@ -62,6 +62,20 @@ export default function SearchResults() {
 
     loadData();
   }, []);
+
+  // Handle ?name= query param
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const nameParam = params.get("name");
+    if (nameParam && allData.length > 0) {
+      setSearchTerm(nameParam);
+      const term = nameParam.toLowerCase().trim();
+      const matches = allData.filter((p) =>
+        p.name.toLowerCase().includes(term)
+      );
+      setResults(matches);
+    }
+  }, [location.search, allData]);
 
   const handleSearch = () => {
     const term = searchTerm.toLowerCase().trim();

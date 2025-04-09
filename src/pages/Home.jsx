@@ -127,12 +127,17 @@ const Home = () => {
               </Link>
             </li>
             <li>
+              <Link to="/whobetta" className="underline text-blue-600 hover:text-blue-800 transition">
+                Team Pages
+              </Link>
+            </li>
+            <li>
               <Link to="/projects/similarity" className="underline text-blue-600 hover:text-blue-800 transition">
                 Player Similarity Tool
               </Link>
             </li>
             <li>
-              <Link to="/whobetta" className="underline text-blue-600 hover:text-blue-800 transition">
+              <Link to="/lineup" className="underline text-blue-600 hover:text-blue-800 transition">
                 Head2Head
               </Link>
             </li>
@@ -144,11 +149,6 @@ const Home = () => {
             <li>
               <Link to="/contracts" className="underline text-blue-600 hover:text-blue-800 transition">
                 Extension Projections
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects/bdb2025" className="underline text-blue-600 hover:text-blue-800 transition">
-                Big Data Bowl 2025
               </Link>
             </li>
           </ul>
