@@ -530,7 +530,7 @@ export default function TeamLineup() {
   
         {/* Info Message */}
         <p className="text-center text-sm text-gray-600 mb-8 max-w-3xl mx-auto">
-          These pages show projected starting lineups and important backups for each team with links attached to each player showing their player page (so click on the player names!). Underneath the starting lineup is my draft writeup for each team. I've included 2 TEs and 3 WRs for each.  
+          These pages show projected starting lineups and important backups for each team with links attached to each player showing their player page (so click on the player names!). Underneath the starting lineup is my draft writeup for each team. I've included 3 WRs and 2 TEs for each offense, and a Nickel for each defense.  
         </p>
   
         {/* Team content */}
