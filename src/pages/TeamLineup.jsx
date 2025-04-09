@@ -529,6 +529,65 @@ Sample mock draft:
   
   Blake Fisher could also start over Cam Robinson, with Simmons at LT and Fisher at RT.`,
   },
+  Vikings: {
+    offense: {
+      QB: "J.J. McCarthy",
+      RB: "Aaron Jones",
+      WR1: "Justin Jefferson",
+      WR2: "Jordan Addison",
+      SWR: "Jalen Nailor",
+      TE1: "T.J. Hockenson",
+      TE2: "Josh Oliver",
+      LT: "Christian Darrisaw",
+      LG: "Blake Brandel",
+      C: "Ryan Kelly",
+      RG: "Will Fries",
+      RT: "Brian O'Neill",
+    },
+    defense: {
+      DT1: "Jonathan Allen",
+      NT: "Harrison Phillips",
+      DT2: "Javon Hargrave",
+      EDGE1: "Jonathan Greenard",
+      ILB1: "Blake Cashman",
+      ILB2: "Ivan Pace Jr.",
+      EDGE2: "Andrew Van Ginkel",
+      CB1: "Byron Murphy Jr.",
+      FS: "Josh Metellus",
+      SS: "Harrison Smith",
+      CB2: "Isaiah Rodgers",
+      NB: "Tavierre Thomas",
+    },
+    backups: [
+      { position: "RB", name: "Jordan Mason" },
+      { position: "SWR", name: "Rondale Moore" },
+      { position: "DT", name: "Jalen Redmond" },
+      { position: "EDGE", name: "Dallas Turner" },
+      { position: "CB", name: "Jeff Okudah" },
+      { position: "S", name: "Theo Jackson" },
+    ],
+    draftPreview: `NFL Draft Preview: Vikings
+  Picks: 24, 97, 139, 187
+  
+  Needs: OG, IDL, NB/S
+  
+  OG: Blake Brandel really struggled last season. An improvement would be hugely beneficial. This is the only significant need on offense.
+  
+  IDL: Harrison Phillips has no guaranteed money after this season and has struggled the past few years, ranking #78 among IDL in my model in 2024.
+  
+  NB/S: Camryn Bynum walked, vacating 1060 snaps. They'll have a hole at one of these positions, depending on where they play Josh Metellus. I’m assuming that they will 
+  keep Murphy Jr. on the outside this year, however.
+  
+  Note: Many will point to CB as a need. I had Isaiah Rodgers, who was very solid in limited reps, as my #43 CB last season. I think he’ll be solid in the CB2 role this year.
+  
+  First Round Pick History under Kwesi Adofo-Mensah: S, WR, QB, EDGE
+  
+  I don’t attempt to predict draft day trades, but I do think it would make a lot of sense for Minnesota to move down this year.
+  
+  Mock Draft:
+  24. Nick Emmanwori, S, South Carolina
+  97. Deone Walker, IDL, Kentucky`
+  },
   
   
 };
