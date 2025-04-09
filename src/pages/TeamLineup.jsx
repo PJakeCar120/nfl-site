@@ -7,8 +7,8 @@ const teams = {
     offense: {
       QB: "Jalen Hurts",
       RB: "Saquon Barkley",
-      WR1: "A.J. Brown",
-      WR2: "Jahan Dotson",
+      WR: "A.J. Brown",
+      WR: "Jahan Dotson",
       SWR: "Devonta Smith",
       TE: "Dallas Goedert",
       LT: "Jordan Mailata",
@@ -18,18 +18,18 @@ const teams = {
       RT: "Lane Johnson",
     },
     defense: {
+      DT: "Jalen Carter",
       NT: "Jordan Davis",
-      DT1: "Jalen Carter",
-      DT2: "Mario Ojomo",
-      EDGE1: "Nolan Smith Jr.",
-      EDGE2: "Jalyx Hunt",
-      ILB1: "Zach Baun",
-      ILB2: "Nakobe Dean",
-      CB1: "Quinyon Mitchell",
-      CB2: "Kelee Ringo",
+      DT: "Mario Ojomo",
+      EDGE: "Nolan Smith Jr.",
+      ILB: "Zach Baun",
+      ILB: "Nakobe Dean",
+      EDGE: "Jalyx Hunt",
+      CB: "Quinyon Mitchell",
+      S: "Reed Blankenship",
+      S: "Sydney Brown",
+      CB: "Kelee Ringo",
       NB: "Cooper DeJean",
-      S1: "Reed Blankenship",
-      S2: "Sydney Brown",
     },
     backups: [
       { position: "RB", name: "A.J. Dillon" },
@@ -76,8 +76,8 @@ Sample mock draft:
     offense: {
       QB: "Patrick Mahomes",
       RB: "Isiah Pacheco",
-      WR1: "Xavier Worthy",
-      WR2: "Marquise Brown",
+      WR: "Xavier Worthy",
+      WR: "Marquise Brown",
       SWR: "Rashee Rice",
       TE: "Travis Kelce",
       LT: "Jaylon Moore",
@@ -87,17 +87,17 @@ Sample mock draft:
       RT: "Jawaan Taylor",
     },
     defense: {
-      EDGE1: "George Karlaftis",
-      DT1: "Chris Jones",
-      DT2: "Mike Pennel",
-      EDGE2: "Mike Danna",
-      ILB1: "Nick Bolton",
-      ILB2: "Drue Tranquill",
-      CB1: "Trent McDuffie",
-      CB2: "Kristian Fulton",
+      EDGE: "George Karlaftis",
+      DT: "Chris Jones",
+      DT: "Mike Pennel",
+      EDGE: "Mike Danna",
+      ILB: "Nick Bolton",
+      ILB: "Drue Tranquill",
+      CB: "Trent McDuffie",
+      S: "Bryan Cook",
+      S: "Jaden Hicks",
+      CB: "Kristian Fulton",
       NB: "Chamarri Conner",
-      S1: "Bryan Cook",
-      S2: "Jaden Hicks",
     },
     backups: [
       { position: "QB", name: "Gardner Minshew" },
@@ -136,6 +136,73 @@ Sample mock draft:
 66. Darien Porter, CB, Iowa State
 95. Dylan Sampson, RB, Tennessee`,
   },
+  Bills: {
+    offense: {
+      QB: "Josh Allen",
+      RB: "James Cook",
+      WR: "Keon Coleman",
+      WR: "Josh Palmer",
+      SWR: "Khalil Shakir",
+      TE: "Dawson Knox",
+      LT: "Dion Dawkins",
+      LG: "David Edwards",
+      C: "Connor McGovern",
+      RG: "O'Cyrus Torrence",
+      RT: "Spencer Brown",
+    },
+    defense: {
+      EDGE: "Greg Rousseau",
+      DT: "Ed Oliver",
+      DT: "DaQuan Jones",
+      EDGE: "Joey Bosa",
+      ILB: "Matt Milano",
+      ILB: "Terrel Bernard",
+      CB: "Christian Benford",
+      S: "Taylor Rapp",
+      S: "Damar Hamlin",
+      CB: "Dane Jackson",
+      NB: "Taron Johnson",
+    },
+    backups: [
+      { position: "RB", name: "Ty Johnson" },
+      { position: "WR", name: "Curtis Samuel" },
+      { position: "DT", name: "Larry Ogunjobi" },
+      { position: "EDGE", name: "Michael Hoecht" },
+      { position: "EDGE", name: "E.J. Epenesa" },
+      { position: "ILB", name: "Dorian Williams" },
+      { position: "NB", name: "Cam Lewis" },
+      { position: "S", name: "Cole Bishop" },
+    ],
+    draftPreview: `NFL Draft Preview: Bills
+  Picks: 30, 56, 62, 109, 132, 169, 170, 173, 177, 206
+  
+  Needs: WR, OG, DT, CB, S
+  
+  WR: 854 vacated snaps from Mack Hollins, 319 vacated from Amari Cooper. They added Josh Palmer, and Keon Coleman should get a boost this season. Still, the group could use help on the outside.
+  
+  OG: David Edwards' 2 year $6M contract expires at the end of the year. He's fine, but an improvement would be nice.
+  
+  DT: DaQuan Jones was fine last season, but an impact guy to pair with Oliver would really help out this team. They added Ogunjobi, but that's really a rotational piece. Both guys' deals 
+  expire at the end of the season.
+  
+  CB: 996 vacated snaps from Rasul Douglas. They didn't really address the hole in free agency. This is a pretty glaring need.
+  
+  S: Both starters, Hamlin and Rapp, return. Both are on cheap deals, so it'd be nice to at least add some competition. They also took Bishop 60th last year, so a mid-round pick would probably 
+  suffice.
+  
+  Since 2015, the Bills have selected the following positions in the 1st round: EDGE, CB, QB, ILB, DT, EDGE, CB, TE. Compared to other teams, they're more willing to draft non-premium positions.
+  
+  Pick 30: "Needs" aside, the Bills have one of the top QBs in the NFL. They can trust Josh Allen to support an elite offense with what he currently has. Thus, we turn to the defensive side of 
+  the ball. This first round pick should probably be defensive line. I think they have a bigger need at DT than EDGE, but I could see either. CB or S is an option as well, but they just invested 
+  a lot of money in Benford and S in the first-round is questionable positional-value wise.
+  
+  Picks 56, 62: Any of the needs work here. They have a lot of options and can go pseudo-BPA. They could also theoretically trade Cook and go RB here if contract negotiations go south.
+  
+  Sample mock draft:
+  30. Walter Nolen, DT, Ole Miss
+  56. Darien Porter, CB, Iowa State
+  62. Tate Ratledge, OG, Georgia`,
+  },  
 };
 
 export default function TeamLineup() {
