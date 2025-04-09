@@ -588,6 +588,71 @@ Sample mock draft:
   24. Nick Emmanwori, S, South Carolina
   97. Deone Walker, IDL, Kentucky`
   },
+  Packers: {
+    offense: {
+      QB: "Jordan Love",
+      RB: "Josh Jacobs",
+      WR1: "Romeo Doubs",
+      WR2: "Christian Watson",
+      SWR: "Jayden Reed",
+      TE1: "Tucker Kraft",
+      TE2: "Luke Musgrave",
+      LT: "Rasheed Walker",
+      LG: "Aaron Banks",
+      C: "Elgton Jenkins",
+      RG: "Sean Rhyan",
+      RT: "Zach Tom",
+    },
+    defense: {
+      EDGE1: "Rashan Gary",
+      DT1: "Kenny Clark",
+      DT2: "Devonte Wyatt",
+      EDGE2: "Kingsley Enagbare",
+      ILB1: "Quay Walker",
+      ILB2: "Edgerrin Cooper",
+      CB1: "Jaire Alexander",
+      FS: "Evan Williams",
+      SS: "Xavier McKinney",
+      CB2: "Keisean Nixon",
+      NB: "Nate Hobbs",
+    },
+    backups: [
+      { position: "QB", name: "Malik Willis" },
+      { position: "WR", name: "Dontayvion Wicks" },
+      { position: "SWR", name: "Mecole Hardman" },
+      { position: "OL", name: "Jordan Morgan" },
+      { position: "DT", name: "Karl Brooks" },
+      { position: "EDGE", name: "Lukas Van Ness" },
+      { position: "EDGE", name: "Colby Wooden" },
+      { position: "EDGE", name: "Brenton Cox Jr." },
+      { position: "ILB", name: "Isaiah McDuffie" },
+      { position: "CB", name: "Carrington Valentine" },
+      { position: "S", name: "Javon Bullard" },
+    ],
+    draftPreview: `NFL Draft Preview: Packers
+  Picks: 23, 54, 87, 124, 159, 198, 237, 250
+  
+  Needs: WR, IDL, EDGE, CB
+  
+  WR: Jayden Reed graded out as my #26 WR last season, so he’ll confidently man the slot next season. However, they’re weak on the outside. Christian Watson was my #25, but he’ll likely miss time 
+  and has generally struggled to stay on the field. Romeo Doubs was my #35, and Dontayvion Wicks struggled, ranking #63. They have depth here, but they could use a more dominant outside WR.
+  
+  IDL: The Packers are still looking for a more consistent piece next to Kenny Clark. Personally, I like Devonte Wyatt, who graded as my #16 DT in 2023 and didn’t play enough in 2024 to qualify. 
+  Unfortunately, the Packers don’t seem as convinced as I am.
+  
+  EDGE: Another place where they are looking for more consistency across from Rashan Gary. Kingsley Enagbare graded as my #80 EDGE last season, and Lukas Van Ness was my #86 EDGE, so I 
+  wouldn’t hold my breath on a breakout season.
+  
+  CB: I’m going to make the safe assumption that Jaire Alexander will not be a Packer next season. That leaves the Packers with Keisean Nixon and Carrington Valentine on the outside. I’m actually 
+  a big fan of both, with Nixon as my #22 CB last season and Valentine as my #27. Still, they’ll want to add another guy here.
+  
+  First Round Pick History under Brian Gutekunst: CB, EDGE, S, QB, CB, ILB, IDL, EDGE, OG
+  
+  Sample Mock Draft:
+  23. Walter Nolen, IDL, Ole Miss
+  54. J.T. Tuimoloau, EDGE, Ohio State
+  87. Savion Williams, WR, TCU`,
+  },
   
   
 };
