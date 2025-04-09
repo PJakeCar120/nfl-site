@@ -393,6 +393,69 @@ Sample mock draft:
   59. Jonah Savaiinaea, OG, Arizona
   91. Kyle Kennard, EDGE, South Carolina`,
   },
+
+  Rams: {
+    offense: {
+      QB: "Matthew Stafford",
+      RB: "Kyren Williams",
+      WR1: "Puka Nacua",
+      WR2: "Davante Adams",
+      SWR: "Tutu Atwell",
+      TE1: "Tyler Higbee",
+      TE2: "Colby Parkinson",
+      LT: "Alaric Jackson",
+      LG: "Steve Avila",
+      C: "Beaux Limmer",
+      RG: "Kevin Dotson",
+      RT: "Rob Havenstein",
+    },
+    defense: {
+      DT1: "Kobie Turner",
+      NT: "Poona Ford",
+      DT2: "Braden Fiske",
+      EDGE1: "Jared Verse",
+      ILB1: "Omar Speights",
+      ILB2: "Nate Landman",
+      EDGE2: "Byron Young",
+      CB1: "Darious Williams",
+      FS: "Kamren Kinchens",
+      SS: "Kam Curl",
+      CB2: "Cobie Durant",
+      NB: "Quentin Lake",
+    },
+    backups: [
+      { position: "QB", name: "Jimmy Garoppolo" },
+      { position: "WR", name: "Jordan Whittington" },
+      { position: "TE", name: "Davis Allen" },
+      { position: "C", name: "Coleman Shelton" },
+      { position: "NT", name: "Tyler Davis" },
+      { position: "S", name: "Jaylen McCollough" }
+    ],
+    draftPreview: `NFL Draft Preview: Rams
+  Picks: 26, 90, 101, 127, 190, 195, 201, 202
+  
+  Needs: TE, OT, EDGE, ILB, CB
+  
+  TE: 32 year-old Tyler Higbee's contract expires after this season. Colby Parkinson has no guaranteed money after this season, as well. 
+  
+  OT: Preferential decision here. They just locked up Alaric Jackson long-term. 32 year-old Rob Havenstein's contract expires after this season, but he's still playing at a high level. 
+  They could extend Havenstein or opt to look for a new, long-term solution. 
+  
+  EDGE: Michael Hoecht left in Free Agency, vacating 705 snaps. They haven't brought in anyone to replace him. 
+  
+  ILB: Christian Rozeboom left in Free Agency, vacating 956 snaps. They replaced him with Nate Landman, but this is quite a weak group with Landman and Speights. 
+  
+  CB: I happen to be higher on this CB group than most, ranking Darious Williams 37th and Cobie Durant 14th among CBs in 2024. Still, the 32 year-old Williams has no guaranteed money past 
+  this season and Ahkello Witherspoon, who played 599 snaps last season, was my 86th ranked CB. 
+  
+  First Round Pick History under Les Snead: EDGE, WR, ILB, OT, IDL, RB, QB, EDGE
+  
+  Sample mock draft:
+  26. Josh Simmons, OT, Ohio State
+  90. Jacob Parrish, CB, Kansas State
+  101. Jared Ivey, EDGE, Ole Miss`
+  },
+  
   
   
   
@@ -465,7 +528,12 @@ export default function TeamLineup() {
           </select>
         </div>
   
-        {/* Only render if a team is selected */}
+        {/* Info Message */}
+        <p className="text-center text-sm text-gray-600 mb-8 max-w-3xl mx-auto">
+          These pages show projected starting lineups and important backups for each team with links attached to each player showing their player page (so click on the player names!). Underneath the starting lineup is my draft writeup for each team. I've included 2 TEs and 3 WRs for each.  
+        </p>
+  
+        {/* Team content */}
         {selectedTeam && (
           <>
             <h1 className="text-3xl font-bold mb-8 text-center">
@@ -513,3 +581,4 @@ export default function TeamLineup() {
       </div>
     );
   }
+  
