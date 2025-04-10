@@ -654,6 +654,132 @@ Sample mock draft:
   87. Savion Williams, WR, TCU`,
   },
   
+  Chargers: {
+    offense: {
+      QB: "Justin Herbert",
+      RB: "Najee Harris",
+      WR1: "Quentin Johnston",
+      WR2: "Mike Williams",
+      SWR: "Ladd McConkey",
+      TE1: "Will Dissly",
+      TE2: "Tyler Conklin",
+      LT: "Rashawn Slater",
+      LG: "Zion Johnson",
+      C: "Bradley Bozeman",
+      RG: "Mekhi Becton",
+      RT: "Joe Alt",
+    },
+    defense: {
+      DT1: "Da'Shawn Hand",
+      NT: "Teair Tart",
+      DT2: "Otito Ogbonnia",
+      EDGE1: "Khalil Mack",
+      ILB1: "Daiyan Henley",
+      ILB2: "Denzel Perryman",
+      EDGE2: "Tuli Tuipulotu",
+      CB1: "Donte Jackson",
+      FS: "Alohi Gilman",
+      SS: "Derwin James Jr",
+      CB2: "Tarheeb Still",
+      NB: "Cam Hart",
+    },
+    backups: [
+      { position: "OG", name: "Trey Pipkins" },
+      { position: "C", name: "Andre James" },
+      { position: "DT", name: "Scott Matlock" },
+      { position: "EDGE", name: "Bud Dupree" },
+      { position: "ILB", name: "Junior Colson" },
+      { position: "ILB", name: "Troy Dye" },
+      { position: "CB", name: "Benjamin St-Juste" },
+      { position: "CB", name: "Ja'Sir Taylor" },
+      { position: "S", name: "Elijah Molden" },
+      { position: "S", name: "Tony Jefferson" },
+    ],
+    draftPreview: `NFL Draft Preview: Chargers
+  Picks: 22, 55, 86, 125, 158, 181, 199, 209, 214, 256
+  
+  Needs: RB, WR, IOL, IDL, EDGE
+  
+  RB: The Chargers thrive on running the ball, so they’ll want to add a compliment and successor to Najee Harris. Luckily, this is a deep draft, so they’ll have plenty of options.
+  
+  WR: Slot WR Ladd McConkey will be their top target again next year. Quentin Johnston showed massive improvement this season, going from my #91 WR as a rookie to #22 this year. Still, they’ll 
+  need another Outside WR after vacating 616 snaps from Josh Palmer.
+  
+  IOL: The Chargers could opt to find a long-term replacement for Bradley Bozeman. Because Zion Johnson has the ability to move to Center, this means they could draft either a Center or Guard.
+  
+  IDL: This group could use a lot of work. The projected starters ranked the following in my model last season among IDL: Da’Shawn Hand #71, Teair Tart #44, Otito Ogbonnia #81. Furthermore, not a 
+  single one is signed past this season. I think this is by far the weakest position group on the team.
+  
+  EDGE: Joey Bosa left in Free Agency, vacating 502 snaps. They haven’t added a replacement, so they’ll need another rotational EDGE at some point.
+  
+  The Chargers could also add a TE or CB early. Really, they’re looking at straight BPA. For a playoff team, they have quite a few holes.
+  
+  First Round Pick History under Joe Hortiz: OT
+  
+  Sample Mock Draft:
+  22. Kenneth Grant, IDL, Michigan
+  55. TreVeyon Henderson, RB, Ohio State
+  86. Kyle Kennard, EDGE, South Carolina`
+  },
+
+  Steelers: {
+    offense: {
+      QB: "Mason Rudolph",
+      RB: "Jaylen Warren",
+      WR1: "DK Metcalf",
+      WR2: "George Pickens",
+      SWR: "Calvin Austin",
+      TE1: "Pat Freiermuth",
+      TE2: "Darnell Washington",
+      LT: "Broderick Jones",
+      LG: "Isaac Seumalo",
+      C: "Zach Frazier",
+      RG: "Mason McCormick",
+      RT: "Troy Fautanu",
+    },
+    defense: {
+      DT1: "Cameron Heyward",
+      NT: "Keeanu Benton",
+      DT2: "Isaiahh Loudermilk",
+      EDGE1: "T.J. Watt",
+      ILB1: "Patrick Queen",
+      ILB2: "Payton Wilson",
+      EDGE2: "Alex Highsmith",
+      CB1: "Joey Porter Jr.",
+      FS: "Minkah Fitzpatrick",
+      SS: "Deshon Elliott",
+      CB2: "Darius Slay",
+      NB: "Beanie Bishop Jr.",
+    },
+    backups: [
+      { position: "RB", name: "Kenneth Gainwell" },
+      { position: "NT", name: "Montravious Adams" },
+      { position: "EDGE", name: "Nick Herbig" },
+      { position: "ILB", name: "Malik Harrison" },
+      { position: "ILB", name: "Cole Holcomb" },
+      { position: "CB", name: "Brandin Echols" },
+      { position: "S", name: "Juan Thornhill" },
+    ],
+    draftPreview: `NFL Draft Preview: Steelers
+  Picks: 21, 83, 123, 156, 185, 229
+  
+  Needs: QB, RB, OG, IDL
+  
+  QB: Their Quarterback next season may very well be Aaron Rodgers, but regardless he was my #17 rated QB last season and is already 41 years old.
+  
+  RB: Najee Harris left in Free Agency, vacating 590 snaps. Backup Jaylen Warren was my #48 rated RB last season.
+  
+  OG: Mason McCormick is very replaceable as a starter, while Isaac Seumalo’s contract expires at the end of the season.
+  
+  IDL: Larry Ogunjobi left in Free Agency, vacating 549 snaps. They’ll need a replacement to join a very strong interior with Cameron Heyward, my #1 rated IDL last season, and Keeanu Benton, my #42 rated IDL last season.
+  
+  First Round Pick History under Omar Khan: OT, CB, OT
+  
+  Sample Mock Draft:
+  21. Jaxson Dart, QB, Ole Miss
+  83. Omarr Norman-Lott, IDL, Tennessee`
+  },
+  
   
 };
 
