@@ -52,14 +52,14 @@ const CB_COLS = [
   "QB Rating Against",
   "Yards Allowed per Snap",
   "Forced Incompletion Rate",
-  "Interceptions",
+  "Interceptions per Game",
   "Catch Rate Allowed",
   "Missed Tackle Rate",
   "Penalties per Snap",
   "TDs Allowed per Snap",
-  "Coverage Snaps",
-  "Slot Coverage Snaps",
-  "Tackles"
+  "Coverage Snaps per Game",
+  "Slot Coverage Snaps per Game",
+  "Tackles per Game"
 ];
 
 const S_COLS = [
