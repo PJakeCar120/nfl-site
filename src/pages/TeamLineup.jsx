@@ -863,6 +863,45 @@ Sample mock draft:
     ],
   },
   
+  Seahawks: {
+    offense: {
+      QB: "Sam Darnold",
+      RB: "Kenneth Walker",
+      WR1: "Cooper Kupp",
+      WR2: "Marquez Valdes-Scantling",
+      SWR: "Jaxon Smith-Njigba",
+      TE1: "Noah Fant",
+      TE2: "AJ Barner",
+      LT: "Charles Cross",
+      LG: "Christian Haynes",
+      C: "Olu Oluwatimi",
+      RG: "Anthony Bradford",
+      RT: "Abraham Lucas",
+    },
+    defense: {
+      DT1: "Leonard Williams",
+      NT: "Byron Murphy II",
+      DT2: "Jarran Reed",
+      EDGE1: "Boye Mafe",
+      ILB1: "Ernest Jones",
+      ILB2: "Tyrice Knight",
+      EDGE2: "Uchenna Nwosu",
+      CB1: "Tariq Woolen",
+      FS: "Coby Bryant",
+      SS: "Julian Love",
+      CB2: "Josh Jobe",
+      NB: "Devon Witherspoon",
+    },
+    backups: [
+      { position: "QB", name: "Drew Lock" },
+      { position: "RB", name: "Zach Charbonnet" },
+      { position: "OG", name: "Satoa Laumea" },
+      { position: "EDGE", name: "Demarcus Lawrence" },
+      { position: "EDGE", name: "Derick Hall" },
+      { position: "CB", name: "Nehemiah Pritchett" },
+    ],
+  }
+  
 };
 
 export default function TeamLineup() {
