@@ -900,7 +900,48 @@ Sample mock draft:
       { position: "EDGE", name: "Derick Hall" },
       { position: "CB", name: "Nehemiah Pritchett" },
     ],
-  }
+  },
+  Bengals: {
+    offense: {
+      QB: "Joe Burrow",
+      RB: "Chase Brown",
+      WR1: "Ja'Marr Chase",
+      WR2: "Tee Higgins",
+      SWR: "Andrei Iosivas",
+      TE1: "Mike Gesicki",
+      TE2: "Drew Sample",
+      LT: "Orlando Brown Jr.",
+      LG: "Cordell Volson",
+      C: "Ted Karras",
+      RG: "Cody Ford",
+      RT: "Amarius Mims",
+    },
+    defense: {
+      EDGE1: "Trey Hendrickson",
+      DT1: "B.J. Hill",
+      DT2: "Kris Jenkins",
+      EDGE2: "Joseph Ossai",
+      ILB1: "Logan Wilson",
+      ILB2: "Germaine Pratt",
+      CB1: "Cam Taylor-Britt",
+      FS: "Geno Stone",
+      SS: "Jordan Battle",
+      CB2: "DJ Turner II",
+      NB: "Dax Hill",
+    },
+    backups: [
+      { position: "QB", name: "Jake Browning" },
+      { position: "RB", name: "Zack Moss" },
+      { position: "OG", name: "Lucas Patrick" },
+      { position: "DT", name: "T.J. Slaton" },
+      { position: "DT", name: "McKinnley Jackson" },
+      { position: "EDGE", name: "Cam Sample" },
+      { position: "EDGE", name: "Myles Murphy" },
+      { position: "ILB", name: "Oren Burks" },
+      { position: "CB", name: "Josh Newton" },
+    ],
+  },
+  
   
 };
 
