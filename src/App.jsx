@@ -13,6 +13,8 @@ import DraftPage from "./pages/DraftPage";
 import SearchResults from "./pages/SearchResults";
 import WhoBetta from "./pages/PlayerComparer";
 import TeamLineup from "./pages/TeamLineup"; // ✅ NEW IMPORT
+import TopFreeAgents from "./pages/TopFreeAgents"; // ✅ Add this
+
 
 function App() {
   return (
@@ -33,7 +35,7 @@ function App() {
         <Route path="/draft-page" element={<DraftPage />} />
         <Route path="/search" element={<SearchResults />} />
         <Route path="/playersearch" element={<SearchResults />} />  // ✅ new
-
+        <Route path="/freeagents" element={<TopFreeAgents />} />
         <Route path="/whobetta" element={<WhoBetta />} />
         <Route path="/lineup" element={<TeamLineup />} /> {/* ✅ NEW ROUTE */}
       </Routes>

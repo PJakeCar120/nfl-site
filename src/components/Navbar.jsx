@@ -11,6 +11,7 @@ export default function Navbar() {
           <Link to="/"><button className="hover:text-blue-600">Home</button></Link>
           <Link to="/rankings"><button className="hover:text-blue-600">Rankings</button></Link>
           <Link to="/lineup"><button className="hover:text-blue-600">Team Pages</button></Link> {/* ✅ new */}
+          <Link to="/freeagents"><button className="hover:text-blue-600">Top Free Agents</button></Link>
           <Link to="/compare"><button className="hover:text-blue-600">Player Similarity Comparison</button></Link>
           <Link to="/whobetta"><button className="hover:text-blue-600">Head2Head</button></Link>
           <Link to="/draft-page"><button className="hover:text-blue-600">Draft Center</button></Link>
