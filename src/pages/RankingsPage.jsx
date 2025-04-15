@@ -4,6 +4,12 @@ export default function RankingsPage() {
   return (
     <div className="px-6 py-8">
       <h1 className="text-3xl font-bold mb-6">🏆 Rankings</h1>
+      <p className="text-gray-700 text-sm mb-6">
+  Each player’s Analytical Score is calculated by converting key performance metrics into percentiles relative to their position group. 
+  More predictive or valuable stats are given higher weights, and a weighted average of these percentiles forms the final score. 
+  Higher scores reflect players who exceled in the areas that matter most for their role.
+</p>
+
 
       <div className="space-y-6">
         <div>
