@@ -139,10 +139,10 @@ export default function SearchResults() {
           <table className="table-auto w-full text-sm border border-gray-300">
             <thead>
               <tr>
-                <th className="p-2 bg-gray-100 border border-gray-300 text-center">Year</th>
-                <th className="p-2 bg-gray-100 border border-gray-300 text-center">Position</th>
-                <th className="p-2 bg-gray-100 border border-gray-300 text-center">Rank</th>
-                <th className="p-2 bg-gray-100 border border-gray-300 text-center">Name</th>
+                <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Position</th>
+                <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Year</th>
+                <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Name</th>
+                <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Rank</th>
                 {sortedResults.length > 0 &&
                   Object.keys(sortedResults[0])
                     .filter(
@@ -164,17 +164,17 @@ export default function SearchResults() {
                 const { year, position, rank, name, ...stats } = player;
                 return (
                   <tr key={index}>
-                    <td className="p-2 border border-gray-300 text-center">
-                      {year}
-                    </td>
-                    <td className="p-2 border border-gray-300 text-center">
+                    <td className="p-2 px-8 border border-gray-300 text-center">
                       {position}
                     </td>
-                    <td className="p-2 border border-gray-300 text-center">
-                      {rank}
+                    <td className="p-2 px-8 border border-gray-300 text-center">
+                      {year}
                     </td>
-                    <td className="p-2 border border-gray-300 text-center">
+                    <td className="p-2 px-8 border border-gray-300 text-center">
                       {name}
+                    </td>
+                    <td className="p-2 px-8 border border-gray-300 text-center">
+                      {rank}
                     </td>
                     {Object.entries(stats).map(([key, val]) => {
                       const style = getColor(key, val)
