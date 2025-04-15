@@ -28,31 +28,34 @@ export default function SearchResults() {
                   WR: "WRScore",
                   TE: "TEScore",
                   CB: "CBScore",
-                  S: "SScore"
+                  S: "SScore",
                 };
 
-                Papa.parse(`/assets/${positionToFilePrefix[pos]}Results${year}.csv`, {
-                  download: true,
-                  header: true,
-                  complete: (res) => {
-                    res.data.forEach((row) => {
-                      if (row.Name) {
-                        combined.push({
-                          year,
-                          position: pos === "DI" ? "IDL" : pos, // convert DI -> IDL
-                          name: row.Name,
-                          rank: row.Rank,
-                          ...Object.fromEntries(
-                            Object.entries(row).filter(
-                              ([key]) => key !== "Name" && key !== "Rank"
-                            )
-                          ),
-                        });
-                      }
-                    });
-                    resolve();
-                  },
-                });
+                Papa.parse(
+                  `/assets/${positionToFilePrefix[pos]}Results${year}.csv`,
+                  {
+                    download: true,
+                    header: true,
+                    complete: (res) => {
+                      res.data.forEach((row) => {
+                        if (row.Name) {
+                          combined.push({
+                            year,
+                            position: pos === "DI" ? "IDL" : pos,
+                            name: row.Name,
+                            rank: row.Rank,
+                            ...Object.fromEntries(
+                              Object.entries(row).filter(
+                                ([key]) => key !== "Name" && key !== "Rank"
+                              )
+                            ),
+                          });
+                        }
+                      });
+                      resolve();
+                    },
+                  }
+                );
               })
           )
         )
@@ -63,7 +66,6 @@ export default function SearchResults() {
     loadData();
   }, []);
 
-  // Handle ?name= query param
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const nameParam = params.get("name");
@@ -85,7 +87,9 @@ export default function SearchResults() {
     setResults(matches);
   };
 
-  const sortedResults = [...results].sort((a, b) => parseInt(b.year) - parseInt(a.year));
+  const sortedResults = [...results].sort(
+    (a, b) => parseInt(b.year) - parseInt(a.year)
+  );
 
   const getColor = (key, value) => {
     const isScore = key.toLowerCase().includes("score");
@@ -99,7 +103,6 @@ export default function SearchResults() {
 
   return (
     <div className="p-6 max-w-7xl mx-auto">
-      {/* Centered Big Search Bar */}
       <div className="w-full flex justify-center mb-10">
         <div className="flex w-full max-w-xl">
           <input
@@ -130,54 +133,68 @@ export default function SearchResults() {
         </div>
       ) : (
         <>
-          <h2 className="text-2xl font-bold mb-6">🔍 Results for "{searchTerm}"</h2>
-          {sortedResults.map((player, index) => {
-            const { name, rank, year, position, ...stats } = player;
-
-            return (
-              <div key={index} className="mb-10">
-                <h3 className="text-xl font-semibold mb-2">
-                  {name} — {position}, {year}
-                </h3>
-                <table className="table-auto w-full text-sm border border-gray-300">
-                  <thead>
-                    <tr>
-                      <th className="p-2 bg-gray-100 border border-gray-300 text-center">Rank</th>
-                      <th className="p-2 bg-gray-100 border border-gray-300 text-center">Name</th>
-                      {Object.keys(stats).map((key) => (
-                        <th
+          <h2 className="text-2xl font-bold mb-6">
+            🔍 Results for "{searchTerm}"
+          </h2>
+          <table className="table-auto w-full text-sm border border-gray-300">
+            <thead>
+              <tr>
+                <th className="p-2 bg-gray-100 border border-gray-300 text-center">Year</th>
+                <th className="p-2 bg-gray-100 border border-gray-300 text-center">Position</th>
+                <th className="p-2 bg-gray-100 border border-gray-300 text-center">Rank</th>
+                <th className="p-2 bg-gray-100 border border-gray-300 text-center">Name</th>
+                {sortedResults.length > 0 &&
+                  Object.keys(sortedResults[0])
+                    .filter(
+                      (key) =>
+                        !["year", "position", "rank", "name"].includes(key)
+                    )
+                    .map((key) => (
+                      <th
+                        key={key}
+                        className="p-2 bg-gray-100 border border-gray-300 text-center"
+                      >
+                        {key}
+                      </th>
+                    ))}
+              </tr>
+            </thead>
+            <tbody>
+              {sortedResults.map((player, index) => {
+                const { year, position, rank, name, ...stats } = player;
+                return (
+                  <tr key={index}>
+                    <td className="p-2 border border-gray-300 text-center">
+                      {year}
+                    </td>
+                    <td className="p-2 border border-gray-300 text-center">
+                      {position}
+                    </td>
+                    <td className="p-2 border border-gray-300 text-center">
+                      {rank}
+                    </td>
+                    <td className="p-2 border border-gray-300 text-center">
+                      {name}
+                    </td>
+                    {Object.entries(stats).map(([key, val]) => {
+                      const style = getColor(key, val)
+                        ? { backgroundColor: getColor(key, val) }
+                        : {};
+                      return (
+                        <td
                           key={key}
-                          className="p-2 bg-gray-100 border border-gray-300 text-center"
+                          className="p-2 border border-gray-300 text-center"
+                          style={style}
                         >
-                          {key}
-                        </th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className="p-2 border border-gray-300 text-center">{rank}</td>
-                      <td className="p-2 border border-gray-300 text-center">{name}</td>
-                      {Object.entries(stats).map(([key, val]) => {
-                        const style = getColor(key, val)
-                          ? { backgroundColor: getColor(key, val) }
-                          : {};
-                        return (
-                          <td
-                            key={key}
-                            className="p-2 border border-gray-300 text-center"
-                            style={style}
-                          >
-                            {val}
-                          </td>
-                        );
-                      })}
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            );
-          })}
+                          {val}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </>
       )}
     </div>
