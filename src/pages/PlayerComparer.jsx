@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import Papa from "papaparse";
 
 const YEARS = ["2024", "2023", "2022", "2021"];
-const POSITIONS = ["QB", "RB", "WR", "TE", "IDL", "EDGE", "CB", "S"];
+const POSITIONS = ["QB", "RB", "WR", "TE", "IDL", "EDGE", "ILB", "CB", "S"];
 const filePrefixMap = {
   QB: "QBScore", RB: "RBScore", WR: "WRScore", TE: "TEScore",
-  IDL: "DIScore", EDGE: "EDScore", CB: "CBScore", S: "SScore"
+  IDL: "DIScore", EDGE: "EDScore", ILB: "ILBScore", CB: "CBScore", S: "SScore"
 };
 
 export default function WhoBetta() {
