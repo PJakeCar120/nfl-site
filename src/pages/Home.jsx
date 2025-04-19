@@ -81,6 +81,31 @@ const Home = () => {
         <div className="mt-10">
           <h2 className="text-base font-semibold mb-2 text-gray-800">📌 Featured Projects</h2>
           <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+          <li>
+              <Link to="/lineup" className="underline text-blue-600 hover:text-blue-800 transition">
+                Team Pages
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects/similarity" className="underline text-blue-600 hover:text-blue-800 transition">
+                Player Similarity Tool
+              </Link>
+            </li>
+            <li>
+              <Link to="/lineup" className="underline text-blue-600 hover:text-blue-800 transition">
+                Head2Head
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects/contract-market" className="underline text-blue-600 hover:text-blue-800 transition">
+                Positional Contract Markets
+              </Link>
+            </li>
+            <li>
+              <Link to="/contracts" className="underline text-blue-600 hover:text-blue-800 transition">
+                Extension Projections
+              </Link>
+            </li>
             <li>
               <Link to="/projects/qb2024" className="underline text-blue-600 hover:text-blue-800 transition">
                 2024 QB Rankings
@@ -124,31 +149,6 @@ const Home = () => {
             <li>
               <Link to="/projects/s2024" className="underline text-blue-600 hover:text-blue-800 transition">
                 2024 S Rankings
-              </Link>
-            </li>
-            <li>
-              <Link to="/lineup" className="underline text-blue-600 hover:text-blue-800 transition">
-                Team Pages
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects/similarity" className="underline text-blue-600 hover:text-blue-800 transition">
-                Player Similarity Tool
-              </Link>
-            </li>
-            <li>
-              <Link to="/lineup" className="underline text-blue-600 hover:text-blue-800 transition">
-                Head2Head
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects/contract-market" className="underline text-blue-600 hover:text-blue-800 transition">
-                Positional Contract Markets
-              </Link>
-            </li>
-            <li>
-              <Link to="/contracts" className="underline text-blue-600 hover:text-blue-800 transition">
-                Extension Projections
               </Link>
             </li>
           </ul>
