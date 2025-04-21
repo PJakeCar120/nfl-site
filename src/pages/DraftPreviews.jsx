@@ -446,6 +446,98 @@ Sample Mock Draft:
 47. T.J. Sanders, IDL, South Carolina  
 78. Jack Bech, WR, TCU`,
 
+Falcons: `NFL Draft Preview: Falcons 
+Picks: 15, 46, 118, 218, 242
+
+Needs: WR, IDL, EDGE, CB, S
+
+WR: Outside of the fantastic duo of Drake London (my WR15) and Darnell Mooney (WR27), the Falcons are thin at WR. A late-round pick would do, but they should add another option, preferably 
+a slot.
+
+IDL: Other than Ruke Orhorhoro, there may not be a player from this group on the roster next season. This is a huge target for them early.
+
+EDGE: Similar to IDL, there isn’t much of a future on the EDGE. The Falcons should be targeting DLine hard this draft.
+
+CB: Weak-link systems. Dee Alford got crushed last year, so they’d really benefit from an improvement at Nickel.
+
+S: The Falcons haven’t yet done anything to replace Justin Simmons and Richie Grant who both walked this offseason. Jordan Fuller struggled last year after a strong 2023 season.
+
+First Round Pick History under Terry Fontenot: TE, WR, RB, QB  
+Second Round Pick History under Terry Fontenot: S, EDGE, ILB, OG, IDL
+
+Sample Mock Draft:
+15. Mykel Williams, EDGE, Georgia  
+46. T.J. Sanders, IDL, South Carolina`,
+
+Colts: `NFL Draft Preview: Colts
+Picks: 14, 45, 80, 117, 151, 189, 232
+
+Needs: TE, OG, IDL, ILB
+
+TE: The Colts have seemingly wanted to add an elite TE for years now and it just hasn’t happened. Regardless, this is a strong draft for the position.
+
+OG: Will Fries departed in free agency and they haven’t really done anything to fill the spot.
+
+IDL: With DeForest Buckner 31 years-old and Grover Stewart 32, the Colts will need to prepare for life after one or both of them.
+
+ILB: The Colts will need to replace E.J. Speed. Last year’s 5th-round pick Jaylon Carlies is the frontrunner, but they may replace him in the draft.
+
+First Round Pick History under Chris Ballard: S, OG, EDGE, QB, EDGE  
+Second Round Pick History under Chris Ballard: CB, ILB, OT, IDL, IDL, CB, EDGE, WR, WR, RB, EDGE, WR, CB, WR
+
+Sample Mock Draft:
+14. Kelvin Banks Jr, OL, Texas  
+45. Elijah Arroyo, TE, Miami  
+80. Omarr Norman-Lott, IDL, Tennessee`,
+
+Cowboys: `NFL Draft Preview: Cowboys
+Picks: 12, 44, 76, 149, 174, 204, 211, 217, 239, 247
+
+Needs: RB, WR, OG, EDGE, NB
+
+RB: It’s hard to imagine the Cowboys without a star RB, but the truth is they haven’t invested in this position quite as strongly as the general sentiment holds. They’ll probably add at some 
+point, but I don’t think it’s a major concern.
+
+WR: Outside of CeeDee Lamb, it’s pretty bleak. KaVontae Turpin actually had a pretty good year (my #66 WR) but regardless they’ll want to add.
+
+OG: Zack Martin retired and leaves a hall-of-fame sized hole. As of now, I have Robert Jones projected to start at that spot.
+
+EDGE: Dante Fowler Jr. graded out very well for me last season as my #36 ranked EDGE. Still, he’s 31 years-old and only signed for one year.
+
+NB: Nickel Jourdan Lewis walked for a huge payday this offseason. They’ll need a replacement at some point.
+
+First Round Pick History Since 2017: EDGE, ILB, WR, EDGE, OG, IDL, OT  
+Second Round Pick History Since 2017: CB, C, IDL, CB, CB, EDGE, TE, EDGE
+
+Sample Mock Draft:
+12. Jalon Walker, ILB/EDGE, Georgia  
+44. Jonah Savaiinaea, OG, Arizona  
+76. Damien Martinez, RB, Miami`,
+
+'49ers': `NFL Draft Preview: 49ers
+Picks: 11, 43, 75, 100, 113, 138, 147, 160, 227, 249, 252
+
+Needs: OG, IDL, EDGE, ILB, CB
+
+OG: Aaron Banks walked this offseason and no replacement has been brought in.
+
+IDL: The biggest weakness on the team. They don’t have an IDL signed past this season. Jordan Elliott and Kevin Givens would be the likely starters as of now.
+
+EDGE: Outside of Bosa, there are no EDGEs signed past this season. The focus of this draft will certainly be on the defensive line. Yetur Gross-Matos is the 2nd starter as of now.
+
+ILB: De’Vondre Campbell walked, leaving a hole next to the legendary Fred Warner. Dee Winters is the 2nd starter as of now.
+
+CB: With Charvarius Ward gone, they will need to add here. They’ll need an outside Corner.
+
+First Round Pick History Since 2017: EDGE, ILB, OT, EDGE, IDL, WR, QB, WR  
+Second Round Pick History Since 2017: WR, WR, OG, EDGE, CB
+
+Sample Mock Draft:
+11. Mykel Williams, EDGE, Georgia  
+43. Trey Amos, CB, Ole Miss  
+75. Shemar Turner, IDL, Texas A&M  
+100. Ty Robinson, IDL, Nebraska`,
+
 };
 
 const DraftPreviews = () => {
