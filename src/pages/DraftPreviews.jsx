@@ -134,7 +134,7 @@ S Brown: 80 (2023: 334)
 While the team has some young question marks, it should remain incredibly strong with superstar talent throughout the roster.
 
 Sample mock draft:
-32. Mike Green, EDGE, Marshall
+32. Donovan Ezeiruaku, EDGE, Boston College
 64. Omarr Norman-Lott, DT, Tennessee
 96. Jaylen Reed, S, Penn State `,
 
