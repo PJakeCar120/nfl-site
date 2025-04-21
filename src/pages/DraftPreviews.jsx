@@ -341,6 +341,111 @@ Sample Mock Draft:
 51. Azareye'h Thomas, CB, Florida State
 85. Dylan Sampson, RB, Tennessee`,
 
+Buccaneers: `NFL Draft Preview: Buccanneers
+Picks: 19, 53, 84, 121, 157, 235
+
+Needs: TE, EDGE, ILB, S
+
+TE: The Bucs ran a fair bit of 12 personnel last season. Otton’s contract expires at the end of the season, so some added clarity at the position may help.
+
+EDGE: Despite his lack of sacks, I was very happy with Yaya Diaby’s performance is 2024 (my #15 EDGE). Opposite him this season will be Haason Reddick, but they’ll need a long-term answer.
+
+ILB: While Lavonte David may actually be immortal, let’s assume he’s not. I have Anthony Walker Jr, my #63 ILB in 2024, projected to start alongside him. They’ll really want to look towards 
+the future here. They’ll likely be replacing both starters in the next 2 years.
+
+S: Christian Izien really struggled last year, coming in as my #64 ranked safety. I’d like to see them give him at least fairly strong competition.
+
+I happen to be much higher on both Buccaneers CBs than most. Provided they still healthy, I think a combination of Zyon McCollum and Jamel Dean is very strong. To me there are other, more 
+glaring issues on the defense. I’m sure they’ll add depth, though, with the injury concerns with Dean.
+
+First Round Pick History under Jason Licht: WR, QB, CB, TE, IDL, ILB, OT, EDGE, IDL, OG
+Second Round Pick History under Jason Licht: TE, OT, C, EDGE, K, S, RB, CB, CB, CB, S, QB, OT, OG, EDGE
+
+Sample Mock Draft:
+19. Mykel Williams, EDGE, Georgia
+53. Mason Taylor, TE, LSU
+84. Kevin Winston Jr, S, Penn State`,
+
+Seahawks: `NFL Draft Preview: Seahawks 
+Picks: 18, 50, 52, 82, 92, 137, 172, 175, 223, 234
+
+Needs: WR, TE, OT, OG, ILB, S
+
+WR: Seattle doesn’t have a clear #1 outside WR. Regardless of how they use JSN and Kupp, they’ll need a future perimeter #1.
+
+TE: Noah Fant’s contract expires following the season. They may bring him back, or they may opt to restart at the position.
+
+OT: With Abraham Lucas an upcoming FA, the Seahawks will want to find a better, more long-term option.
+
+OG: It’s never ideal when both OT and OG are needs, but here we are. They’re likely still looking for both starting OGs long-term.
+
+ILB: Tyrice Knight started 11 games last season as a rookie. He played about as expected for a rookie, so I don’t see this as a huge need. They may look for some depth here or competition 
+for Knight, but they have more pressing needs.
+
+S: Coby Bryant’s contract expires after the season, so they’ll have an interesting decision here. I thought he played very well last year, grading as my #23 Safety in his only year as a starter.
+
+First Round Pick History under John Schneider: OT, S, OT, EDGE, OG, RB, IDL, ILB, OT, CB, WR, IDL  
+Second Round Pick History under John Schneider: WR, ILB, RB, WR, OT, EDGE, IDL, IDL, C, S, WR, EDGE, WR, EDGE, RB, EDGE, RB
+
+Sample Mock Draft:
+18. Josh Simmons, OT, Ohio State  
+50. Jayden Higgins, WR, Iowa State  
+52. Tate Ratledge, OG, Georgia  
+82. Jacob Parrish, CB, Kansas State  
+92. Chris Paul Jr, ILB, Ole Miss`,
+
+Bengals: `NFL Draft Preview: Bengals 
+Picks: 17, 49, 81, 119, 153, 193
+
+Needs: WR, OG, IDL, EDGE, CB, S
+
+WR: I know, I know, they have Ja’Marr Chase (my #3 WR in 2024) and Tee Higgins (#10). Still, they need a legit third WR.
+
+OG: Neither current starting OG is signed to starter money or really starter level.
+
+IDL: The Bengals are actually relatively deep here, they just lack a true #1. B.J. Hill (my #30 IDL in 2024), Kris Jenkins (my #87), and T.J. Slaton (my #74) can all eat snaps, but they need a 
+long-term leader for this group.
+
+EDGE: Outside of the fantastic Trey Hendrickson (my #4 EDGE in 2024) this position group is really thin. Joseph Ossai, my #77 EDGE in 2024, currently projects as the 2nd starter.
+
+CB: Before injury, DJ Turner was playing some really strong football. Cam Taylor-Britt struggled, but you could argue it was in large part an effect of the weak pass-rush. This group may be 
+better than we give credit, so I could see Cincinnati focusing on other needs.
+
+S: Geno Stone was solid, though his contract expires after the season. His counterpart Jordan Battle has yet to start for a full season. At the very least, they need to add some depth. 
+There’s essentially no certainty at the position past this season.
+
+Sample Mock Draft:
+17. Derrick Harmon, IDL, Oregon  
+49. Landon Jackson, EDGE, Arkansas  
+81. Kevin Winston Jr, S, Penn State`,
+
+Cardinals: `NFL Draft Preview: Cardinals 
+Picks: 16, 47, 78, 115, 152, 225
+
+Needs: WR, OT, OG, IDL, EDGE
+
+WR: Outside of Marvin Harrison Jr, this is a relatively weak group. Michael Wilson ranked as my #86 WR in 2024, while Greg Dortch was #81.
+
+OT: Jonah Williams is a free agent following the season, so they may opt for a long-term improvement.
+
+OG: Isaiah Adams struggled a bit as a rookie, but the 3rd-round pick is just starting to get his bearing in the NFL. I could easily see Arizona roll with him as a starter next season. 
+Evan Brown has been solid but has a replaceable contract.
+
+IDL: They could definitely use some youth in this group. Outside of Darius Robinson, we’re looking at 31 year-old Dalvin Tomlinson and 39 year old Calais Campbell. The group is strong this year, 
+but they’ll need to add some young talent.
+
+EDGE: A rotation of Zaven Collins, my #48 EDGE last season, and Baron Browning, my #69 EDGE last season, isn’t as bad as some make it out to be. Still, a more consistent long-term starter would be ideal.
+
+I’m fine with their starters at ILB: 28 year-old Akeem Davis-Gaither (my #49 ILB) and 27 year-old Mack Wilson (my #61 ILB) are both signed through 2026. In my opinion, a late depth pick would suffice.
+
+First Round Pick History under Monti Ossenfort: OT, WR, IDL  
+Second Round Pick History under Monti Ossenfort: EDGE, CB
+
+Sample Mock Draft:
+16. Kelvin Banks Jr, OL, Texas  
+47. T.J. Sanders, IDL, South Carolina  
+78. Jack Bech, WR, TCU`,
+
 };
 
 const DraftPreviews = () => {
