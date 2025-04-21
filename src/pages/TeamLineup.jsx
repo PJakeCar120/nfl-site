@@ -820,6 +820,31 @@ Sample mock draft:
       { position: "ILB", name: "Justin Strnad" },
       { position: "S", name: "P.J. Locke" },
     ],
+    draftPreview: `NFL Draft Preview: Broncos
+Picks: 20, 51, 85, 122, 191, 197, 208
+
+Needs: RB, WR, TE, ILB, CB
+
+RB: Their current RB room has last year’s 5th-round pick Audric Estime and the pass-catching Jaleel McLaughlin. Sean Payton’s scheme relies heavily on the run game, and he’s spoken at length about 
+wanting to add a dynamic RB.
+
+WR: Outside of the talented Courtland Sutton, my WR20 last season, they’re currently relying on last year’s rookie pair of Troy Franklin and Devaughn Vele. I figured they’d add a veteran, and they 
+still can, but as of now this is a need.
+
+TE: Sean Payton loves an impactful Tight End. They signed Evan Engram, but I’m sure Payton would like a more long-term solution at the position.
+
+ILB: They have some question marks here with Greenlaw and Singleton. Neither player has any guaranteed money after this season, so they’ll need to prepare for the future here.
+
+CB: While they have likely the top CB in the NFL in Pat Surtain, we must follow the advice of @ericeager_ with respect to weak-link systems. Riley Moss finished the season as my CB63,
+while Nickel Ja’Quan McMillian was my CB80. They could look to add competition here.
+
+First Round Pick History under George Paton: CB, QB
+Second Round Pick History under George Paton: RB, EDGE, WR
+
+Sample Mock Draft:
+20. Emeka Egbuka, WR, Ohio State
+51. Azareye'h Thomas, CB, Florida State
+85. Dylan Sampson, RB, Tennessee`,
   },
   
   Buccaneers: {
