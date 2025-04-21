@@ -295,7 +295,25 @@ Sample Mock Draft:
 55. TreVeyon Henderson, RB, Ohio State
 86. Kyle Kennard, EDGE, South Carolina`,
 
+Steelers: `NFL Draft Preview: #Steelers
+Picks: 21, 83, 123, 156, 185, 229
 
+Needs: QB, RB, OG, IDL
+
+QB: Their Quarterback next season may very well be Aaron Rodgers, but regardless he was my #17 rated QB last season and is already 41 years old.
+
+RB: Najee Harris left in Free Agency, vacating 590 snaps. Backup Jaylen Warren was my #48 rated RB last season.
+
+OG: Mason McCormick is very replaceable as a starter, while Isaac Seumalo’s contract expires at the end of the season.
+
+IDL: Larry Ogunjobi left in Free Agency, vacating 549 snaps. They’ll need a replacement to join a very strong interior with Cameron Heyward, my #1 rated IDL last season, and Keeanu Benton, 
+my #42 rated IDL last season.
+
+First Round Pick History under Omar Khan: OT, CB, OT
+
+Sample Mock Draft:
+21. Jaxson Dart, QB, Ole Miss
+83. Omarr Norman-Lott, IDL, Tennessee`,
 
 };
 

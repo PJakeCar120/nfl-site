@@ -290,10 +290,10 @@ Sample mock draft:
       EDGE2: "Josh Paschal",
       ILB1: "Jack Campbell",
       ILB2: "Alex Anzalone",
-      CB1: "Terrion Arnold",
+      CB1: "D.J. Reed",
       FS: "Kerby Joseph",
       SS: "Brian Branch",
-      CB2: "D.J. Reed",
+      CB2: "Terrion Arnold",
       NB: "Amik Robertson",
     },
     backups: [
@@ -771,7 +771,8 @@ Sample mock draft:
   
   OG: Mason McCormick is very replaceable as a starter, while Isaac Seumalo’s contract expires at the end of the season.
   
-  IDL: Larry Ogunjobi left in Free Agency, vacating 549 snaps. They’ll need a replacement to join a very strong interior with Cameron Heyward, my #1 rated IDL last season, and Keeanu Benton, my #42 rated IDL last season.
+  IDL: Larry Ogunjobi left in Free Agency, vacating 549 snaps. They’ll need a replacement to join a very strong interior with Cameron Heyward, my #1 rated IDL last season, and Keeanu Benton, 
+  my #42 rated IDL last season.
   
   First Round Pick History under Omar Khan: OT, CB, OT
   
