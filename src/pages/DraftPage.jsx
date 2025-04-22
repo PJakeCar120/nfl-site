@@ -6,7 +6,7 @@ const DraftPage = () => {
       <h1 className="text-3xl font-bold mb-4">📈 Draft Center</h1>
 
       <p className="mb-6">
-        Chart 1: Strength of each position in the early rounds of this year's NFL Draft, per Grinding the Mocks (Updated 4/3). Chart 2: NFL team's total draft capital, per the Jimmy Johnson model.
+        Chart 1: Strength of each position in the early rounds of this year's NFL Draft, per Grinding the Mocks (Updated 4/22). Chart 2: NFL team's total draft capital, per the Jimmy Johnson model.
       </p>
 
       <p className="mb-6">
