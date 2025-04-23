@@ -1441,6 +1441,36 @@ Sample Mock Draft:
     { position: "S", name: "Jonathan Owens" },
     { position: "S", name: "Elijah Hicks" },
   ],
+  draftPreview: `
+Picks: 10, 39, 41, 72, 148, 233, 240
+
+Needs: RB, TE, EDGE, ILB, CB
+
+RB: Head Coach Ben Johnson uses the run game to set up the full offense. They’ll want an improvement over current RB D’Andre Swift, my #35 RB last season.
+
+TE: Johnson ran a fair bit of 12 personnel last season, so they’ll likely want to improve at the 2nd TE slot.
+
+EDGE: Dayo Odeyingbo is likely to be the 2nd starter here, but his new contract is more projection than anything, ranking as my #55 EDGE last season (#52 in 2023, #82 in 2022).
+
+ILB: With no guaranteed money left on his deal in 2026, Tremaine Edmunds seems unlikely to be on the roster past this year.
+
+CB: Tyrique Stevenson has ranked as my #71 CB each of the past two seasons, so an improvement at the 2nd CB spot would be ideal.
+
+People have seemingly talked themselves into OT being a need. While I will never fully disagree with investing in the lines, I do have to disagree here. Braxton Jones is an above-average 
+starting OT and 26 years-old. Darnell Wright was fantastic last year at 23 years-old. 
+
+At Safety, I think a depth pick would suffice. Brisker, while injury prone, was very good last year when healthy. Kevin Byard had a resurgent year, ranking as my #11 S. With the general 
+inconsistency at this position league-wide, I don't think they should be investing heavy resources here. 
+
+First Round Pick History Under Ryan Poles: OT, QB, WR
+Second Round Pick History Under Ryan Poles: CB, S, IDL, CB, IDL
+
+Sample Mock Draft:
+10. Mykel Williams, EDGE, Georgia
+39. Azareye'h Thomas, CB, Florida State
+41. TreVeyon Henderson, RB, Ohio State
+72. Terrance Ferguson, TE, Oregon`,
+
 },
 'Saints': {
   offense: {
@@ -1479,6 +1509,35 @@ Sample Mock Draft:
     { position: "CB", name: "Ugo Amadi" },
     { position: "S", name: "Jordan Howden" },
   ],
+  draftPreview: `
+Picks: 9, 40, 71, 93, 112, 131, 184, 248, 254
+
+Needs: QB, WR, OT, OG, IDL, CB
+
+QB: Truthfully, I’m the world’s biggest Derek Carr fan. I had him as my #5 QB in 2024 and #7 in 2023. Regardless, the Derek Carr Era is over in New Orleans. The Saints will cut bait next 
+offseason rather than pay an extra $50M for 2026.
+
+WR: This isn’t a massive need currently, but both Olave and Shaheed have murky futures in NO. The team still ahas Olave’s 5th-year option, while Shaheed is an UFA following the season.
+
+OT: It feels like the Trevor Penning experience may have run its course. For a team likely to struggle again next year, giving the former first-rounder another year as a starter isn’t the 
+worst idea. Still, it seems unlikely he’ll be the guy long-term.
+
+OG: Right now, I have Dillon Radunz projected as the 2nd starter at OG. He just signed a one year, $2.25M contract, so that’s really just a stopgap. They’ll need a long-term solution.
+
+IDL: Outside of Bryan Bresee, who ranked #51 among IDL for me last season, they don’t really have anyone. Khalen Saunders projects to start, but he wont be the long-term answer.
+
+CB: The good news is Kool-Aid McKinstry was solid as a rookie last season. Outside of him, though, they don’t have much. Isaac Yiadom projects to start opposite him, while Alontae Taylor, 
+who really struggled last year, will be the Nickel.
+
+First Round Pick History Since 2017: CB, OT, EDGE, OG, EDGE, WR, IDL, OT
+Second Round Pick History Since 2017: S, C, ILB, CB, EDGE, CB
+
+Sample Mock Draft:
+9. Kelvin Banks Jr, OT, Texas
+40. T.J. Sanders, IDL, South Carolina
+71. Tyler Shough, QB, Louisville
+93. Quincy Riley, CB, Louisville`,
+
 },
 'Panthers': {
   offense: {
@@ -1520,6 +1579,31 @@ Sample Mock Draft:
     { position: "ILB", name: "Christian Rozeboom" },
     { position: "S", name: "Nick Scott" },
   ],
+  draftPreview: `
+Picks: 8, 57, 74, 111, 114, 140, 146, 163, 230
+
+Needs: WR, EDGE, ILB, CB, S
+
+WR: Jalen Coker had a fantastic rookie year, finishing as my #49 WR on the season but really heating up late. Adam Thielen had a good year as well, though at 35 he won’t be a part of the 
+long-term plan. Xavier Legette also deserves time. Still, they need a dominant WR1, and I’m not to sure that is currently on the roster.
+
+EDGE: D.J. Wonnum and Jadeveon Clowney each graded out well for me last year, ranking 23rd and 28th, respectively. Wonnum is 28 and an upcoming free agent, while Clowney is 32 and an 
+upcoming free agent. So, there’s lots of uncertainty here. Wonnum will be a part of the long-term plans, but they’ll need a Clowney replacement.
+
+ILB: Carolina is likely looking for 2 long-term starters here. Josey Jewell is 30 with no guaranteed money past this season, while Trevin Wallace is a question mark.
+
+CB: CB2 Mike Jackson graded as my #45 CB last season, so he may be a little stronger than public perception. Nevertheless, they’ll look to improve long-term. They don’t have a consistent
+presence at Nickel, so they’ll look to add there.
+
+S: Borderline need here. If the Panthers are comfortable rolling with 2024 undrafted-rookie Demani Richardson then I am too. He played pretty well in limited snaps last season.
+
+First Round Pick History Under Dan Morgan: WR
+Second Round Pick History Under Dan Morgan: RB
+
+Sample Mock Draft:
+8. Tet McMillan, WR, Arizona
+57. Landon Jackson, EDGE, Arkansas
+74. Kevin Winston Jr, S, Penn State`,
 },
 'Jets': {
   offense: {
@@ -1558,7 +1642,29 @@ Sample Mock Draft:
     { position: "EDGE", name: "Micheal Clemons" },
     { position: "CB", name: "Isaiah Oliver" },
   ],
-  
+  draftPreview: `NFL Draft Preview: #Jets (https://footballanalyticsnerd.netlify.app/lineup?team=Jets)
+Picks: 7, 42, 73, 110, 145, 162, 186, 207
+
+Needs: QB, WR, TE, OT, IDL, S
+
+QB: I know there are many Justin Fields “truthers” but I just don’t think he’ll ever be the guy. He ranked as my QB19 in 2023, QB29 in 2022, and QB27 in 2021.
+
+WR: Outside of Garrett Wilson, it’s bleak. I’m hoping we get to see Malachi Corley start in the slot this year, but regardless they need a lot of help here.
+
+TE: They really don’t have anything here. Jeremy Ruckert projects to start but he doesn’t even qualify for my model.
+
+OT: The good news: they have a 23 year-old, selected 11th last year, locked in as one of the starters. They really have no options on the other side, and my expectation is that this is 
+where they’ll use pick #7.
+
+IDL: Behind Quinnen Williams (my #8 IDL in 2024) they are very thin. I project Byron Cowart to start, but that’s just a placeholder.
+
+S: Both starting Safeties are upcoming free agents and struggled somewhat in 2024. They’re both young, and really could both be long-term solutions, but there’s not a lot of stability in the 
+position group moving forward.
+
+Sample Mock Draft:
+7. Armand Membou, OT, Missouri
+42. Luther Burden III, WR, Missouri
+73. Omarr Norman-Lott, IDL, Tennessee`
 },
 
 
@@ -1597,6 +1703,34 @@ Sample Mock Draft:
     { position: "EDGE", name: "Charles Snowden" },
     { position: "CB", name: "Eric Stokes" },
   ], 
+  draftPreview: `
+Picks: 6, 37, 68, 108, 143, 180, 213, 215, 222
+
+Needs: QB, RB, WR, IDL, ILB, CB, S
+
+QB: Geno Smith is 35 and trending in the wrong direction according to my model (2024 26th, 2023 15th, 2022 13th). He has no guaranteed money in 2027, so they could theoretically look towards 
+the future here.
+
+RB: They have very little on the roster right now RB-wise. It’s a very deep draft at the position, so they’ll be alright here. They may just draft Ashton Jeanty and call it a day – I won’t do 
+so in this mock draft.
+
+WR: Outside of the ever-consistent Jakobi Meyers, the Raiders don’t have much here. Of course, Brock Bowers is essentially a WR, and a very good one at that.
+
+IDL: Outside of Christian Wilkins, they’re pretty thin here. I’m sure they’d love to beef up the interior to make Maxx Crosby’s job a little easier.
+
+ILB: They’re scrapping at parts here with Elandon Roberts and Devin White. Neither is signed past this season, so they’re looking for two long-term starters.
+
+CB: While I am the world’s biggest Jakorian Bennett (my #26 CB last season), they have very little behind him. They’ll definitely want to address the position.
+
+S: Isaiah Pola-Mao was thrust into a starter role last season and struggled. He won’t kill them, but long-term they’ll need a better solution.
+
+While I’m always a general proponent of trading down for future picks, If I were the Raiders I would REALLY want to trade back. 6 is an awkward spot for them and they have a ton of holes to 
+fill.
+
+Sample Mock Draft:
+6. Tet McMillan, WR, Arizona
+37. Shavon Revel, CB, East Carolina
+68. Kaleb Johnson, RB, Iowa`
   
 },
 'Jaguars': {
@@ -1636,6 +1770,32 @@ Sample Mock Draft:
     { position: "CB", name: "Jarrian Jones" },
     { position: "S", name: "Antonio Johnson" },
   ],
+  draftPreview: `
+Picks: 5, 36, 70, 88, 107, 126, 142, 182, 194, 221
+
+Needs: RB, WR, CB, S
+
+RB: At this point, we know Etienne isn’t the future. They’ll want to improve here, but it’s not necessarily a massive need.
+
+WR: Brian Thomas is a superstar, ranking as my WR11 as a rookie. That makes everything else a lot easier. They could definitely improve from Dyami Brown and Parker Washington, but if they opt 
+not to they aren’t in a terrible position by any means necessary.
+
+CB: Outside of Tyson Campbell they are very thin on the outside. I project Montaric Brown, my #89 CB last season, to start. This is a big spot for improvement.
+
+S: Darnell Savage has really struggled the past 4 years according to my model, ranking #82, #86, #82, and #70. They can easily get out of his contract after this season, which I expect they 
+will. Eric Murray had a strong 2024, but he’s still 31 years-old and making borderline starter money.
+
+I don’t believe OT is necessarily a need, yet I choose Armand Membou here in my mock. The Jaguars need to unlock Trevor Lawrence, so let’s turn a somewhat “fine” OT room into an elite one. 
+I see the argument for Mason Graham as well, though I would like to see Maason Smith in a bigger role and a combination of Arik Armstead and DaVon Hamilton should be a strong #2. 
+I do not see the argument for Ashton Jeanty.
+
+Overall, this is a very strong roster for a 4-13 team. In a weaker division, they may be ready to compete right away.
+
+Sample Mock Draft:
+5. Armand Membou, OT, Missouri
+36. Maxwell Hairston, CB, Kentucky
+70. Kevin Winston Jr, S, Penn State
+88. Dylan Sampson, RB, Tennessee`
 },
 'Patriots': {
   offense: {
@@ -1680,6 +1840,31 @@ Sample Mock Draft:
     { position: "S", name: "Marte Mapu" },
     { position: "S", name: "Jaylinn Hawkins" },
   ],
+  draftPreview: `
+Picks: 4, 38, 69, 77, 106, 144, 171, 220, 238
+
+Needs: RB, WR, OT, IOL, EDGE
+
+RB: While they have bigger issues, I don’t see Rhamondre Stevenson as a starting-level RB (#38 in 2024, #36 in 2023). They can get out of his contract easily after 2026.
+
+WR: Outside of Stefon Diggs, the room is very unproven. Kayshon Boutte was my #60 WR last season, while Pop Douglas was #78. That’s not terrible for young guys, and we can’t give up on 
+Ja’Lynn Polk after one season. Still, there’s reason for concern with this group.
+
+OT: They really have to add an OT with one of the top 2 picks. Drake Maye needs to be protected and the current setup won’t do that.
+
+IOL: The current lineup at OG and C will be fine for this season, but outside of Onwenu they don’t have any long-term options.
+
+EDGE: They aren’t particularly weak here, they just aren’t very strong either. Landry and White are both solid EDGES but they’ll want to find a true #1 at some point.
+
+The theme of this draft will be helping to protect Drake Maye. The offensive line and receiver room simply aren’t good enough. On the other side of the ball, I really like what they’ve put 
+together. The pairing of Milton Williams and Christian Barmore should be super strong. The secondary likely has above-average starters at each position. At linebacker, Robert Spillane was my 
+#10 ILB in 2024 and #6 in 2023. If they draft well this year, and Drake Maye is as good as I think he’ll eventually be, this team is really looking up.
+
+Sample Mock Draft:
+4. Armand Membou, OT, Missouri
+38. Donovan Jackson, OG, Ohio State
+69. Jaylin Noel, WR, Iowa State
+77. Joshua Farmer, IDL, Florida State`
 },
 'Giants': {
   offense: {
@@ -1722,6 +1907,32 @@ Sample Mock Draft:
     { position: "CB", name: "Cor'Dale Flott" },
     { position: "S", name: "Dane Belton" },
   ],
+  draftPreview: `
+Picks: 3, 34, 65, 99, 105, 154, 219, 246
+
+Needs: QB, TE, OT, OG, IDL
+
+QB: I’m a Russell Wilson fan, my model ranking him QB7 last season. Still, he’s not the future and they likely will not be contenders this season.
+
+TE: In a strong TE draft class, the Giants could certainly add here. The current group is underwhelming.
+
+OT: 31 year-old Jermaine Eluemunor’s contract expires after the season. They’ll want to add a more long-term starter.
+
+OG: I have 35 year-old Greg Van Roten projected as the 2nd starter at OG. Similar to OT, they’ll want to find a more long-term starter.
+
+IDL: Neither Rakeem Nunez-Roches nor Roy Robertson-Harris is making over $5M AAV. They need a full overhaul of this group outside of star NT Dexter Lawrence.
+
+At CB, Deonte Banks probably deserves one more year. He has solid his rookie season but dreadful last year. The additions of Paulson Adebo and Jevon Holland should make his life a lot easier. 
+The EDGE room is relatively strong, but the opportunity to draft such a premier player in Abdul Carter is too much to pass up.
+
+First Round Draft History Under Joe Schoen: EDGE, OT, CB, WR
+Second Round Draft History Under Joe Schoen: WR, C, S
+
+Sample Mock Draft:
+3. Abdul Carter, EDGE, Penn State
+34. Donovan Jackson, OG, Ohio State
+65. Elijah Arroyo, TE, Miami
+99. Joshua Farmer, IDL, Florida State`
 },
 'Browns': {
   offense: {
@@ -1761,6 +1972,43 @@ Sample Mock Draft:
     { position: "ILB", name: "Jerome Baker" },
     { position: "CB", name: "Cameron Mitchell" },
   ],
+  draftPreview: `
+Picks: 2, 33, 67, 94, 104, 179, 192, 200, 216, 255
+
+Needs: QB, RB, WR, OT, EDGE, CB, S
+
+QB: It will be interesting to see how Cleveland approaches the position this draft. It appears they won’t be selecting one with the 2nd pick, so pick 33 or a trade back into the first become 
+interesting options.
+
+RB: Jerome Ford ranked as my #20 RB in 2024, so this isn’t as big of a need to me. Cleveland isn’t really in a position to invest in RB anyway, so I’d be happy to see them stick with Ford or a 
+late-round pick.
+
+WR: Jerry Jeudy really turned it on late last season, though the raw volume of passing from Jameis Winston certainly helped. Outside of him, the group is pretty weak. The expectation is that 
+Cleveland will draft Travis Hunter and use him as a WR, so they may have found their solution.
+
+OT: Former fourth-round pick Dawand Jones struggled last season after a better 2023. Jack Conklin has maintained a solid level of play, but after agreeing to a contract restructure this 
+offseason in which he shortened his contract to end after 2025 it seems his time with the Browns is ending.
+
+EDGE: The Browns have the best EDGE rusher in the NFL. Behind him, though, they are a little thin. Isaiah McGuire performed very well last season, but a larger sample size will tell us more. 
+They’ll hope to revitalize the career of Joe Tryon-Shoyinka as a depth piece.
+
+CB: Martin Emerson Jr. really struggled last season after a strong 2023. His contract expires after the season, so they’ll want to add some flexibility at the position. It appears that Nickel 
+Greg Newsome II is on his way out, too. His contract expires after the season.
+
+S: With Rodney McLeod Jr. and Juan Thornhill gone, the second projected starting spot turns to Ronnie Hickman. He has been solid in limited snaps, but they’ll want to add some assurance to the 
+position.
+
+You simply can’t build a competitive roster with the amount of money Deshaun Watson is being paid not to play quarterback. I don’t blame Cleveland for the decision they made to acquire him or 
+the contract they gave him, but we are where we are. I can very easily understand the decision to draft Travis Hunter or Abdul Carter, and it appears that Hunter will be the pick.
+
+First Round Draft History Under Andrew Berry: OT, CB
+Second Round Draft History Under Andrew Berry: S, ILB, IDL
+
+Sample Mock Draft:
+2. Travis Hunter, WR, Colorado
+32. Jaxson Dart, QB, Ole Miss
+67. Aireontae Ersery, OT, Minnesota
+94. Josaiah Stewart, EDGE, Michigan`
 },
 'Titans': {
   offense: {
@@ -1797,6 +2045,34 @@ Sample Mock Draft:
     { position: "CB", name: "Darrell Baker Jr." },
     { position: "S", name: "Mike Brown" },
   ],
+  draftPreview: `
+Picks: 1, 35, 103, 120, 141, 167, 178, 188
+
+Needs: QB, WR, TE, IDL, EDGE, ILB, CB
+
+QB: Cam Ward is going to be the Titans starting quarterback. This is a need by technicality.
+
+WR: Outside of Calvin Ridley, this is a really thin group with Treylon Burks and Van Jefferson projected to start. They’ll want to add a weapon for their new QB early.
+
+TE: Chig Okonkwo is a free agent after the season. They’ll want to either work on an extension or gain some clarity on the long-term plan at TE.
+
+IDL: The Titans have two very important pieces in Jeffery Simmons and T’Vondre Sweat. Sebastian Joseph-Day projects as the third starter upfront, but he is 30 with an expiring contract. 
+They’ll want to find a third piece long-term.
+
+EDGE: There isn’t really a long-term piece in place here. I project Arden Key and Dre’Mont Jones to start this season, but both are on expiring contracts and nearing the end of their primes. 
+This will be a focus of the draft and/or next offseason for Tennessee.
+
+ILB: The Titans don’t have much opposite of Cody Barton. I project last year’s 4th-round pick Cedric Gray to start, but he didn’t play at all last season so he’s quite a wildcard.
+
+CB: Last year’s 5th-round pick Jarvis Brownlee Jr. projects to be the 2nd starter on the outside. He really struggled last season, ranking as my #108 CB. Roger McCreary will man the Nickel, 
+but he is on an expiring contract and also struggled last year.
+
+The Titans have surrounded #1 pick Cam Ward with a strong offensive line. If they can add some receiving threats, they’ll have put him in a nice position to have early success. The defense is 
+a work in progress, but the goal has to be putting Cam Ward in the most optimal position.
+
+Sample Mock Draft:
+1. Cam Ward, QB, Miami
+35. Luther Burden III, WR, Missouri`
 }
 
 
