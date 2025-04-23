@@ -576,7 +576,7 @@ Needs: QB, WR, OT, OG, IDL, CB
 QB: Truthfully, I’m the world’s biggest Derek Carr fan. I had him as my #5 QB in 2024 and #7 in 2023. Regardless, the Derek Carr Era is over in New Orleans. The Saints will cut bait next 
 offseason rather than pay an extra $50M for 2026.
 
-WR: This isn’t a massive need currently, but both Olave and Shaheed have murky futures in NO. The team still ahas Olave’s 5th-year option, while Shaheed is an UFA following the season.
+WR: This isn’t a massive need currently, but both Olave and Shaheed have murky futures in NO. The team still has Olave’s 5th-year option, while Shaheed is an UFA following the season.
 
 OT: It feels like the Trevor Penning experience may have run its course. For a team likely to struggle again next year, giving the former first-rounder another year as a starter isn’t the 
 worst idea. Still, it seems unlikely he’ll be the guy long-term.
