@@ -894,7 +894,7 @@ Needs: TE, EDGE, ILB, S
 
 TE: The Bucs ran a fair bit of 12 personnel last season. Otton’s contract expires at the end of the season, so some added clarity at the position may help.
 
-EDGE: Despite his lack of sacks, I was very happy with Yaya Diaby’s performance is 2024 (my #15 EDGE). Opposite him this season will be Haason Reddick, but they’ll need a long-term answer.
+EDGE: Despite his lack of sacks, I was very happy with Yaya Diaby’s performance in 2024 (my #15 EDGE). Opposite him this season will be Haason Reddick, but they’ll need a long-term answer.
 
 ILB: While Lavonte David may actually be immortal, let’s assume he’s not. I have Anthony Walker Jr, my #63 ILB in 2024, projected to start alongside him. They’ll really want to look towards 
 the future here. They’ll likely be replacing both starters in the next 2 years.
