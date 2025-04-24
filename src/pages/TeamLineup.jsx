@@ -161,7 +161,7 @@ Sample mock draft:
       CB1: "Christian Benford",
       FS: "Damar Hamlin",
       SS: "Taylor Rapp",
-      CB2: "Dane Jackson",
+      CB2: "Tre'Davious White",
       NB: "Taron Johnson",
     },
     backups: [
@@ -171,6 +171,7 @@ Sample mock draft:
       { position: "EDGE", name: "Michael Hoecht" },
       { position: "EDGE", name: "A.J. Epenesa" },
       { position: "ILB", name: "Dorian Williams" },
+      { position: "CB", name: "Dane Jackson" },
       { position: "NB", name: "Cam Lewis" },
       { position: "S", name: "Cole Bishop" },
     ],
@@ -186,7 +187,7 @@ Sample mock draft:
   DT: DaQuan Jones was fine last season, but an impact guy to pair with Oliver would really help out this team. They added Ogunjobi, but that's really a rotational piece. Both guys' deals 
   expire at the end of the season.
   
-  CB: 996 vacated snaps from Rasul Douglas. They didn't really address the hole in free agency. This is a pretty glaring need.
+  CB: 996 vacated snaps from Rasul Douglas. They just signed Tre'Davious White to a one-year deal, but they'll want a more long-term solution.
   
   S: Both starters, Hamlin and Rapp, return. Both are on cheap deals, so it'd be nice to at least add some competition. They also took Bishop 60th last year, so a mid-round pick would probably 
   suffice.
@@ -2016,7 +2017,7 @@ Sample Mock Draft:
     RB: "Tony Pollard",
     WR1: "Calvin Ridley",
     WR2: "Treylon Burks",
-    SWR: "Van Jefferson",
+    SWR: "Tyler Lockett",
     TE1: "Chig Okonkwo",
     TE2: "Josh Whyle",
     LT: "Dan Moore Jr.",
@@ -2041,6 +2042,7 @@ Sample Mock Draft:
   },
   backups: [
     { position: "RB", name: "Tyjae Spears" },
+    { position: "WR", name: "Van Jefferson" },
     { position: "EDGE", name: "Lorenzo Carter" },
     { position: "CB", name: "Darrell Baker Jr." },
     { position: "S", name: "Mike Brown" },
@@ -2052,7 +2054,7 @@ Needs: QB, WR, TE, IDL, EDGE, ILB, CB
 
 QB: Cam Ward is going to be the Titans starting quarterback. This is a need by technicality.
 
-WR: Outside of Calvin Ridley, this is a really thin group with Treylon Burks and Van Jefferson projected to start. They’ll want to add a weapon for their new QB early.
+WR: Outside of Calvin Ridley, this is a really thin group with Treylon Burks and Tyler Lockett projected to start. They’ll want to add a weapon for their new QB early.
 
 TE: Chig Okonkwo is a free agent after the season. They’ll want to either work on an extension or gain some clarity on the long-term plan at TE.
 
