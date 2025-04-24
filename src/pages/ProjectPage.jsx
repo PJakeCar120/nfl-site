@@ -205,7 +205,10 @@ const projects = {
     title: "NFL Draft ROI Report",
     pdfUrl: "/assets/NFLDraftROI2013-2019.pdf",
   },
-
+  "2025nfldraft": {
+    title: "2025 NFL Draft: What I’d Do as GM for Every Team",
+    pdfUrl: "/assets/2025NFLDraft.pdf",
+  },
   // 🎥 Video
   offseasonTutorial: {
     title: "Offseason Dashboard Tutorial",

@@ -5,6 +5,7 @@ const Research = [
   { id: "draftroi", title: "What NFL Positions Have the Highest Return on 1st Round Picks (2013–2019)?" },
   { id: "bdb2025", title: "Big Data Bowl 2025" },
   { id: "ohc", title: "Head Coach Research" },
+  { id: "2025nfldraft", title: "2025 NFL Draft: What I’d Do as GM for Every Team"},
 ];
 
 export default function ResearchPage() {
