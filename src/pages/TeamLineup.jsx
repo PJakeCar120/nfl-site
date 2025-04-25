@@ -300,6 +300,7 @@ Sample mock draft:
     backups: [
       { position: "RB", name: "David Montgomery" },
       { position: "WR", name: "Kalif Raymond" },
+      { position: "DT", name: "Tyleik Williams (R)" },
       { position: "DT", name: "Levi Onwuzurike" },
       { position: "NT", name: "Roy Lopez" },
       { position: "EDGE", name: "Al-Quadin Muhammad" },
