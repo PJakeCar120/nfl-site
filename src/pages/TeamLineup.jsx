@@ -1551,7 +1551,7 @@ Sample Mock Draft:
   offense: {
     QB: "Bryce Young",
     RB: "Chuba Hubbard",
-    WR2: "Tetairoa McMillan (R)",
+    WR1: "Tetairoa McMillan (R)",
     WR2: "Jalen Coker",
     SWR: "Adam Thielen",
     TE1: "Tommy Tremble",
