@@ -741,7 +741,7 @@ Sample mock draft:
     defense: {
       DT1: "Cameron Heyward",
       NT: "Keeanu Benton",
-      DT2: "Isaiahh Loudermilk",
+      DT2: "Derrick Harmon (R)",
       EDGE1: "T.J. Watt",
       ILB1: "Patrick Queen",
       ILB2: "Payton Wilson",
@@ -755,6 +755,7 @@ Sample mock draft:
     backups: [
       { position: "RB", name: "Kenneth Gainwell" },
       { position: "NT", name: "Montravious Adams" },
+      { position: "DT", name: "Isaiahh Loudermilk" },
       { position: "EDGE", name: "Nick Herbig" },
       { position: "ILB", name: "Malik Harrison" },
       { position: "ILB", name: "Cole Holcomb" },
