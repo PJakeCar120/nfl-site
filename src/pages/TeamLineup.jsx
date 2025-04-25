@@ -1429,7 +1429,7 @@ Sample Mock Draft:
     RB: "D'Andre Swift",
     WR1: "D.J. Moore",
     WR2: "Rome Odunze",
-    SWR: "Olamide Zaccheaus",
+    SWR: "Luther Burden III (R)",
     TE1: "Cole Kmet",
     TE2: "Colston Loveland (R)",
     LT: "Braxton Jones",
@@ -1453,6 +1453,7 @@ Sample Mock Draft:
   },
   backups: [
     { position: "RB", name: "Roschon Johnson" },
+    { position: "WR", name: "Olamide Zaccheaus" },
     { position: "OT", name: "Kiran Amegadjie" },
     { position: "DT", name: "Andrew Billings" },
     { position: "DT", name: "Chris Williams" },
