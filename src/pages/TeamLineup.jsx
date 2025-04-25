@@ -540,7 +540,7 @@ Sample mock draft:
       TE1: "T.J. Hockenson",
       TE2: "Josh Oliver",
       LT: "Christian Darrisaw",
-      LG: "Blake Brandel",
+      LG: "Donovan Jackson (R)",
       C: "Ryan Kelly",
       RG: "Will Fries",
       RT: "Brian O'Neill",
