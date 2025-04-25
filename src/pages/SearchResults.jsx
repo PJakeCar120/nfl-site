@@ -1,7 +1,31 @@
 import { useState, useEffect } from "react";
 import Papa from "papaparse";
 import { useLocation } from "react-router-dom";
+import { awardsData } from "./Awards";
 
+const findPlayerHonors = (name, year) => {
+  const data = awardsData[year];
+  if (!data) return "";
+
+  const awards = data.awards?.filter((a) => a.winner.includes(name)) || [];
+  const honors = [];
+
+  awards.forEach((a) => {
+    if (a.title === "Most Valuable Player") honors.push("MVP");
+    if (a.title === "Offensive Player of the Year") honors.push("OPOY");
+    if (a.title === "Defensive Player of the Year") honors.push("DPOY");
+    if (a.title === "Offensive Rookie of the Year") honors.push("OROY");
+    if (a.title === "Defensive Rookie of the Year") honors.push("DROY");
+  });
+
+  if (data.firstTeam?.some((p) => p.includes(name))) {
+    honors.push("1st Team All-Pro");
+  } else if (data.secondTeam?.some((p) => p.includes(name))) {
+    honors.push("2nd Team All-Pro");
+  }
+
+  return honors.join(", ");
+};
 
 const YEARS = ["2021", "2022", "2023", "2024"];
 const POSITIONS = ["QB", "RB", "WR", "TE", "DI", "EDGE", "ILB", "CB", "S"];
@@ -17,47 +41,47 @@ export default function SearchResults() {
       const combined = [];
       await Promise.all(
         POSITIONS.flatMap((pos) =>
-          YEARS.map(
-            (year) =>
-              new Promise((resolve) => {
-                const positionToFilePrefix = {
-                  DI: "DIScore",
-                  ILB: "ILBScore",
-                  EDGE: "EDScore",
-                  QB: "QBScore",
-                  RB: "RBScore",
-                  WR: "WRScore",
-                  TE: "TEScore",
-                  CB: "CBScore",
-                  S: "SScore",
-                };
+          YEARS.map((year) =>
+            new Promise((resolve) => {
+              const positionToFilePrefix = {
+                DI: "DIScore",
+                ILB: "ILBScore",
+                EDGE: "EDScore",
+                QB: "QBScore",
+                RB: "RBScore",
+                WR: "WRScore",
+                TE: "TEScore",
+                CB: "CBScore",
+                S: "SScore",
+              };
 
-                Papa.parse(
-                  `/assets/${positionToFilePrefix[pos]}Results${year}.csv`,
-                  {
-                    download: true,
-                    header: true,
-                    complete: (res) => {
-                      res.data.forEach((row) => {
-                        if (row.Name) {
-                          combined.push({
-                            year,
-                            position: pos === "DI" ? "IDL" : pos,
-                            name: row.Name,
-                            rank: row.Rank,
-                            ...Object.fromEntries(
-                              Object.entries(row).filter(
-                                ([key]) => key !== "Name" && key !== "Rank"
-                              )
-                            ),
-                          });
-                        }
-                      });
-                      resolve();
-                    },
-                  }
-                );
-              })
+              Papa.parse(
+                `/assets/${positionToFilePrefix[pos]}Results${year}.csv`,
+                {
+                  download: true,
+                  header: true,
+                  complete: (res) => {
+                    res.data.forEach((row) => {
+                      if (row.Name) {
+                        combined.push({
+                          year,
+                          position: pos === "DI" ? "IDL" : pos,
+                          name: row.Name,
+                          rank: row.Rank,
+                          honors: findPlayerHonors(row.Name, year),
+                          ...Object.fromEntries(
+                            Object.entries(row).filter(
+                              ([key]) => key !== "Name" && key !== "Rank"
+                            )
+                          ),
+                        });
+                      }
+                    });
+                    resolve();
+                  },
+                }
+              );
+            })
           )
         )
       );
@@ -148,7 +172,7 @@ export default function SearchResults() {
                   Object.keys(sortedResults[0])
                     .filter(
                       (key) =>
-                        !["year", "position", "rank", "name"].includes(key)
+                        !["year", "position", "rank", "name", "honors"].includes(key)
                     )
                     .map((key) => (
                       <th
@@ -158,25 +182,18 @@ export default function SearchResults() {
                         {key}
                       </th>
                     ))}
+                <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">F.A.N. Awards</th>
               </tr>
             </thead>
             <tbody>
               {sortedResults.map((player, index) => {
-                const { year, position, rank, name, ...stats } = player;
+                const { year, position, rank, name, honors, ...stats } = player;
                 return (
                   <tr key={index}>
-                    <td className="p-2 px-8 border border-gray-300 text-center">
-                      {position}
-                    </td>
-                    <td className="p-2 px-8 border border-gray-300 text-center">
-                      {year}
-                    </td>
-                    <td className="p-2 px-8 border border-gray-300 text-center">
-                      {name}
-                    </td>
-                    <td className="p-2 px-8 border border-gray-300 text-center">
-                      {rank}
-                    </td>
+                    <td className="p-2 px-8 border border-gray-300 text-center">{position}</td>
+                    <td className="p-2 px-8 border border-gray-300 text-center">{year}</td>
+                    <td className="p-2 px-8 border border-gray-300 text-center">{name}</td>
+                    <td className="p-2 px-8 border border-gray-300 text-center">{rank}</td>
                     {Object.entries(stats).map(([key, val]) => {
                       const style = getColor(key, val)
                         ? { backgroundColor: getColor(key, val) }
@@ -191,6 +208,7 @@ export default function SearchResults() {
                         </td>
                       );
                     })}
+                    <td className="p-2 px-8 border border-gray-300 text-center">{honors || "-"}</td>
                   </tr>
                 );
               })}

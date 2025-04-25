@@ -348,3 +348,5 @@ const year = searchParams.get("year") || "2024";
     </div>
   );
 }
+
+export { awardsData };
