@@ -302,7 +302,6 @@ Sample mock draft:
       { position: "WR", name: "Kalif Raymond" },
       { position: "DT", name: "Tyleik Williams (R)" },
       { position: "DT", name: "Levi Onwuzurike" },
-      { position: "NT", name: "Roy Lopez" },
       { position: "EDGE", name: "Al-Quadin Muhammad" },
       { position: "ILB", name: "Malcolm Rodriguez" },
       { position: "CB", name: "Ennis Rakestraw Jr." },
