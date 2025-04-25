@@ -593,8 +593,8 @@ Sample mock draft:
     offense: {
       QB: "Jordan Love",
       RB: "Josh Jacobs",
-      WR1: "Matthew Golden (R)",
-      WR2: "Romeo Doubs",
+      WR1: "Romeo Doubs",
+      WR2: "Matthew Golden (R)",
       SWR: "Jayden Reed",
       TE1: "Tucker Kraft",
       TE2: "Luke Musgrave",
