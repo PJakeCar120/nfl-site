@@ -169,6 +169,7 @@ Sample mock draft:
     backups: [
       { position: "RB", name: "Ty Johnson" },
       { position: "WR", name: "Curtis Samuel" },
+      { position: "DT", name: "T.J. Sanders (R)" },
       { position: "DT", name: "Larry Ogunjobi" },
       { position: "EDGE", name: "Michael Hoecht" },
       { position: "EDGE", name: "A.J. Epenesa" },
