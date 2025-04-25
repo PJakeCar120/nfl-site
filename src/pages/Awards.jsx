@@ -6,7 +6,7 @@ const awardsData = {
   "2024": {
     awards: [
       { title: "Most Valuable Player", winner: "QB: Lamar Jackson, BAL" },
-      { title: "Offensive Player of the Year", winner: "WR: Ja’Marr Chase, CIN" },
+      { title: "Offensive Player of the Year", winner: "WR: Ja'Marr Chase, CIN" },
       { title: "Defensive Player of the Year", winner: "EDGE: Myles Garrett, CLE" },
       { title: "Offensive Rookie of the Year", winner: "QB: Jayden Daniels, WAS" },
       { title: "Defensive Rookie of the Year", winner: "CB: Quinyon Mitchell, PHI" },
@@ -30,6 +30,7 @@ const awardsData = {
       "EDGE: Micah Parsons, DAL",
       "ILB: Zack Baun, PHI",
       "ILB: Eric Kendricks, DAL",
+      "ILB: Demario Davis, NO",
       "CB: Pat Surtain II, DEN",
       "S: Xavier McKinney, GB",
       "S: Jessie Bates III, ATL",
@@ -52,8 +53,9 @@ const awardsData = {
       "IDL: Chris Jones, KC",
       "IDL: Jalen Carter, PHI",
       "EDGE: Trey Hendrickson, CIN",
-      "ILB: Demario Davis, NO",
       "ILB: Zaire Franklin, IND",
+      "ILB: Roquan Smith, BAL",
+      "ILB: Fred Warner, SF",
       "CB: Quinyon Mitchell, PHI",
       "S: Brian Branch, DET",
       "S: Kerby Joseph, DET",
@@ -68,7 +70,7 @@ const awardsData = {
   awards: [
     { title: "Most Valuable Player", winner: "QB: Lamar Jackson, BAL" },
     { title: "Offensive Player of the Year", winner: "RB: Christian McCaffrey, SF" },
-    { title: "Defensive Player of the Year", winner: "IDL: Aaron Donald, LAR" },
+    { title: "Defensive Player of the Year", winner: "EDGE: Khalil Mack, LAC" },
     { title: "Offensive Rookie of the Year", winner: "WR: Puka Nacua, LAR" },
     { title: "Defensive Rookie of the Year", winner: "EDGE: Will Anderson Jr, HOU" },
     { title: "Coach of the Year", winner: "HC Kevin Stefanski, CLE" },
@@ -91,6 +93,7 @@ const awardsData = {
     "EDGE: Myles Garrett, CLE",
     "ILB: Terrel Bernard, BUF",
     "ILB: Fred Warner, SF",
+    "ILB: Jeremiah Owusu-Koramoah, CLE",
     "CB: Jaylon Johnson, CHI",
     "S: Kyle Hamilton, BAL",
     "S: Antoine Winfield Jr, TB",
@@ -113,8 +116,9 @@ const awardsData = {
     "IDL: Dexter Lawrence, NYG",
     "IDL: Chris Jones, KC",
     "EDGE: Josh Hines-Allen, JAX",
-    "ILB: Jeremiah Owusu-Koramoah, CLE",
     "ILB: Quincy Williams, NYJ",
+    "ILB: Robert Spillane, LV",
+    "ILB: T.J. Edwards, CHI",
     "CB: Charvarius Ward, KC",
     "S: Jalen Thompson, ARI",
     "S: Jessie Bates III, ATL",
@@ -126,7 +130,67 @@ const awardsData = {
   ]
 },
 
-  "2022": {},
+  "2022": {
+    awards: [
+        { title: "Most Valuable Player", winner: "QB: Patrick Mahomes, KC" },
+        { title: "Offensive Player of the Year", winner: "WR: A.J. Brown, PHI" },
+        { title: "Defensive Player of the Year", winner: "EDGE: Myles Garrett, CLE" },
+        { title: "Offensive Rookie of the Year", winner: "WR: Chris Olave, NO" },
+        { title: "Defensive Rookie of the Year", winner: "CB: Sauce Gardner, NYJ" },
+        { title: "Coach of the Year", winner: "HC Kyle Shanahan, SF" },
+      ],
+      firstTeam: [
+        "QB: Patrick Mahomes, KC",
+        "RB: Nick Chubb, CLE",
+        "WR: A.J. Brown, PHI",
+        "WR: Justin Jefferson, MIN",
+        "WR: Stefon Diggs, BUF",
+        "TE: Travis Kelce, KC",
+        "LT: Trent Williams, SF",
+        "LG: Joel Bitonio, CLE",
+        "C: Jason Kelce, PHI",
+        "RG: Chris Lindstrom, ATL",
+        "RT: Lane Johnson, PHI",
+        "EDGE: Myles Garrett, CLE",
+        "IDL: Chris Jones, KC",
+        "IDL: DeForest Buckner, IND",
+        "EDGE: Maxx Crosby, LV",
+        "ILB: Matt Milano, BUF",
+        "ILB: Fred Warner, SF",
+        "ILB: Roquan Smith, BAL",
+        "CB: James Bradberry, PHI",
+        "S: Vonn Bell, CIN",
+        "S: Tashaun Gipson Sr, SF",
+        "CB: Patrick Peterson, MIN",
+      ],
+      secondTeam: [
+        "QB: Joe Burrow, CIN",
+        "RB: Saquon Barkley, PHI",
+        "WR: Tyreek Hill, MIA",
+        "WR: Jaylen Waddle, MIA",
+        "WR: Davante Adams, LV",
+        "TE: George Kittle, SF",
+        "LT: Andrew Thomas, NYG",
+        "LG: Joe Thuney, KC",
+        "C: Creed Humphrey, KC",
+        "RG: Zack Martin, DAL",
+        "RT: Tristan Wirfs, TB",
+        "EDGE: Nick Bosa, SF",
+        "IDL: Dexter Lawrence, NYG",
+        "IDL: Cameron Heyward, IDL",
+        "EDGE: Micah Parsons, DAL",
+        "ILB: Bobby Wagner, LAR",
+        "ILB: Ja'Whaun Bentley, NE",
+        "ILB: Tremaine Edmunds, BUF",
+        "CB: Sauce Gardner, NYJ",
+        "S: Tyrann Mathieu, NO",
+        "S: Derwin James Jr, LAC",
+        "CB: Tariq Woolen, SEA",
+      ],
+      notes: [
+        "Note: I do not have my own OL ratings, so I have relied on AP, PFWA, and PFF.",
+      ]
+    },
   "2021": {}
 };
 
@@ -180,7 +244,7 @@ const year = searchParams.get("year") || "2024";
 
       {yearData.awards && (
         <div className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">{year} NFL Awards</h2>
+          <h2 className="text-xl font-semibold mb-2">{year} NFL Awards (min. 15 GP)</h2>
           <ul className="list-disc list-inside">
             {yearData.awards.map((a, idx) => (
               <li key={idx}>
