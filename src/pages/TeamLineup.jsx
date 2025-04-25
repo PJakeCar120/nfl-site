@@ -1262,7 +1262,7 @@ Sample Mock Draft:
       TE1: "Jonnu Smith",
       TE2: "Julian Hill",
       LT: "Patrick Paul",
-      LG: "Liam Eichenberg",
+      LG: "Jonah Savaiinaea (R)",
       C: "Aaron Brewer",
       RG: "James Daniels",
       RT: "Austin Jackson",
