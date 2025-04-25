@@ -1522,6 +1522,7 @@ Sample Mock Draft:
     NB: "Alontae Taylor",
   },
   backups: [
+    { position: "QB", name: "Tyler Shough (R)" },
     { position: "QB", name: "Spencer Rattler" },
     { position: "OG", name: "Nick Saldiveri" },
     { position: "DT", name: "Nathan Shepherd" },
