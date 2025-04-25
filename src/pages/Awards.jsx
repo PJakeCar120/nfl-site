@@ -10,7 +10,6 @@ const awardsData = {
       { title: "Offensive Rookie of the Year", winner: "QB: Jayden Daniels, WAS" },
       { title: "Defensive Rookie of the Year", winner: "CB: Quinyon Mitchell, PHI" },
       { title: "Coach of the Year", winner: "HC Kevin O'Connell, MIN" },
-      { title: "Comeback Player of the Year", winner: "QB: Joe Burrow, CIN" }
     ],
     firstTeam: [
       "QB: Lamar Jackson, BAL",
@@ -61,13 +60,10 @@ const awardsData = {
       "S: Kerby Joseph, DET",
       "CB: Christian Benford, BUF",
       "NB: Marlon Humphrey, BAL",
-      "K: Brandon Aubrey, DAL",
-      "P: AJ Cole, LV"
     ],
     notes: [
       "Excluded due to games played: WR Nico Collins, WR Chris Godwin, WR Puka Nacua, ILB Jeremiah Owusu-Koramoah",
       "Note: I do not have my own OL ratings, so I have relied on AP, PFWA, and PFF.",
-      "Punter selections are credit to @ThePuntRunts"
     ]
   },
   "2023": {},
