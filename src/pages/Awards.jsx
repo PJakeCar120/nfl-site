@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useSearchParams, Link } from "react-router-dom";
+
 
 const awardsData = {
   "2024": {
@@ -34,8 +35,6 @@ const awardsData = {
       "S: Jessie Bates III, ATL",
       "CB: Derek Stingley Jr, HOU",
       "NB: Garrett Williams, ARI",
-      "K: Chris Boswell, PIT",
-      "P: Jack Fox, DET"
     ],
     secondTeam: [
       "QB: Joe Burrow, CIN",
@@ -62,11 +61,71 @@ const awardsData = {
       "NB: Marlon Humphrey, BAL",
     ],
     notes: [
-      "Excluded due to games played: WR Nico Collins, WR Chris Godwin, WR Puka Nacua, ILB Jeremiah Owusu-Koramoah",
       "Note: I do not have my own OL ratings, so I have relied on AP, PFWA, and PFF.",
     ]
   },
-  "2023": {},
+  "2023": {
+  awards: [
+    { title: "Most Valuable Player", winner: "QB: Lamar Jackson, BAL" },
+    { title: "Offensive Player of the Year", winner: "RB: Christian McCaffrey, SF" },
+    { title: "Defensive Player of the Year", winner: "IDL: Aaron Donald, LAR" },
+    { title: "Offensive Rookie of the Year", winner: "WR: Puka Nacua, LAR" },
+    { title: "Defensive Rookie of the Year", winner: "EDGE: Will Anderson Jr, HOU" },
+    { title: "Coach of the Year", winner: "HC Kevin Stefanski, CLE" },
+  ],
+  firstTeam: [
+    "QB: Lamar Jackson, BAL",
+    "RB: Christian McCaffrey, SF",
+    "WR: Nico Collins, HOU",
+    "WR: Tyreek Hill, MIA",
+    "WR: Brandon Aiyuk, SF",
+    "TE: George Kittle, SF",
+    "LT: Trent Williams, SF",
+    "LG: Joe Thuney, KC",
+    "C: Jason Kelce, PHI",
+    "RG: Zack Martin, DAL",
+    "RT: Penei Sewell, DET",
+    "EDGE: Khalil Mack, LAC",
+    "IDL: Aaron Donald, LAR",
+    "IDL: Quinnen Williams, NYJ",
+    "EDGE: Myles Garrett, CLE",
+    "ILB: Terrel Bernard, BUF",
+    "ILB: Fred Warner, SF",
+    "CB: Jaylon Johnson, CHI",
+    "S: Kyle Hamilton, BAL",
+    "S: Antoine Winfield Jr, TB",
+    "CB: Darious Williams, LAR",
+    "NB: Devon Witherspoon, SEA",
+  ],
+  secondTeam: [
+    "QB: Russell Wilson, PIT",
+    "RB: James Conner",
+    "WR: D.J. Moore, CHI",
+    "WR: A.J. Brown, PHI",
+    "WR: Amon-Ra St. Brown, DET",
+    "TE: Trey McBride, ARI",
+    "LT: Jordan Mailata, PHI",
+    "LG: Tyler Smith, DAL",
+    "C: Frank Ragnow, DET",
+    "RG: Chris Lindstrom, ATL",
+    "RT: Lane Johnson, PHI",
+    "EDGE: T.J. Watt, PIT",
+    "IDL: Dexter Lawrence, NYG",
+    "IDL: Chris Jones, KC",
+    "EDGE: Josh Hines-Allen, JAX",
+    "ILB: Jeremiah Owusu-Koramoah, CLE",
+    "ILB: Quincy Williams, NYJ",
+    "CB: Charvarius Ward, KC",
+    "S: Jalen Thompson, ARI",
+    "S: Jessie Bates III, ATL",
+    "CB: Steven Nelson, HOU",
+    "NB: Deommodore Lenoir, SF",
+  ],
+  notes: [
+    "Note: I do not have my own OL ratings, so I have relied on AP, PFWA, and PFF.",
+  ]
+},
+
   "2022": {},
   "2021": {}
 };
@@ -97,7 +156,8 @@ const linkifyPlayer = (text) => {
 };
 
 export default function AwardsPage() {
-  const [year, setYear] = useState("2024");
+const [searchParams, setSearchParams] = useSearchParams();
+const year = searchParams.get("year") || "2024";
   const yearData = awardsData[year];
 
   return (
@@ -106,7 +166,7 @@ export default function AwardsPage() {
 
       <select
         value={year}
-        onChange={(e) => setYear(e.target.value)}
+        onChange={(e) => setSearchParams({ year: e.target.value })}
         className="mb-6 border p-2 rounded"
       >
         {Object.keys(awardsData)
