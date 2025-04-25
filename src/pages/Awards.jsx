@@ -62,6 +62,88 @@ const awardsData = {
       "CB: Christian Benford, BUF",
       "NB: Marlon Humphrey, BAL",
     ],
+    proBowl: {
+        NFC: [
+            "QB: Derek Carr",
+      "QB: Jared Goff",
+      "QB: Kyler Murray",
+      "RB: Jahmyr Gibbs",
+      "RB: Saquon Barkley",
+      "RB: James Conner",
+      "WR: A.J. Brown",
+      "WR: Justin Jefferson",
+      "WR: Mike Evans",
+      "WR: Puka Nacua",
+      "TE: George Kittle",
+      "TE: Trey McBride",
+      "OT: Tristan Wirfs",
+      "OT: Penei Sewell",
+      "OT: Lane Johnson",
+      "OG: Chris Lindstrom",
+      "OG: Landon Dickerson",
+      "OG: Tyler Smith",
+      "C: Frank Ragnow",
+      "C: Cam Jurgens",
+      "IDL: Jalen Carter",
+      "IDL: Leonard Williams",
+      "IDL: Osa Odighizuwa",
+      "DE: Micah Parsons",
+      "DE: Nick Bosa",
+      "DE: Carl Granderson",
+      "OLB: Jonathan Greenard",
+      "OLB: Jared Verse",
+      "OLB: Brian Burns",
+      "ILB: Zack Baun",
+      "ILB: Eric Kendricks",
+      "CB: Quinyon Mitchell",
+      "CB: Garrett Williams",
+      "CB: A.J. Terrell",
+      "CB: Tariq Woolen",
+      "S: Xavier McKinney",
+      "S: Jessie Bates III",
+      "S: Brian Branch"
+    ],
+    AFC: [
+      "QB: Lamar Jackson",
+      "QB: Joe Burrow",
+      "QB: Josh Allen",
+      "RB: Derrick Henry",
+      "RB: James Cook",
+      "RB: Jonathan Taylor",
+      "WR: Nico Collins",
+      "WR: Ja'Marr Chase",
+      "WR: Tee Higgins",
+      "WR: Brian Thomas",
+      "TE: Jonnu Smith",
+      "TE: Brock Bowers",
+      "OT: Dion Dawkins",
+      "OT: Laremy Tunsil",
+      "OT: Rashawn Slater",
+      "OG: Joe Thuney",
+      "OG: Quinn Meinerz",
+      "OG: Quenton Nelson",
+      "C: Creed Humphrey",
+      "C: Tyler Linderbaum",
+      "IDL: Cameron Heyward",
+      "IDL: Zach Allen",
+      "IDL: Chris Jones",
+      "DE: Myles Garrett",
+      "DE: Trey Hendrickson",
+      "DE: Danielle Hunter",
+      "OLB: Alex Highsmith",
+      "OLB: Jonathon Cooper",
+      "OLB: T.J. Watt",
+      "ILB: Zaire Franklin",
+      "ILB: Roquan Smith",
+      "CB: Pat Surtain II",
+      "CB: Derek Stingley Jr.",
+      "CB: Christian Benford",
+      "CB: Christian Gonzalez",
+      "S: Kyle Hamilton",
+      "S: Calen Bullock",
+      "S: Amani Hooker"
+    ],
+},
     notes: [
       "Note: I do not have my own OL ratings, so I have relied on AP, PFWA, and PFF.",
     ]
@@ -259,7 +341,7 @@ const linkifyPlayer = (text) => {
   if (!rest) return text;
 
   const [name, team] = rest.split(", ");
-  const unlinkedPositions = ["LT", "LG", "C", "RG", "RT", "HC"];
+  const unlinkedPositions = ["LT", "LG", "C", "RG", "RT", "HC", "OT", "OG"];
 
   return (
     <>
@@ -338,6 +420,32 @@ const year = searchParams.get("year") || "2024";
           </ul>
         </div>
       )}
+      {yearData.proBowl && (
+  <div className="mb-8">
+    <h2 className="text-xl font-semibold mb-2">Pro Bowl (min. 9 GP)</h2>
+
+    <div className="grid grid-cols-2 gap-6">
+      <div>
+        <h3 className="text-lg font-semibold mb-2">NFC</h3>
+        <ul className="list-disc list-inside">
+          {yearData.proBowl.NFC.map((p, idx) => (
+            <li key={idx}>{linkifyPlayer(p)}</li> // ✅ updated
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h3 className="text-lg font-semibold mb-2">AFC</h3>
+        <ul className="list-disc list-inside">
+          {yearData.proBowl.AFC.map((p, idx) => (
+            <li key={idx}>{linkifyPlayer(p)}</li> // ✅ updated
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+)}
+
 
       {yearData.notes && (
         <div className="mt-6 text-sm italic space-y-1">

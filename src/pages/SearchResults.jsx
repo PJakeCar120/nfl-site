@@ -7,9 +7,9 @@ const findPlayerHonors = (name, year) => {
   const data = awardsData[year];
   if (!data) return "";
 
-  const awards = data.awards?.filter((a) => a.winner.includes(name)) || [];
   const honors = [];
 
+  const awards = data.awards?.filter((a) => a.winner.includes(name)) || [];
   awards.forEach((a) => {
     if (a.title === "Most Valuable Player") honors.push("MVP");
     if (a.title === "Offensive Player of the Year") honors.push("OPOY");
@@ -24,8 +24,14 @@ const findPlayerHonors = (name, year) => {
     honors.push("2nd Team All-Pro");
   }
 
+  const isProBowl =
+    data.proBowl?.AFC?.some((p) => p.includes(name)) ||
+    data.proBowl?.NFC?.some((p) => p.includes(name));
+  if (isProBowl) honors.push("Pro Bowl");
+
   return honors.join(", ");
 };
+
 
 const YEARS = ["2021", "2022", "2023", "2024"];
 const POSITIONS = ["QB", "RB", "WR", "TE", "DI", "EDGE", "ILB", "CB", "S"];

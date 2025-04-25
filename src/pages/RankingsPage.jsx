@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { awardsData } from "./Awards"; // adjust the path if needed
+
 
 export default function RankingsPage() {
   return (
@@ -110,13 +112,6 @@ export default function RankingsPage() {
           </ul>
         </div>
 
-        {/* Football Analytics Nerd Awards */}
-        <div>
-          <h2 className="text-xl font-semibold mb-2">Football Analytics Nerd Awards</h2>
-          <ul className="list-disc ml-6 text-blue-500 space-y-1">
-            <li><Link to="/awards">View Football Analytics Nerd Awards</Link></li>
-          </ul>
-        </div>
         
       </div>
     </div>
