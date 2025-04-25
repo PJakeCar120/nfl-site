@@ -6,6 +6,7 @@ import RankingsPage from "./pages/RankingsPage";
 import Research from "./pages/Research";
 import ContractsPage from "./pages/ContractsPage";
 import PlayerComparison from "./pages/PlayerComparison";
+import AwardsPage from "./pages/Awards"
 import ContractMarket from "./pages/ContractMarket";
 import DraftPreviews from "./pages/DraftPreviews";
 import PlayerPage from "./pages/SearchResults";
@@ -29,6 +30,7 @@ function App() {
         <Route path="/contracts" element={<ContractsPage />} />
         <Route path="/compare" element={<PlayerComparison />} />
         <Route path="/draft-previews" element={<DraftPreviews />} />
+        <Route path="/awards" element={<AwardsPage />} />
         <Route path="/projects/similarity" element={<PlayerComparison />} />
         <Route path="/projects/contract-market" element={<ContractMarket />} />
         <Route path="/player" element={<PlayerPage />} />

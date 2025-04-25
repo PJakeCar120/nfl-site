@@ -35,7 +35,7 @@ const teams = {
     backups: [
       { position: "RB", name: "A.J. Dillon" },
       { position: "OG", name: "Kenyon Green" },
-      { position: "ILB", name: "Jihaad Campbell (R)" },
+      { position: "EDGE/ILB", name: "Jihaad Campbell (R)" },
       { position: "EDGE", name: "Bryce Huff" },
       { position: "EDGE", name: "Azeez Ojulari" },
       { position: "CB", name: "Adoree' Jackson" }
