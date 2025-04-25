@@ -491,6 +491,7 @@ Sample mock draft:
       NB: "Jalen Pitre",
     },
     backups: [
+      { position: "WR", name: "Jayden Higgins (R)" },
       { position: "WR", name: "Justin Watson" },
       { position: "WR", name: "John Metchie" },
       { position: "OT", name: "Trent Brown" },
@@ -949,8 +950,8 @@ Sample Mock Draft:
       ILB2: "Tyrice Knight",
       EDGE2: "Uchenna Nwosu",
       CB1: "Tariq Woolen",
-      FS: "Coby Bryant",
-      SS: "Julian Love",
+      FS: "Julian Love",
+      SS: "Nick Emmanwori (R)",
       CB2: "Josh Jobe",
       NB: "Devon Witherspoon",
     },
@@ -961,6 +962,7 @@ Sample Mock Draft:
       { position: "EDGE", name: "Demarcus Lawrence" },
       { position: "EDGE", name: "Derick Hall" },
       { position: "CB", name: "Nehemiah Pritchett" },
+      { position: "S", name: "Coby Bryant" },
     ],
     draftPreview: `
 Picks: 18, 50, 52, 82, 92, 137, 172, 175, 223, 234
@@ -1959,7 +1961,7 @@ Sample Mock Draft:
 'Browns': {
   offense: {
     QB: "Joe Flacco",
-    RB: "Jerome Ford",
+    RB: "Quinshon Judkins (R)",
     WR1: "Jerry Jeudy",
     WR2: "Cedric Tillman",
     SWR: "Jamari Thrash",
@@ -1977,7 +1979,7 @@ Sample Mock Draft:
     DT2: "Maliek Collins",
     EDGE2: "Isaiah McGuire",
     ILB1: "Jeremiah Owusu-Koramoah",
-    ILB2: "Jordan Hicks",
+    ILB2: "Carson Schwesinger (R)",
     CB1: "Denzel Ward",
     FS: "Ronnie Hickman",
     SS: "Grant Delpit",
@@ -1986,11 +1988,13 @@ Sample Mock Draft:
   },
   backups: [
     { position: "QB", name: "Kenny Pickett" },
+    { position: "RB", name: "Jerome Ford" },
     { position: "OG", name: "Teven Jenkins" },
     { position: "DT", name: "Mike Hall Jr." },
     { position: "DT", name: "Shelby Harris" },
     { position: "EDGE", name: "Joe Tryon-Shoyinka" },
     { position: "EDGE", name: "Ogbo Okoronkwo" },
+    { position: "ILB", name: "Jordan Hicks" },
     { position: "ILB", name: "Mohamoud Diabate" },
     { position: "ILB", name: "Jerome Baker" },
     { position: "CB", name: "Cameron Mitchell" },
