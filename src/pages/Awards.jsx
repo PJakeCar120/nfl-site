@@ -191,7 +191,67 @@ const awardsData = {
         "Note: I do not have my own OL ratings, so I have relied on AP, PFWA, and PFF.",
       ]
     },
-  "2021": {}
+  "2021": {
+    awards: [
+        { title: "Most Valuable Player", winner: "QB: Tom Brady, TB" },
+        { title: "Offensive Player of the Year", winner: "WR: Ja'Marr Chase, CIN" },
+        { title: "Defensive Player of the Year", winner: "IDL: Aaron Donald, LAR" },
+        { title: "Offensive Rookie of the Year", winner: "WR: Ja'Marr Chase, CIN" },
+        { title: "Defensive Rookie of the Year", winner: "ILB/EDGE: Micah Parsons, DAL" },
+        { title: "Coach of the Year", winner: "HC Mike Vrabel, TEN" },
+      ],
+      firstTeam: [
+        "QB: Tom Brady, TB",
+        "RB: Jonathan Taylor, IND",
+        "WR: Ja'Marr Chase, CIN",
+        "WR: Cooper Kupp, LAR",
+        "WR: Davante Adams, GB",
+        "TE: George Kittle, SF",
+        "LT: Trent Williams, SF",
+        "LG: Joel Bitonio, CLE",
+        "C: Jason Kelce, PHI",
+        "RG: Zack Martin, DAL",
+        "RT: Tristan Wirfs, TB",
+        "EDGE: Nick Bosa, SF",
+        "IDL: Aaron Donald, LAR",
+        "IDL: Javon Hargrave, PHI",
+        "EDGE: T.J. Watt, PIT",
+        "ILB: Micah Parsons, DAL",
+        "ILB: Shaquille Leonard, IND",
+        "ILB: Kyzir White, LAC",
+        "CB: D.J. Reed, SEA",
+        "S: Jordan Poyer, BUF",
+        "S: Kevin Byard, TEN",
+        "CB: A.J. Terrell, ATL",
+      ],
+      secondTeam: [
+        "QB: Kyler Murray, ARI",
+        "RB: Dalvin Cook, MIN",
+        "WR: Justin Jefferson, MIN",
+        "WR: Deebo Samuel, SF",
+        "WR: Tee Higgins, CIN",
+        "TE: Mark Andrews, BAL",
+        "LT: Rashawn Slater, LAC",
+        "LG: Quenton Nelson, IND",
+        "C: Creed Humphrey, KC",
+        "RG: Wyatt Teller, CLE",
+        "RT: Lane Johnson, PHI",
+        "EDGE: Maxx Crosby, LV",
+        "IDL: Jonathan Allen, WAS",
+        "IDL: Cameron Heyward, PIT",
+        "EDGE: Myles Garrett, CLE",
+        "ILB: Bobby Okereke, IND",
+        "ILB: Shaq Thompson, CAR",
+        "ILB: Roquan Smith, BAL",
+        "CB: Casey Hayward Jr, LV",
+        "S: Justin Simmons, DEN",
+        "S: Derwin James Jr, LAC",
+        "CB: Adoree' Jackson, NYG",
+      ],
+      notes: [
+        "Note: I do not have my own OL ratings, so I have relied on AP, PFWA, and PFF.",
+      ]
+    }
 };
 
 const linkifyPlayer = (text) => {
