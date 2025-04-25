@@ -161,7 +161,7 @@ Sample mock draft:
       CB1: "Christian Benford",
       FS: "Damar Hamlin",
       SS: "Taylor Rapp",
-      CB2: "Tre'Davious White",
+      CB2: "Maxwell Hairston (R)",
       NB: "Taron Johnson",
     },
     backups: [
@@ -171,6 +171,7 @@ Sample mock draft:
       { position: "EDGE", name: "Michael Hoecht" },
       { position: "EDGE", name: "A.J. Epenesa" },
       { position: "ILB", name: "Dorian Williams" },
+      { position: "CB", name: "Tre'Davious White" },
       { position: "CB", name: "Dane Jackson" },
       { position: "NB", name: "Cam Lewis" },
       { position: "S", name: "Cole Bishop" },
