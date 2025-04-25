@@ -809,7 +809,7 @@ Sample mock draft:
       FS: "Talanoa Hufanga",
       SS: "Brandon Jones",
       CB2: "Riley Moss",
-      NB: "Ja'Quan McMillian",
+      NB: "Jahdae Barron (R)",
     },
     backups: [
       { position: "RB", name: "Jaleel McLaughlin" },
@@ -819,6 +819,7 @@ Sample mock draft:
       { position: "EDGE", name: "Jonah Ellis" },
       { position: "EDGE", name: "Baron Browning" },
       { position: "ILB", name: "Justin Strnad" },
+      { position: "CB", name: "Ja'Quan McMillian" },
       { position: "S", name: "P.J. Locke" },
     ],
     draftPreview: `
