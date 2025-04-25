@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 import Papa from "papaparse";
 import { useLocation } from "react-router-dom";
-import { awardsData } from "./Awards";
+import { awardsData } from "./Awards"; // ✅ import awardsData
+
+const YEARS = ["2021", "2022", "2023", "2024"];
+const POSITIONS = ["QB", "RB", "WR", "TE", "DI", "EDGE", "ILB", "CB", "S"];
 
 const findPlayerHonors = (name, year) => {
   const data = awardsData[year];
@@ -9,32 +12,41 @@ const findPlayerHonors = (name, year) => {
 
   const honors = [];
 
-  const awards = data.awards?.filter((a) => a.winner.includes(name)) || [];
-  awards.forEach((a) => {
-    if (a.title === "Most Valuable Player") honors.push("MVP");
-    if (a.title === "Offensive Player of the Year") honors.push("OPOY");
-    if (a.title === "Defensive Player of the Year") honors.push("DPOY");
-    if (a.title === "Offensive Rookie of the Year") honors.push("OROY");
-    if (a.title === "Defensive Rookie of the Year") honors.push("DROY");
+  const normalize = (str) => str.replace(/[^a-zA-Z]/g, "").toLowerCase();
+  const cleanName = normalize(name);
+
+  (data.awards || []).forEach((award) => {
+    if (normalize(award.winner).includes(cleanName)) {
+      if (award.title === "Most Valuable Player") honors.push("MVP");
+      if (award.title === "Offensive Player of the Year") honors.push("OPOY");
+      if (award.title === "Defensive Player of the Year") honors.push("DPOY");
+      if (award.title === "Offensive Rookie of the Year") honors.push("OROY");
+      if (award.title === "Defensive Rookie of the Year") honors.push("DROY");
+    }
   });
 
-  if (data.firstTeam?.some((p) => p.includes(name))) {
+  if ((data.firstTeam || []).some((p) => normalize(p).includes(cleanName))) {
     honors.push("1st Team All-Pro");
-  } else if (data.secondTeam?.some((p) => p.includes(name))) {
+  } else if ((data.secondTeam || []).some((p) => normalize(p).includes(cleanName))) {
     honors.push("2nd Team All-Pro");
   }
 
-  const isProBowl =
-    data.proBowl?.AFC?.some((p) => p.includes(name)) ||
-    data.proBowl?.NFC?.some((p) => p.includes(name));
-  if (isProBowl) honors.push("Pro Bowl");
+  const stripPositionPrefix = (playerString) => {
+    const parts = playerString.split(": ");
+    return parts.length > 1 ? parts[1] : parts[0];
+  };
+
+  if (
+    (data.proBowl?.NFC || []).some((p) => normalize(stripPositionPrefix(p)).includes(cleanName)) ||
+    (data.proBowl?.AFC || []).some((p) => normalize(stripPositionPrefix(p)).includes(cleanName))
+  ) {
+    honors.push("Pro Bowl");
+  }
 
   return honors.join(", ");
 };
 
 
-const YEARS = ["2021", "2022", "2023", "2024"];
-const POSITIONS = ["QB", "RB", "WR", "TE", "DI", "EDGE", "ILB", "CB", "S"];
 
 export default function SearchResults() {
   const location = useLocation();
@@ -47,47 +59,48 @@ export default function SearchResults() {
       const combined = [];
       await Promise.all(
         POSITIONS.flatMap((pos) =>
-          YEARS.map((year) =>
-            new Promise((resolve) => {
-              const positionToFilePrefix = {
-                DI: "DIScore",
-                ILB: "ILBScore",
-                EDGE: "EDScore",
-                QB: "QBScore",
-                RB: "RBScore",
-                WR: "WRScore",
-                TE: "TEScore",
-                CB: "CBScore",
-                S: "SScore",
-              };
+          YEARS.map(
+            (year) =>
+              new Promise((resolve) => {
+                const positionToFilePrefix = {
+                  DI: "DIScore",
+                  ILB: "ILBScore",
+                  EDGE: "EDScore",
+                  QB: "QBScore",
+                  RB: "RBScore",
+                  WR: "WRScore",
+                  TE: "TEScore",
+                  CB: "CBScore",
+                  S: "SScore",
+                };
 
-              Papa.parse(
-                `/assets/${positionToFilePrefix[pos]}Results${year}.csv`,
-                {
-                  download: true,
-                  header: true,
-                  complete: (res) => {
-                    res.data.forEach((row) => {
-                      if (row.Name) {
-                        combined.push({
-                          year,
-                          position: pos === "DI" ? "IDL" : pos,
-                          name: row.Name,
-                          rank: row.Rank,
-                          honors: findPlayerHonors(row.Name, year),
-                          ...Object.fromEntries(
-                            Object.entries(row).filter(
-                              ([key]) => key !== "Name" && key !== "Rank"
-                            )
-                          ),
-                        });
-                      }
-                    });
-                    resolve();
-                  },
-                }
-              );
-            })
+                Papa.parse(
+                  `/assets/${positionToFilePrefix[pos]}Results${year}.csv`,
+                  {
+                    download: true,
+                    header: true,
+                    complete: (res) => {
+                      res.data.forEach((row) => {
+                        if (row.Name) {
+                          combined.push({
+                            year,
+                            position: pos === "DI" ? "IDL" : pos,
+                            name: row.Name,
+                            rank: row.Rank,
+                            honors: findPlayerHonors(row.Name, year), // ✅ add honors
+                            ...Object.fromEntries(
+                              Object.entries(row).filter(
+                                ([key]) => key !== "Name" && key !== "Rank"
+                              )
+                            ),
+                          });
+                        }
+                      });
+                      resolve();
+                    },
+                  }
+                );
+              })
           )
         )
       );
@@ -188,7 +201,7 @@ export default function SearchResults() {
                         {key}
                       </th>
                     ))}
-                <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Football Analytics Nerd Awards</th>
+                <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Football Analytics Nerd Awards</th> {/* ✅ added final column */}
               </tr>
             </thead>
             <tbody>
@@ -214,7 +227,9 @@ export default function SearchResults() {
                         </td>
                       );
                     })}
-                    <td className="p-2 px-8 border border-gray-300 text-center">{honors || "-"}</td>
+                    <td className="p-2 px-8 border border-gray-300 text-center">
+                      {honors || "-"}
+                    </td> {/* ✅ added honors value */}
                   </tr>
                 );
               })}

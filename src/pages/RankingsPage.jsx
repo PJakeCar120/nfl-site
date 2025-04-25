@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import { awardsData } from "./Awards"; // adjust the path if needed
-
 
 export default function RankingsPage() {
   return (
@@ -112,7 +110,14 @@ export default function RankingsPage() {
           </ul>
         </div>
 
-        
+        {/* F.A.N. Awards Section */}
+        <div>
+          <h2 className="text-xl font-semibold mb-2">F.A.N. Awards</h2>
+          <ul className="list-disc ml-6 text-blue-500 space-y-1">
+            <li><Link to="/awards">View F.A.N. Awards</Link></li>
+          </ul>
+        </div>
+
       </div>
     </div>
   );

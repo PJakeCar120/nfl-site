@@ -368,7 +368,8 @@ const year = searchParams.get("year") || "2024";
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4">🏆 F.A.N. Awards & All-Pro Teams</h1>
+      <h1 className="text-3xl font-bold mb-4">🏆 Football Analytics Nerd Awards & All-Pro Teams</h1>
+
 
 
       <select
