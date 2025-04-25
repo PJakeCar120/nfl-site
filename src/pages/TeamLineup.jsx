@@ -853,8 +853,8 @@ Sample Mock Draft:
       QB: "Baker Mayfield",
       RB: "Bucky Irving",
       WR1: "Mike Evans",
-      WR2: "Jalen McMillan",
-      SWR: "Chris Godwin",
+      WR2: "Chris Godwin",
+      SWR: "Emeka Egbuka (R)",
       TE1: "Cade Otton",
       TE2: "Payne Durham",
       LT: "Tristan Wirfs",
@@ -879,6 +879,7 @@ Sample Mock Draft:
     },
     backups: [
       { position: "RB", name: "Rachaad White" },
+      { position: "WR", name: "Jalen McMillan" },
       { position: "WR", name: "Sterling Shepard" },
       { position: "NT", name: "Greg Gaines" },
       { position: "EDGE", name: "Anthony Nelson" },
