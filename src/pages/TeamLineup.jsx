@@ -35,6 +35,7 @@ const teams = {
     backups: [
       { position: "RB", name: "A.J. Dillon" },
       { position: "OG", name: "Kenyon Green" },
+      { position: "ILB", name: "Jihaad Campbell (R)" },
       { position: "EDGE", name: "Bryce Huff" },
       { position: "EDGE", name: "Azeez Ojulari" },
       { position: "CB", name: "Adoree' Jackson" }
@@ -81,7 +82,7 @@ Sample mock draft:
       SWR: "Rashee Rice",
       TE1: "Travis Kelce",
       TE2: "Noah Gray",
-      LT: "Jaylon Moore",
+      LT: "Josh Simmons (R)",
       LG: "Kingsley Suamataia",
       C: "Creed Humphrey",
       RG: "Trey Smith",
@@ -105,6 +106,7 @@ Sample mock draft:
       { position: "RB", name: "Kareem Hunt" },
       { position: "RB", name: "Elijah Mitchell" },
       { position: "WR", name: "JuJu Smith-Schuster" },
+      { position: "OT", name: "Jaylon Moore" },
       { position: "DT", name: "Jerry Tillery" },
       { position: "EDGE", name: "Charles Omenihu" },
       { position: "EDGE", name: "Felix Anudike-Uzomah" },
