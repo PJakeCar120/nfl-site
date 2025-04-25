@@ -658,7 +658,7 @@ Sample mock draft:
   Chargers: {
     offense: {
       QB: "Justin Herbert",
-      RB: "Najee Harris",
+      RB: "Omarion Hampton (R)",
       WR1: "Quentin Johnston",
       WR2: "Mike Williams",
       SWR: "Ladd McConkey",
@@ -685,6 +685,7 @@ Sample mock draft:
       NB: "Cam Hart",
     },
     backups: [
+      { position: "RB", name: "Najee Harris" },
       { position: "OG", name: "Trey Pipkins" },
       { position: "C", name: "Andre James" },
       { position: "DT", name: "Scott Matlock" },
