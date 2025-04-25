@@ -593,8 +593,8 @@ Sample mock draft:
     offense: {
       QB: "Jordan Love",
       RB: "Josh Jacobs",
-      WR1: "Romeo Doubs",
-      WR2: "Christian Watson",
+      WR1: "Matthew Golden (R)",
+      WR2: "Romeo Doubs",
       SWR: "Jayden Reed",
       TE1: "Tucker Kraft",
       TE2: "Luke Musgrave",
@@ -619,6 +619,7 @@ Sample mock draft:
     },
     backups: [
       { position: "QB", name: "Malik Willis" },
+      { position: "WR", name: "Christian Watson" },
       { position: "WR", name: "Dontayvion Wicks" },
       { position: "SWR", name: "Mecole Hardman" },
       { position: "OL", name: "Jordan Morgan" },
