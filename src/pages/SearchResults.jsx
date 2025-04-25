@@ -182,7 +182,7 @@ export default function SearchResults() {
                         {key}
                       </th>
                     ))}
-                <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">F.A.N. Awards</th>
+                <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Football Analytics Nerd Awards</th>
               </tr>
             </thead>
             <tbody>

@@ -5,13 +5,13 @@ export default function RankingsPage() {
     <div className="px-6 py-8">
       <h1 className="text-3xl font-bold mb-6">🏆 Rankings</h1>
       <p className="text-gray-700 text-sm mb-6">
-  Each player’s Analytical Score is calculated by converting key performance metrics into percentiles relative to their position group. 
-  More predictive or valuable stats are given higher weights, and a weighted average of these percentiles forms the final score. 
-  Higher scores reflect players who exceled in the areas that matter most for their role.
-</p>
-
+        Each player’s Analytical Score is calculated by converting key performance metrics into percentiles relative to their position group. 
+        More predictive or valuable stats are given higher weights, and a weighted average of these percentiles forms the final score. 
+        Higher scores reflect players who excelled in the areas that matter most for their role.
+      </p>
 
       <div className="space-y-6">
+        {/* Quarterbacks */}
         <div>
           <h2 className="text-xl font-semibold mb-2">Quarterbacks</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-1">
@@ -22,6 +22,7 @@ export default function RankingsPage() {
           </ul>
         </div>
 
+        {/* Running Backs */}
         <div>
           <h2 className="text-xl font-semibold mb-2">Running Backs</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-1">
@@ -32,6 +33,7 @@ export default function RankingsPage() {
           </ul>
         </div>
 
+        {/* Wide Receivers */}
         <div>
           <h2 className="text-xl font-semibold mb-2">Wide Receivers</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-1">
@@ -42,6 +44,7 @@ export default function RankingsPage() {
           </ul>
         </div>
 
+        {/* Tight Ends */}
         <div>
           <h2 className="text-xl font-semibold mb-2">Tight Ends</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-1">
@@ -52,6 +55,7 @@ export default function RankingsPage() {
           </ul>
         </div>
 
+        {/* Interior Defensive Line */}
         <div>
           <h2 className="text-xl font-semibold mb-2">Interior Defensive Line</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-1">
@@ -61,8 +65,10 @@ export default function RankingsPage() {
             <li><Link to="/projects/idl2021">2021 IDL Rankings</Link></li>
           </ul>
         </div>
+
+        {/* EDGEs */}
         <div>
-          <h2 className="text-xl font-semibold mb-2">EDGES</h2>
+          <h2 className="text-xl font-semibold mb-2">EDGEs</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-1">
             <li><Link to="/projects/edge2024">2024 EDGE Rankings</Link></li>
             <li><Link to="/projects/edge2023">2023 EDGE Rankings</Link></li>
@@ -70,6 +76,8 @@ export default function RankingsPage() {
             <li><Link to="/projects/edge2021">2021 EDGE Rankings</Link></li>
           </ul>
         </div>
+
+        {/* Inside Linebackers */}
         <div>
           <h2 className="text-xl font-semibold mb-2">Inside Linebackers</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-1">
@@ -80,6 +88,7 @@ export default function RankingsPage() {
           </ul>
         </div>
 
+        {/* Cornerbacks */}
         <div>
           <h2 className="text-xl font-semibold mb-2">Cornerbacks</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-1">
@@ -89,6 +98,8 @@ export default function RankingsPage() {
             <li><Link to="/projects/cb2021">2021 CB Rankings</Link></li>
           </ul>
         </div>
+
+        {/* Safeties */}
         <div>
           <h2 className="text-xl font-semibold mb-2">Safeties</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-1">
@@ -98,8 +109,16 @@ export default function RankingsPage() {
             <li><Link to="/projects/s2021">2021 S Rankings</Link></li>
           </ul>
         </div>
+
+        {/* Football Analytics Nerd Awards */}
+        <div>
+          <h2 className="text-xl font-semibold mb-2">Football Analytics Nerd Awards</h2>
+          <ul className="list-disc ml-6 text-blue-500 space-y-1">
+            <li><Link to="/awards">View Football Analytics Nerd Awards</Link></li>
+          </ul>
+        </div>
+        
       </div>
     </div>
-    
   );
 }
