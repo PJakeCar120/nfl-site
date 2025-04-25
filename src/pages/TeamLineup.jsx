@@ -925,7 +925,7 @@ Sample Mock Draft:
       TE1: "Noah Fant",
       TE2: "AJ Barner",
       LT: "Charles Cross",
-      LG: "Christian Haynes",
+      LG: "Grey Zabel (R)",
       C: "Olu Oluwatimi",
       RG: "Anthony Bradford",
       RT: "Abraham Lucas",
@@ -947,7 +947,7 @@ Sample Mock Draft:
     backups: [
       { position: "QB", name: "Drew Lock" },
       { position: "RB", name: "Zach Charbonnet" },
-      { position: "OG", name: "Satoa Laumea" },
+      { position: "OG", name: "Christian Haynes" },
       { position: "EDGE", name: "Demarcus Lawrence" },
       { position: "EDGE", name: "Derick Hall" },
       { position: "CB", name: "Nehemiah Pritchett" },
