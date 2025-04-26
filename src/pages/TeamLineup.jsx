@@ -247,6 +247,7 @@ Sample mock draft:
       { position: "DT", name: "Eddie Goldman" },
       { position: "EDGE", name: "Deatrich Wise Jr." },
       { position: "EDGE", name: "Jacob Martin" },
+      { position: "CB", name: "Trey Amos (R)" },
       { position: "S", name: "Percy Butler" },
       { position: "NB", name: "Jonathan Jones" },
     ],
