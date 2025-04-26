@@ -469,7 +469,7 @@ Sample mock draft:
       QB: "C.J. Stroud",
       RB: "Joe Mixon",
       WR1: "Nico Collins",
-      WR2: "Tank Dell",
+      WR2: "Jayden Higgins (R)",
       SWR: "Christian Kirk",
       TE1: "Dalton Schultz",
       TE2: "Brevin Jordan",
@@ -493,7 +493,7 @@ Sample mock draft:
       NB: "Jalen Pitre",
     },
     backups: [
-      { position: "WR", name: "Jayden Higgins (R)" },
+      { position: "WR", name: "Tank Dell" },
       { position: "WR", name: "Justin Watson" },
       { position: "WR", name: "John Metchie" },
       { position: "OT", name: "Aireontae Ersery (R)" },
