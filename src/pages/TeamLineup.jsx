@@ -286,7 +286,7 @@ Sample mock draft:
       LT: "Taylor Decker",
       LG: "Graham Glasgow",
       C: "Frank Ragnow",
-      RG: "Christian Mahogany",
+      RG: "Tate Ratledge (R)",
       RT: "Penei Sewell",
     },
     defense: {
@@ -305,6 +305,7 @@ Sample mock draft:
     backups: [
       { position: "RB", name: "David Montgomery" },
       { position: "WR", name: "Kalif Raymond" },
+      { position: "OG", name: "Christian Mahogany"},
       { position: "DT", name: "Tyleik Williams (R)" },
       { position: "DT", name: "Levi Onwuzurike" },
       { position: "EDGE", name: "Al-Quadin Muhammad" },
