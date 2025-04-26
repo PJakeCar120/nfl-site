@@ -517,6 +517,7 @@ Sample mock draft:
       { position: "EDGE", name: "Darrell Taylor" },
       { position: "ILB", name: "E.J. Speed" },
       { position: "CB", name: "Ronald Darby" },
+      { position: "CB", name: "Jaylin Smith (R)" },
       { position: "S", name: "Jimmie Ward" },
     ],
     draftPreview: `
@@ -583,7 +584,8 @@ Sample mock draft:
     },
     backups: [
       { position: "RB", name: "Jordan Mason" },
-      { position: "SWR", name: "Rondale Moore" },
+      { position: "WR", name: "Rondale Moore" },
+      { position: "WR", name: "Tai Felton (R)" },
       { position: "DT", name: "Jalen Redmond" },
       { position: "EDGE", name: "Dallas Turner" },
       { position: "CB", name: "Jeff Okudah" },
@@ -849,6 +851,7 @@ Sample mock draft:
       { position: "DT", name: "Jordan Jackson" },
       { position: "EDGE", name: "Jonah Ellis" },
       { position: "EDGE", name: "Baron Browning" },
+      { position: "EDGE", name: "Savion Jones (R)" },
       { position: "ILB", name: "Justin Strnad" },
       { position: "CB", name: "Ja'Quan McMillian" },
       { position: "S", name: "P.J. Locke" },
@@ -980,7 +983,7 @@ Sample Mock Draft:
       NB: "Devon Witherspoon",
     },
     backups: [
-      { position: "QB", name: "Drew Lock" },
+      { position: "QB", name: "Jalen Milroe (R)" },
       { position: "RB", name: "Zach Charbonnet" },
       { position: "TE", name: "AJ Barner" },
       { position: "OG", name: "Christian Haynes" },
@@ -1198,6 +1201,7 @@ Sample Mock Draft:
       { position: "ILB", name: "Troy Anderson" },
       { position: "CB", name: "Mike Ford" },
       { position: "CB", name: "Clark Phillips III" },
+      { position: "S", name: "Xavier Watts (R)" },
     ],
     draftPreview: `
 Picks: 15, 46, 118, 218, 242
@@ -1430,6 +1434,7 @@ Sample Mock Draft:
     { position: "EDGE", name: "Sam Okuayinonu" },
     { position: "ILB", name: "Nick Martin (R)" },
     { position: "ILB", name: "Luke Gifford" },
+    { position: "CB", name: "Upton Stout (R)" },
     { position: "S", name: "Jason Pinnock" },
     { position: "S", name: "Richie Grant" },
   ],
@@ -1566,6 +1571,7 @@ Sample Mock Draft:
     { position: "DT", name: "Davon Godchaux" },
     { position: "EDGE", name: "Cameron Jordan" },
     { position: "CB", name: "Ugo Amadi" },
+    { position: "S", name: "Jonas Sanker (R)" },
     { position: "S", name: "Jordan Howden" },
   ],
   draftPreview: `
@@ -1762,6 +1768,8 @@ Sample Mock Draft:
   backups: [
     { position: "QB", name: "Aidan O'Connell" },
     { position: "RB", name: "Raheem Mostert" },
+    { position: "OT", name: "Caleb Rogers (R)" },
+    { position: "OT", name: "Charles Grant (R)" },
     { position: "DT", name: "Jonah Laulu" },
     { position: "EDGE", name: "Tyree Wilson" },
     { position: "EDGE", name: "Charles Snowden" },
@@ -1902,6 +1910,7 @@ Sample Mock Draft:
     { position: "WR", name: "Mack Hollins" },
     { position: "WR", name: "Ja'Lynn Polk" },
     { position: "OG", name: "Layden Robinson" },
+    { position: "C", name: "Jared Wilson (R)" },
     { position: "DT", name: "Khyiris Tonga" },
     { position: "DT", name: "Jeremiah Pharms Jr." },
     { position: "EDGE", name: "Anfernee Jennings" },
@@ -2035,6 +2044,7 @@ Sample Mock Draft:
     NB: "Greg Newsome II",
   },
   backups: [
+    { position: "QB", name: "Dillon Gabriel (R)" },
     { position: "QB", name: "Kenny Pickett" },
     { position: "RB", name: "Jerome Ford" },
     { position: "TE", name: "Blake Whiteheart" },
