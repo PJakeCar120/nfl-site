@@ -1466,6 +1466,7 @@ Sample Mock Draft:
   backups: [
     { position: "RB", name: "Roschon Johnson" },
     { position: "WR", name: "Olamide Zaccheaus" },
+    { position: "OT", name: "Ozzy Trapilo (R)" },
     { position: "OT", name: "Kiran Amegadjie" },
     { position: "DT", name: "Andrew Billings" },
     { position: "DT", name: "Chris Williams" },
