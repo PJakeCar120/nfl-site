@@ -1712,7 +1712,7 @@ Sample Mock Draft:
     RB: "Ashton Jeanty (R)",
     WR1: "Jakobi Meyers",
     WR2: "Tre Tucker",
-    SWR: "N/A",
+    SWR: "Jack Bech (R)",
     TE1: "Brock Bowers",
     TE2: "Michael Mayer",
     LT: "Kolton Miller",
