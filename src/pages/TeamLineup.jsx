@@ -1086,7 +1086,7 @@ Sample Mock Draft:
       CB1: "Sean Murphy-Bunting",
       FS: "Budda Baker",
       SS: "Jalen Thompson",
-      CB2: "Starling Thomas V",
+      CB2: "Will Johnson (R)",
       NB: "Garrett Williams",
     },
     backups: [
@@ -1098,6 +1098,7 @@ Sample Mock Draft:
       { position: "DT", name: "Justin Jones" },
       { position: "DT", name: "Dante Stills" },
       { position: "EDGE", name: "Baron Browning" },
+      { position: "CB", name: "Starling Thomas V" },
       { position: "CB", name: "Max Melton" },
       { position: "S", name: "Dadrion Taylor-Demerson" },
     ],
