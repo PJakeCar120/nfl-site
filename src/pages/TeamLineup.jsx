@@ -801,7 +801,7 @@ Sample mock draft:
   Broncos: {
     offense: {
       QB: "Bo Nix",
-      RB: "Audric Estime",
+      RB: "RJ Harvey (R)",
       WR1: "Courtland Sutton",
       WR2: "Troy Franklin",
       SWR: "Devaughn Vele",
@@ -828,6 +828,7 @@ Sample mock draft:
       NB: "Jahdae Barron (R)",
     },
     backups: [
+      { position: "RB", name: "Audric Estime" },
       { position: "RB", name: "Jaleel McLaughlin" },
       { position: "WR", name: "Marvin Mims" },
       { position: "NT", name: "Malcolm Roach" },
