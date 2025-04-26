@@ -369,6 +369,7 @@ Sample mock draft:
       { position: "FB", name: "Patrick Ricard" },
       { position: "WR", name: "Tylan Wallace" },
       { position: "OG", name: "Ben Cleveland" },
+      { position: "EDGE", name: "Mike Green (R)" },
       { position: "EDGE", name: "Tavius Robinson" },
       { position: "EDGE", name: "David Ojabo" },
       { position: "S", name: "Ar'Darius Washington" },
