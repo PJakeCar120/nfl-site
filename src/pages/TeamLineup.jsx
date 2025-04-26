@@ -1227,6 +1227,7 @@ Sample Mock Draft:
       { position: "QB", name: "Daniel Jones" },
       { position: "WR", name: "Adonai Mitchell" },
       { position: "TE", name: "Mo Alie-Cox" },
+      { position: "EDGE", name: "JT Tuimoloau (R)" },
       { position: "EDGE", name: "Samson Ebukam" },
       { position: "EDGE", name: "Tyquan Lewis" },
       { position: "CB", name: "Samuel Womack III" },
