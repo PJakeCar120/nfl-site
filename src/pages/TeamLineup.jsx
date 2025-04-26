@@ -249,6 +249,7 @@ Sample mock draft:
       { position: "WR", name: "Noah Brown" },
       { position: "WR", name: "K.J. Osborn" },
       { position: "OT", name: "Andrew Wylie" },
+      { position: "OT", name: "Brandon Coleman" },
       { position: "DT", name: "Jer'Zhan Newton" },
       { position: "DT", name: "Eddie Goldman" },
       { position: "EDGE", name: "Deatrich Wise Jr." },
@@ -1185,7 +1186,7 @@ Sample Mock Draft:
       EDGE2: "James Pearce Jr. (R)",
       CB1: "A.J. Terrell",
       FS: "Jessie Bates III",
-      SS: "Jordan Fuller",
+      SS: "Xavier Watts (R)",
       CB2: "Mike Hughes",
       NB: "Dee Alford",
     },
@@ -1201,7 +1202,7 @@ Sample Mock Draft:
       { position: "ILB", name: "Troy Anderson" },
       { position: "CB", name: "Mike Ford" },
       { position: "CB", name: "Clark Phillips III" },
-      { position: "S", name: "Xavier Watts (R)" },
+      { position: "S", name: "Jordan Fuller" },
     ],
     draftPreview: `
 Picks: 15, 46, 118, 218, 242
@@ -1417,11 +1418,11 @@ Sample Mock Draft:
     EDGE2: "Mykel Williams (R)",
     ILB1: "Fred Warner",
     ILB2: "Dee Winters",
-    CB1: "Renardo Green",
+    CB1: "Deommodore Lenoir",
     FS: "Ji'Ayir Brown",
     SS: "Malik Mustapha",
-    CB2: "Tre Brown",
-    NB: "Deommodore Lenoir",
+    CB2: "Renardo Green",
+    NB: "Upton Stout (R)",
   },
   backups: [
     { position: "QB", name: "Mac Jones" },
@@ -1434,7 +1435,7 @@ Sample Mock Draft:
     { position: "EDGE", name: "Sam Okuayinonu" },
     { position: "ILB", name: "Nick Martin (R)" },
     { position: "ILB", name: "Luke Gifford" },
-    { position: "CB", name: "Upton Stout (R)" },
+    { position: "CB", name: "Tre Brown" },
     { position: "S", name: "Jason Pinnock" },
     { position: "S", name: "Richie Grant" },
   ],
@@ -1762,7 +1763,7 @@ Sample Mock Draft:
     CB1: "Jakorian Bennett",
     FS: "Isaiah Pola-Mao",
     SS: "Jeremy Chinn",
-    CB2: "Decamerion Richardson",
+    CB2: "Eric Stokes",
     NB: "Darnay Holmes",
   },
   backups: [
@@ -1774,7 +1775,7 @@ Sample Mock Draft:
     { position: "EDGE", name: "Tyree Wilson" },
     { position: "EDGE", name: "Charles Snowden" },
     { position: "CB", name: "Darien Porter (R)" },
-    { position: "CB", name: "Eric Stokes" },
+    { position: "CB", name: "Decamerion Richardson" },
   ], 
   draftPreview: `
 Picks: 6, 37, 68, 108, 143, 180, 213, 215, 222
