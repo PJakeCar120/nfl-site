@@ -671,7 +671,7 @@ Sample mock draft:
       QB: "Justin Herbert",
       RB: "Omarion Hampton (R)",
       WR1: "Quentin Johnston",
-      WR2: "Mike Williams",
+      WR2: "Tre Harris (R)",
       SWR: "Ladd McConkey",
       TE1: "Will Dissly",
       TE2: "Tyler Conklin",
@@ -697,6 +697,7 @@ Sample mock draft:
     },
     backups: [
       { position: "RB", name: "Najee Harris" },
+      { position: "WR", name: "Mike Williams" },
       { position: "OG", name: "Trey Pipkins" },
       { position: "C", name: "Andre James" },
       { position: "DT", name: "Scott Matlock" },
