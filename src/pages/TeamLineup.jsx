@@ -1327,6 +1327,7 @@ Sample Mock Draft:
       { position: "WR", name: "Jonathan Mingo" },
       { position: "OG", name: "Brock Hoffman" },
       { position: "DT", name: "Solomon Thomas" },
+      { position: "EDGE", name: "Donovan Ezeiruaku (R)" },
       { position: "EDGE", name: "Sam Williams" },
       { position: "EDGE", name: "Marshawn Kneeland" },
       { position: "EDGE", name: "Payton Turner" },
