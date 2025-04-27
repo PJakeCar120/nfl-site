@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Papa from "papaparse";
+import { Link } from "react-router-dom"; //
 
 
 
@@ -287,145 +288,90 @@ if (project.videoUrl) {
     </div>
   );
 }
+// 📊 CSV view
+if (project.csvUrl && csvData.length > 0) {
+  const headers = Object.keys(csvData[0]);
+  const columnStats = {};
 
-
-// 📄 PDF view
-if (project.pdfUrl) {
-  const isMobile = window.innerWidth <= 768;
+  headers.forEach((header) => {
+    if (header === "Name") return;
+    const values = csvData
+      .map((row) => parseFloat(row[header]))
+      .filter((v) => !isNaN(v));
+    columnStats[header] = {
+      min: Math.min(...values),
+      max: Math.max(...values),
+    };
+  });
 
   return (
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
       <p className="text-gray-700 mb-6">{project.description}</p>
 
-      {!pdfError ? (
-        <div
-          className="w-full border rounded overflow-auto"
-          style={{
-            height: "90vh",
-            WebkitOverflowScrolling: "touch",
-          }}
-        >
-          {isMobile ? (
-            <embed
-              src={project.pdfUrl}
-              type="application/pdf"
-              width="100%"
-              height="100%"
-              onError={() => setPdfError(true)}
-              style={{ display: "block" }}
-            />
-          ) : (
-            <iframe
-              src={project.pdfUrl}
-              title="PDF Viewer"
-              width="100%"
-              height="100%"
-              onError={() => setPdfError(true)}
-              className="rounded"
-              style={{
-                border: "none",
-                display: "block",
-              }}
-            />
-          )}
-        </div>
-      ) : (
-        <div className="mt-6 p-4 border border-red-300 bg-red-50 rounded text-red-700">
-          Failed to load PDF.
-          <a
-            href={project.pdfUrl}
-            download
-            className="ml-2 underline text-blue-600"
-          >
-            Click here to download
-          </a>
-        </div>
-      )}
-
-      <a
-        href={project.pdfUrl}
-        download
-        className="mt-4 inline-block text-blue-600 underline"
-      >
-        📥 Download PDF
-      </a>
-    </div>
-  );
-}
-
-
-
-
-  // 📊 CSV view
-  if (project.csvUrl && csvData.length > 0) {
-    const headers = Object.keys(csvData[0]);
-    const columnStats = {};
-    headers.forEach((header) => {
-      if (header === "Name") return;
-      const values = csvData.map((row) => parseFloat(row[header])).filter((v) => !isNaN(v));
-      columnStats[header] = {
-        min: Math.min(...values),
-        max: Math.max(...values),
-      };
-    });
-    return (
-  <div className="p-6">
-    <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
-    <p className="text-gray-700 mb-6">{project.description}</p>
-
-    <div className="overflow-x-auto">
-      <div style={{ maxHeight: "75vh", overflowY: "auto" }}>
-        <table className="min-w-full border border-gray-300 text-sm ranking-table">
-          <thead className="bg-gray-100">
-            <tr>
-              {headers.map((key) => (
-                <th
-                key={key}
-                onClick={() => {
-                  if (sortColumn === key) {
-                    setSortOrder(sortOrder === "asc" ? "desc" : "asc");
-                  } else {
-                    setSortColumn(key);
-                    setSortOrder("desc");
-                  }
-                }}
-                className="border px-4 py-2 text-left whitespace-nowrap font-mono cursor-pointer hover:bg-gray-200"
-              >
-                {key} {sortColumn === key ? (sortOrder === "asc" ? "↑" : "↓") : ""}
-              </th>
-              
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {sortedData.map((row, i) => (
-              <tr key={i} className="odd:bg-white even:bg-gray-50">
-                {headers.map((key, j) => {
-                  const value = row[key];
-                  const bgColor = getColorScale(
-                    value,
-                    columnStats[key]?.min,
-                    columnStats[key]?.max,
-                    key
-                  );
-                  return (
-                    <td
-                      key={j}
-                      className="border px-4 py-2 text-sm text-gray-800 whitespace-nowrap font-mono"
-                      style={{ backgroundColor: bgColor }}
-                    >
-                      {value}
-                    </td>
-                  );
-                })}
+      <div className="overflow-x-auto">
+        <div style={{ maxHeight: "75vh", overflowY: "auto" }}>
+          <table className="min-w-full border border-gray-300 text-sm ranking-table">
+            <thead className="bg-gray-100">
+              <tr>
+                {headers.map((key) => (
+                  <th
+                    key={key}
+                    onClick={() => {
+                      if (sortColumn === key) {
+                        setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+                      } else {
+                        setSortColumn(key);
+                        setSortOrder("desc");
+                      }
+                    }}
+                    className="border px-4 py-2 text-left whitespace-nowrap font-mono cursor-pointer hover:bg-gray-200"
+                  >
+                    {key} {sortColumn === key ? (sortOrder === "asc" ? "↑" : "↓") : ""}
+                  </th>
+                ))}
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+
+            <tbody>
+              {sortedData.map((row, i) => (
+                <tr key={i} className="odd:bg-white even:bg-gray-50">
+                  {headers.map((key, j) => {
+                    const value = row[key];
+                    const bgColor = getColorScale(
+                      value,
+                      columnStats[key]?.min,
+                      columnStats[key]?.max,
+                      key
+                    );
+
+                    return (
+                      <td
+                        key={j}
+                        className="border px-4 py-2 text-sm text-gray-800 whitespace-nowrap font-mono"
+                        style={{ backgroundColor: bgColor }}
+                      >
+                        {key === "Name" ? (
+                          <Link
+                            to={`/playersearch?name=${encodeURIComponent(value)}`}
+                            className="text-blue-600 underline hover:text-blue-800"
+                          >
+                            {value}
+                          </Link>
+                        ) : (
+                          value
+                        )}
+                      </td>
+                    );
+                  })}
+                </tr>
+              ))}
+            </tbody>
+
+          </table>
+        </div>
       </div>
     </div>
-    </div>
-);
+  );
 }
 }
