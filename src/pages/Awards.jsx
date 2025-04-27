@@ -176,7 +176,7 @@ const awardsData = {
     { title: "Most Valuable Player", winner: "QB: Lamar Jackson, BAL" },
     { title: "Offensive Player of the Year", winner: "RB: Christian McCaffrey, SF" },
     { title: "Defensive Player of the Year", winner: "EDGE: Khalil Mack, LAC" },
-    { title: "Offensive Rookie of the Year", winner: "WR: Puka Nacua, LAR" },
+    { title: "Offensive Rookie of the Year", winner: "QB: C.J. Stroud, HOU" },
     { title: "Defensive Rookie of the Year", winner: "EDGE: Will Anderson Jr, HOU" },
     { title: "Coach of the Year", winner: "HC Kevin Stefanski, CLE" },
   ],
