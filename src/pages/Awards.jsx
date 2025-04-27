@@ -7,7 +7,7 @@ const awardsData = {
     awards: [
       { title: "Most Valuable Player", winner: "QB: Lamar Jackson, BAL" },
       { title: "Offensive Player of the Year", winner: "WR: Ja'Marr Chase, CIN" },
-      { title: "Defensive Player of the Year", winner: "EDGE: Myles Garrett, CLE" },
+      { title: "Defensive Player of the Year", winner: "CB: Pat Surtain II, DEN" },
       { title: "Offensive Rookie of the Year", winner: "QB: Jayden Daniels, WAS" },
       { title: "Defensive Rookie of the Year", winner: "CB: Quinyon Mitchell, PHI" },
       { title: "Coach of the Year", winner: "HC Kevin O'Connell, MIN" },
