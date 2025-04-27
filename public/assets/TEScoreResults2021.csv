@@ -1,4 +1,4 @@
-Rank,Name,Analytical Tight End Score (ATES),First Downs per Route Run,Receiving Yards per Game,Yards per Route Run,Missed Tackles Forced per Reception,Drop Rate,Run Block Grade,Yards per Target Over Expectation,Yards After Catch per Reception,Pass Block Grade,TDs per Route Run,Contested Catch Rate
+Rank,Name,Analytical Tight End Score (ATES),First Downs per Route Run,Receiving Yards per Game,Yards per Route Run,Missed Tackles Forced per Reception,Drop Rate,PFF Run Block Grade,Yards per Target Over Expectation,Yards After Catch per Reception,PFF Pass Block Grade,TDs per Route Run,Contested Catch Rate
 1,George Kittle,92.6,95.7,93.5,97.8,95.7,82.6,93.5,93.5,84.8,93.5,89.1,26.1
 2,Travis Kelce,88.3,93.5,97.8,89.1,97.8,71.7,69.6,84.8,80.4,80.4,82.6,67.4
 3,Mark Andrews,87.8,97.8,100,95.7,50,84.8,97.8,72.8,28.3,89.1,80.4,78.3

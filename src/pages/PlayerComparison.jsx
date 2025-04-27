@@ -11,10 +11,10 @@ const TE_COLS = [
   "Yards per Route Run",
   "Missed Tackles Forced per Reception",
   "Drop Rate",
-  "Run Block Grade",
+  "PFF Run Block Grade",
   "Yards per Target Over Expectation",
   "Yards After Catch per Reception",
-  "Pass Block Grade",
+  "PFF Pass Block Grade",
   "TDs per Route Run",
   "Contested Catch Rate"
 ];
