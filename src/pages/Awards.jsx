@@ -563,7 +563,31 @@ const awardsData = {
         "S: Derwin James Jr, LAC",
         "CB: Adoree' Jackson, NYG",
       ],
-      allRookie: [],
+      allRookie: [
+        "QB: Mac Jones, NE",
+        "RB: Elijah Mitchell, SF",
+        "WR: Ja'Marr Chase, CIN",
+        "WR: DeVonta Smith, PHI",
+        "WR: Jaylen Waddle, MIA",
+        "TE: Kyle Pitts, ATL",
+        "LT: Rashawn Slater, LAC",
+        "LG: Alijah Vera-Tucker, NYJ",
+        "C: Creed Humphrey, KC",
+        "RG: Trey Smith, KC",
+        "RT: Penei Sewell, DET",
+        "EDGE: Odafe Oweh, BAL",
+        "IDL: Christian Barmore, NE",
+        "IDL: Osa Odighizuwa, DAL",
+        "EDGE: Azeez Ojulari, NYG",
+        "ILB: Micah Parsons, DAL",
+        "ILB: Jeremiah Owusu-Koramoah, CLE",
+        "ILB: Ernest Jones, LAR",
+        "CB: Eric Stokes, GB",
+        "S: Jevon Holland, MIA",
+        "S: Caden Sterns, DEN",
+        "CB: Pat Surtain II, DEN"
+      ],
+      
       proBowl: {
         NFC: [
           "QB: Tom Brady, TB",
@@ -644,7 +668,7 @@ const awardsData = {
           "S: Jordan Poyer, BUF",
           "S: Kevin Byard, TEN",
           "S: Justin Simmons, DEN"
-        ]
+        ],    
       },      
 
       notes: [
