@@ -42,6 +42,9 @@ const findPlayerHonors = (name, year) => {
   ) {
     honors.push("Pro Bowl");
   }
+  if ((data.allRookie || []).some((p) => normalize(stripPositionPrefix(p)).includes(cleanName))) {
+    honors.push("All-Rookie Team");
+  }
 
   return honors.join(", ");
 };

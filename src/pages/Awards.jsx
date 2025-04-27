@@ -30,7 +30,6 @@ const awardsData = {
       "EDGE: Micah Parsons, DAL",
       "ILB: Zack Baun, PHI",
       "ILB: Eric Kendricks, DAL",
-      "ILB: Demario Davis, NO",
       "CB: Pat Surtain II, DEN",
       "S: Xavier McKinney, GB",
       "S: Jessie Bates III, ATL",
@@ -53,101 +52,125 @@ const awardsData = {
       "IDL: Chris Jones, KC",
       "IDL: Jalen Carter, PHI",
       "EDGE: Trey Hendrickson, CIN",
+      "ILB: Demario Davis, NO",
       "ILB: Zaire Franklin, IND",
-      "ILB: Roquan Smith, BAL",
-      "ILB: Fred Warner, SF",
       "CB: Quinyon Mitchell, PHI",
       "S: Brian Branch, DET",
       "S: Kerby Joseph, DET",
       "CB: Christian Benford, BUF",
       "NB: Marlon Humphrey, BAL",
     ],
+    allRookie: [
+      "QB: Jayden Daniels, WAS",
+      "RB: Bucky Irving, TB",
+      "WR: Brian Thomas, JAX",
+      "WR: Ladd McConkey, LAC",
+      "WR: Malik Nabers, NYG",
+      "TE: Brock Bowers, LV",
+      "LT: JC Latham, TEN",
+      "LG: Jackson Powers-Johnson, LV",
+      "C: Zach Frazier, PIT",
+      "RG: Dominick Puni, SF",
+      "RT: Joe Alt, LAC",
+      "EDGE: Jared Verse, LAR",
+      "IDL: Braden Fiske, LAR",
+      "IDL: Jer'Zhan Newton, WAS",
+      "EDGE: Chop Robinson, MIA",
+      "ILB: Edgerrin Cooper, GB",
+      "ILB: Darius Muasau, NYG",
+      "CB: Quinyon Mitchell, PHI",
+      "S: Jaylen McCollough, LAR",
+      "S: Calen Bullock, HOU",
+      "CB: Kamari Lassiter, HOU",
+      "NB: Cooper DeJean, PHI"
+    ],
     proBowl: {
-        NFC: [
-      "QB: Derek Carr",
-      "QB: Jared Goff",
-      "QB: Kyler Murray",
-      "RB: Jahmyr Gibbs",
-      "RB: Saquon Barkley",
-      "RB: James Conner",
-      "WR: A.J. Brown",
-      "WR: Justin Jefferson",
-      "WR: Mike Evans",
-      "WR: Puka Nacua",
-      "TE: George Kittle",
-      "TE: Trey McBride",
-      "OT: Tristan Wirfs",
-      "OT: Penei Sewell",
-      "OT: Lane Johnson",
-      "OG: Chris Lindstrom",
-      "OG: Landon Dickerson",
-      "OG: Tyler Smith",
-      "C: Frank Ragnow",
-      "C: Cam Jurgens",
-      "IDL: Jalen Carter",
-      "IDL: Leonard Williams",
-      "IDL: Osa Odighizuwa",
-      "DE: Micah Parsons",
-      "DE: Nick Bosa",
-      "DE: Carl Granderson",
-      "OLB: Jonathan Greenard",
-      "OLB: Jared Verse",
-      "OLB: Brian Burns",
-      "ILB: Zack Baun",
-      "ILB: Eric Kendricks",
-      "CB: Quinyon Mitchell",
-      "CB: Garrett Williams",
-      "CB: A.J. Terrell",
-      "CB: Tariq Woolen",
-      "S: Xavier McKinney",
-      "S: Jessie Bates III",
-      "S: Brian Branch"
-    ],
-    AFC: [
-      "QB: Lamar Jackson",
-      "QB: Joe Burrow",
-      "QB: Josh Allen",
-      "RB: Derrick Henry",
-      "RB: James Cook",
-      "RB: Jonathan Taylor",
-      "WR: Nico Collins",
-      "WR: Ja'Marr Chase",
-      "WR: Tee Higgins",
-      "WR: Brian Thomas",
-      "TE: Jonnu Smith",
-      "TE: Brock Bowers",
-      "OT: Dion Dawkins",
-      "OT: Laremy Tunsil",
-      "OT: Rashawn Slater",
-      "OG: Joe Thuney",
-      "OG: Quinn Meinerz",
-      "OG: Quenton Nelson",
-      "C: Creed Humphrey",
-      "C: Tyler Linderbaum",
-      "IDL: Cameron Heyward",
-      "IDL: Zach Allen",
-      "IDL: Chris Jones",
-      "DE: Myles Garrett",
-      "DE: Trey Hendrickson",
-      "DE: Danielle Hunter",
-      "OLB: Alex Highsmith",
-      "OLB: Jonathon Cooper",
-      "OLB: T.J. Watt",
-      "ILB: Zaire Franklin",
-      "ILB: Roquan Smith",
-      "CB: Pat Surtain II",
-      "CB: Derek Stingley Jr.",
-      "CB: Christian Benford",
-      "CB: Christian Gonzalez",
-      "S: Kyle Hamilton",
-      "S: Calen Bullock",
-      "S: Amani Hooker"
-    ],
-},
+      NFC: [
+        "QB: Derek Carr, NO",
+        "QB: Jared Goff, DET",
+        "QB: Kyler Murray, ARI",
+        "RB: Jahmyr Gibbs, DET",
+        "RB: Saquon Barkley, PHI",
+        "RB: James Conner, ARI",
+        "WR: A.J. Brown, PHI",
+        "WR: Justin Jefferson, MIN",
+        "WR: Mike Evans, TB",
+        "WR: Puka Nacua, LAR",
+        "TE: George Kittle, SF",
+        "TE: Trey McBride, ARI",
+        "OT: Tristan Wirfs, TB",
+        "OT: Penei Sewell, DET",
+        "OT: Lane Johnson, PHI",
+        "OG: Chris Lindstrom, ATL",
+        "OG: Landon Dickerson, PHI",
+        "OG: Tyler Smith, DAL",
+        "C: Frank Ragnow, DET",
+        "C: Cam Jurgens, PHI",
+        "IDL: Jalen Carter, PHI",
+        "IDL: Leonard Williams, SEA",
+        "IDL: Osa Odighizuwa, DAL",
+        "DE: Micah Parsons, DAL",
+        "DE: Nick Bosa, SF",
+        "DE: Carl Granderson, NO",
+        "OLB: Jonathan Greenard, MIN",
+        "OLB: Jared Verse, LAR",
+        "OLB: Brian Burns, NYG",
+        "ILB: Zack Baun, PHI",
+        "ILB: Eric Kendricks, DAL",
+        "CB: Quinyon Mitchell, PHI",
+        "CB: Garrett Williams, ARI",
+        "CB: A.J. Terrell, ATL",
+        "CB: Tariq Woolen, SEA",
+        "S: Xavier McKinney, GB",
+        "S: Jessie Bates III, ATL",
+        "S: Brian Branch, DET"
+      ],
+      AFC: [
+        "QB: Lamar Jackson, BAL",
+        "QB: Joe Burrow, CIN",
+        "QB: Josh Allen, BUF",
+        "RB: Derrick Henry, BAL",
+        "RB: James Cook, BUF",
+        "RB: Jonathan Taylor, IND",
+        "WR: Nico Collins, HOU",
+        "WR: Ja'Marr Chase, CIN",
+        "WR: Tee Higgins, CIN",
+        "WR: Brian Thomas, JAX",
+        "TE: Jonnu Smith, MIA",
+        "TE: Brock Bowers, LV",
+        "OT: Dion Dawkins, BUF",
+        "OT: Laremy Tunsil, HOU",
+        "OT: Rashawn Slater, LAC",
+        "OG: Joe Thuney, KC",
+        "OG: Quinn Meinerz, DEN",
+        "OG: Quenton Nelson, IND",
+        "C: Creed Humphrey, KC",
+        "C: Tyler Linderbaum, BAL",
+        "IDL: Cameron Heyward, PIT",
+        "IDL: Zach Allen, DEN",
+        "IDL: Chris Jones, KC",
+        "DE: Myles Garrett, CLE",
+        "DE: Trey Hendrickson, CIN",
+        "DE: Danielle Hunter, HOU",
+        "OLB: Alex Highsmith, PIT",
+        "OLB: Jonathon Cooper, DEN",
+        "OLB: T.J. Watt, PIT",
+        "ILB: Zaire Franklin, IND",
+        "ILB: Roquan Smith, BAL",
+        "CB: Pat Surtain II, DEN",
+        "CB: Derek Stingley Jr, HOU",
+        "CB: Christian Benford, BUF",
+        "CB: Christian Gonzalez, NE",
+        "S: Kyle Hamilton, BAL",
+        "S: Calen Bullock, HOU",
+        "S: Amani Hooker, TEN"
+      ]
+    }, 
     notes: [
-      "Note: I do not have my own OL ratings, so I have relied on AP, PFWA, and PFF.",
+      "Note: I do not have my own OL ratings, so I have relied on AP, PFWA, and PFF."
     ]
   },
+
   "2023": {
   awards: [
     { title: "Most Valuable Player", winner: "QB: Lamar Jackson, BAL" },
@@ -175,7 +198,6 @@ const awardsData = {
     "EDGE: Myles Garrett, CLE",
     "ILB: Terrel Bernard, BUF",
     "ILB: Fred Warner, SF",
-    "ILB: Jeremiah Owusu-Koramoah, CLE",
     "CB: Jaylon Johnson, CHI",
     "S: Kyle Hamilton, BAL",
     "S: Antoine Winfield Jr, TB",
@@ -198,98 +220,15 @@ const awardsData = {
     "IDL: Dexter Lawrence, NYG",
     "IDL: Chris Jones, KC",
     "EDGE: Josh Hines-Allen, JAX",
-    "ILB: Quincy Williams, NYJ",
-    "ILB: Robert Spillane, LV",
-    "ILB: T.J. Edwards, CHI",
+    "ILB: Jeremiah Owusu-Koramoah, CLE",
+    "ILB: Bobby Okereke, NYG",
     "CB: Charvarius Ward, KC",
     "S: Jalen Thompson, ARI",
     "S: Jessie Bates III, ATL",
     "CB: Steven Nelson, HOU",
     "NB: Deommodore Lenoir, SF",
   ],
-  proBowl: {
-    NFC: [
-      "QB: Jared Goff",
-      "QB: Dak Prescott",
-      "QB: Jalen Hurts",
-      "RB: Christian McCaffrey",
-      "RB: James Conner",
-      "RB: Jahmyr Gibbs",
-      "WR: Brandon Aiyuk",
-      "WR: D.J. Moore",
-      "WR: Justin Jefferson",
-      "WR: A.J. Brown",
-      "TE: George Kittle",
-      "TE: Trey McBride",
-      "OT: Trent Williams",
-      "OT: Penei Sewell",
-      "OT: Lane Johnson",
-      "OG: Zack Martin",
-      "OG: Tyler Smith",
-      "OG: Chris Lindstrom",
-      "C: Jason Kelce",
-      "C: Frank Ragnow",
-      "IDL: Aaron Donald",
-      "IDL: Dexter Lawrence",
-      "IDL: Jonathan Allen",
-      "DE: Nick Bosa",
-      "DE: Aidan Hutchinson",
-      "DE: Montez Sweat",
-      "OLB: Micah Parsons",
-      "OLB: Danielle Hunter",
-      "OLB: Rashan Gary",
-      "ILB: Fred Warner",
-      "ILB: Bobby Okereke",
-      "CB: Jaylon Johnson",
-      "CB: Charvarius Ward",
-      "CB: Kendall Fuller",
-      "CB: Darius Slay",
-      "S: Antoine Winfield Jr.",
-      "S: Jalen Thompson",
-      "S: Jessie Bates III",
-    ],
-    AFC: [
-      "QB: Lamar Jackson",
-      "QB: Russell Wilson",
-      "QB: Patrick Mahomes",
-      "RB: Raheem Mostert",
-      "RB: Isiah Pacheco",
-      "RB: Devon Achane",
-      "WR: Nico Collins",
-      "WR: Tyreek Hill",
-      "WR: Jaylen Waddle",
-      "WR: Keenan Allen",
-      "TE: Mark Andrews",
-      "TE: Travis Kelce",
-      "OT: Laremy Tunsil",
-      "OT: Dion Dawkins",
-      "OT: Terron Armstead",
-      "OG: Joe Thuney",
-      "OG: Quenton Nelson",
-      "OG: Joel Bitonio",
-      "C: Creed Humphrey",
-      "C: Tyler Linderbaum",
-      "IDL: Quinnen Williams",
-      "IDL: Chris Jones",
-      "IDL: Ed Oliver",
-      "DE: Myles Garrett",
-      "DE: Maxx Crosby",
-      "DE: Trey Hendrickson",
-      "OLB: Khalil Mack",
-      "OLB: T.J. Watt",
-      "OLB: Josh Hines-Allen",
-      "ILB: Terrel Bernard",
-      "ILB: Jeremiah Owusu-Koramoah",
-      "CB: Darious Williams",
-      "CB: Jalen Ramsey",
-      "CB: Steven Nelson",
-      "CB: L'Jarius Sneed",
-      "S: Kyle Hamilton",
-      "S: Jabrill Peppers",
-      "S: Andre Cisco",
-    ],
-  },
-  
+  allRookie: [],
   notes: [
     "Note: I do not have my own OL ratings, so I have relied on AP, PFWA, and PFF.",
   ]
@@ -352,6 +291,7 @@ const awardsData = {
         "S: Derwin James Jr, LAC",
         "CB: Tariq Woolen, SEA",
       ],
+      allRookie: [],
       notes: [
         "Note: I do not have my own OL ratings, so I have relied on AP, PFWA, and PFF.",
       ]
@@ -413,6 +353,7 @@ const awardsData = {
         "S: Derwin James Jr, LAC",
         "CB: Adoree' Jackson, NYG",
       ],
+      allRookie: [],
       notes: [
         "Note: I do not have my own OL ratings, so I have relied on AP, PFWA, and PFF.",
       ]
@@ -445,15 +386,13 @@ const linkifyPlayer = (text) => {
 };
 
 export default function AwardsPage() {
-const [searchParams, setSearchParams] = useSearchParams();
-const year = searchParams.get("year") || "2024";
+  const [searchParams, setSearchParams] = useSearchParams();
+  const year = searchParams.get("year") || "2024";
   const yearData = awardsData[year];
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mb-4">🏆 Football Analytics Nerd Awards & All-Pro Teams</h1>
-
-
 
       <select
         value={year}
@@ -504,31 +443,43 @@ const year = searchParams.get("year") || "2024";
           </ul>
         </div>
       )}
+
+{yearData.allRookie && (
+        <div className="mb-8">
+          <h2 className="text-xl font-semibold mb-2">All-Rookie Team</h2>
+          <ul className="list-disc list-inside">
+            {yearData.allRookie.map((p, idx) => (
+              <li key={idx}>{linkifyPlayer(p)}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+
+
       {yearData.proBowl && (
-  <div className="mb-8">
-    <h2 className="text-xl font-semibold mb-2">Pro Bowl (min. 9 GP)</h2>
-
-    <div className="grid grid-cols-2 gap-6">
-      <div>
-        <h3 className="text-lg font-semibold mb-2">NFC</h3>
-        <ul className="list-disc list-inside">
-          {yearData.proBowl.NFC.map((p, idx) => (
-            <li key={idx}>{linkifyPlayer(p)}</li> // ✅ updated
-          ))}
-        </ul>
-      </div>
-
-      <div>
-        <h3 className="text-lg font-semibold mb-2">AFC</h3>
-        <ul className="list-disc list-inside">
-          {yearData.proBowl.AFC.map((p, idx) => (
-            <li key={idx}>{linkifyPlayer(p)}</li> // ✅ updated
-          ))}
-        </ul>
-      </div>
-    </div>
-  </div>
-)}
+        <div className="mb-8">
+          <h2 className="text-xl font-semibold mb-2">Pro Bowl (min. 9 GP)</h2>
+          <div className="grid grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-lg font-semibold mb-2">NFC</h3>
+              <ul className="list-disc list-inside">
+                {yearData.proBowl.NFC.map((p, idx) => (
+                  <li key={idx}>{linkifyPlayer(p)}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-2">AFC</h3>
+              <ul className="list-disc list-inside">
+                {yearData.proBowl.AFC.map((p, idx) => (
+                  <li key={idx}>{linkifyPlayer(p)}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
 
 
       {yearData.notes && (
@@ -541,5 +492,7 @@ const year = searchParams.get("year") || "2024";
     </div>
   );
 }
+
+
 
 export { awardsData };
