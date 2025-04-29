@@ -259,6 +259,23 @@ export default function ProjectPage() {
   }, [project]);
 
   if (!project) return <div className="p-6 text-lg">Project not found.</div>;
+// 📄 PDF view
+if (project.pdfUrl) {
+  return (
+    <div className="p-6">
+      <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
+      <p className="text-gray-700 mb-6">{project.description || ""}</p>
+
+      <div className="w-full flex justify-center">
+        <iframe
+          src={project.pdfUrl}
+          className="w-full max-w-6xl h-[90vh] border rounded-lg shadow-md"
+          title={project.title}
+        />
+      </div>
+    </div>
+  );
+}
 
 
 // 🎥 Video view
