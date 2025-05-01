@@ -1188,7 +1188,7 @@ Sample Mock Draft:
       FS: "Jessie Bates III",
       SS: "Xavier Watts (R)",
       CB2: "Mike Hughes",
-      NB: "Dee Alford",
+      NB: "Billy Bowman Jr. (R)",
     },
     backups: [
       { position: "QB", name: "Kirk Cousins" },
@@ -1200,6 +1200,7 @@ Sample Mock Draft:
       { position: "EDGE", name: "Arnold Ebiketie" },
       { position: "ILB", name: "Divine Deablo" },
       { position: "ILB", name: "Troy Anderson" },
+      { position: "CB", name: "Dee Alford" },
       { position: "CB", name: "Mike Ford" },
       { position: "CB", name: "Clark Phillips III" },
       { position: "S", name: "Jordan Fuller" },
