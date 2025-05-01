@@ -1133,32 +1133,27 @@ Sample Mock Draft:
       { position: "CB", name: "Max Melton" },
       { position: "S", name: "Dadrion Taylor-Demerson" },
     ],
-    draftPreview: `
-Picks: 16, 47, 78, 115, 152, 225
+    draftReview: `
+A couple weeks ago, I talked about how underrated I felt this roster was. Well, I think they nailed the draft. I wanted them to improve the defensive line; they went out and took 
+IDL Walter Nolen 16th, who I had 11th in my “What I’d Do as GM for Every Team” draft. Then, they grabbed CB Will Johnson at 47. Obviously he fell because of health concerns, so I don’t really 
+know how valid that is from the outside. If he can stay healthy, though, they added a borderline top-10 prospect in the second round. In the third round, they took EDGE Jordan Burch 12 spots 
+after expected according to MockDraftDatabase’s consensus big board. In the 4th they added linebacker depth, which is good because they didn’t have a clear third guy. The only thing they didn’t 
+add that I wanted to see was some OL competition. They are strong at both T positions and C, but the OGs could be a problem. Still, this was a very successful draft from both a talent and need 
+perspective.
 
-Needs: WR, OT, OG, IDL, EDGE
+Overall, I really like where the Cardinals stand next season.
 
-WR: Outside of Marvin Harrison Jr, this is a relatively weak group. Michael Wilson ranked as my #86 WR in 2024, while Greg Dortch was #81.
+The defense is going to be very strong. In the words of @ericeager_, it’s a really nice weak-link unit. Up front, they have my 2024 #26 IDL Dalvin Tomlinson sandwiched between last year’s first 
+round pick Darius Robinson and this year’s first round pick Walter Nolen. They added my 2024 #25 EDGE Josh Sweat to be a clear #1, and a rotation of Zaven Collins, Baron Browning, and rookie 
+Jordan Burch will be a strong complement. Both ILBs are startable, and we’ve seen Gannon have success without starpower there. At CB, they have a wealth of options. Assuming Will Johnson is healthy, 
+he’ll instantly be a quality player. Sean Murphy-Bunting is dependable, while Starling Thomas V was fine last season. They have last year’s 43rd overall pick in Max Melton, too. In the slot, they have 
+my #1 overall Nickel from last year, Garrett Williams. At Safety, they’re very strong with Budda Baker and Jalen Thompson. There isn’t any noticeable weak spot on the defense.
 
-OT: Jonah Williams is a free agent following the season, so they may opt for a long-term improvement.
+To me, offense is the bigger question mark. I graded Kyler Murray as the #8 QB last season, so I’m confident in him. The run game was strong last year, and Trey McBride is a stud. The OTs and C are 
+good, but as I mentioned I have some concern over the OGs. They'll need some secondary WR to step up, too. To reach that next level, they need to get MHJ more involved. If the Kyler to MHJ connection 
+can grow, defenses are going to have a really tough time guarding both MHJ and McBride while worrying about the run game.
 
-OG: Isaiah Adams struggled a bit as a rookie, but the 3rd-round pick is just starting to get his bearing in the NFL. I could easily see Arizona roll with him as a starter next season. 
-Evan Brown has been solid but has a replaceable contract.
-
-IDL: They could definitely use some youth in this group. Outside of Darius Robinson, we’re looking at 31 year-old Dalvin Tomlinson and 39 year old Calais Campbell. The group is strong this year,
-but they’ll need to add some young talent.
-
-EDGE: A rotation of Zaven Collins, my #48 EDGE last season, and Baron Browning, my #69 EDGE last season, isn’t as bad as some make it out to be. Still, a more consistent long-term starter would be ideal.
-
-I’m fine with their starters at ILB: 28 year-old Akeem Davis-Gaither (my #49 ILB) and 27 year-old Mack Wilson (my #61 ILB) are both signed through 2026. In my opinion, a late depth pick would suffice.
-
-First Round Pick History under Monti Ossenfort: OT, WR, IDL  
-Second Round Pick History under Monti Ossenfort: EDGE, CB
-
-Sample Mock Draft:
-16. Kelvin Banks Jr, OL, Texas  
-47. T.J. Sanders, IDL, South Carolina  
-78. Jack Bech, WR, TCU`,
+I think this is a Cardinals team that could surprise a lot of people next season – I won’t be one of them.`,
 
   },
   Falcons: {
@@ -1205,28 +1200,32 @@ Sample Mock Draft:
       { position: "CB", name: "Clark Phillips III" },
       { position: "S", name: "Jordan Fuller" },
     ],
-    draftPreview: `
-Picks: 15, 46, 118, 218, 242
+    draftReview: `
+I wanted the Falcons to completely revamp the defensive line in this draft. They started off very strong by selecting EDGE/ILB Jalon Walker at 15 (12th pick in my “What I’d Do as All 32 GMs” draft),
+who I think is a great fit for them. They then traded back into the first round to select EDGE James Pearce Jr. at 26 (around where I had him projected). Look, I love the pick. I’ll explain later 
+how I see the Falcons using Walker, Pearce Jr, and Leonard Floyd, but I think it’ll really change the defense. That being said, the trade is inexcusable. They moved up 20 picks from 46th to 26th 
+and sent their first-round pick next year. This is a team that won 8 games last season and has an unproven entity at QB. I’m a strong proponent in not devaluing future draft picks, so there’s really 
+no way of justifying the trade in my eyes. If Penix struggles or gets injured, this could be a colossal issue for Atlanta. 
 
-Needs: WR, IDL, EDGE, CB, S
+From an on-field perspective I really like what Atlanta can do on the EDGE this season. I imagine Walker will primarily play the EDGE, but they should also use some fun disguised looks given the 
+capability to play Pearce Jr. and Floyd (my #44 2024 EDGE) on the EDGE with Walker lined up at ILB. The additions of Xavier Watts and Billy Bowman Jr. should really help the secondary. Watts will 
+likely start at Safety opposite Jessie Bates III, while Bowman Jr. may take over the Nickel position from Dee Alford (my #113 CB in 2024).
 
-WR: Outside of the fantastic duo of Drake London (my WR15) and Darnell Mooney (WR27), the Falcons are thin at WR. A late-round pick would do, but they should add another option, preferably 
-a slot.
+Looking forward to the season, I think Atlanta is a bit of a question mark. On offense, we don’t really know what they have in Penix. The offensive line should remain a strength as long as Ryan Neuzil 
+is an apt replacement for Drew Dalman, and with it the run game. In the receiving game, they’re pretty thin outside of Drake London (my #15 2024 WR) and Darnell Mooney (my #27).
 
-IDL: Other than Ruke Orhorhoro, there may not be a player from this group on the roster next season. This is a huge target for them early.
+On defense, the interior is still a big concern. IDL David Onyemata ranked #65 among DL for me last season, while IDL Morgan Fox ranked #46. They’ll badly need 2024 35th overall pick Ruke Orhorhoro 
+to step up. Last year, Atlanta ranked 26th against the run in EPA/play. This is especially a concern in a division where Tampa Bay and Carolina run the ball so well. I already talked about the EDGE 
+room, which I think will be a huge improvement from last season and will make a big impact. The ILBs are passable. At CB1, they have the fantastic A.J. Terrell, my #8 CB last season. CB2 Mike Hughes 
+has struggled each of the past 4 seasons, so that is a big concern of mine. I discussed this earlier, but Nickel will be an interesting spot for them. The hope is certainly that Billy Bowman Jr. can 
+step up immediately, as Alford hasn’t proved to be startable. Safety should be a point of strength with Jessie Bates III, my #2 S last season, and 3rd-round pick Xavier Watts, who is a very “NFL-Ready” player.
 
-EDGE: Similar to IDL, there isn’t much of a future on the EDGE. The Falcons should be targeting DLine hard this draft.
+In summary, there are a few too many question marks with this roster for me to be confident. How will Penix fare in his first real season as a starter? Can a receiver step up outside of London and Mooney? 
+Will the offensive line look the same without Dalman? Can Ruke Orhorhoro step up and anchor the IDL? Will both rookie EDGE rushers be immediate impact players? Can the rookie 3rd and 4th round picks fix a 
+secondary that struggled greatly last season?
 
-CB: Weak-link systems. Dee Alford got crushed last year, so they’d really benefit from an improvement at Nickel.
-
-S: The Falcons haven’t yet done anything to replace Justin Simmons and Richie Grant who both walked this offseason. Jordan Fuller struggled last year after a strong 2023 season.
-
-First Round Pick History under Terry Fontenot: TE, WR, RB, QB  
-Second Round Pick History under Terry Fontenot: S, EDGE, ILB, OG, IDL
-
-Sample Mock Draft:
-15. Mykel Williams, EDGE, Georgia  
-46. T.J. Sanders, IDL, South Carolina`,
+On offense, they have a strong offensive line, a good run game and two very good WRs. On defense, they have the 35th pick in 2024 at IDL who we haven’t gotten to see much of yet, two promising EDGE first-round 
+draft picks, and stars in A.J. Terrell and Jessie Bates III. There’s certainly room for hope, I just have too many questions to feel good about their outlook for the 2025 season.`,
 
   },
   Colts: {
@@ -2286,10 +2285,12 @@ export default function TeamLineup() {
             )}
   
             <div className="mt-12">
-              <h2 className="text-2xl font-bold mb-4">NFL Draft Preview: {selectedTeam}</h2>
-              <pre className="whitespace-pre-wrap text-sm bg-gray-50 p-4 border border-gray-200 rounded">
-                {teams[selectedTeam].draftPreview}
-              </pre>
+              <h2 className="text-2xl font-bold mb-4">
+                NFL Draft {teams[selectedTeam].draftReview ? "Review" : "Preview"}: {selectedTeam}
+                </h2>
+                <pre className="whitespace-pre-wrap text-sm bg-gray-50 p-4 border border-gray-200 rounded">
+                  {teams[selectedTeam].draftReview || teams[selectedTeam].draftPreview}
+                </pre>
             </div>
           </>
         )}
