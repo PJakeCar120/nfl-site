@@ -384,33 +384,36 @@ Sample mock draft:
       { position: "EDGE", name: "David Ojabo" },
       { position: "CB", name: "Chidobe Awuzie" },
     ],
-    draftPreview: `
-  Picks: 27, 59, 91, 129, 136, 176, 183, 203, 210, 212, 243
-  
-  Needs: WR, OG, DLine, ILB, CB
-  
-  WR: Nelson Agholor vacates 466 snaps. They signed DeAndre Hopkins to a 1 year $5M deal, but long-term they need a replacement on the outside.
-  
-  OG: They're pretty weak at both spots here after losing Patrick Mekari.
-  
-  DLine: No team rotates defensive line quite like the Ravens. They have 2 studs at IDL with 27 year-old Madubuike (my #14/102 qualifying IDL) and 25 year-old Jones (#33/102). 
-  They played Broderick Washington 490 snaps and he graded as my #84/102 IDL, so an improvement there would be nice. EDGE-wise, 34 year-old Van Noy (#29/115) and Oweh (#30/115) both had strong years. 
-  Tavius Robinson (#101/115) played 548 snaps, so some competition would be nice. Of course, Baltimore could just be more restrictive with their snaps next season.
-  
-  ILB: Some competition for Trenton Simpson would be nice after they benched him late last season.
-  
-  CB: Last year's rookie Nate Wiggins had a fantastic rookie year (my #19/116 CBs), so he'll be a strength. Marlon Humphrey will man the nickel, and they'll need a replacement at outside CB 
-  for Brandon Stephens' 1135 vacated snaps. They signed 30 year-old Chidobe Awuzie in free agency so they have a competent option, but surely they'll be looking for something more long-term. 
-  Also important to remember they play in a division with Chase, Higgins, Metcalf, Pickens, and Jeudy.
-  
-  First Round Pick History under Eric DeCosta: WR, ILB, WR, EDGE, S, C, WR, CB
-  
-  Quick note: I see a lot of sites with Safety listed as a need. I had 25 year-old Ar'Darius Washington as my #30 ranked S last year, so I disagree pretty strongly on that front.
-  
-  Sample mock draft:
-  27. Shavon Revel, CB, East Carolina
-  59. Jonah Savaiinaea, OG, Arizona
-  91. Kyle Kennard, EDGE, South Carolina`,
+    draftReview: `
+I wanted the Ravens to improve at OG, DLine, and CB. With pick #27, they selected S Malaki Starks. It’s an interesting pick with Starks having experience at Nickel. The secondary now includes 
+Humphrey, Washington, Hamilton, and Starks all with experience at Nickel. I’m not entirely sure how they’ll line up, and I’d imagine it will rotate throughout the game, but my inclination is 
+they’ll start like this: CB1: Marlon Humphrey, FS: Ar'Darius Washington, SS: Kyle Hamilton, CB2: Nate Wiggins, NB: Malaki Starks. This would mean Humphrey sliding back to the Outside. If they don’t 
+want to do that, they’d either move Kyle Hamilton to the Nickel or Ar’Darius Washington to the bench, but Washington was my #30 Safety last year so I’d imagine they’ll favor him over Chidobe Awuzie. 
+In terms of the actual pick, as expected I struggle with the positional value aspect. Safety is both a low-paying and volatile position. The Ravens scouting department has been very successful and the 
+addition gives them a ton of flexibility, so I can see it working well. Still, he’ll need to be an elite player for the pick to really be worth it. With pick #59, they selected EDGE Mike Green. 
+This will be quite a debated pick with Green’s off-field concerns, but I’m not in team meetings so let’s stick to the on-field outlook. Green was a consensus top-30 player from a talent perspective. 
+With Odafe Oweh and Kyle Van Noy as starters, the Ravens will be able to ease him into action. Van Noy is 34 years old, so Green will be a perfect successor. From an on-field perspective, this is a slam dunk. 
+I wanted a high draft capital addition on the DLine, and Green is exactly that. With pick #91, they took OL Emery Jones Jr. I’ll be curious to see if they move him to OG, which was my final need for the team. 
+They just added OT Joe Noteboom, so it does seem more likely he’ll kick inside. In the 4th round they added ILB Teddye Buchanan, so that should be nice depth behind Trenton Simpson who struggled late last season.
+
+Looking forward to the season, this will be an elite Ravens team. Lamar Jackson was the best player in the NFL each of the last two seasons. Both starting OTs Ronnie Stanley and Roger Rosengarten 
+and C Tyler Linderbaum return, which are spots of strength for the team. The OGs are a question mark, but I believe with a player of Lamar Jackson’s talent you focus on the defense and trust him to 
+make up for a weak spot or two. The wide receiver room is pretty good with Rashod Bateman (my 2024 #29 WR) and Zay Flowers (2024 #21 WR), though Hopkins is a weak spot (but I’d expect lots of 12 
+personnel). Tight ends Mark Andrews (2024 #10 TE) and Isaiah Likely (2024 #7 TE) are very strong points for the offense. The run game should be one of the best in the league with Jackson and 
+RB Derrick Henry (2024 #3 RB).
+
+On defense, they should also be one of the best units in the league. The interior is very strong with Travis Jones (2024 #33 IDL), Nnamdi Madabuike (2024 #14 IDL) and Broderick Washington 
+(2024 #84 IDL). Washington is probably the weakest link of the defense. On the EDGE, Kyle Van Noy (2024 #29 EDGE) and Odafe Oweh (2024 #30 EDGE) form a strong starting duo, while rookie Mike Green 
+could make an instant impact. ILB Roquan Smith (2024 #6 ILB) is another star, while his counterpart Trenton Simpson struggled last season (2024 #79 ILB). Simpson is the other question mark on the 
+defense. I already talked about the secondary a bit, but it should be one of the best in football. Marlon Humphrey (2024 #10 CB) and Nate Wiggins (2024 #29 CB) form one of the best duos in the league. 
+They have another superstar in S Kyle Hamilton (2024 #5 S) next to a solid starter in Ar’Darius Washington (2024 #30 S). Rookie 1st round pick Malaki Starks will be the other starter.
+
+Their depth is very strong too with QB Cooper Rush, OL Joe Noteboom and Emery Jones Jr, WRs Tez Walker and Tylan Wallace, IDL Aeneas Peebles, ILB Teddye Buchanan, EDGEs Tavius Robinson, David Ojabo 
+and Adisa Isaac, and CBs Chidobe Awuzie and T.J. Tampa.
+
+This is one of the best rosters in the NFL, if not the best. The only question marks come at OG, DT2, and ILB2. Even then, they have relatively proven entities at those spots, so they won’t be 
+dragged down. The abundance of starpower is incredible, so much so that I don’t want to list them all off. It’s hard to imagine, but they probably got better this offseason. If rookies Malaki Starks 
+and Mike Green have strong years, this may be the best team in the NFL. GM Eric DeCosta has built a Goliath, now we’ll have to wait and see if it’s finally their year.`,
   },
 
   Rams: {
@@ -1505,35 +1508,40 @@ Sample Mock Draft:
     { position: "S", name: "Jonathan Owens" },
     { position: "S", name: "Elijah Hicks" },
   ],
-  draftPreview: `
-Picks: 10, 39, 41, 72, 148, 233, 240
+  draftReview: `
+My most important needs heading into the draft for the Bears were EDGE and CB. With the 10th pick, they selected TE Colston Loveland. Loveland is a talented receiver who should fit well in Head Coach 
+Ben Johnson’s scheme, with the goal of him taking the role of Sam Laporta. That being said, I have major issues with this pick. To start, the hit rate on first-round Tight Ends has been very low. 
+These are the most recent TEs to go in the first round: Brock Bowers, Dalton Kincaid, Kyle Pitts, TJ Hockenson, Noah Fant, Hayden Hurst, OJ Howard, Evan Engram, David Njoku, and Eric Ebron. 
+Outside of Bowers and Hockenson, I imagine teams regret these picks (and Hockenson was traded from his original team). Furthermore, the position is extremely low-paying. Kittle and McBride, the two 
+best TEs in the league, just signed for $19.1M and $19M AAV, respectively. Those would be the 13th and 14th highest paid EDGEs in the league, an example I use as Mykel Williams was on the board.
+So they use the 10th pick on a player at a low-paying position with a low hit-rate. I can’t get behind the process. Moving on, the Bears took WR Luther Burden III with the 39th pick. I’m intrigued by 
+the pick and how the Bears plan to use Burden in addition to Moore and Odunze. Nevertheless, if Ben Johnson can scheme him the ball, he’ll be a dangerous player. This is right around where Burden was 
+projected and he plays a premier position, so I’m on board. The Bears then traded picks 41, 72, and 240 for picks 56, 62, and 109. Without referencing a trade calculator, I think this was about what we would expect. 
+With the 56th pick they selected OT Ozzy Trapilo. Clearly, the theme of the draft was to make sure they left no stone unturned to set QB Caleb Williams up for a successful season. I’ll never be upset about a team 
+investing in the trenches. The pick gives them insurance if they don’t extend LT Braxton Jones, and at worst it gives them a solid swing tackle. With the 62nd pick, they selected IDL Shemar Turner. Turner puts the 
+Bears in a really nice spot at IDL. Gervon Dexter Sr. was fantastic last season and will be the #1 moving forward. With the 2nd spot, the Bears can start Grady Jarrett and ease Turner into action with the goal of him 
+eventually becoming the second long-term starter. While I can understand all three 2nd round picks, I do still have trouble with the Bears neglecting needs at EDGE and CB and think the defense will struggle because of it. 
+That being said, I understand the approach to put Caleb Williams in the best position possible to succeed next year, as the franchise will depend on his success.
 
-Needs: RB, TE, EDGE, ILB, CB
+Looking forward to next year, I have a very difficult time projecting the success of the offense. It truly comes down to QB Caleb Williams. Williams was my 25th ranked QB last season. He really 
+struggled against pressure, didn’t make many big time throws, and overall had accuracy issues. However, his supporting cast this season should be phenomenal. First, they added offensive mastermind Ben Johnson as Head Coach. 
+The offensive line should be one of the best in the league. Both OTs, Braxton Jones and Darnell Wright, are good starters. OG Joe Thuney is still one of the best in the league, while OG Jonah Jackson is a bit of a question 
+mark but knows the scheme well. C Drew Dalman is also one of the best in the league. The Wide Receivers will be very interesting with D.J. Moore (my 2024 #50 WR, but 2023 #4 WR), 2024 9th overall pick Rome Odunze, and 2025 
+39th overall pick Luther Burden III. Both Moore and Odunze struggled last season. Still, Moore was my #4 WR in 2023 and I won’t write off the 9th pick in the draft in Rome Odunze after one season. At Tight End, they’ll be 
+very strong with 10th overall pick Colston Loveland and Cole Kmet (2024 #27 TE, 2023 #6 TE). At RB they have D’Andre Swift, my 2024 #35 RB.
 
-RB: Head Coach Ben Johnson uses the run game to set up the full offense. They’ll want an improvement over current RB D’Andre Swift, my #35 RB last season.
+On defense, I think they’ll be relatively average. I’m intrigued by the Interior Defensive Line. Gervon Dexter Sr. was very good last season (2024 #21 IDL) and they signed Grady Jarrett to pair with him (2024 #28 IDL). 
+Jarrett is 32 years old, so we can expect a bit of regression. Still, it’s a nice duo. They drafted Shemar Turner 62nd, so he’ll rotate in and ideally eventually be Dexter’s counterpart. I like what they’ve done here. 
+On the EDGE, I think they’re a bit weak. Montez Sweat (2024 #24 EDGE) is a below-average number one. He’ll pair with Free Agent addition Dayo Odeyingbo (2024 #55 EDGE) who is really unproven. They don’t have a well defined 
+number 3, with Austin Booker the most likely candidate. The Inside Linebackers should be fine with T.J. Edwards (2024 #45 ILB, 2023 #7 ILB) and Tremaine Edmunds (2024 #67 ILB, 2023 #26 ILB). 
+This will likely be Edmunds’ last season with the team, so they’ll need to start looking for a long-term replacement. At CB, they have a stud in Jaylon Johnson (2024 #15 CB, 2023 #1 CB). 
+However, they are very weak outside of him, with Tyrique Stevenson (2024 #71 CB) the other projected starter. Kyler Gordon should start at Nickel (2024 #109 CB, 2023 #42 CB). I happen to like both 
+Safeties in Jaquan Brisker (2024 #6 S) and Kevin Byard (2024 #11 S). For them, it will moreso be a question of staying healthy. The defense just lacks starpower outside of Jaylon Johnson. I like the 
+IDL and the Safeties, and the linebackers shouldn’t be an issue. I think they’ll struggle to rush the Quarterback, though. I also see CB2 and EDGE3 as big holes.
 
-TE: Johnson ran a fair bit of 12 personnel last season, so they’ll likely want to improve at the 2nd TE slot.
-
-EDGE: Dayo Odeyingbo is likely to be the 2nd starter here, but his new contract is more projection than anything, ranking as my #55 EDGE last season (#52 in 2023, #82 in 2022).
-
-ILB: With no guaranteed money left on his deal in 2026, Tremaine Edmunds seems unlikely to be on the roster past this year.
-
-CB: Tyrique Stevenson has ranked as my #71 CB each of the past two seasons, so an improvement at the 2nd CB spot would be ideal.
-
-People have seemingly talked themselves into OT being a need. While I will never fully disagree with investing in the lines, I do have to disagree here. Braxton Jones is an above-average 
-starting OT and 26 years-old. Darnell Wright was fantastic last year at 23 years-old. 
-
-At Safety, I think a depth pick would suffice. Brisker, while injury prone, was very good last year when healthy. Kevin Byard had a resurgent year, ranking as my #11 S. With the general 
-inconsistency at this position league-wide, I don't think they should be investing heavy resources here. 
-
-First Round Pick History Under Ryan Poles: OT, QB, WR
-Second Round Pick History Under Ryan Poles: CB, S, IDL, CB, IDL
-
-Sample Mock Draft:
-10. Mykel Williams, EDGE, Georgia
-39. Azareye'h Thomas, CB, Florida State
-41. TreVeyon Henderson, RB, Ohio State
-72. Terrance Ferguson, TE, Oregon`,
+To me, the Bears are one of the most intriguing teams in the league. On defense, I think they’ll be around average. They have the holes I’ve referenced, but they also have some legitimate strengths with Johnson, Sweat, 
+Dexter, and the Safeties. On offense, I really don’t know. The talent is without a doubt there. If Caleb Williams looks better under pressure, they could be really dangerous. They have so many weapons, it’s just a question 
+of if Williams can get the ball in their hands. Of course, it won’t help that the NFC North will be so strong again this season. The Bears will certainly be a fun team to keep your eye on. `,
 
 },
 'Saints': {
@@ -1649,31 +1657,35 @@ Sample Mock Draft:
     { position: "ILB", name: "Christian Rozeboom" },
     { position: "S", name: "Nick Scott" },
   ],
-  draftPreview: `
-Picks: 8, 57, 74, 111, 114, 140, 146, 163, 230
+  draftReview: `
+I wanted the Panthers to find long-term plans at WR, EDGE, and ILB. With pick #8, the Panthers selected WR Tetairoa McMillan. I took McMillan #8 in my “What I’d Do as GM of All 32 Teams” draft as 
+well. First of all, the rising salaries at WR have made this a premier position. We just saw Ja’Marr Chase sign for over $40M AAV. McMillan fills a massive need for the Panthers, too. Last year, 
+Young really broke out at the end of the season despite throwing primarily to Adam Thielen (my 2024 #28 WR) and Jalen Coker (2024 #49 WR). Now, he gets a legit #1. From both a math and fit perspective, 
+this is a slam dunk. He was in the late-teens in Mel Kiper and Daniel Jeremiah’s final big boards, but I like the player and am fine with a small reach. With pick #51, the Panthers took EDGE Nic Scourton. 
+With pick #77, they took EDGE Princely Umanmielen. D.J. Wonnum and Jadeveon Clowney each graded out well for me last year, ranking 23rd and 28th, respectively. Wonnum is 28 and an upcoming free agent, 
+while Clowney is 32 and an upcoming free agent. So, there’s lots of uncertainty here. Adding both EDGES is fantastic work with respect to both positional value and long-term need.
 
-Needs: WR, EDGE, ILB, CB, S
+I wanted the Panthers to find long-term fixes at WR, EDGE, and ILB. Out of those three, the two with significant positional value are WR and EDGE. They made the exact pick I would have at 8, then they added 
+two EDGES. This was a slam dunk draft for the Panthers.
 
-WR: Jalen Coker had a fantastic rookie year, finishing as my #49 WR on the season but really heating up late. Adam Thielen had a good year as well, though at 35 he won’t be a part of the 
-long-term plan. Xavier Legette also deserves time. Still, they need a dominant WR1, and I’m not to sure that is currently on the roster.
+Looking forward to next year, the Panthers will be an interesting team to watch. I think that the offense will be pretty good. QB Bryce Young (2024 #15 QB) looked really strong the latter half of 
+the season. The offensive line is very strong and they return all five starters. With the strong offensive line comes a good run game led by Chuba Hubbard (2024 #6 RB). In the passing game, the 
+combination of McMillan on the outside and Thielen in the slot could really work. Jalen Coker or Xavier Legette will be the other starter on the outside (I liked Coker). The Tight End room isn’t 
+great, led by Tommy Tremble (2024 #33 TE). All in all, I see a QB that looked very good to end the season, a strong offensive line, and a nice duo at WR. I think this offense could be really solid.
 
-EDGE: D.J. Wonnum and Jadeveon Clowney each graded out well for me last year, ranking 23rd and 28th, respectively. Wonnum is 28 and an upcoming free agent, while Clowney is 32 and an 
-upcoming free agent. So, there’s lots of uncertainty here. Wonnum will be a part of the long-term plans, but they’ll need a Clowney replacement.
+This defense will look very different from last year. Derrick Brown, their best interior defensive lineman, was out for essentially all of last season. Counting him, they added 4 new starters this 
+offseason. The IDL will feature Derrick Brown (2023 #25 IDL), Tershawn Wharton (2024 #31 IDL), and Bobby Brown III (2024 #99 IDL). That’s not necessarily an elite unit, but it’s solid and a really 
+nice improvement from last year. I spoke about the EDGE room above, but Wonnum and Clowney graded as around average starters for me. Adding in Scourton and Umanmielen creates a really exciting room. 
+At inside linebacker, Josey Jewell (2024 #21 ILB) and Trevin Wallace (2024 #84 ILB) will be the starters. Again, it’s not a strength but won’t drag them down. At CB, Jaycee Horn (2024 #13 CB) is a 
+great player. Opposite him will be Mike Jackson, my 2024 #45 CB. They don’t really have a defined Nickel, so it will be interesting to see what they do there. At safety, they added Tre’von Moehrig 
+(2024 #16 S) to pair with Demani Richardson (2024 #71 S).
 
-ILB: Carolina is likely looking for 2 long-term starters here. Josey Jewell is 30 with no guaranteed money past this season, while Trevin Wallace is a question mark.
+Depth-wise, they are pretty strong. Rico Dowdle (2024 #24 RB) should make an impact. IDL A’Shawn Robinson should be a nice contributor. I already talked about the additions of Scourton and Umanmielen, 
+but EDGE Pat Jones II was also brought in and will play. Finally, they have ILB Christian Rozeboom and S Nick Scott.
 
-CB: CB2 Mike Jackson graded as my #45 CB last season, so he may be a little stronger than public perception. Nevertheless, they’ll look to improve long-term. They don’t have a consistent
-presence at Nickel, so they’ll look to add there.
-
-S: Borderline need here. If the Panthers are comfortable rolling with 2024 undrafted-rookie Demani Richardson then I am too. He played pretty well in limited snaps last season.
-
-First Round Pick History Under Dan Morgan: WR
-Second Round Pick History Under Dan Morgan: RB
-
-Sample Mock Draft:
-8. Tet McMillan, WR, Arizona
-57. Landon Jackson, EDGE, Arkansas
-74. Kevin Winston Jr, S, Penn State`,
+Overall, this is a team on the rise. The offense could be really good if Bryce Young looks the way he did the latter half of last season. They’ve got the QB, the offensive line, and now a legit WR1 in 
+Tet McMillan. I think the defense will still struggle. Despite the additions, they lack starpower outside of Derrick Brown and Jaycee Horn. They have a deep EDGE room, but no star talent. 
+In the secondary, I don’t see a plan at Nickel and both CB2 Mike Jackson and S Demani Richardson are question marks. The team isn’t there yet, but you can easily see the path they are on.`,
 },
 'Jets': {
   offense: {
