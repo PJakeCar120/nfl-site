@@ -759,7 +759,7 @@ Sample mock draft:
       QB: "Mason Rudolph",
       RB: "Jaylen Warren",
       WR1: "DK Metcalf",
-      WR2: "George Pickens",
+      WR2: "Robert Woods",
       SWR: "Calvin Austin",
       TE1: "Pat Freiermuth",
       TE2: "Darnell Washington",
@@ -1333,9 +1333,9 @@ Sample Mock Draft:
     offense: {
       QB: "Dak Prescott",
       RB: "Javonte Williams",
-      WR1: "CeeDee Lamb",
+      WR1: "George Pickens",
       WR2: "Jalen Tolbert",
-      SWR: "KaVontae Turpin",
+      SWR: "CeeDee Lamb",
       TE1: "Jake Ferguson",
       TE2: "Luke Schoonmaker",
       LT: "Tyler Guyton",
@@ -1359,6 +1359,7 @@ Sample Mock Draft:
     },
     backups: [
       { position: "RB", name: "Miles Sanders" },
+      { position: "WR", name: "KaVontae Turpin" },
       { position: "WR", name: "Jonathan Mingo" },
       { position: "OG", name: "Brock Hoffman" },
       { position: "DT", name: "Solomon Thomas" },
