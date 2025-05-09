@@ -377,11 +377,15 @@ Sample mock draft:
       { position: "RB", name: "Justice Hill" },
       { position: "FB", name: "Patrick Ricard" },
       { position: "WR", name: "Tylan Wallace" },
+      { position: "TE", name: "Mitchell Evans (R)" },
       { position: "OT", name: "Emery Jones Jr (R)" },
+      { position: "OT", name: "Carson Vinson (R)" },
       { position: "OG", name: "Ben Cleveland" },
+      { position: "IDL", name: "Cam Jackson (R)" },
       { position: "EDGE", name: "Mike Green (R)" },
       { position: "EDGE", name: "Tavius Robinson" },
       { position: "EDGE", name: "David Ojabo" },
+      { position: "ILB", name: "Teddye Buchanan (R)" },
       { position: "CB", name: "Chidobe Awuzie" },
     ],
     draftReview: `
@@ -1057,10 +1061,12 @@ Sample Mock Draft:
       { position: "QB", name: "Jake Browning" },
       { position: "RB", name: "Zack Moss" },
       { position: "OG", name: "Dylan Fairchild (R)" },
+      { position: "OG", name: "Jalen Rivers (R)" },
       { position: "OG", name: "Lucas Patrick" },
       { position: "DT", name: "T.J. Slaton" },
       { position: "DT", name: "McKinnley Jackson" },
-      { position: "ILB", name: "Demetrius Knight Jr (R)" },
+      { position: "ILB", name: "Demetrius Knight Jr. (R)" },
+      { position: "ILB", name: "Barrett Carter (R)" },
       { position: "EDGE", name: "Joseph Ossai" },
       { position: "EDGE", name: "Cam Sample" },
       { position: "EDGE", name: "Myles Murphy" },
@@ -1132,8 +1138,10 @@ Sample Mock Draft:
       { position: "DT", name: "Dante Stills" },
       { position: "EDGE", name: "Baron Browning" },
       { position: "EDGE", name: "Jordan Burch (R)" },
+      { position: "ILB", name: "Cody Simon (R)" },
       { position: "CB", name: "Starling Thomas V" },
       { position: "CB", name: "Max Melton" },
+      { position: "CB", name: "Denzel Burke (R)" },
       { position: "S", name: "Dadrion Taylor-Demerson" },
     ],
     draftReview: `
@@ -1504,6 +1512,8 @@ Sample Mock Draft:
     { position: "DT", name: "Shemar Turner (R)" },
     { position: "DT", name: "Andrew Billings" },
     { position: "EDGE", name: "Austin Booker" },
+    { position: "ILB", name: "Ruben Hyppolite II (R)" },
+    { position: "CB", name: "Zah Frazier (R)" },
     { position: "CB", name: "Terell Smith" },
     { position: "S", name: "Jonathan Owens" },
     { position: "S", name: "Elijah Hicks" },
@@ -1636,7 +1646,7 @@ Sample Mock Draft:
     EDGE1: "D.J. Wonnum",
     ILB1: "Josey Jewell",
     ILB2: "Trevin Wallace",
-    EDGE2: "Jadeveon Clowney",
+    EDGE2: "Nic Scourton (R)",
     CB1: "Jaycee Horn",
     FS: "Demani Richardson",
     SS: "Tre'von Moehrig",
@@ -1645,25 +1655,27 @@ Sample Mock Draft:
   },
   backups: [
     { position: "RB", name: "Rico Dowdle" },
+    { position: "RB", name: "Trevor Etienne (R)" },
     { position: "WR", name: "Xavier Legette" },
     { position: "WR", name: "David Moore" },
     { position: "DT", name: "A'Shawn Robinson" },
     { position: "DT", name: "Shy Tuttle" },
     { position: "DT", name: "LaBryan Ray" },
-    { position: "EDGE", name: "Nic Scourton (R)" },
+    { position: "DT", name: "Cam Jackson (R)" },
     { position: "EDGE", name: "Princely Umanmielen (R)" },
     { position: "EDGE", name: "Pat Jones II" },
     { position: "EDGE", name: "DJ Johnson" },
     { position: "ILB", name: "Christian Rozeboom" },
     { position: "S", name: "Nick Scott" },
+    { position: "S", name: "Lathan Ransom (R)" },
   ],
   draftReview: `
 I wanted the Panthers to find long-term plans at WR, EDGE, and ILB. With pick #8, the Panthers selected WR Tetairoa McMillan. I took McMillan #8 in my “What I’d Do as GM of All 32 Teams” draft as 
 well. First of all, the rising salaries at WR have made this a premier position. We just saw Ja’Marr Chase sign for over $40M AAV. McMillan fills a massive need for the Panthers, too. Last year, 
 Young really broke out at the end of the season despite throwing primarily to Adam Thielen (my 2024 #28 WR) and Jalen Coker (2024 #49 WR). Now, he gets a legit #1. From both a math and fit perspective, 
 this is a slam dunk. He was in the late-teens in Mel Kiper and Daniel Jeremiah’s final big boards, but I like the player and am fine with a small reach. With pick #51, the Panthers took EDGE Nic Scourton. 
-With pick #77, they took EDGE Princely Umanmielen. D.J. Wonnum and Jadeveon Clowney each graded out well for me last year, ranking 23rd and 28th, respectively. Wonnum is 28 and an upcoming free agent, 
-while Clowney is 32 and an upcoming free agent. So, there’s lots of uncertainty here. Adding both EDGES is fantastic work with respect to both positional value and long-term need.
+With pick #77, they took EDGE Princely Umanmielen. D.J. Wonnum graded out well for me last year, ranking 23rd. Wonnum is 28 and an upcoming free agent, So, there’s lots of uncertainty here. Adding both EDGES 
+is fantastic work with respect to both positional value and long-term need.
 
 I wanted the Panthers to find long-term fixes at WR, EDGE, and ILB. Out of those three, the two with significant positional value are WR and EDGE. They made the exact pick I would have at 8, then they added 
 two EDGES. This was a slam dunk draft for the Panthers.
@@ -1675,7 +1687,7 @@ great, led by Tommy Tremble (2024 #33 TE). All in all, I see a QB that looked ve
 
 This defense will look very different from last year. Derrick Brown, their best interior defensive lineman, was out for essentially all of last season. Counting him, they added 4 new starters this 
 offseason. The IDL will feature Derrick Brown (2023 #25 IDL), Tershawn Wharton (2024 #31 IDL), and Bobby Brown III (2024 #99 IDL). That’s not necessarily an elite unit, but it’s solid and a really 
-nice improvement from last year. I spoke about the EDGE room above, but Wonnum and Clowney graded as around average starters for me. Adding in Scourton and Umanmielen creates a really exciting room. 
+nice improvement from last year. I spoke about the EDGE room above, but Wonnum graded as an around average starter for me. Adding in Scourton and Umanmielen creates a really exciting room. 
 At inside linebacker, Josey Jewell (2024 #21 ILB) and Trevin Wallace (2024 #84 ILB) will be the starters. Again, it’s not a strength but won’t drag them down. At CB, Jaycee Horn (2024 #13 CB) is a 
 great player. Opposite him will be Mike Jackson, my 2024 #45 CB. They don’t really have a defined Nickel, so it will be interesting to see what they do there. At safety, they added Tre’von Moehrig 
 (2024 #16 S) to pair with Demani Richardson (2024 #71 S).
@@ -2059,8 +2071,11 @@ Sample Mock Draft:
   },
   backups: [
     { position: "QB", name: "Dillon Gabriel (R)" },
+    { position: "QB", name: "Shedeur Sanders (R)" },
     { position: "QB", name: "Kenny Pickett" },
     { position: "RB", name: "Jerome Ford" },
+    { position: "RB", name: "Dylan Sampson (R)" },
+    { position: "WR", name: "Diontae Johnson" },
     { position: "TE", name: "Blake Whiteheart" },
     { position: "OG", name: "Teven Jenkins" },
     { position: "DT", name: "Mike Hall Jr." },
@@ -2072,43 +2087,61 @@ Sample Mock Draft:
     { position: "ILB", name: "Jerome Baker" },
     { position: "CB", name: "Cameron Mitchell" },
   ],
-  draftPreview: `
-Picks: 2, 33, 67, 94, 104, 179, 192, 200, 216, 255
+  draftReview: `
+NFL Draft Review: #Browns 
 
-Needs: QB, RB, WR, OT, EDGE, CB, S
+To begin the draft, the Browns traded picks #2, #104, and #200 for picks #5, #36, #126, and the Jaguars’ 2026 First Round pick. Fantastic. WR/CB Travis Hunter will likely be a great player, but this
+is a QB trade-up package. When you can move off of a non-QB for this set of picks, you have to do it. Quite frankly, I don’t think the difference between Hunter and IDL Mason Graham, who they selected
+#5, will be that large. Moving onto Graham, I love the pick. The Browns get a premier player at a premier position. When you talk about rebuilding a roster, the first step is the lines. A Defensive Line 
+with Graham and EDGE Myles Garrett will be haunting for opposing offenses. This is great work by Andrew Berry and Co. With pick #33, Cleveland selected ILB Carson Schwesinger. This is a confusing pick for me.
+Cleveland has much more pressing long-term needs at WR, OT, and CB. Certainly, this isn’t a vote of confidence in the health of Jeremiah Owusu-Koramoah, who I think is one of the best ILBs in the NFL. With pick 
+#36, the Browns selected RB Quinshon Judkins. Again, I have trouble with this pick. In such a deep RB draft class, I really would’ve liked to see the Browns look at RB later 
+(which they actually did with RB Dylan Sampson in the 4th). Schwesinger and Judkins may very well be great NFL players. That being said, the Browns are in all likelihood still without their QB of the future. 
+If the goal is to draft a QB high in 2026, then they should be preparing a supporting cast to make his introduction to the NFL as easy as possible. The way you do that is to have a strong Offensive Line and Wide Receivers. 
+Currently, the Offensive Line is in disarray as we look toward the future. Both starting Offensive Guards Wyatt Teller (age 31) and Joel Bitonio (age 34) are Free Agents following the season, as are starting 
+Offensive Tackle Jack Conklin (age 31) and starting Center Ethan Pocic (age 30). The only other projected starter, Offensive Tackle Dawand Jones, has not yet proven to be a long-term starter. Both Teller and Bitonio 
+may be back given their projected Void year cap hits, but the Offensive Tackles are worrisome. At Wide Receiver, only Jerry Jeudy has proven to be a long-term starter. So, this is not a team that is set-up 
+to develop a Quarterback. With premier draft capital in picks #33 and #36, Cleveland had a great chance to start the process of cleaning this up. Opting for an off-ball Linebacker and a Running Back are very surprising
+decisions to me. I will say, however, that Cleveland has a fantastic analytics department. There could certainly be things they are looking at internally that give them confidence in OT Dawand Jones, OG Zak Zinter, and 
+WR Cedric Tillman. Or, their models could be telling them that their projected hit rates on Schwesinger and Judkins are so high that they were players they wouldn’t feel comfortable passing on. Still, I have trouble with 
+an analytical Front Office selecting non-premier positions over more premier ones mid-rebuild, especially with a new Quarterback set to come in next season. Moving on, with pick #67 Cleveland selected TE Harold Fannin Jr. 
+Fannin was a highly-debated prospect after leading the FBS in receptions but testing to just a 7.78 RAS (Relative Athletic Score). I like the idea of shooting for his upside here. Starting TE David Njoku is a Free Agent 
+following the season, so we will see if Fannin can take over long-term or form a nice one-two punch with Njoku. Njoku has so much money tied up in Void years that it seems the latter is the more likely option. With pick #94, 
+the Browns selected QB Dylan Gabriel. This was quite a surprise, but like I said Cleveland has a strong analytical department so maybe they are seeing something, and he does fit their mold of accurate QBs. I’ll never criticize a 
+team for taking a shot on a young Quarterback. In the 4th round, the Browns took RB Dylan Sampson. I’m a big fan of this pick, and that reiterates my confusion with the Judkins pick. In a normal year, Sampson probably would have 
+gone in day 2. I wish we had gotten to see him as a starter this season. Clearly, the Browns are gearing up to play good defense and run the ball next season. With their final pick, the Browns selected QB Shedeur Sanders 
+in the 5th round. There may never again be a more discussed 5th round pick at the time of the pick. Sanders is another scheme fit for what the Browns are trying to do. They are looking for accurate QBs who can protect the ball. 
+Sanders likely won’t make special plays, but he could grow into a very stable NFL QB, whether that is as a starter or a valuable backup. 
 
-QB: It will be interesting to see how Cleveland approaches the position this draft. It appears they won’t be selecting one with the 2nd pick, so pick 33 or a trade back into the first become 
-interesting options.
 
-RB: Jerome Ford ranked as my #20 RB in 2024, so this isn’t as big of a need to me. Cleveland isn’t really in a position to invest in RB anyway, so I’d be happy to see them stick with Ford or a 
-late-round pick.
+Looking towards next season, it’s difficult to project Cleveland’s offense given that we don’t know who will be playing QB. Still, there’s no reason to expect considerable improvement from last year. 
+It is going to look different based on which QB starts. Either way, I think we’ll see a very run-first approach. If it is Joe Flacco, expect a lot of aggressive throws similar to 2023. If it is one of the 
+rookies or Pickett, they’ll likely be asked to play smart and protect the ball. The Offensive Tackles could struggle. Neither projected starter, Conklin and Jones, has been very good. 
+The Interior should be pretty good with Teller, Bitonio, and Pocic, which reaffirms that I think we’ll see a lot of running between the tackles with Judkins and Sampson. The Wide Receiver room is led by Jerry Jeudy, 
+my 2024 #46 WR, who really turned it on late last season. Opposite him will be Cedric Tillman, my 2024 #79 WR. I project last year’s 5th round pick Jamari Thrash as the third WR, but it should be a competition. 
+This is quite frankly not a good group and a major need heading into next year. The Tight End room should be good. David Njoku (2024 #29 TE, 2023 #11 TE) will be the #1, 
+with 3rd-rounder Harold Fannin Jr. likely to play a solid amount. I expect a lot of 12 personnel. Finally, the RB room will be led by 2nd-rounder Quinshon Judkins, with Jerome Ford as a pass-catcher 
+and 4th-rounder Dylan Sampson stealing some carries. I expect a ton of running through Judkins and Sampson as Cleveland attempts to play good defense and eat clock. 
 
-WR: Jerry Jeudy really turned it on late last season, though the raw volume of passing from Jameis Winston certainly helped. Outside of him, the group is pretty weak. The expectation is that 
-Cleveland will draft Travis Hunter and use him as a WR, so they may have found their solution.
+On defense, I’m excited to see this group. The Interior Defensive Line should be really good. 5th overall pick Mason Graham will lead the way. Next to him will be Maliek Collins (2024 #18 IDL), who I 
+think was a steal in FA at 2 years $20M. 2024 2nd round pick Mike Hall Jr. should push for a good chunk of playing time as well. On the EDGE, superstar and future Hall-of-Famer Myles Garrett leads the way. 
+My model runs from 2021-2024. In those 4 years, Garrett ranks as my #4, #1, #2, and #1 EDGE. He was my 2022 and 2024 DPOY. Opposite him will be Isaiah McGuire, my 2024 #49 EDGE. 
+If the 23 year-old McGuire can take a step forward this season, the Defensive Line could be the league’s best. Graham, Collins, Garrett, and McGuire form a lethal unit here. 
+At Linebacker, it’s unclear what the health status of Jeremiah Owusu-Koramoah is. If he’s healthy, this is one of the best duos in the league. 
+Assuming his health, JOK (2024 #3 ILB) will start next to #33 pick Carson Schwesinger. If JOK can’t go, it will be Jordan Hicks (2024 #50 ILB) in the second starting spot. 
+The Secondary is the only worrisome group on the defense. CB1 will be Denzel Ward, who has really struggled the past few seasons after a great 2021 (2024 #81 CB, 2023 #49 CB, 2022 #68 CB, 2021 #6 CB). 
+Ward is still just 28 years-old and has obvious talent, but they’ll need him to turn it around. CB2 will be Martin Emerson Jr, who struggled last year after a very strong 2023 (2024 #98 CB, 2023 #17 CB). 
+In the Nickel will be Greg Newsome II (2024 #112 CB, 2023 #56 CB). The Browns have 3 very talented CBs who for whatever reason really struggled last season. With the help of what should be a great pass rush, 
+Cleveland will hope the CBs can figure it out this year. The Safeties will be Grant Delpit (2024 #65 S) and Ronnie Hickman Jr (2024 #83 S). 
+This will be Hickman’s first full year as a starting Safety, and he’s played well in limited time. I think this unit will be okay. The defense will depend on a bounce-back from the secondary. 
+If the CBs can hone in on their talents, it could be a fantastic defense. I think it comes down to JOK’s health, McGuire, Ward, and Emerson Jr. 
 
-OT: Former fourth-round pick Dawand Jones struggled last season after a better 2023. Jack Conklin has maintained a solid level of play, but after agreeing to a contract restructure this 
-offseason in which he shortened his contract to end after 2025 it seems his time with the Browns is ending.
-
-EDGE: The Browns have the best EDGE rusher in the NFL. Behind him, though, they are a little thin. Isaiah McGuire performed very well last season, but a larger sample size will tell us more. 
-They’ll hope to revitalize the career of Joe Tryon-Shoyinka as a depth piece.
-
-CB: Martin Emerson Jr. really struggled last season after a strong 2023. His contract expires after the season, so they’ll want to add some flexibility at the position. It appears that Nickel 
-Greg Newsome II is on his way out, too. His contract expires after the season.
-
-S: With Rodney McLeod Jr. and Juan Thornhill gone, the second projected starting spot turns to Ronnie Hickman. He has been solid in limited snaps, but they’ll want to add some assurance to the 
-position.
-
-You simply can’t build a competitive roster with the amount of money Deshaun Watson is being paid not to play quarterback. I don’t blame Cleveland for the decision they made to acquire him or 
-the contract they gave him, but we are where we are. I can very easily understand the decision to draft Travis Hunter or Abdul Carter, and it appears that Hunter will be the pick.
-
-First Round Draft History Under Andrew Berry: OT, CB
-Second Round Draft History Under Andrew Berry: S, ILB, IDL
-
-Sample Mock Draft:
-2. Travis Hunter, WR, Colorado
-32. Jaxson Dart, QB, Ole Miss
-67. Aireontae Ersery, OT, Minnesota
-94. Josaiah Stewart, EDGE, Michigan`
+I don’t think the Browns will be a contender because I just don’t see the offense being good enough to win big games. They could beat bad teams by playing great defense and draining the clock, 
+but it’s hard to see them beating a lot of good teams. I think the offense will be most productive by prioritizing the run game and protecting the ball. It’s boring, but the goal should be for 
+the defense to win them games. The defense could be really good. The DLine may be elite, and the linebackers too if JOK is healthy. The secondary will be the big question. 
+They have a lot of talent with Ward, Emerson Jr, and Newsome II, but those guys just haven’t been putting it together lately. All in all, I’m a little higher on the Browns than the public but 
+don’t expect any serious contention, especially in a difficult division.
+` 
 },
 'Titans': {
   offense: {
@@ -2299,7 +2332,7 @@ export default function TeamLineup() {
   
             <div className="mt-12">
               <h2 className="text-2xl font-bold mb-4">
-                NFL Draft {teams[selectedTeam].draftReview ? "Review" : "Preview"}: {selectedTeam}
+                NFL Draft {teams[selectedTeam].draftReview ? "Review + Season Preview" : "Preview"}: {selectedTeam}
                 </h2>
                 <pre className="whitespace-pre-wrap text-sm bg-gray-50 p-4 border border-gray-200 rounded">
                   {teams[selectedTeam].draftReview || teams[selectedTeam].draftPreview}

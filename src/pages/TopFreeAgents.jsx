@@ -13,6 +13,7 @@ const freeAgents = [
   { name: "Jordan Akins", position: "TE" },
   { name: "Folorunso Fatukasi", position: "IDL" },
   { name: "Johnathan Hankins ", position: "IDL" },
+  { name: "Jadeveon Clowney", position: "EDGE" },
   { name: "Matthew Judon", position: "EDGE" },
   { name: "Za'Darius Smith", position: "EDGE" },
   { name: "Von Miller", position: "EDGE" },
