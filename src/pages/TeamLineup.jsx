@@ -2088,8 +2088,6 @@ Sample Mock Draft:
     { position: "CB", name: "Cameron Mitchell" },
   ],
   draftReview: `
-NFL Draft Review: #Browns 
-
 To begin the draft, the Browns traded picks #2, #104, and #200 for picks #5, #36, #126, and the Jaguars’ 2026 First Round pick. Fantastic. WR/CB Travis Hunter will likely be a great player, but this
 is a QB trade-up package. When you can move off of a non-QB for this set of picks, you have to do it. Quite frankly, I don’t think the difference between Hunter and IDL Mason Graham, who they selected
 #5, will be that large. Moving onto Graham, I love the pick. The Browns get a premier player at a premier position. When you talk about rebuilding a roster, the first step is the lines. A Defensive Line 
