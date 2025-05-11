@@ -86,8 +86,8 @@ const awardsData = {
     ],
     proBowl: {
       NFC: [
-        "QB: Derek Carr, NO",
         "QB: Jared Goff, DET",
+        "QB: Derek Carr, NO",
         "QB: Kyler Murray, ARI",
         "RB: Jahmyr Gibbs, DET",
         "RB: Saquon Barkley, PHI",
@@ -205,7 +205,7 @@ const awardsData = {
     "NB: Devon Witherspoon, SEA",
   ],
   secondTeam: [
-    "QB: Russell Wilson, PIT",
+    "QB: Jared Goff, DET",
     "RB: James Conner, ARI",
     "WR: D.J. Moore, CHI",
     "WR: A.J. Brown, PHI",
@@ -400,7 +400,7 @@ const awardsData = {
         NFC: [
           "QB: Jalen Hurts, PHI",
           "QB: Aaron Rodgers, GB",
-          "QB: Tom Brady, TB",
+          "QB: Andy Dalton, NO",
           "RB: Saquon Barkley, NYG",
           "RB: Christian McCaffrey, SF",
           "RB: Tony Pollard, DAL",

@@ -1154,15 +1154,17 @@ perspective.
 
 Overall, I really like where the Cardinals stand next season.
 
-The defense is going to be very strong. In the words of @ericeager_, it’s a really nice weak-link unit. Up front, they have my 2024 #26 IDL Dalvin Tomlinson sandwiched between last year’s first 
-round pick Darius Robinson and this year’s first round pick Walter Nolen. They added my 2024 #25 EDGE Josh Sweat to be a clear #1, and a rotation of Zaven Collins, Baron Browning, and rookie 
-Jordan Burch will be a strong complement. Both ILBs are startable, and we’ve seen Gannon have success without starpower there. At CB, they have a wealth of options. Assuming Will Johnson is healthy, 
-he’ll instantly be a quality player. Sean Murphy-Bunting is dependable, while Starling Thomas V was fine last season. They have last year’s 43rd overall pick in Max Melton, too. In the slot, they have 
-my #1 overall Nickel from last year, Garrett Williams. At Safety, they’re very strong with Budda Baker and Jalen Thompson. There isn’t any noticeable weak spot on the defense.
+The defense is going to be strong. In the words of @ericeager_, it’s a really nice weak-link unit. Up front, they have my 2024 #26 IDL Dalvin Tomlinson sandwiched between last year’s first 
+round pick Darius Robinson and this year’s first round pick Walter Nolen. They added my 2024 #25 EDGE Josh Sweat to be a clear #1, and a rotation of Zaven Collins (2024 #48 EDGE), Baron Browning (2024 #69 EDGE), 
+and rookie Jordan Burch will be a strong complement. Both ILBs, Akeem Davis-Gaither (2024 #49 ILB) and Mack Wilson Sr. (2024 #61 ILB) are startable and we’ve seen Gannon have success without starpower there. 
+At CB, they have a wealth of options. Assuming Will Johnson is healthy, he’ll instantly be a quality player. Sean Murphy-Bunting (2024 #46 CB) is dependable, while Starling Thomas V (2024 #50 CB) was fine last season. 
+They have last year’s 43rd overall pick in Max Melton, too. In the slot, they have my #1 overall Nickel from last year, Garrett Williams. At Safety, they’re very strong with Budda Baker and Jalen Thompson. 
+There isn’t any noticeable weak spot on the defense.
 
-To me, offense is the bigger question mark. I graded Kyler Murray as the #8 QB last season, so I’m confident in him. The run game was strong last year, and Trey McBride is a stud. The OTs and C are 
-good, but as I mentioned I have some concern over the OGs. They'll need some secondary WR to step up, too. To reach that next level, they need to get MHJ more involved. If the Kyler to MHJ connection 
-can grow, defenses are going to have a really tough time guarding both MHJ and McBride while worrying about the run game.
+To me, offense is the bigger question mark. I graded Kyler Murray as the #8 QB last season, so I’m confident in him. The run game was strong last year, and Trey McBride (2024 #2 TE) is a stud. 
+The OTs (Paris Johnson Jr. and Jonah Williams) and C (Hjalte Froholdt) are good, but as I mentioned I have some concern over the OGs. They'll need some secondary WR to step up, too. 
+Projected WR2 Michael Wilson was my #86 WR, while Slot Greg Dortch was my #81. To reach that next level, they need to get MHJ (2024 #48 WR) more involved. If the Kyler to MHJ connection can grow, 
+defenses are going to have a really tough time guarding both MHJ and McBride while worrying about the run game.
 
 I think this is a Cardinals team that could surprise a lot of people next season – I won’t be one of them.`,
 
@@ -1370,6 +1372,7 @@ Sample Mock Draft:
     },
     backups: [
       { position: "RB", name: "Miles Sanders" },
+      { position: "RB", name: "Jaydon Blue (R)" },
       { position: "WR", name: "KaVontae Turpin" },
       { position: "WR", name: "Jonathan Mingo" },
       { position: "OG", name: "Brock Hoffman" },
@@ -1380,6 +1383,7 @@ Sample Mock Draft:
       { position: "EDGE", name: "Payton Turner" },
       { position: "ILB", name: "Marist Liufau" },
       { position: "ILB", name: "Jack Sanborn" },
+      { position: "ILB", name: "Shemar James (R)" },
       { position: "CB", name: "Shavon Revel Jr (R)" },
       { position: "CB", name: "Kaiir Elam" },
     ],
@@ -1533,7 +1537,7 @@ Bears in a really nice spot at IDL. Gervon Dexter Sr. was fantastic last season 
 eventually becoming the second long-term starter. While I can understand all three 2nd round picks, I do still have trouble with the Bears neglecting needs at EDGE and CB and think the defense will struggle because of it. 
 That being said, I understand the approach to put Caleb Williams in the best position possible to succeed next year, as the franchise will depend on his success.
 
-Looking forward to next year, I have a very difficult time projecting the success of the offense. It truly comes down to QB Caleb Williams. Williams was my 25th ranked QB last season. He really 
+Looking forward to next year, I have a very difficult time projecting the success of the offense. It truly comes down to QB Caleb Williams. Williams was my 26th ranked QB last season. He really 
 struggled against pressure, didn’t make many big time throws, and overall had accuracy issues. However, his supporting cast this season should be phenomenal. First, they added offensive mastermind Ben Johnson as Head Coach. 
 The offensive line should be one of the best in the league. Both OTs, Braxton Jones and Darnell Wright, are good starters. OG Joe Thuney is still one of the best in the league, while OG Jonah Jackson is a bit of a question 
 mark but knows the scheme well. C Drew Dalman is also one of the best in the league. The Wide Receivers will be very interesting with D.J. Moore (my 2024 #50 WR, but 2023 #4 WR), 2024 9th overall pick Rome Odunze, and 2025 
@@ -1680,7 +1684,7 @@ is fantastic work with respect to both positional value and long-term need.
 I wanted the Panthers to find long-term fixes at WR, EDGE, and ILB. Out of those three, the two with significant positional value are WR and EDGE. They made the exact pick I would have at 8, then they added 
 two EDGES. This was a slam dunk draft for the Panthers.
 
-Looking forward to next year, the Panthers will be an interesting team to watch. I think that the offense will be pretty good. QB Bryce Young (2024 #15 QB) looked really strong the latter half of 
+Looking forward to next year, the Panthers will be an interesting team to watch. I think that the offense will be pretty good. QB Bryce Young (2024 #19 QB) looked really strong the latter half of 
 the season. The offensive line is very strong and they return all five starters. With the strong offensive line comes a good run game led by Chuba Hubbard (2024 #6 RB). In the passing game, the 
 combination of McMillan on the outside and Thielen in the slot could really work. Jalen Coker or Xavier Legette will be the other starter on the outside (I liked Coker). The Tight End room isn’t 
 great, led by Tommy Tremble (2024 #33 TE). All in all, I see a QB that looked very good to end the season, a strong offensive line, and a nice duo at WR. I think this offense could be really solid.
