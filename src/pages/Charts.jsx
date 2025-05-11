@@ -1,6 +1,19 @@
 import { useState } from "react";
 
 const chartData = {
+  Draft: [
+    {
+      src: "/assets/charts/2024QBDraft.png",
+      caption:
+        "How Cam Ward, Shedeur Sanders, Jaxson Dart, Jalen Milroe, and Tyler Shough Stack Up Analytically Against Past First-Round Picks.",
+    },
+    {
+      src: "/assets/charts/2024Draft.jpeg",
+      caption:
+        "Color-Coded Final Top-50 Positional Strength Chart per @GrindingMocks Data",
+    },
+  ],
+  
   QB: [
     {
       src: "/assets/charts/2024QB.png",
@@ -21,17 +34,10 @@ const chartData = {
       caption:
         "Presumably the QBs with very high 1st Read % are forcing the ball too much.",
     },
-  ],
-  Draft: [
     {
-      src: "/assets/charts/2024QBDraft.png",
+      src: "/assets/charts/Deep.jpeg",
       caption:
-        "How Cam Ward, Shedeur Sanders, Jaxson Dart, Jalen Milroe, and Tyler Shough Stack Up Analytically Against Past First-Round Picks.",
-    },
-    {
-      src: "/assets/charts/2024Draft.jpeg",
-      caption:
-        "Color-Coded Final Top-50 Positional Strength Chart per @GrindingMocks Data",
+        "Turnover worthy throw % can be a bit biased against QBs who throw deep more often. Here's a nice way of looking at it IMO. Obviously you want QBs above the line.",
     },
   ],
   RB: [
@@ -143,7 +149,14 @@ export default function ChartsPage() {
     )}
 
     <p className="text-sm font-bold text-gray-800 mb-2">{currentChart.caption}</p>
-    <img src={currentChart.src} alt="" className="w-full rounded" />
+    <img
+  src={currentChart.src}
+  alt=""
+  className="max-w-full max-h-screen w-auto h-auto object-contain mx-auto block"
+/>
+
+
+
   </div>
 )}
 </div>
