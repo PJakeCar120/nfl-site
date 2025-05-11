@@ -44,7 +44,8 @@ const QB_COLS = [
   "Pass TD/G",
   "Rush TD/G",
   "Fum/G",
-  "Int/G"
+  "Int/G",
+  "YPA"
 ];
 
 const CB_COLS = [
@@ -137,7 +138,7 @@ const EDGE_WEIGHTS = [20, 22, 11, 14, 8, 5, 12, 5, 5, 4, 4]; // match your `edge
 
 
 // Define weights in same order as columns
-const QB_WEIGHTS = [2, 4, 6, 5, 1, 2, 4, 4.5, 1, 1, 3];
+const QB_WEIGHTS = [2, 4, 6, 5, 1, 2, 4, 4.5, 1, 1, 3, 1.5];
 
 const RB_WEIGHTS = [7, 7, 5, 4, 3, 2, 2, 1];
 
