@@ -92,7 +92,7 @@ const Home = () => {
               </Link>
             </li>
             <li>
-              <Link to="/lineup" className="underline text-blue-600 hover:text-blue-800 transition">
+              <Link to="/whobetta" className="underline text-blue-600 hover:text-blue-800 transition">
                 Head2Head
               </Link>
             </li>
