@@ -14,6 +14,13 @@ const chartData = {
     },
   ],
   
+  "Free Agency": [
+    {src: "/assets/charts/PFFFAS.png",
+      caption:
+        "Free Agency Positional Strengh",
+    }
+
+  ],
   QB: [
     {
       src: "/assets/charts/2024QB.png",
