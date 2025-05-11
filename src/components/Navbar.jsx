@@ -27,6 +27,8 @@ export default function Navbar() {
           <Link to="/draft-previews"><button className={isActive("/draft-previews")}>Team Draft Previews</button></Link>
           <Link to="/awards"><button className={isActive("/awards")}>Awards</button></Link>
           <Link to="/research"><button className={isActive("/research")}>Research</button></Link>
+          <Link to="/charts"><button className={isActive("/charts")}>Charts</button></Link>
+
           <Link to="/search"><button className={isActive("/search")}>Player Search</button></Link>
         </nav>
       </div>
