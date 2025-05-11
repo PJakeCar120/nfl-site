@@ -1,7 +1,105 @@
 import { useState } from "react";
 
+const chartData = {
+  QB: [
+    {
+      src: "/assets/charts/2024QB.png",
+      caption:
+        "2024 Turnover Worthy Throw % vs. Pressure to Sack Rate with Yards per Attempt. One of the reasons I feel Carr was very underrated.",
+    },
+    {
+      src: "/assets/charts/QBRookies.jpeg",
+      caption:
+        "Just gave a small update to my QB model. Here are rookie-year QB Scores for all qualifying rookies from 2021–2024:",
+    },
+    {
+      src: "/assets/charts/2024QBInts.jpeg",
+      caption: "What QBs got lucky/unlucky with interceptions last year?",
+    },
+    {
+      src: "/assets/charts/TWT1R.jpeg",
+      caption:
+        "Presumably the QBs with very high 1st Read % are forcing the ball too much.",
+    },
+  ],
+  Draft: [
+    {
+      src: "/assets/charts/2024QBDraft.png",
+      caption:
+        "How Cam Ward, Shedeur Sanders, Jaxson Dart, Jalen Milroe, and Tyler Shough Stack Up Analytically Against Past First-Round Picks.",
+    },
+    {
+      src: "/assets/charts/2024Draft.jpeg",
+      caption:
+        "Color-Coded Final Top-50 Positional Strength Chart per @GrindingMocks Data",
+    },
+  ],
+  RB: [
+    {
+      src: "/assets/charts/2024RB.png",
+      caption:
+        "Explosive Run % vs. Yards Before Contact per Attempt. Barkley, Gibbs, and Henry are so far ahead of any other RBs in the NFL.",
+    },
+  ],
+  WR: [
+    {
+      src: "/assets/charts/2024WR.png",
+      caption:
+        "WR Slot Rate vs. Yards per Route Run. JSN and McConkey the only real elite pure Slot WRs.",
+    },
+    {
+      src: "/assets/charts/AWRSPFF.jpeg",
+      caption: "AWRS vs. PFF WR Grades",
+    },
+  ],
+  TE: [
+    {
+      src: "/assets/charts/2024TE.png",
+      caption:
+        "TE Yards per Route Run vs. PFF Run Block Grade. George Kittle continues to be an anomaly.",
+    },
+  ],
+  EDGE: [
+    {
+      src: "/assets/charts/2024EDGE.jpeg",
+      caption:
+        "2024 Sacks vs. Hurries (Top 50 Sack Leaders). Lower correlation than expected.",
+    },
+    {
+      src: "/assets/charts/2024EDGE2.jpeg",
+      caption:
+        "Sacks really aren't that correlated with Pass Rush Win Rate, either.",
+    },
+    {
+      src: "/assets/charts/2024EDGE3.jpeg",
+      caption:
+        "However, Pass Rush Win Rate is very highly correlated with Hurries.",
+    },
+  ],
+  ILB: [
+    {
+      src: "/assets/charts/2024ILB.png",
+      caption:
+        "2024 Regular Season Tackles vs. Stops. Players with more valuable tackles are above the OLS line.",
+    },
+  ],
+};
+
 export default function ChartsPage() {
   const [category, setCategory] = useState("");
+  const [indexMap, setIndexMap] = useState({});
+
+  const charts = chartData[category] || [];
+  const currentIndex = indexMap[category] || 0;
+  const currentChart = charts[currentIndex];
+
+  const changeIndex = (delta) => {
+    setIndexMap((prev) => ({
+      ...prev,
+      [category]:
+        (currentIndex + delta + charts.length) % charts.length,
+    }));
+  };
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-8 font-bold">
@@ -18,127 +116,37 @@ export default function ChartsPage() {
           onChange={(e) => setCategory(e.target.value)}
         >
           <option value=""> Select </option>
-          <option value="Draft">Draft</option>
-          <option value="QB">QB</option>
-          <option value="RB">RB</option>
-          <option value="WR">WR</option>
-          <option value="TE">TE</option>
-          <option value="EDGE">EDGE</option>
-          <option value="ILB">ILB</option>
-          {/* Add more options here as needed */}
+          {Object.keys(chartData).map((key) => (
+            <option key={key} value={key}>{key}</option>
+          ))}
         </select>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {category === "ILB" && (
-          <div className="border rounded p-4 bg-white shadow">
-            <p className="text-sm text-gray-600">
-              2024 Regular Season Tackles vs. Stops. Highly correlated, but we can see the players with more valuable tackles above the OLS line.
-            </p>
-            <img src="/assets/charts/2024ILB.png" alt="Tackles vs Stops" className="w-full rounded" />
-          </div>
-        )}
+      {category && currentChart && (
+  <div className="border rounded p-4 bg-white shadow relative">
+    {charts.length > 1 && (
+      <div className="absolute top-4 right-4 flex items-center gap-2 text-sm font-normal">
+        <button
+          className="bg-gray-200 px-3 py-1 rounded hover:bg-gray-300"
+          onClick={() => changeIndex(-1)}
+        >
+          ← Prev
+        </button>
+        <span>{currentIndex + 1} / {charts.length}</span>
+        <button
+          className="bg-gray-200 px-3 py-1 rounded hover:bg-gray-300"
+          onClick={() => changeIndex(1)}
+        >
+          Next →
+        </button>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {category === "TE" && (
-          <div className="border rounded p-4 bg-white shadow">
-            <p className="text-sm text-gray-600">
-                TE Yards per Route Run vs. PFF Run Block Grade. George Kittle continues to be an anomaly.
-            </p>
-            <img src="/assets/charts/2024TE.png" alt="TE YPRR vs. PFF Run Block" className="w-full rounded" />
-          </div>
-        )}
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {category === "WR" && (
-          <div className="border rounded p-4 bg-white shadow">
-            <p className="text-sm text-gray-600">
-              WR Slot Rate vs. Yards per Route Run. JSN and McConkey the only real elite pure Slot WRs.
-            </p>
-            <img src="/assets/charts/2024WR.png" alt="WR Slot Rate vs. YPRR" className="w-full rounded" />
-          </div>
-        )}
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {category === "RB" && (
-          <div className="border rounded p-4 bg-white shadow">
-            <p className="text-sm text-gray-600">
-            Explosive Run % vs. Yards Before Contact per Attempt. Super strong correlation here. Barkley, Gibbs, and Henry are so far ahead of any other RBs in the NFL.
-            </p>
-            <img src="/assets/charts/2024RB.png" alt="RB Explosive Run % vs. YBCO/ATT" className="w-full rounded" />
-          </div>
-        )}
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {category === "QB" && (
-          <div className="border rounded p-4 bg-white shadow">
-            <p className="text-sm text-gray-600">
-            2024 Turnover Worthy Throw % vs. Pressure to Sack Rate with Yards per Attempt. One of the reasons I feel Carr was very underrated.
-            </p>
-            <img src="/assets/charts/2024QB.png" alt="" className="w-full rounded" />
-          </div>
-        )}
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {category === "Draft" && (
-          <div className="border rounded p-4 bg-white shadow">
-            <p className="text-sm text-gray-600">
-            How Cam Ward, Shedeur Sanders, Jaxson Dart, Jalen Milroe, and Tyler Shough Stack Up Analytically Against Past First-Round Picks.
-            </p>
-            <img src="/assets/charts/2024QBDraft.png" alt="" className="w-full rounded" />
-          </div>
-        )}
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {category === "QB" && (
-          <div className="border rounded p-4 bg-white shadow">
-            <p className="text-sm text-gray-600">
-            Just gave a small update to my QB model. Here are rookie-year QB Scores for all qualifying rookies from 2021-2024:
-            </p>
-            <img src="/assets/charts/QBRookies.jpeg" alt="" className="w-full rounded" />
-          </div>
-        )}
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {category === "EDGE" && (
-          <div className="border rounded p-4 bg-white shadow">
-            <p className="text-sm text-gray-600">
-            2024 Sacks vs. Hurries (Top 50 Sack Leaders). We see a lower correlation than I expected.
-            </p>
-            <img src="/assets/charts/2024EDGE.jpeg" alt="" className="w-full rounded" />
-          </div>
-        )}
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {category === "EDGE" && (
-          <div className="border rounded p-4 bg-white shadow">
-            <p className="text-sm text-gray-600">
-            We can see that Sacks really aren't that correlated with Pass Rush Win Rate, either.
-            </p>
-            <img src="/assets/charts/2024EDGE2.jpeg" alt="" className="w-full rounded" />
-          </div>
-        )}
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {category === "EDGE" && (
-          <div className="border rounded p-4 bg-white shadow">
-            <p className="text-sm text-gray-600">
-            However, Pass Rush Win Rate is very highly correlated with Hurries.
-            </p>
-            <img src="/assets/charts/2024EDGE3.jpeg" alt="" className="w-full rounded" />
-          </div>
-        )}
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {category === "Draft" && (
-          <div className="border rounded p-4 bg-white shadow">
-            <p className="text-sm text-gray-600">
-            Color-Coded Final Top-50 Positional Strength Chart per @GrindingMocks Data
-            </p>
-            <img src="/assets/charts/2024Draft.jpeg" alt="" className="w-full rounded" />
-          </div>
-        )}
-      </div>
-    </div>
-  );
+    )}
+
+    <p className="text-sm font-bold text-gray-800 mb-2">{currentChart.caption}</p>
+    <img src={currentChart.src} alt="" className="w-full rounded" />
+  </div>
+)}
+</div>
+);
 }
+
