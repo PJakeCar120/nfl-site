@@ -825,7 +825,7 @@ const DraftPreviews = () => {
   const [team, setTeam] = useState("");
 
   return (
-    <div className="p-6 max-w-4xl mx-auto text-white">
+    <div className="p-6 max-w-4xl mx-auto text-black">
       <h1 className="text-3xl font-bold mb-4">📘 NFL Draft Previews</h1>
 
       <select
