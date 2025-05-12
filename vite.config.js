@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import mime from 'mime';
 
 export default defineConfig({
+  base: '/', // 👈 This ensures proper asset paths on custom domains
   plugins: [react()],
   server: {
     middlewareMode: false,
