@@ -131,7 +131,26 @@ button:focus-visible {
 
 @media (max-width: 640px) {
   html {
-    font-size: 14px;
+    font-size: 13px;
+  }
+
+  table {
+    transform: scale(0.85);
+    transform-origin: top left;
+    width: 100%;
+  }
+
+  .ranking-table {
+    min-width: unset;
+    table-layout: fixed;
+    word-wrap: break-word;
+  }
+
+  .ranking-table th,
+  .ranking-table td {
+    font-size: 0.75rem;
+    padding: 0.4rem;
+    word-break: break-word;
   }
 
   h1 {
@@ -143,7 +162,7 @@ button:focus-visible {
   }
 
   p, a, button, li {
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
 
   button {
@@ -158,7 +177,6 @@ button:focus-visible {
     padding: 0.5rem;
   }
 
-  /* ✅ Make charts/images scale to screen */
   img {
     max-width: 100%;
     height: auto;
@@ -166,33 +184,6 @@ button:focus-visible {
     margin: 0 auto;
   }
 
-  .chart-container,
-  .chart-wrapper,
-  .scroll-container {
-    max-width: 100%;
-    overflow-x: auto;
-  }
-
-  /* ✅ Make sure tables stay scrollable horizontally if needed */
-  table {
-    width: 100%;
-    overflow-x: auto;
-    display: table;
-    table-layout: auto;
-  }
-
-  .ranking-table {
-    min-width: 800px; /* allow scrolling */
-    border-collapse: collapse;
-  }
-
-  .ranking-table th,
-  .ranking-table td {
-    padding: 0.5rem;
-    font-size: 0.85em;
-  }
-
-  /* ✅ Fix oversized bottom image */
   .bottom-image {
     position: static;
     display: block;
