@@ -131,8 +131,7 @@ export default function ChartsPage() {
   const changeIndex = (delta) => {
     setIndexMap((prev) => ({
       ...prev,
-      [category]:
-        (currentIndex + delta + charts.length) % charts.length,
+      [category]: (currentIndex + delta + charts.length) % charts.length,
     }));
   };
 
@@ -152,43 +151,46 @@ export default function ChartsPage() {
         >
           <option value=""> Select </option>
           {Object.keys(chartData).map((key) => (
-            <option key={key} value={key}>{key}</option>
+            <option key={key} value={key}>
+              {key}
+            </option>
           ))}
         </select>
       </div>
 
       {category && currentChart && (
-  <div className="border rounded p-4 bg-white shadow relative">
-    {charts.length > 1 && (
-      <div className="absolute top-4 right-4 flex items-center gap-2 text-sm font-normal">
-        <button
-          className="bg-gray-200 px-3 py-1 rounded hover:bg-gray-300"
-          onClick={() => changeIndex(-1)}
-        >
-          ← Prev
-        </button>
-        <span>{currentIndex + 1} / {charts.length}</span>
-        <button
-          className="bg-gray-200 px-3 py-1 rounded hover:bg-gray-300"
-          onClick={() => changeIndex(1)}
-        >
-          Next →
-        </button>
-      </div>
-    )}
+        <div className="border rounded p-4 bg-white shadow relative overflow-x-auto">
+          {charts.length > 1 && (
+            <div className="absolute top-4 right-4 flex items-center gap-2 text-sm font-normal">
+              <button
+                className="bg-gray-200 px-3 py-1 rounded hover:bg-gray-300"
+                onClick={() => changeIndex(-1)}
+              >
+                ← Prev
+              </button>
+              <span>
+                {currentIndex + 1} / {charts.length}
+              </span>
+              <button
+                className="bg-gray-200 px-3 py-1 rounded hover:bg-gray-300"
+                onClick={() => changeIndex(1)}
+              >
+                Next →
+              </button>
+            </div>
+          )}
 
-    <p className="text-sm font-bold text-gray-800 mb-2">{currentChart.caption}</p>
-    <img
-  src={currentChart.src}
-  alt=""
-  className="max-w-full max-h-screen w-auto h-auto object-contain mx-auto block"
-/>
+          <p className="text-sm font-bold text-gray-800 mb-4">{currentChart.caption}</p>
 
-
-
-  </div>
-)}
-</div>
-);
+          <div className="min-w-[800px] max-w-full mx-auto">
+            <img
+              src={currentChart.src}
+              alt=""
+              className="w-full h-auto max-h-[90vh] object-contain rounded"
+            />
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
-

@@ -50,7 +50,7 @@ const Home = () => {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <div className="max-w-4xl mx-auto px-6 pt-6 pb-16">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-6 pb-16 text-[15px] leading-relaxed">
         {/* Intro */}
         <h1 className="text-sm font-bold text-gray-800 mb-2">
           My name is Jake Cardonick and I am a third-year college student at the University of Chicago 
