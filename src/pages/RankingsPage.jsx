@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function RankingsPage() {
   return (
-    <div className="max-w-7xl mx-auto px-8 py-12">
+    <div className="w-full px-12 py-12">
       <h1 className="text-4xl font-bold mb-10">🏆 Rankings</h1>
       <p className="text-gray-700 text-base mb-12 leading-relaxed max-w-3xl">
         Each player’s Analytical Score is calculated by converting key performance metrics into percentiles relative to their position group.
