@@ -298,7 +298,7 @@ const WEIGHTS =
   };
 
   return (
-    <div className="p-6 max-w-4xl mx-auto">
+    <div className="w-full px-6 py-8 box-border">
       <h2 className="text-3xl font-bold mb-6">🔍 Player Similarity Tool</h2>
       <p className="text-gray-700 text-sm mb-4">
   This tool represents each player season as a weighted vector of statistics and computes pairwise similarity using weighted Euclidean distance. 

@@ -708,7 +708,7 @@ export default function AwardsPage() {
   const yearData = awardsData[year];
 
   return (
-    <div className="p-6 max-w-4xl mx-auto">
+    <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 py-6 box-border">
       <h1 className="text-3xl font-bold mb-4">🏆 Football Analytics Nerd Awards & All-Pro Teams</h1>
 
       <select

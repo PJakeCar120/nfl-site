@@ -2,7 +2,7 @@ import React from "react";
 
 const DraftPage = () => {
   return (
-    <div className="p-6">
+    <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 py-8 box-border">
       <h1 className="text-3xl font-bold mb-4">📈 Draft Center</h1>
 
       <p className="mb-6">

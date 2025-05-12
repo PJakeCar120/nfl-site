@@ -5,7 +5,7 @@ export default function ContractsPage() {
   const [selectedPlayer, setSelectedPlayer] = useState("");
 
   return (
-    <div className="px-6 py-8 max-w-4xl mx-auto">
+    <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 py-8 box-border">
       <h1 className="text-3xl font-bold mb-6">💰 Contract Projections</h1>
       <p className="text-gray-700 text-sm mb-6">
   These contract projections are built using a data-driven framework that evaluates player performance grades, age, and historical contract data to estimate future deals. 

@@ -84,7 +84,8 @@ export default function WhoBetta() {
   };
 
   return (
-    <div className="p-6 max-w-7xl mx-auto">
+    <div className="w-full px-6 py-8 box-border">
+
       <h1 className="text-2xl font-bold mb-6">🔥 Head2Head</h1>
 
       <div className="w-full flex flex-wrap justify-center items-center gap-4 mb-8">
