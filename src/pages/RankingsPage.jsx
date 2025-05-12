@@ -15,10 +15,10 @@ export default function RankingsPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-3">Quarterbacks</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-2">
-            <li><Link to="/projects/qb2024">2024<br />QB<br />Rankings</Link></li>
-            <li><Link to="/projects/qb2023">2023<br />QB<br />Rankings</Link></li>
-            <li><Link to="/projects/qb2022">2022<br />QB<br />Rankings</Link></li>
-            <li><Link to="/projects/qb2021">2021<br />QB<br />Rankings</Link></li>
+            <li><Link to="/projects/qb2024">2024 QB Rankings</Link></li>
+            <li><Link to="/projects/qb2023">2023 QB Rankings</Link></li>
+            <li><Link to="/projects/qb2022">2022 QB Rankings</Link></li>
+            <li><Link to="/projects/qb2021">2021 QB Rankings</Link></li>
           </ul>
         </div>
 
@@ -26,10 +26,10 @@ export default function RankingsPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-3">Running Backs</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-2">
-            <li><Link to="/projects/rb2024">2024<br />RB<br />Rankings</Link></li>
-            <li><Link to="/projects/rb2023">2023<br />RB<br />Rankings</Link></li>
-            <li><Link to="/projects/rb2022">2022<br />RB<br />Rankings</Link></li>
-            <li><Link to="/projects/rb2021">2021<br />RB<br />Rankings</Link></li>
+            <li><Link to="/projects/rb2024">2024 RB Rankings</Link></li>
+            <li><Link to="/projects/rb2023">2023 RB Rankings</Link></li>
+            <li><Link to="/projects/rb2022">2022 RB Rankings</Link></li>
+            <li><Link to="/projects/rb2021">2021 RB Rankings</Link></li>
           </ul>
         </div>
 
@@ -37,10 +37,10 @@ export default function RankingsPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-3">Wide Receivers</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-2">
-            <li><Link to="/projects/wr2024">2024<br />WR<br />Rankings</Link></li>
-            <li><Link to="/projects/wr2023">2023<br />WR<br />Rankings</Link></li>
-            <li><Link to="/projects/wr2022">2022<br />WR<br />Rankings</Link></li>
-            <li><Link to="/projects/wr2021">2021<br />WR<br />Rankings</Link></li>
+            <li><Link to="/projects/wr2024">2024 WR Rankings</Link></li>
+            <li><Link to="/projects/wr2023">2023 WR Rankings</Link></li>
+            <li><Link to="/projects/wr2022">2022 WR Rankings</Link></li>
+            <li><Link to="/projects/wr2021">2021 WR Rankings</Link></li>
           </ul>
         </div>
 
@@ -48,10 +48,10 @@ export default function RankingsPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-3">Tight Ends</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-2">
-            <li><Link to="/projects/te2024">2024<br />TE<br />Rankings</Link></li>
-            <li><Link to="/projects/te2023">2023<br />TE<br />Rankings</Link></li>
-            <li><Link to="/projects/te2022">2022<br />TE<br />Rankings</Link></li>
-            <li><Link to="/projects/te2021">2021<br />TE<br />Rankings</Link></li>
+            <li><Link to="/projects/te2024">2024 TE Rankings</Link></li>
+            <li><Link to="/projects/te2023">2023 TE Rankings</Link></li>
+            <li><Link to="/projects/te2022">2022 TE Rankings</Link></li>
+            <li><Link to="/projects/te2021">2021 TE Rankings</Link></li>
           </ul>
         </div>
 
@@ -59,10 +59,10 @@ export default function RankingsPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-3">Interior Defensive Line</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-2">
-            <li><Link to="/projects/idl2024">2024<br />IDL<br />Rankings</Link></li>
-            <li><Link to="/projects/idl2023">2023<br />IDL<br />Rankings</Link></li>
-            <li><Link to="/projects/idl2022">2022<br />IDL<br />Rankings</Link></li>
-            <li><Link to="/projects/idl2021">2021<br />IDL<br />Rankings</Link></li>
+            <li><Link to="/projects/idl2024">2024 IDL Rankings</Link></li>
+            <li><Link to="/projects/idl2023">2023 IDL Rankings</Link></li>
+            <li><Link to="/projects/idl2022">2022 IDL Rankings</Link></li>
+            <li><Link to="/projects/idl2021">2021 IDL Rankings</Link></li>
           </ul>
         </div>
 
@@ -70,10 +70,10 @@ export default function RankingsPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-3">EDGEs</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-2">
-            <li><Link to="/projects/edge2024">2024<br />EDGE<br />Rankings</Link></li>
-            <li><Link to="/projects/edge2023">2023<br />EDGE<br />Rankings</Link></li>
-            <li><Link to="/projects/edge2022">2022<br />EDGE<br />Rankings</Link></li>
-            <li><Link to="/projects/edge2021">2021<br />EDGE<br />Rankings</Link></li>
+            <li><Link to="/projects/edge2024">2024 EDGE Rankings</Link></li>
+            <li><Link to="/projects/edge2023">2023 EDGE Rankings</Link></li>
+            <li><Link to="/projects/edge2022">2022 EDGE Rankings</Link></li>
+            <li><Link to="/projects/edge2021">2021 EDGE Rankings</Link></li>
           </ul>
         </div>
 
@@ -81,10 +81,10 @@ export default function RankingsPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-3">Inside Linebackers</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-2">
-            <li><Link to="/projects/ilb2024">2024<br />ILB<br />Rankings</Link></li>
-            <li><Link to="/projects/ilb2023">2023<br />ILB<br />Rankings</Link></li>
-            <li><Link to="/projects/ilb2022">2022<br />ILB<br />Rankings</Link></li>
-            <li><Link to="/projects/ilb2021">2021<br />ILB<br />Rankings</Link></li>
+            <li><Link to="/projects/ilb2024">2024 ILB Rankings</Link></li>
+            <li><Link to="/projects/ilb2023">2023 ILB Rankings</Link></li>
+            <li><Link to="/projects/ilb2022">2022 ILB Rankings</Link></li>
+            <li><Link to="/projects/ilb2021">2021 ILB Rankings</Link></li>
           </ul>
         </div>
 
@@ -92,10 +92,10 @@ export default function RankingsPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-3">Cornerbacks</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-2">
-            <li><Link to="/projects/cb2024">2024<br />CB<br />Rankings</Link></li>
-            <li><Link to="/projects/cb2023">2023<br />CB<br />Rankings</Link></li>
-            <li><Link to="/projects/cb2022">2022<br />CB<br />Rankings</Link></li>
-            <li><Link to="/projects/cb2021">2021<br />CB<br />Rankings</Link></li>
+            <li><Link to="/projects/cb2024">2024 CB Rankings</Link></li>
+            <li><Link to="/projects/cb2023">2023 CB Rankings</Link></li>
+            <li><Link to="/projects/cb2022">2022 CB Rankings</Link></li>
+            <li><Link to="/projects/cb2021">2021 CB Rankings</Link></li>
           </ul>
         </div>
 
@@ -103,10 +103,10 @@ export default function RankingsPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-3">Safeties</h2>
           <ul className="list-disc ml-6 text-blue-500 space-y-2">
-            <li><Link to="/projects/s2024">2024<br />S<br />Rankings</Link></li>
-            <li><Link to="/projects/s2023">2023<br />S<br />Rankings</Link></li>
-            <li><Link to="/projects/s2022">2022<br />S<br />Rankings</Link></li>
-            <li><Link to="/projects/s2021">2021<br />S<br />Rankings</Link></li>
+            <li><Link to="/projects/s2024">2024 S Rankings</Link></li>
+            <li><Link to="/projects/s2023">2023 S Rankings</Link></li>
+            <li><Link to="/projects/s2022">2022 S Rankings</Link></li>
+            <li><Link to="/projects/s2021">2021 S Rankings</Link></li>
           </ul>
         </div>
       </div>
