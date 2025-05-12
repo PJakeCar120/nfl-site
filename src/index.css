@@ -121,3 +121,7 @@ td {
   background-color: white;
   z-index: 10;
 }
+
+html {
+  background-color: #ffffff !important;
+}
