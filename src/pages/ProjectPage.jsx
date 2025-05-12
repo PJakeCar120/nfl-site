@@ -328,8 +328,7 @@ if (project.csvUrl && csvData.length > 0) {
       <p className="text-gray-700 mb-6">{project.description}</p>
 
       <div className="overflow-x-auto">
-        <div style={{ maxHeight: "75vh", overflowY: "auto" }}>
-          <table className="min-w-full border border-gray-300 text-sm ranking-table">
+      <table className="min-w-full border border-gray-300 text-sm ranking-table">
             <thead className="bg-gray-100">
               <tr>
                 {headers.map((key) => (
