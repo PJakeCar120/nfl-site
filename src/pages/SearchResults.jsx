@@ -148,7 +148,7 @@ export default function SearchResults() {
     return `rgb(${red}, ${green}, 100)`;
   };
   return (
-    <div className="p-6 max-w-7xl mx-auto">
+    <div className="px-4 py-6 w-full">
       <div className="w-full flex justify-center mb-10">
         <div className="flex w-full max-w-xl">
           <input
@@ -183,7 +183,8 @@ export default function SearchResults() {
             🔍 Results for "{searchTerm}"
           </h2>
           <div className="w-full flex justify-center">
-            <div className="overflow-x-auto max-w-7xl w-full">
+            <div className="overflow-x-auto w-full">
+
               <table className="table-auto w-full text-sm border border-gray-300">
                 <thead>
                   <tr>
