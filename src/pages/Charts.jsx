@@ -84,6 +84,11 @@ const chartData = {
   ],
   EDGE: [
     {
+      src: "/assets/charts/EDGE2024Snaps.png",
+      caption:
+        "Ever wonder how the top NFL EDGES are actually used?",
+    },
+    {
       src: "/assets/charts/2024EDGE.jpeg",
       caption:
         "2024 Sacks vs. Hurries (Top 50 Sack Leaders). Lower correlation than expected.",
