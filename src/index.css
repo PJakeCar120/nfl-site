@@ -129,7 +129,6 @@ button:focus-visible {
   }
 }
 
-
 @media (max-width: 640px) {
   html {
     font-size: 14px; /* scale everything down globally */
@@ -169,7 +168,8 @@ button:focus-visible {
 
   /* ✅ Optional: handle chart wrappers if you use them */
   .chart-container,
-  .chart-wrapper {
+  .chart-wrapper,
+  .scroll-container {
     max-width: 100%;
     overflow-x: auto;
   }
@@ -185,5 +185,28 @@ button:focus-visible {
 
   .bottom-image + * {
     margin-bottom: 2rem;
+  }
+
+  /* ✅ Ensure tables don't overflow and shrink as needed */
+  table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+
+  .ranking-table {
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+  }
+
+  .ranking-table thead,
+  .ranking-table tbody,
+  .ranking-table tr,
+  .ranking-table th,
+  .ranking-table td {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
