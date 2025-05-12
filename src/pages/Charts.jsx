@@ -3,6 +3,11 @@ import { useState } from "react";
 const chartData = {
   Draft: [
     {
+      src: "/assets/charts/2026QBs.png",
+      caption:
+        "My early look at the top projected 2026 QB Draft Prospects.",
+    },
+    {
       src: "/assets/charts/2024QBDraft.png",
       caption:
         "How Cam Ward, Shedeur Sanders, Jaxson Dart, Jalen Milroe, and Tyler Shough Stack Up Analytically Against Past First-Round Picks.",
