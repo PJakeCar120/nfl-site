@@ -31,16 +31,24 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  padding: 0 1rem;
+  padding: 0; /* 🔧 remove restrictive 1rem padding */
   background-color: #ffffff;
   color: #213547;
+  overflow-x: auto; /* 🧠 allow horizontal scroll globally */
 }
 
+html {
+  background-color: #ffffff !important;
+  overflow-x: auto;
+}
+
+/* Headings */
 h1 {
   font-size: 1.3em;
   line-height: 1.1;
 }
 
+/* Buttons */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -63,12 +71,8 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* Remove this since it's conflicting with actual styles */
+/* Light mode overrides */
 @media (prefers-color-scheme: light) {
-  :root {
-    /* You can override specific styles here only if needed */
-  }
-
   a:hover {
     color: #747bff;
   }
@@ -79,9 +83,31 @@ button:focus-visible {
   }
 }
 
-html, body {
-  position: relative;
+/* Table tweaks */
+.scroll-container {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ranking-table {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+}
+
+.ranking-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.ranking-table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.75rem;
 }
 
 .bottom-image {
@@ -100,28 +126,6 @@ html, body {
   }
 
   .bottom-image + * {
-    margin-bottom: 2rem; /* ensure there's spacing after image */
+    margin-bottom: 2rem;
   }
-}
-
-
-
-.scroll-container {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-td {
-  text-align: center;
-  vertical-align: middle;
-}
-.ranking-table thead th {
-  position: sticky;
-  top: 0;
-  background-color: white;
-  z-index: 10;
-}
-
-html {
-  background-color: #ffffff !important;
 }
