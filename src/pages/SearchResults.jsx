@@ -147,7 +147,6 @@ export default function SearchResults() {
     const green = Math.round(255 * pct);
     return `rgb(${red}, ${green}, 100)`;
   };
-
   return (
     <div className="p-6 max-w-7xl mx-auto">
       <div className="w-full flex justify-center mb-10">
@@ -170,7 +169,7 @@ export default function SearchResults() {
           </button>
         </div>
       </div>
-
+  
       {results.length === 0 ? (
         <div className="text-center mt-10">
           <h2 className="text-2xl font-bold mb-2">🔍 Search Players</h2>
@@ -180,66 +179,72 @@ export default function SearchResults() {
         </div>
       ) : (
         <>
-          <h2 className="text-2xl font-bold mb-6">
+          <h2 className="text-2xl font-bold mb-6 text-center">
             🔍 Results for "{searchTerm}"
           </h2>
-          <table className="table-auto w-full text-sm border border-gray-300">
-            <thead>
-              <tr>
-                <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Position</th>
-                <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Year</th>
-                <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Name</th>
-                <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Rank</th>
-                {sortedResults.length > 0 &&
-                  Object.keys(sortedResults[0])
-                    .filter(
-                      (key) =>
-                        !["year", "position", "rank", "name", "honors"].includes(key)
-                    )
-                    .map((key) => (
-                      <th
-                        key={key}
-                        className="p-2 bg-gray-100 border border-gray-300 text-center"
-                      >
-                        {key}
-                      </th>
-                    ))}
-                <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Football Analytics Nerd Awards</th> {/* ✅ added final column */}
-              </tr>
-            </thead>
-            <tbody>
-              {sortedResults.map((player, index) => {
-                const { year, position, rank, name, honors, ...stats } = player;
-                return (
-                  <tr key={index}>
-                    <td className="p-2 px-8 border border-gray-300 text-center">{position}</td>
-                    <td className="p-2 px-8 border border-gray-300 text-center">{year}</td>
-                    <td className="p-2 px-8 border border-gray-300 text-center">{name}</td>
-                    <td className="p-2 px-8 border border-gray-300 text-center">{rank}</td>
-                    {Object.entries(stats).map(([key, val]) => {
-                      const style = getColor(key, val)
-                        ? { backgroundColor: getColor(key, val) }
-                        : {};
-                      return (
-                        <td
-                          key={key}
-                          className="p-2 border border-gray-300 text-center"
-                          style={style}
-                        >
-                          {val}
-                        </td>
-                      );
-                    })}
-                    <td className="p-2 px-8 border border-gray-300 text-center">
-                      {honors || "-"}
-                    </td> {/* ✅ added honors value */}
+          <div className="w-full flex justify-center">
+            <div className="overflow-x-auto max-w-7xl w-full">
+              <table className="table-auto w-full text-sm border border-gray-300">
+                <thead>
+                  <tr>
+                    <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Position</th>
+                    <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Year</th>
+                    <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Name</th>
+                    <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Rank</th>
+                    {sortedResults.length > 0 &&
+                      Object.keys(sortedResults[0])
+                        .filter(
+                          (key) =>
+                            !["year", "position", "rank", "name", "honors"].includes(key)
+                        )
+                        .map((key) => (
+                          <th
+                            key={key}
+                            className="p-2 bg-gray-100 border border-gray-300 text-center"
+                          >
+                            {key}
+                          </th>
+                        ))}
+                    <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">
+                      Football Analytics Nerd Awards
+                    </th>
                   </tr>
-                );
-              })}
-            </tbody>
-          </table>
+                </thead>
+                <tbody>
+                  {sortedResults.map((player, index) => {
+                    const { year, position, rank, name, honors, ...stats } = player;
+                    return (
+                      <tr key={index}>
+                        <td className="p-2 px-8 border border-gray-300 text-center">{position}</td>
+                        <td className="p-2 px-8 border border-gray-300 text-center">{year}</td>
+                        <td className="p-2 px-8 border border-gray-300 text-center">{name}</td>
+                        <td className="p-2 px-8 border border-gray-300 text-center">{rank}</td>
+                        {Object.entries(stats).map(([key, val]) => {
+                          const style = getColor(key, val)
+                            ? { backgroundColor: getColor(key, val) }
+                            : {};
+                          return (
+                            <td
+                              key={key}
+                              className="p-2 border border-gray-300 text-center"
+                              style={style}
+                            >
+                              {val}
+                            </td>
+                          );
+                        })}
+                        <td className="p-2 px-8 border border-gray-300 text-center">
+                          {honors || "-"}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
         </>
       )}
     </div>
   );
-}
+}  
