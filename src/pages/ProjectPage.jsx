@@ -326,69 +326,68 @@ if (project.csvUrl && csvData.length > 0) {
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-2">{project.title}</h1>
       <p className="text-gray-700 mb-6">{project.description}</p>
-
-      <div className="overflow-x-auto">
-      <table className="min-w-full border border-gray-300 text-sm ranking-table">
-            <thead className="bg-gray-100">
-              <tr>
-                {headers.map((key) => (
-                  <th
-                    key={key}
-                    onClick={() => {
-                      if (sortColumn === key) {
-                        setSortOrder(sortOrder === "asc" ? "desc" : "asc");
-                      } else {
-                        setSortColumn(key);
-                        setSortOrder("desc");
-                      }
-                    }}
-                    className="border px-4 py-2 text-left whitespace-nowrap font-mono cursor-pointer hover:bg-gray-200"
-                  >
-                    {key} {sortColumn === key ? (sortOrder === "asc" ? "↑" : "↓") : ""}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-
-            <tbody>
-              {sortedData.map((row, i) => (
-                <tr key={i} className="odd:bg-white even:bg-gray-50">
-                  {headers.map((key, j) => {
-                    const value = row[key];
-                    const bgColor = getColorScale(
-                      value,
-                      columnStats[key]?.min,
-                      columnStats[key]?.max,
-                      key
-                    );
-
-                    return (
-                      <td
-                        key={j}
-                        className="border px-4 py-2 text-sm text-gray-800 whitespace-nowrap font-mono"
-                        style={{ backgroundColor: bgColor }}
-                      >
-                        {key === "Name" ? (
-                          <Link
-                            to={`/playersearch?name=${encodeURIComponent(value)}`}
-                            className="text-blue-600 underline hover:text-blue-800"
-                          >
-                            {value}
-                          </Link>
-                        ) : (
-                          value
-                        )}
-                      </td>
-                    );
-                  })}
-                </tr>
+  
+      <div className="w-full overflow-x-auto">
+        <table className="min-w-full border border-gray-300 text-sm ranking-table">
+          <thead className="bg-gray-100">
+            <tr>
+              {headers.map((key) => (
+                <th
+                  key={key}
+                  onClick={() => {
+                    if (sortColumn === key) {
+                      setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+                    } else {
+                      setSortColumn(key);
+                      setSortOrder("desc");
+                    }
+                  }}
+                  className="border px-4 py-2 text-left whitespace-nowrap font-mono cursor-pointer hover:bg-gray-200"
+                >
+                  {key} {sortColumn === key ? (sortOrder === "asc" ? "↑" : "↓") : ""}
+                </th>
               ))}
-            </tbody>
-
-          </table>
-        </div>
+            </tr>
+          </thead>
+  
+          <tbody>
+            {sortedData.map((row, i) => (
+              <tr key={i} className="odd:bg-white even:bg-gray-50">
+                {headers.map((key, j) => {
+                  const value = row[key];
+                  const bgColor = getColorScale(
+                    value,
+                    columnStats[key]?.min,
+                    columnStats[key]?.max,
+                    key
+                  );
+  
+                  return (
+                    <td
+                      key={j}
+                      className="border px-4 py-2 text-sm text-gray-800 whitespace-nowrap font-mono"
+                      style={{ backgroundColor: bgColor }}
+                    >
+                      {key === "Name" ? (
+                        <Link
+                          to={`/playersearch?name=${encodeURIComponent(value)}`}
+                          className="text-blue-600 underline hover:text-blue-800"
+                        >
+                          {value}
+                        </Link>
+                      ) : (
+                        value
+                      )}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
+  
 }
 }
