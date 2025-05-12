@@ -23,7 +23,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div className="max-w-6xl mx-auto px-4"> {/* GLOBAL WRAPPER */}
+      <div className="w-full px-4">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects/:id" element={<ProjectPage />} />
