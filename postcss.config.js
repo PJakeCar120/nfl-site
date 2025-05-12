@@ -1,8 +1,7 @@
-export default async () => {
-  const tailwindcss = (await import('tailwindcss')).default;
-  const autoprefixer = (await import('autoprefixer')).default;
+// postcss.config.js
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
 
-  return {
-    plugins: [tailwindcss, autoprefixer],
-  };
+export default {
+  plugins: [tailwindcss, autoprefixer],
 };
