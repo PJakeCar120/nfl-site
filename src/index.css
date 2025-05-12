@@ -131,7 +131,7 @@ button:focus-visible {
 
 @media (max-width: 640px) {
   html {
-    font-size: 14px; /* scale everything down globally */
+    font-size: 14px;
   }
 
   h1 {
@@ -158,7 +158,7 @@ button:focus-visible {
     padding: 0.5rem;
   }
 
-  /* ✅ Make images (including charts) fit the screen */
+  /* ✅ Make charts/images scale to screen */
   img {
     max-width: 100%;
     height: auto;
@@ -166,12 +166,30 @@ button:focus-visible {
     margin: 0 auto;
   }
 
-  /* ✅ Optional: handle chart wrappers if you use them */
   .chart-container,
   .chart-wrapper,
   .scroll-container {
     max-width: 100%;
     overflow-x: auto;
+  }
+
+  /* ✅ Make sure tables stay scrollable horizontally if needed */
+  table {
+    width: 100%;
+    overflow-x: auto;
+    display: table;
+    table-layout: auto;
+  }
+
+  .ranking-table {
+    min-width: 800px; /* allow scrolling */
+    border-collapse: collapse;
+  }
+
+  .ranking-table th,
+  .ranking-table td {
+    padding: 0.5rem;
+    font-size: 0.85em;
   }
 
   /* ✅ Fix oversized bottom image */
@@ -185,28 +203,5 @@ button:focus-visible {
 
   .bottom-image + * {
     margin-bottom: 2rem;
-  }
-
-  /* ✅ Ensure tables don't overflow and shrink as needed */
-  table {
-    width: 100%;
-    display: block;
-    overflow-x: auto;
-  }
-
-  .ranking-table {
-    width: 100%;
-    table-layout: auto;
-    border-collapse: collapse;
-  }
-
-  .ranking-table thead,
-  .ranking-table tbody,
-  .ranking-table tr,
-  .ranking-table th,
-  .ranking-table td {
-    display: table;
-    width: 100%;
-    box-sizing: border-box;
   }
 }
