@@ -1,7 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 export default function Navbar() {
   const location = useLocation();
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const isActive = (path) =>
     location.pathname.startsWith(path)
@@ -14,24 +16,52 @@ export default function Navbar() {
         <Link to="/" className="text-2xl font-bold tracking-tight text-blue-900">
           🏈 Football Analytics Nerd
         </Link>
-        <nav className="space-x-4 text-blue-800 font-medium text-sm">
-          <Link to="/"><button className={isActive("/")}>Home</button></Link>
-          <Link to="/rankings"><button className={isActive("/rankings")}>Rankings</button></Link>
-          <Link to="/lineup"><button className={isActive("/lineup")}>Team Pages</button></Link>
-          <Link to="/freeagents"><button className={isActive("/freeagents")}>Top Free Agents</button></Link>
-          <Link to="/compare"><button className={isActive("/compare")}>Player Similarity Comparison</button></Link>
-          <Link to="/whobetta"><button className={isActive("/whobetta")}>Head2Head</button></Link>
-          <Link to="/draft-page"><button className={isActive("/draft-page")}>Draft Center</button></Link>
-          <Link to="/contract-market"><button className={isActive("/contract-market")}>Contract Market</button></Link>
-          <Link to="/contracts"><button className={isActive("/contracts")}>Extension Projections</button></Link>
-          <Link to="/draft-previews"><button className={isActive("/draft-previews")}>Team Draft Previews</button></Link>
-          <Link to="/awards"><button className={isActive("/awards")}>Awards</button></Link>
-          <Link to="/research"><button className={isActive("/research")}>Research</button></Link>
-          <Link to="/charts"><button className={isActive("/charts")}>Charts</button></Link>
 
-          <Link to="/search"><button className={isActive("/search")}>Player Search</button></Link>
+        {/* Hamburger Button for Mobile */}
+        <button
+          className="sm:hidden text-blue-800 text-xl"
+          onClick={() => setMobileOpen(!mobileOpen)}
+        >
+          ☰
+        </button>
+
+        {/* Desktop Nav */}
+        <nav className="hidden sm:flex space-x-4 text-blue-800 font-medium text-sm">
+          {navItems.map(({ path, label }) => (
+            <Link key={path} to={path}>
+              <button className={isActive(path)}>{label}</button>
+            </Link>
+          ))}
         </nav>
       </div>
+
+      {/* Mobile Menu */}
+      {mobileOpen && (
+        <div className="flex flex-col sm:hidden px-6 pt-4 space-y-3 text-blue-800 font-medium text-sm bg-blue-50 shadow-inner">
+          {navItems.map(({ path, label }) => (
+            <Link key={path} to={path} onClick={() => setMobileOpen(false)}>
+              <span className={isActive(path)}>{label}</span>
+            </Link>
+          ))}
+        </div>
+      )}
     </header>
   );
 }
+
+const navItems = [
+  { path: "/", label: "Home" },
+  { path: "/rankings", label: "Rankings" },
+  { path: "/lineup", label: "Team Pages" },
+  { path: "/freeagents", label: "Top Free Agents" },
+  { path: "/compare", label: "Player Similarity Comparison" },
+  { path: "/whobetta", label: "Head2Head" },
+  { path: "/draft-page", label: "Draft Center" },
+  { path: "/contract-market", label: "Contract Market" },
+  { path: "/contracts", label: "Extension Projections" },
+  { path: "/draft-previews", label: "Team Draft Previews" },
+  { path: "/awards", label: "Awards" },
+  { path: "/research", label: "Research" },
+  { path: "/charts", label: "Charts" },
+  { path: "/search", label: "Player Search" },
+];
