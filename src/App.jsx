@@ -23,29 +23,32 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects/:id" element={<ProjectPage />} />
-        <Route path="/rankings" element={<RankingsPage />} />
-        <Route path="/research" element={<Research />} />
-        <Route path="/contract-market" element={<ContractMarket />} />
-        <Route path="/contracts" element={<ContractsPage />} />
-        <Route path="/compare" element={<PlayerComparison />} />
-        <Route path="/draft-previews" element={<DraftPreviews />} />
-        <Route path="/awards" element={<AwardsPage />} />
-        <Route path="/projects/similarity" element={<PlayerComparison />} />
-        <Route path="/projects/contract-market" element={<ContractMarket />} />
-        <Route path="/player" element={<PlayerPage />} />
-        <Route path="/draft-page" element={<DraftPage />} />
-        <Route path="/search" element={<SearchResults />} />
-        <Route path="/playersearch" element={<SearchResults />} />  // ✅ new
-        <Route path="/freeagents" element={<TopFreeAgents />} />
-        <Route path="/whobetta" element={<WhoBetta />} />
-        <Route path="/lineup" element={<TeamLineup />} /> {/* ✅ NEW ROUTE */}
-        <Route path="/charts" element={<ChartsPage />} />
-      </Routes>
+      <div className="max-w-6xl mx-auto px-4"> {/* GLOBAL WRAPPER */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects/:id" element={<ProjectPage />} />
+          <Route path="/rankings" element={<RankingsPage />} />
+          <Route path="/research" element={<Research />} />
+          <Route path="/contract-market" element={<ContractMarket />} />
+          <Route path="/contracts" element={<ContractsPage />} />
+          <Route path="/compare" element={<PlayerComparison />} />
+          <Route path="/draft-previews" element={<DraftPreviews />} />
+          <Route path="/awards" element={<AwardsPage />} />
+          <Route path="/projects/similarity" element={<PlayerComparison />} />
+          <Route path="/projects/contract-market" element={<ContractMarket />} />
+          <Route path="/player" element={<PlayerPage />} />
+          <Route path="/draft-page" element={<DraftPage />} />
+          <Route path="/search" element={<SearchResults />} />
+          <Route path="/playersearch" element={<SearchResults />} />
+          <Route path="/freeagents" element={<TopFreeAgents />} />
+          <Route path="/whobetta" element={<WhoBetta />} />
+          <Route path="/lineup" element={<TeamLineup />} />
+          <Route path="/charts" element={<ChartsPage />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
+
 
 export default App;
