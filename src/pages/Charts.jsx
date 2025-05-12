@@ -33,6 +33,11 @@ const chartData = {
         "Just gave a small update to my QB model. Here are rookie-year QB Scores for all qualifying rookies from 2021–2024:",
     },
     {
+      src: "/assets/charts/2024AQR.png",
+      caption:
+        "2024 QBR vs. Passer Rating with AQS as Color. Always interesting to see how my model compares to these two. Most glaring to me is model being higher on Russ and Young, lower on Stafford and Geno. ",
+    },
+    {
       src: "/assets/charts/2024QBInts.jpeg",
       caption: "What QBs got lucky/unlucky with interceptions last year?",
     },
@@ -94,6 +99,13 @@ const chartData = {
       src: "/assets/charts/2024ILB.png",
       caption:
         "2024 Regular Season Tackles vs. Stops. Players with more valuable tackles are above the OLS line.",
+    },
+  ],
+  CB: [
+    {
+      src: "/assets/charts/2024CB.jpeg",
+      caption:
+        "2024 CB Yards Allowed per Snap vs. QB Rating Against. Cobie Durant stands out to me in a group of well-known elite guys.",
     },
   ],
 };
