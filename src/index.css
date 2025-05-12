@@ -148,8 +148,8 @@ button:focus-visible {
 
   .ranking-table th,
   .ranking-table td {
-    font-size: 0.75rem;
-    padding: 0.4rem;
+    font-size: 0.55rem;
+    padding: 0.2rem;
     word-break: break-word;
   }
 
