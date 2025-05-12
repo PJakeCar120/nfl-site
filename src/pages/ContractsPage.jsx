@@ -14,7 +14,7 @@ export default function ContractsPage() {
   Rather than relying on raw AAV (Average Annual Value), all projections are scaled to cap % at signing — a more stable and predictive metric given year-to-year cap growth. 
   Final projections are calculated as a weighted combination of comparables within the confidence band, adjusted for position-specific trends, contract length norms, and market conditions.
 </p>
-
+ 
 
       <label className="block text-sm font-medium text-gray-600 mb-2">
         Select a player:
