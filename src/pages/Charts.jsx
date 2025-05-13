@@ -161,7 +161,8 @@ export default function ChartsPage() {
       {category && currentChart && (
         <div className="border rounded p-4 bg-white shadow relative w-full overflow-x-auto sm:overflow-visible">
           {charts.length > 1 && (
-            <div className="absolute top-4 right-4 flex items-center gap-2 text-sm font-normal">
+            <div className="w-full flex justify-end mb-2 gap-2 text-sm font-normal">
+
               <button
                 className="bg-gray-200 px-3 py-1 rounded hover:bg-gray-300"
                 onClick={() => changeIndex(-1)}
