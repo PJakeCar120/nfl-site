@@ -293,6 +293,7 @@ export default function WhoBetta() {
           plugins: {
             legend: {
               position: "top",
+              
             },
           },
         }}
