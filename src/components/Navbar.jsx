@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const location = useLocation();
-  const [comparisonOpen, setComparisonOpen] = useState(false);
+  const [hoveredDropdown, setHoveredDropdown] = useState(null);
 
   const isActive = (path) =>
     location.pathname.startsWith(path)
@@ -23,29 +23,32 @@ export default function Navbar() {
           <Link to="/lineup"><button className={isActive("/lineup")}>Team Pages</button></Link>
           <Link to="/freeagents"><button className={isActive("/freeagents")}>Top Free Agents</button></Link>
 
-          {/* Grouped Player Comparison Dropdown */}
+          {/* Player Comparison Dropdown */}
           <div
-            className="relative"
-            onMouseEnter={() => setComparisonOpen(true)}
-            onMouseLeave={() => setComparisonOpen(false)}
+            className="relative group"
+            onMouseEnter={() => setHoveredDropdown("comparison")}
+            onMouseLeave={() => setHoveredDropdown(null)}
           >
-            <button className={`relative z-10 ${isActive("/compare") || isActive("/whobetta")}`}>
-              Player Comparison
+            <button
+              className={`px-3 py-2 border rounded hover:bg-blue-100 transition-all ${
+                isActive("/compare") || isActive("/whobetta")
+              }`}
+            >
+              Player Comparison ▾
             </button>
-
-            {comparisonOpen && (
-              <div className="absolute left-0 mt-2 bg-white border rounded shadow-md z-50 w-56">
+            {hoveredDropdown === "comparison" && (
+              <div className="absolute left-0 mt-2 bg-white border rounded shadow-lg z-50 w-48 py-2">
                 <Link
                   to="/compare"
-                  className="block px-4 py-2 hover:bg-gray-100 text-sm text-blue-800"
-                  onClick={() => setComparisonOpen(false)}
+                  className="block px-4 py-2 hover:bg-gray-100 text-blue-800"
+                  onClick={() => setHoveredDropdown(null)}
                 >
                   Similarity Tool
                 </Link>
                 <Link
                   to="/whobetta"
-                  className="block px-4 py-2 hover:bg-gray-100 text-sm text-blue-800"
-                  onClick={() => setComparisonOpen(false)}
+                  className="block px-4 py-2 hover:bg-gray-100 text-blue-800"
+                  onClick={() => setHoveredDropdown(null)}
                 >
                   Head2Head
                 </Link>
