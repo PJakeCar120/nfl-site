@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const location = useLocation();
-  const [showComparisonDropdown, setShowComparisonDropdown] = useState(false);
+  const [comparisonOpen, setComparisonOpen] = useState(false);
 
   const isActive = (path) =>
     location.pathname.startsWith(path)
@@ -17,37 +17,35 @@ export default function Navbar() {
           🏈 Football Analytics Nerd
         </Link>
 
-        <nav className="relative space-x-4 text-blue-800 font-medium text-sm flex flex-wrap items-center">
+        <nav className="relative text-blue-800 font-medium text-sm flex flex-wrap items-center space-x-4">
           <Link to="/"><button className={isActive("/")}>Home</button></Link>
           <Link to="/rankings"><button className={isActive("/rankings")}>Rankings</button></Link>
           <Link to="/lineup"><button className={isActive("/lineup")}>Team Pages</button></Link>
           <Link to="/freeagents"><button className={isActive("/freeagents")}>Top Free Agents</button></Link>
 
-          {/* Player Comparison Dropdown */}
+          {/* Grouped Player Comparison Dropdown */}
           <div
-            className="relative group"
-            onMouseEnter={() => setShowComparisonDropdown(true)}
-            onMouseLeave={() => setShowComparisonDropdown(false)}
+            className="relative"
+            onMouseEnter={() => setComparisonOpen(true)}
+            onMouseLeave={() => setComparisonOpen(false)}
           >
-            <button
-              className={`relative z-10 ${isActive("/compare") || isActive("/whobetta")}`}
-              onClick={() => setShowComparisonDropdown((prev) => !prev)} // mobile toggle
-            >
+            <button className={`relative z-10 ${isActive("/compare") || isActive("/whobetta")}`}>
               Player Comparison
             </button>
-            {showComparisonDropdown && (
-              <div className="absolute left-0 mt-2 w-52 bg-white border rounded shadow-md z-50">
+
+            {comparisonOpen && (
+              <div className="absolute left-0 mt-2 bg-white border rounded shadow-md z-50 w-56">
                 <Link
                   to="/compare"
                   className="block px-4 py-2 hover:bg-gray-100 text-sm text-blue-800"
-                  onClick={() => setShowComparisonDropdown(false)}
+                  onClick={() => setComparisonOpen(false)}
                 >
                   Similarity Tool
                 </Link>
                 <Link
                   to="/whobetta"
                   className="block px-4 py-2 hover:bg-gray-100 text-sm text-blue-800"
-                  onClick={() => setShowComparisonDropdown(false)}
+                  onClick={() => setComparisonOpen(false)}
                 >
                   Head2Head
                 </Link>
