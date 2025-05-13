@@ -22,7 +22,7 @@ export default function Navbar() {
     }
   };
 
-  const handleMouseLeave = (key) => {
+  const handleMouseLeave = () => {
     if (window.innerWidth >= 640) {
       setHoveredDropdown(null);
     }
@@ -48,12 +48,12 @@ export default function Navbar() {
               <div
                 className="relative group"
                 onMouseEnter={() => handleMouseEnter("rankings")}
-                onMouseLeave={() => handleMouseLeave("rankings")}
+                onMouseLeave={handleMouseLeave}
                 onClick={() => handleDropdown("rankings")}
               >
                 <button className={isActive("/rankings") || isActive("/awards")}>Rankings & Awards ▾</button>
                 {hoveredDropdown === "rankings" && (
-                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2">
+                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2" onClick={(e) => e.stopPropagation()}>
                     <Link to="/rankings" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Rankings</Link>
                     <Link to="/awards" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Awards</Link>
                   </div>
@@ -64,12 +64,12 @@ export default function Navbar() {
               <div
                 className="relative group"
                 onMouseEnter={() => handleMouseEnter("comparison")}
-                onMouseLeave={() => handleMouseLeave("comparison")}
+                onMouseLeave={handleMouseLeave}
                 onClick={() => handleDropdown("comparison")}
               >
-                <button className={isActive("/compare") || isActive("/whobetta")}>Player Comparison Tools▾</button>
+                <button className={isActive("/compare") || isActive("/whobetta")}>Player Comparison Tools ▾</button>
                 {hoveredDropdown === "comparison" && (
-                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2">
+                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2" onClick={(e) => e.stopPropagation()}>
                     <Link to="/compare" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Similarity Scores</Link>
                     <Link to="/whobetta" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Player Comparison</Link>
                   </div>
@@ -80,12 +80,12 @@ export default function Navbar() {
               <div
                 className="relative group"
                 onMouseEnter={() => handleMouseEnter("contracts")}
-                onMouseLeave={() => handleMouseLeave("contracts")}
+                onMouseLeave={handleMouseLeave}
                 onClick={() => handleDropdown("contracts")}
               >
                 <button className={isActive("/contract-market") || isActive("/contracts") || isActive("/freeagents")}>Contracts ▾</button>
                 {hoveredDropdown === "contracts" && (
-                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-56 py-2">
+                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-56 py-2" onClick={(e) => e.stopPropagation()}>
                     <Link to="/contract-market" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Contract Market</Link>
                     <Link to="/contracts" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Extension Projections</Link>
                     <Link to="/freeagents" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Top Free Agents</Link>
@@ -97,12 +97,12 @@ export default function Navbar() {
               <div
                 className="relative group"
                 onMouseEnter={() => handleMouseEnter("draft")}
-                onMouseLeave={() => handleMouseLeave("draft")}
+                onMouseLeave={handleMouseLeave}
                 onClick={() => handleDropdown("draft")}
               >
                 <button className={isActive("/draft-page") || isActive("/draft-previews")}>2025 Draft ▾</button>
                 {hoveredDropdown === "draft" && (
-                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2">
+                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2" onClick={(e) => e.stopPropagation()}>
                     <Link to="/draft-page" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Draft Center</Link>
                     <Link to="/draft-previews" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Team Draft Previews</Link>
                   </div>
@@ -113,12 +113,12 @@ export default function Navbar() {
               <div
                 className="relative group"
                 onMouseEnter={() => handleMouseEnter("analysis")}
-                onMouseLeave={() => handleMouseLeave("analysis")}
+                onMouseLeave={handleMouseLeave}
                 onClick={() => handleDropdown("analysis")}
               >
                 <button className={isActive("/research") || isActive("/charts")}>Analysis ▾</button>
                 {hoveredDropdown === "analysis" && (
-                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-44 py-2">
+                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-44 py-2" onClick={(e) => e.stopPropagation()}>
                     <Link to="/charts" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Charts</Link>
                     <Link to="/research" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Research</Link>
                   </div>
