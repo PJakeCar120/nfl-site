@@ -29,7 +29,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className={`w-full px-6 py-4 shadow-md bg-blue-50 sticky top-0 z-50 transition-all duration-300 ${hoveredDropdown ? 'pb-20' : ''}`}>
+    <header className={`w-full px-6 py-4 shadow-md bg-blue-50 sticky top-0 z-50 transition-all duration-300 ${hoveredDropdown ? 'pb-40' : ''}`}>
       <div className="w-full">
         <div className="flex flex-col sm:flex-row sm:items-center sm:gap-x-6 gap-y-4">
 
@@ -44,7 +44,6 @@ export default function Navbar() {
               <Link to="/"><button className={isActive("/")}>Home</button></Link>
               <Link to="/lineup"><button className={isActive("/lineup")}>Team Pages</button></Link>
 
-              {/* Dropdowns */}
               {["rankings", "comparison", "contracts", "draft", "analysis"].map((key) => {
                 const dropdowns = {
                   rankings: {
@@ -84,6 +83,7 @@ export default function Navbar() {
                     ],
                   },
                 };
+                const isActiveDropdown = dropdowns[key].links.some((l) => location.pathname.startsWith(l.to));
                 return (
                   <div
                     key={key}
@@ -92,14 +92,11 @@ export default function Navbar() {
                     onMouseLeave={handleMouseLeave}
                     onClick={() => handleDropdown(key)}
                   >
-                    <button className={dropdowns[key].links.some((l) => isActive(l.to)) ? "text-blue-600 underline font-bold" : "hover:text-blue-600 font-bold"}>
+                    <button className={isActiveDropdown ? "text-blue-600 underline font-bold" : "hover:text-blue-600 font-bold"}>
                       {dropdowns[key].label} ▾
                     </button>
-                    {hoveredDropdown === key && (
-                      <div
-                        className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2"
-                        onClick={(e) => e.stopPropagation()}
-                      >
+                    {(hoveredDropdown === key || (window.innerWidth < 640 && hoveredDropdown === key)) && (
+                      <div className="absolute sm:absolute sm:left-0 sm:mt-px bg-white border rounded shadow-lg z-50 w-48 py-2 block sm:block" onClick={(e) => e.stopPropagation()}>
                         {dropdowns[key].links.map(({ to, text }) => (
                           <Link
                             key={to}
