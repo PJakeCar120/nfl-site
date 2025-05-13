@@ -342,7 +342,7 @@ if (project.csvUrl && csvData.length > 0) {
                       setSortOrder("desc");
                     }
                   }}
-                  className="border px-2 py-1 text-left break-words font-mono text-[10px] sm:text-sm max-w-[80px] cursor-pointer hover:bg-gray-200"
+                  className="border px-2 py-1 text-left break-normal font-mono text-[10px] sm:text-sm max-w-[80px] cursor-pointer hover:bg-gray-200"
 
                 >
                   {key} {sortColumn === key ? (sortOrder === "asc" ? "↑" : "↓") : ""}
@@ -366,7 +366,7 @@ if (project.csvUrl && csvData.length > 0) {
                   return (
                     <td
                       key={j}
-                      className="border px-2 py-1 text-[10px] sm:text-sm text-gray-800 break-words font-mono max-w-[80px]"
+                      className="border px-2 py-1 text-[10px] sm:text-sm text-gray-800 break-normal font-mono max-w-[80px]"
                       style={{ backgroundColor: bgColor }}
                     >
                       {key === "Name" ? (
