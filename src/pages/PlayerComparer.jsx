@@ -1,5 +1,18 @@
 import { useState, useEffect } from "react";
 import Papa from "papaparse";
+import { Radar } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend,
+} from "chart.js";
+
+ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
+
 
 const YEARS = ["2024", "2023", "2022", "2021"];
 const POSITIONS = ["QB", "RB", "WR", "TE", "IDL", "EDGE", "ILB", "CB", "S"];
@@ -241,3 +254,46 @@ export default function WhoBetta() {
     </div>
   );
 }
+{p1 && p2 && (
+  <div className="mt-10">
+    <h3 className="text-lg font-bold mb-4 text-center">Stat Vector Comparison</h3>
+    <div className="max-w-[700px] w-full h-[500px] md:h-[600px] sm:h-[400px] mx-auto">
+      <Radar
+        data={{
+          labels: statKeys,
+          datasets: [
+            {
+              label: `${p1.Name} (${p1.year})`,
+              data: statKeys.map((key) => parseFloat(p1[key])),
+              backgroundColor: "rgba(59, 130, 246, 0.2)",
+              borderColor: "rgba(59, 130, 246, 1)",
+              borderWidth: 2,
+            },
+            {
+              label: `${p2.Name} (${p2.year})`,
+              data: statKeys.map((key) => parseFloat(p2[key])),
+              backgroundColor: "rgba(16, 185, 129, 0.2)",
+              borderColor: "rgba(16, 185, 129, 1)",
+              borderWidth: 2,
+            },
+          ],
+        }}
+        options={{
+          maintainAspectRatio: false,
+          responsive: true,
+          scales: {
+            r: {
+              suggestedMin: 0,
+              suggestedMax: 100,
+              pointLabels: { font: { size: 10 } },
+              ticks: { backdropColor: "transparent" },
+            },
+          },
+          plugins: {
+            legend: { position: "top" },
+          },
+        }}
+      />
+    </div>
+  </div>
+)}
