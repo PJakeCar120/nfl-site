@@ -11,3 +11,10 @@
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+
+<script>
+  if (location.hostname === "footballanalyticsnerd.netlify.app") {
+    const redirectTo = location.href.replace("footballanalyticsnerd.netlify.app", "footballanalyticsnerd.com");
+    location.replace(redirectTo);
+  }
+</script>
