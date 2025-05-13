@@ -11,16 +11,17 @@ export default function Navbar() {
       : "hover:text-blue-600 font-bold";
 
   return (
-    <header className="w-full px-6 py-4 shadow-md bg-blue-50 sticky top-0 z-50">
-      <div className="flex justify-between items-center max-w-7xl mx-auto overflow-hidden">
-        <Link to="/" className="text-2xl font-bold tracking-tight text-blue-900 whitespace-nowrap">
+    <header className="w-full px-4 sm:px-6 py-4 shadow-md bg-blue-50 sticky top-0 z-50">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-3 max-w-7xl mx-auto overflow-hidden">
+        <Link
+          to="/"
+          className="text-2xl font-bold tracking-tight text-blue-900 whitespace-nowrap"
+        >
           🏈 Football Analytics Nerd
         </Link>
 
-        {/* Scrollable nav on mobile only */}
-        <div className="overflow-x-auto max-w-full w-full">
+        <div className="overflow-x-auto w-full sm:ml-4">
           <nav className="relative text-blue-800 text-sm flex items-center gap-4 w-max">
-            {/* Standalone Links */}
             <Link to="/"><button className={isActive("/")}>Home</button></Link>
             <Link to="/rankings"><button className={isActive("/rankings")}>Rankings</button></Link>
             <Link to="/lineup"><button className={isActive("/lineup")}>Team Pages</button></Link>
@@ -70,7 +71,7 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* 2024 Draft Dropdown */}
+            {/* 2025 Draft Dropdown */}
             <div
               className="relative group"
               onMouseEnter={() => setHoveredDropdown("draft")}
@@ -115,7 +116,7 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* Player Search - always last */}
+            {/* Player Search */}
             <Link to="/search"><button className={isActive("/search")}>Player Search</button></Link>
           </nav>
         </div>
