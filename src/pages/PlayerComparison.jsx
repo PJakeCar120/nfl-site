@@ -440,9 +440,16 @@ const WEIGHTS =
           },
           plugins: {
             legend: {
-              position: "top"
-            }
-          }
+              position: "top",
+              labels: {
+                color: "#000", // black
+                font: {
+                  weight: "bold",
+                  size: 14, // optional tweak
+                },
+              },
+            },
+          },
         }}
       />
     </div>
