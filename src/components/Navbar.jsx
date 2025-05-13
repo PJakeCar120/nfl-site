@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const location = useLocation();
+  const [showComparisonDropdown, setShowComparisonDropdown] = useState(false);
 
   const isActive = (path) =>
     location.pathname.startsWith(path)
@@ -15,29 +17,42 @@ export default function Navbar() {
           🏈 Football Analytics Nerd
         </Link>
 
-        <nav className="flex gap-4 text-blue-800 font-medium text-sm items-center">
+        <nav className="relative space-x-4 text-blue-800 font-medium text-sm flex flex-wrap items-center">
           <Link to="/"><button className={isActive("/")}>Home</button></Link>
           <Link to="/rankings"><button className={isActive("/rankings")}>Rankings</button></Link>
           <Link to="/lineup"><button className={isActive("/lineup")}>Team Pages</button></Link>
           <Link to="/freeagents"><button className={isActive("/freeagents")}>Top Free Agents</button></Link>
 
-          {/* PLAYER COMPARISON DROPDOWN */}
-          <div className="relative group">
-            <button className="text-blue-800 font-medium text-sm hover:text-blue-600">
-              Player Comparison ▾
+          {/* Player Comparison Dropdown */}
+          <div
+            className="relative group"
+            onMouseEnter={() => setShowComparisonDropdown(true)}
+            onMouseLeave={() => setShowComparisonDropdown(false)}
+          >
+            <button
+              className={`relative z-10 ${isActive("/compare") || isActive("/whobetta")}`}
+              onClick={() => setShowComparisonDropdown((prev) => !prev)} // mobile toggle
+            >
+              Player Comparison
             </button>
-            <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 group-hover:visible invisible transition duration-200 z-50">
-              <Link to="/compare">
-                <div className="px-4 py-2 text-sm text-blue-800 hover:bg-blue-100 hover:text-blue-600">
+            {showComparisonDropdown && (
+              <div className="absolute left-0 mt-2 w-52 bg-white border rounded shadow-md z-50">
+                <Link
+                  to="/compare"
+                  className="block px-4 py-2 hover:bg-gray-100 text-sm text-blue-800"
+                  onClick={() => setShowComparisonDropdown(false)}
+                >
                   Similarity Tool
-                </div>
-              </Link>
-              <Link to="/whobetta">
-                <div className="px-4 py-2 text-sm text-blue-800 hover:bg-blue-100 hover:text-blue-600">
-                  Head2Head Tool
-                </div>
-              </Link>
-            </div>
+                </Link>
+                <Link
+                  to="/whobetta"
+                  className="block px-4 py-2 hover:bg-gray-100 text-sm text-blue-800"
+                  onClick={() => setShowComparisonDropdown(false)}
+                >
+                  Head2Head
+                </Link>
+              </div>
+            )}
           </div>
 
           <Link to="/draft-page"><button className={isActive("/draft-page")}>Draft Center</button></Link>
