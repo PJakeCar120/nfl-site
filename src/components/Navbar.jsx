@@ -19,120 +19,123 @@ export default function Navbar() {
             🏈 Football Analytics Nerd
           </Link>
 
-          <nav className="flex flex-col sm:flex-row text-blue-800 text-sm font-medium gap-4">
-            <Link to="/"><button className={isActive("/")}>Home</button></Link>
-            <Link to="/lineup"><button className={isActive("/lineup")}>Team Pages</button></Link>
+          <nav className="text-blue-800 font-medium text-xs sm:text-sm w-full">
+            <div className="flex flex-row sm:flex-row overflow-x-auto whitespace-nowrap gap-2 sm:gap-4 no-scrollbar">
 
-            {/* Rankings & Awards Dropdown */}
-            <div
-              className="relative group"
-              onMouseEnter={() => setHoveredDropdown("rankings")}
-              onMouseLeave={() => setHoveredDropdown(null)}
-            >
-              <button className={isActive("/rankings") || isActive("/awards")}>
-                Rankings & Awards ▾
-              </button>
-              {hoveredDropdown === "rankings" && (
-                <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2">
-                  <Link to="/rankings" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
-                    Rankings
-                  </Link>
-                  <Link to="/awards" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
-                    Awards
-                  </Link>
-                </div>
-              )}
+              <Link to="/"><button className={isActive("/")}>Home</button></Link>
+              <Link to="/lineup"><button className={isActive("/lineup")}>Team Pages</button></Link>
+
+              {/* Rankings & Awards Dropdown */}
+              <div
+                className="relative group"
+                onMouseEnter={() => setHoveredDropdown("rankings")}
+                onMouseLeave={() => setHoveredDropdown(null)}
+              >
+                <button className={isActive("/rankings") || isActive("/awards")}>
+                  Rankings & Awards ▾
+                </button>
+                {hoveredDropdown === "rankings" && (
+                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2">
+                    <Link to="/rankings" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
+                      Rankings
+                    </Link>
+                    <Link to="/awards" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
+                      Awards
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Player Comparison Dropdown */}
+              <div
+                className="relative group"
+                onMouseEnter={() => setHoveredDropdown("comparison")}
+                onMouseLeave={() => setHoveredDropdown(null)}
+              >
+                <button className={isActive("/compare") || isActive("/whobetta")}>
+                  Player Comparison Tools▾
+                </button>
+                {hoveredDropdown === "comparison" && (
+                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2">
+                    <Link to="/compare" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
+                      Similarity Scores
+                    </Link>
+                    <Link to="/whobetta" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
+                      Player Comparison
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Contracts Dropdown */}
+              <div
+                className="relative group"
+                onMouseEnter={() => setHoveredDropdown("contracts")}
+                onMouseLeave={() => setHoveredDropdown(null)}
+              >
+                <button className={isActive("/contract-market") || isActive("/contracts") || isActive("/freeagents")}>
+                  Contracts ▾
+                </button>
+                {hoveredDropdown === "contracts" && (
+                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-56 py-2">
+                    <Link to="/contract-market" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
+                      Contract Market
+                    </Link>
+                    <Link to="/contracts" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
+                      Extension Projections
+                    </Link>
+                    <Link to="/freeagents" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
+                      Top Free Agents
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* 2025 Draft Dropdown */}
+              <div
+                className="relative group"
+                onMouseEnter={() => setHoveredDropdown("draft")}
+                onMouseLeave={() => setHoveredDropdown(null)}
+              >
+                <button className={isActive("/draft-page") || isActive("/draft-previews")}>
+                  2025 Draft ▾
+                </button>
+                {hoveredDropdown === "draft" && (
+                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2">
+                    <Link to="/draft-page" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
+                      Draft Center
+                    </Link>
+                    <Link to="/draft-previews" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
+                      Team Draft Previews
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Analysis Dropdown */}
+              <div
+                className="relative group"
+                onMouseEnter={() => setHoveredDropdown("analysis")}
+                onMouseLeave={() => setHoveredDropdown(null)}
+              >
+                <button className={isActive("/research") || isActive("/charts")}>
+                  Analysis ▾
+                </button>
+                {hoveredDropdown === "analysis" && (
+                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-44 py-2">
+                    <Link to="/charts" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
+                      Charts
+                    </Link>
+                    <Link to="/research" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
+                      Research
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Player Search */}
+              <Link to="/search"><button className={isActive("/search")}>Player Search</button></Link>
             </div>
-
-            {/* Player Comparison Dropdown */}
-            <div
-              className="relative group"
-              onMouseEnter={() => setHoveredDropdown("comparison")}
-              onMouseLeave={() => setHoveredDropdown(null)}
-            >
-              <button className={isActive("/compare") || isActive("/whobetta")}>
-                Player Comparison Tools▾
-              </button>
-              {hoveredDropdown === "comparison" && (
-                <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2">
-                  <Link to="/compare" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
-                    Similarity Scores
-                  </Link>
-                  <Link to="/whobetta" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
-                    Player Comparison
-                  </Link>
-                </div>
-              )}
-            </div>
-
-            {/* Contracts Dropdown */}
-            <div
-              className="relative group"
-              onMouseEnter={() => setHoveredDropdown("contracts")}
-              onMouseLeave={() => setHoveredDropdown(null)}
-            >
-              <button className={isActive("/contract-market") || isActive("/contracts") || isActive("/freeagents")}>
-                Contracts ▾
-              </button>
-              {hoveredDropdown === "contracts" && (
-                <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-56 py-2">
-                  <Link to="/contract-market" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
-                    Contract Market
-                  </Link>
-                  <Link to="/contracts" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
-                    Extension Projections
-                  </Link>
-                  <Link to="/freeagents" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
-                    Top Free Agents
-                  </Link>
-                </div>
-              )}
-            </div>
-
-            {/* 2025 Draft Dropdown */}
-            <div
-              className="relative group"
-              onMouseEnter={() => setHoveredDropdown("draft")}
-              onMouseLeave={() => setHoveredDropdown(null)}
-            >
-              <button className={isActive("/draft-page") || isActive("/draft-previews")}>
-                2025 Draft ▾
-              </button>
-              {hoveredDropdown === "draft" && (
-                <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2">
-                  <Link to="/draft-page" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
-                    Draft Center
-                  </Link>
-                  <Link to="/draft-previews" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
-                    Team Draft Previews
-                  </Link>
-                </div>
-              )}
-            </div>
-
-            {/* Analysis Dropdown (no awards anymore) */}
-            <div
-              className="relative group"
-              onMouseEnter={() => setHoveredDropdown("analysis")}
-              onMouseLeave={() => setHoveredDropdown(null)}
-            >
-              <button className={isActive("/research") || isActive("/charts")}>
-                Analysis ▾
-              </button>
-              {hoveredDropdown === "analysis" && (
-                <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-44 py-2">
-                  <Link to="/charts" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
-                    Charts
-                  </Link>
-                  <Link to="/research" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
-                    Research
-                  </Link>
-                </div>
-              )}
-            </div>
-
-            {/* Player Search - always last */}
-            <Link to="/search"><button className={isActive("/search")}>Player Search</button></Link>
           </nav>
         </div>
       </div>
