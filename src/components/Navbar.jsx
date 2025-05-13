@@ -29,7 +29,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="w-full px-6 py-4 shadow-md bg-blue-50 sticky top-0 z-50">
+    <header className={`w-full px-6 py-4 shadow-md bg-blue-50 sticky top-0 z-50 transition-all duration-300 ${hoveredDropdown ? 'pb-20' : ''}`}>
       <div className="w-full">
         <div className="flex flex-col sm:flex-row sm:items-center sm:gap-x-6 gap-y-4">
 
@@ -37,97 +37,86 @@ export default function Navbar() {
             🏈 Football Analytics Nerd
           </Link>
 
-          <div className="overflow-x-auto sm:overflow-visible relative z-30">
-
+          <div className="overflow-x-auto sm:overflow-visible relative z-30 border-t border-blue-200 pt-2">
             <nav className="flex flex-row flex-nowrap whitespace-nowrap gap-3 sm:gap-4 text-blue-800 font-medium text-xs sm:text-sm no-scrollbar">
+              <div className="flex-shrink-0 animate-pulse text-gray-400">⬅ scroll ➡</div>
 
               <Link to="/"><button className={isActive("/")}>Home</button></Link>
               <Link to="/lineup"><button className={isActive("/lineup")}>Team Pages</button></Link>
 
-              {/* Rankings & Awards Dropdown */}
-              <div
-                className="relative group"
-                onMouseEnter={() => handleMouseEnter("rankings")}
-                onMouseLeave={handleMouseLeave}
-                onClick={() => handleDropdown("rankings")}
-              >
-                <button className={isActive("/rankings") || isActive("/awards")}>Rankings & Awards ▾</button>
-                {hoveredDropdown === "rankings" && (
-                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2" onClick={(e) => e.stopPropagation()}>
-                    <Link to="/rankings" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Rankings</Link>
-                    <Link to="/awards" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Awards</Link>
+              {/* Dropdowns */}
+              {["rankings", "comparison", "contracts", "draft", "analysis"].map((key) => {
+                const dropdowns = {
+                  rankings: {
+                    label: "Rankings & Awards",
+                    links: [
+                      { to: "/rankings", text: "Rankings" },
+                      { to: "/awards", text: "Awards" },
+                    ],
+                  },
+                  comparison: {
+                    label: "Player Comparison Tools",
+                    links: [
+                      { to: "/compare", text: "Similarity Scores" },
+                      { to: "/whobetta", text: "Player Comparison" },
+                    ],
+                  },
+                  contracts: {
+                    label: "Contracts",
+                    links: [
+                      { to: "/contract-market", text: "Contract Market" },
+                      { to: "/contracts", text: "Extension Projections" },
+                      { to: "/freeagents", text: "Top Free Agents" },
+                    ],
+                  },
+                  draft: {
+                    label: "2025 Draft",
+                    links: [
+                      { to: "/draft-page", text: "Draft Center" },
+                      { to: "/draft-previews", text: "Team Draft Previews" },
+                    ],
+                  },
+                  analysis: {
+                    label: "Analysis",
+                    links: [
+                      { to: "/charts", text: "Charts" },
+                      { to: "/research", text: "Research" },
+                    ],
+                  },
+                };
+                return (
+                  <div
+                    key={key}
+                    className="relative group"
+                    onMouseEnter={() => handleMouseEnter(key)}
+                    onMouseLeave={handleMouseLeave}
+                    onClick={() => handleDropdown(key)}
+                  >
+                    <button className={dropdowns[key].links.some((l) => isActive(l.to)) ? "text-blue-600 underline font-bold" : "hover:text-blue-600 font-bold"}>
+                      {dropdowns[key].label} ▾
+                    </button>
+                    {hoveredDropdown === key && (
+                      <div
+                        className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        {dropdowns[key].links.map(({ to, text }) => (
+                          <Link
+                            key={to}
+                            to={to}
+                            className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold"
+                            onClick={() => setHoveredDropdown(null)}
+                          >
+                            {text}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
+                );
+              })}
 
-              {/* Player Comparison Dropdown */}
-              <div
-                className="relative group"
-                onMouseEnter={() => handleMouseEnter("comparison")}
-                onMouseLeave={handleMouseLeave}
-                onClick={() => handleDropdown("comparison")}
-              >
-                <button className={isActive("/compare") || isActive("/whobetta")}>Player Comparison Tools ▾</button>
-                {hoveredDropdown === "comparison" && (
-                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2" onClick={(e) => e.stopPropagation()}>
-                    <Link to="/compare" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Similarity Scores</Link>
-                    <Link to="/whobetta" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Player Comparison</Link>
-                  </div>
-                )}
-              </div>
-
-              {/* Contracts Dropdown */}
-              <div
-                className="relative group"
-                onMouseEnter={() => handleMouseEnter("contracts")}
-                onMouseLeave={handleMouseLeave}
-                onClick={() => handleDropdown("contracts")}
-              >
-                <button className={isActive("/contract-market") || isActive("/contracts") || isActive("/freeagents")}>Contracts ▾</button>
-                {hoveredDropdown === "contracts" && (
-                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-56 py-2" onClick={(e) => e.stopPropagation()}>
-                    <Link to="/contract-market" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Contract Market</Link>
-                    <Link to="/contracts" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Extension Projections</Link>
-                    <Link to="/freeagents" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Top Free Agents</Link>
-                  </div>
-                )}
-              </div>
-
-              {/* 2025 Draft Dropdown */}
-              <div
-                className="relative group"
-                onMouseEnter={() => handleMouseEnter("draft")}
-                onMouseLeave={handleMouseLeave}
-                onClick={() => handleDropdown("draft")}
-              >
-                <button className={isActive("/draft-page") || isActive("/draft-previews")}>2025 Draft ▾</button>
-                {hoveredDropdown === "draft" && (
-                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2" onClick={(e) => e.stopPropagation()}>
-                    <Link to="/draft-page" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Draft Center</Link>
-                    <Link to="/draft-previews" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Team Draft Previews</Link>
-                  </div>
-                )}
-              </div>
-
-              {/* Analysis Dropdown */}
-              <div
-                className="relative group"
-                onMouseEnter={() => handleMouseEnter("analysis")}
-                onMouseLeave={handleMouseLeave}
-                onClick={() => handleDropdown("analysis")}
-              >
-                <button className={isActive("/research") || isActive("/charts")}>Analysis ▾</button>
-                {hoveredDropdown === "analysis" && (
-                  <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-44 py-2" onClick={(e) => e.stopPropagation()}>
-                    <Link to="/charts" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Charts</Link>
-                    <Link to="/research" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>Research</Link>
-                  </div>
-                )}
-              </div>
-
-              {/* Player Search */}
               <Link to="/search"><button className={isActive("/search")}>Player Search</button></Link>
-
             </nav>
           </div>
         </div>
