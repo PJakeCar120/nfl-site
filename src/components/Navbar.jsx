@@ -46,7 +46,8 @@ export default function Navbar() {
           </Link>
 
           <div className="overflow-x-auto sm:overflow-visible relative z-30 border-t border-blue-200 pt-2">
-            <nav className="flex flex-row flex-nowrap whitespace-nowrap gap-3 sm:gap-4 text-blue-800 font-medium text-xs sm:text-sm no-scrollbar">
+            <nav className="flex flex-row flex-nowrap whitespace-nowrap min-w-max gap-3 sm:gap-4 text-blue-800 font-medium text-xs sm:text-sm no-scrollbar">
+
               {isMobile() && (
                 <div className="flex-shrink-0 animate-pulse text-gray-400 select-none pointer-events-none">
                   ⬅ Scroll ➡
