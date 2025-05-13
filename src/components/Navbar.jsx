@@ -17,7 +17,7 @@ export default function Navbar() {
           🏈 Football Analytics Nerd
         </Link>
 
-        <nav className="relative text-blue-800 font-medium text-sm flex flex-wrap items-center space-x-4">
+        <nav className="relative text-blue-800 font-medium text-sm flex items-center gap-4">
           {/* Standalone Links */}
           <Link to="/"><button className={isActive("/")}>Home</button></Link>
           <Link to="/rankings"><button className={isActive("/rankings")}>Rankings</button></Link>
