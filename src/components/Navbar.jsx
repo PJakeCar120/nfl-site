@@ -12,9 +12,9 @@ export default function Navbar() {
 
   return (
     <header className="w-full px-6 py-4 shadow-md bg-blue-50 sticky top-0 z-50">
-      <div className="w-full px-4 sm:px-6">
+      <div className="w-full">
 
-        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
           <Link to="/" className="text-2xl font-bold tracking-tight text-blue-900 whitespace-nowrap">
             🏈 Football Analytics Nerd
           </Link>
