@@ -248,7 +248,8 @@ export default function WhoBetta() {
       {p1 && p2 && (
   <div className="mt-10">
     <h3 className="text-lg font-bold mb-4 text-center">Stat Vector Comparison</h3>
-    <div className="w-full h-[min(90vw,600px)] px-4">
+    <div className="w-full mx-auto h-[400px] sm:h-[600px] md:h-[800px] max-w-full md:max-w-[1000px] px-4">
+
 
       <Radar
         data={{
