@@ -245,19 +245,10 @@ export default function WhoBetta() {
           </tbody>
         </table>
       )}
-
-      {!p1 || !p2 ? (
-        <p className="text-gray-500 mt-6 text-center">
-          Search two players and pick a year to compare.
-        </p>
-      ) : null}
-    </div>
-  );
-}
-{p1 && p2 && (
+      {p1 && p2 && (
   <div className="mt-10">
     <h3 className="text-lg font-bold mb-4 text-center">Stat Vector Comparison</h3>
-    <div className="max-w-[700px] w-full h-[500px] md:h-[600px] sm:h-[400px] mx-auto">
+    <div className="w-full max-w-[700px] h-[min(80vw,600px)] mx-auto">
       <Radar
         data={{
           labels: statKeys,
@@ -285,15 +276,30 @@ export default function WhoBetta() {
             r: {
               suggestedMin: 0,
               suggestedMax: 100,
-              pointLabels: { font: { size: 10 } },
-              ticks: { backdropColor: "transparent" },
+              pointLabels: {
+                font: { size: 10 },
+              },
+              ticks: {
+                backdropColor: "transparent",
+              },
             },
           },
           plugins: {
-            legend: { position: "top" },
+            legend: {
+              position: "top",
+            },
           },
         }}
       />
     </div>
   </div>
 )}
+
+      {!p1 || !p2 ? (
+        <p className="text-gray-500 mt-6 text-center">
+          Search two players and pick a year to compare.
+        </p>
+      ) : null}
+    </div>
+  );
+}
