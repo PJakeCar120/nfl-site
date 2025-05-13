@@ -19,8 +19,7 @@ export default function Navbar() {
             🏈 Football Analytics Nerd
           </Link>
 
-          <nav className="flex flex-row sm:flex-row overflow-x-auto whitespace-nowrap text-blue-800 text-xs sm:text-sm font-medium sm:gap-4 gap-2 no-scrollbar">
-
+          <nav className="flex flex-col sm:flex-row text-blue-800 text-sm font-medium gap-4">
             <Link to="/"><button className={isActive("/")}>Home</button></Link>
             <Link to="/lineup"><button className={isActive("/lineup")}>Team Pages</button></Link>
 
