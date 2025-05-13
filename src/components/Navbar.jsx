@@ -13,17 +13,35 @@ export default function Navbar() {
   return (
     <header className="w-full px-6 py-4 shadow-md bg-blue-50 sticky top-0 z-50">
       <div className="w-full">
-
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
           <Link to="/" className="text-2xl font-bold tracking-tight text-blue-900 whitespace-nowrap">
             🏈 Football Analytics Nerd
           </Link>
 
-          {/* Stacks vertically on mobile, horizontal on larger screens */}
           <nav className="flex flex-col sm:flex-row text-blue-800 text-sm font-medium gap-4">
             <Link to="/"><button className={isActive("/")}>Home</button></Link>
-            <Link to="/rankings"><button className={isActive("/rankings")}>Rankings</button></Link>
             <Link to="/lineup"><button className={isActive("/lineup")}>Team Pages</button></Link>
+
+            {/* Rankings & Awards Dropdown */}
+            <div
+              className="relative group"
+              onMouseEnter={() => setHoveredDropdown("rankings")}
+              onMouseLeave={() => setHoveredDropdown(null)}
+            >
+              <button className={isActive("/rankings") || isActive("/awards")}>
+                Rankings & Awards ▾
+              </button>
+              {hoveredDropdown === "rankings" && (
+                <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2">
+                  <Link to="/rankings" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
+                    Rankings
+                  </Link>
+                  <Link to="/awards" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
+                    Awards
+                  </Link>
+                </div>
+              )}
+            </div>
 
             {/* Player Comparison Dropdown */}
             <div
@@ -70,14 +88,14 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* 2024 Draft Dropdown */}
+            {/* 2025 Draft Dropdown */}
             <div
               className="relative group"
               onMouseEnter={() => setHoveredDropdown("draft")}
               onMouseLeave={() => setHoveredDropdown(null)}
             >
               <button className={isActive("/draft-page") || isActive("/draft-previews")}>
-                2024 Draft ▾
+                2025 Draft ▾
               </button>
               {hoveredDropdown === "draft" && (
                 <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2">
@@ -91,22 +109,19 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* Analysis Dropdown */}
+            {/* Analysis Dropdown (no awards anymore) */}
             <div
               className="relative group"
               onMouseEnter={() => setHoveredDropdown("analysis")}
               onMouseLeave={() => setHoveredDropdown(null)}
             >
-              <button className={isActive("/research") || isActive("/charts") || isActive("/awards")}>
+              <button className={isActive("/research") || isActive("/charts")}>
                 Analysis ▾
               </button>
               {hoveredDropdown === "analysis" && (
                 <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-44 py-2">
                   <Link to="/charts" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
                     Charts
-                  </Link>
-                  <Link to="/awards" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
-                    Awards
                   </Link>
                   <Link to="/research" className="block px-4 py-2 hover:bg-gray-100 text-blue-800 font-bold" onClick={() => setHoveredDropdown(null)}>
                     Research
