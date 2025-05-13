@@ -19,8 +19,24 @@ export default function Navbar() {
           <Link to="/rankings"><button className={isActive("/rankings")}>Rankings</button></Link>
           <Link to="/lineup"><button className={isActive("/lineup")}>Team Pages</button></Link>
           <Link to="/freeagents"><button className={isActive("/freeagents")}>Top Free Agents</button></Link>
-          <Link to="/compare"><button className={isActive("/compare")}>Player Similarity Comparison</button></Link>
-          <Link to="/whobetta"><button className={isActive("/whobetta")}>Head2Head</button></Link>
+          <div className="relative inline-block group">
+  <button className="text-blue-800 font-medium text-sm hover:text-blue-600">
+    Player Comparison ▾
+  </button>
+  <div className="absolute hidden group-hover:block bg-white shadow-md mt-1 rounded z-50">
+    <Link to="/compare">
+      <div className="px-4 py-2 text-sm text-blue-800 hover:bg-blue-100 hover:text-blue-600 whitespace-nowrap">
+        Similarity Tool
+      </div>
+    </Link>
+    <Link to="/whobetta">
+      <div className="px-4 py-2 text-sm text-blue-800 hover:bg-blue-100 hover:text-blue-600 whitespace-nowrap">
+        Head2Head Tool
+      </div>
+    </Link>
+  </div>
+</div>
+
           <Link to="/draft-page"><button className={isActive("/draft-page")}>Draft Center</button></Link>
           <Link to="/contract-market"><button className={isActive("/contract-market")}>Contract Market</button></Link>
           <Link to="/contracts"><button className={isActive("/contracts")}>Extension Projections</button></Link>
