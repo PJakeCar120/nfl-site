@@ -37,7 +37,8 @@ export default function Navbar() {
             🏈 Football Analytics Nerd
           </Link>
 
-          <div className="overflow-x-auto sm:overflow-visible">
+          <div className="overflow-x-auto sm:overflow-visible relative z-30">
+
             <nav className="flex flex-row flex-nowrap whitespace-nowrap gap-3 sm:gap-4 text-blue-800 font-medium text-xs sm:text-sm no-scrollbar">
 
               <Link to="/"><button className={isActive("/")}>Home</button></Link>
