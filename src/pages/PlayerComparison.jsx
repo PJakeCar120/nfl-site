@@ -427,7 +427,8 @@ const WEIGHTS =
               suggestedMin: 0,
               suggestedMax: 100,
               pointLabels: {
-                font: { size: 10 }
+                font: { size: 10 },
+                color: "#000", // black
               },
               ticks: {
                 backdropColor: "transparent"

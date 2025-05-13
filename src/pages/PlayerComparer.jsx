@@ -280,6 +280,7 @@ export default function WhoBetta() {
               suggestedMax: 100,
               pointLabels: {
                 font: { size: 10 },
+                color: "#000", // black
               },
               ticks: {
                 backdropColor: "transparent",
