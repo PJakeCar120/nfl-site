@@ -18,6 +18,7 @@ export default function Navbar() {
         </Link>
 
         <nav className="relative text-blue-800 font-medium text-sm flex flex-wrap items-center space-x-4">
+
           <Link to="/"><button className={isActive("/")}>Home</button></Link>
           <Link to="/rankings"><button className={isActive("/rankings")}>Rankings</button></Link>
           <Link to="/lineup"><button className={isActive("/lineup")}>Team Pages</button></Link>
@@ -38,28 +39,66 @@ export default function Navbar() {
             </button>
             {hoveredDropdown === "comparison" && (
               <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2">
-                <Link
-                  to="/compare"
-                  className="block px-4 py-2 hover:bg-gray-100 text-blue-800"
-                  onClick={() => setHoveredDropdown(null)}
-                >
+                <Link to="/compare" className="block px-4 py-2 hover:bg-gray-100 text-blue-800" onClick={() => setHoveredDropdown(null)}>
                   Similarity Tool
                 </Link>
-                <Link
-                  to="/whobetta"
-                  className="block px-4 py-2 hover:bg-gray-100 text-blue-800"
-                  onClick={() => setHoveredDropdown(null)}
-                >
+                <Link to="/whobetta" className="block px-4 py-2 hover:bg-gray-100 text-blue-800" onClick={() => setHoveredDropdown(null)}>
                   Head2Head
                 </Link>
               </div>
             )}
           </div>
 
-          <Link to="/draft-page"><button className={isActive("/draft-page")}>Draft Center</button></Link>
-          <Link to="/contract-market"><button className={isActive("/contract-market")}>Contract Market</button></Link>
-          <Link to="/contracts"><button className={isActive("/contracts")}>Extension Projections</button></Link>
-          <Link to="/draft-previews"><button className={isActive("/draft-previews")}>Team Draft Previews</button></Link>
+          {/* Contracts Dropdown */}
+          <div
+            className="relative group"
+            onMouseEnter={() => setHoveredDropdown("contracts")}
+            onMouseLeave={() => setHoveredDropdown(null)}
+          >
+            <button
+              className={`px-3 py-2 border rounded hover:bg-blue-100 transition-all ${
+                isActive("/contract-market") || isActive("/contracts")
+              }`}
+            >
+              Contracts ▾
+            </button>
+            {hoveredDropdown === "contracts" && (
+              <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2">
+                <Link to="/contract-market" className="block px-4 py-2 hover:bg-gray-100 text-blue-800" onClick={() => setHoveredDropdown(null)}>
+                  Contract Market
+                </Link>
+                <Link to="/contracts" className="block px-4 py-2 hover:bg-gray-100 text-blue-800" onClick={() => setHoveredDropdown(null)}>
+                  Extension Projections
+                </Link>
+              </div>
+            )}
+          </div>
+
+          {/* 2024 Draft Dropdown */}
+          <div
+            className="relative group"
+            onMouseEnter={() => setHoveredDropdown("draft")}
+            onMouseLeave={() => setHoveredDropdown(null)}
+          >
+            <button
+              className={`px-3 py-2 border rounded hover:bg-blue-100 transition-all ${
+                isActive("/draft-page") || isActive("/draft-previews")
+              }`}
+            >
+              2024 Draft ▾
+            </button>
+            {hoveredDropdown === "draft" && (
+              <div className="absolute left-0 mt-px bg-white border rounded shadow-lg z-50 w-48 py-2">
+                <Link to="/draft-page" className="block px-4 py-2 hover:bg-gray-100 text-blue-800" onClick={() => setHoveredDropdown(null)}>
+                  Draft Center
+                </Link>
+                <Link to="/draft-previews" className="block px-4 py-2 hover:bg-gray-100 text-blue-800" onClick={() => setHoveredDropdown(null)}>
+                  Team Draft Previews
+                </Link>
+              </div>
+            )}
+          </div>
+
           <Link to="/awards"><button className={isActive("/awards")}>Awards</button></Link>
           <Link to="/research"><button className={isActive("/research")}>Research</button></Link>
           <Link to="/charts"><button className={isActive("/charts")}>Charts</button></Link>
