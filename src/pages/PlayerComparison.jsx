@@ -1,6 +1,19 @@
 import { useEffect, useState } from "react";
 import Papa from "papaparse";
 import Select from "react-select";
+import { Radar } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend
+} from "chart.js";
+
+ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
+
 
 const years = ["2024", "2023", "2022", "2021"];
 
@@ -374,6 +387,60 @@ const WEIGHTS =
           </ul>
         </div>
       )}
+      {selectedPlayer && similarPlayers.length > 0 && (
+  <div className="mt-10">
+    <h3 className="text-lg font-bold mb-4">Stat Vector Comparison</h3>
+    <Radar
+      data={{
+        labels: COLUMNS,
+        datasets: [
+          {
+            label: selectedPlayer.label,
+            data: getStatsVector(
+              dataByYear[selectedPlayer.value.year].find(
+                (r) => r.Name === selectedPlayer.value.name
+              )
+            ),
+            backgroundColor: "rgba(59, 130, 246, 0.2)",
+            borderColor: "rgba(59, 130, 246, 1)",
+            borderWidth: 2
+          },
+          {
+            label: `${similarPlayers[0].name} (${similarPlayers[0].year})`,
+            data: getStatsVector(
+              dataByYear[similarPlayers[0].year].find(
+                (r) => r.Name === similarPlayers[0].name
+              )
+            ),
+            backgroundColor: "rgba(16, 185, 129, 0.2)",
+            borderColor: "rgba(16, 185, 129, 1)",
+            borderWidth: 2
+          }
+        ]
+      }}
+      options={{
+        scales: {
+          r: {
+            suggestedMin: 0,
+            suggestedMax: 100,
+            pointLabels: {
+              font: { size: 10 }
+            },
+            ticks: {
+              backdropColor: "transparent"
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            position: "top"
+          }
+        }
+      }}
+    />
+  </div>
+)}
+
     </div>
   );
 }
