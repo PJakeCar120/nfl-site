@@ -159,7 +159,7 @@ export default function ChartsPage() {
       </div>
 
       {category && currentChart && (
-        <div className="border rounded p-4 bg-white shadow relative overflow-x-auto">
+        <div className="border rounded p-4 bg-white shadow relative w-full overflow-x-auto sm:overflow-visible">
           {charts.length > 1 && (
             <div className="absolute top-4 right-4 flex items-center gap-2 text-sm font-normal">
               <button
@@ -182,11 +182,11 @@ export default function ChartsPage() {
 
           <p className="text-sm font-bold text-gray-800 mb-4">{currentChart.caption}</p>
 
-          <div className="min-w-[800px] max-w-full mx-auto">
+          <div className="w-full max-w-full overflow-x-auto">
             <img
               src={currentChart.src}
               alt=""
-              className="w-full h-auto max-h-[90vh] object-contain rounded"
+              className="max-w-full h-auto object-contain rounded mx-auto"
             />
           </div>
         </div>
