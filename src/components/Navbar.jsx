@@ -12,15 +12,14 @@ export default function Navbar() {
 
   return (
     <header className="w-full px-6 py-4 shadow-md bg-blue-50 sticky top-0 z-50">
-      <div className="flex justify-between items-center max-w-7xl mx-auto">
-        <Link to="/" className="text-2xl font-bold tracking-tight text-blue-900">
-          🏈 Football Analytics Nerd
-        </Link>
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+          <Link to="/" className="text-2xl font-bold tracking-tight text-blue-900">
+            🏈 Football Analytics Nerd
+          </Link>
 
-        {/* Horizontally scrollable nav container on mobile */}
-        <div className="overflow-x-auto max-w-full">
-          <nav className="relative text-blue-800 text-sm flex items-center gap-4 w-max">
-            {/* Standalone Links */}
+          {/* Stacks vertically on mobile, horizontal on larger screens */}
+          <nav className="flex flex-col sm:flex-row text-blue-800 text-sm font-medium gap-4">
             <Link to="/"><button className={isActive("/")}>Home</button></Link>
             <Link to="/rankings"><button className={isActive("/rankings")}>Rankings</button></Link>
             <Link to="/lineup"><button className={isActive("/lineup")}>Team Pages</button></Link>
