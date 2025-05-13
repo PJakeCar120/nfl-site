@@ -12,7 +12,8 @@ export default function Navbar() {
 
   return (
     <header className="w-full px-4 sm:px-6 py-4 shadow-md bg-blue-50 sticky top-0 z-50">
-      <div className="flex flex-col sm:flex-row sm:items-center gap-3 max-w-7xl mx-auto overflow-hidden">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-3 w-full overflow-hidden">
+
         <Link
           to="/"
           className="text-2xl font-bold tracking-tight text-blue-900 whitespace-nowrap"
