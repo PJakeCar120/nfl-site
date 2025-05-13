@@ -49,7 +49,7 @@ export default function Navbar() {
             <nav className="flex flex-row flex-nowrap whitespace-nowrap gap-3 sm:gap-4 text-blue-800 font-medium text-xs sm:text-sm no-scrollbar">
               {isMobile() && (
                 <div className="flex-shrink-0 animate-pulse text-gray-400 select-none pointer-events-none">
-                  ⬅ scroll ➡
+                  ⬅ Scroll ➡
                 </div>
               )}
 
@@ -78,6 +78,14 @@ export default function Navbar() {
                   ],
                 },
                 {
+                  key: "analysis",
+                  label: "Charts & Research",
+                  links: [
+                    { to: "/charts", text: "Charts" },
+                    { to: "/research", text: "Research" },
+                  ],
+                },
+                {
                   key: "contracts",
                   label: "Contracts",
                   links: [
@@ -92,14 +100,6 @@ export default function Navbar() {
                   links: [
                     { to: "/draft-page", text: "Draft Center" },
                     { to: "/draft-previews", text: "Team Draft Previews" },
-                  ],
-                },
-                {
-                  key: "analysis",
-                  label: "Analysis",
-                  links: [
-                    { to: "/charts", text: "Charts" },
-                    { to: "/research", text: "Research" },
                   ],
                 },
               ].map(({ key, label, links }) => {
