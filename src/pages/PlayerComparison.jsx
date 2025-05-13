@@ -390,7 +390,7 @@ const WEIGHTS =
     {selectedPlayer && similarPlayers.length > 0 && (
   <div className="mt-10">
     <h3 className="text-lg font-bold mb-4">Stat Vector Comparison</h3>
-    <div className="max-w-[500px] w-full mx-auto h-[400px]">
+    <div className="w-full mx-auto h-[400px] sm:h-[600px] md:h-[800px] max-w-full md:max-w-[1000px]">
       <Radar
         data={{
           labels: COLUMNS,
