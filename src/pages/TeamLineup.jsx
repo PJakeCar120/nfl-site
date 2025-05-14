@@ -513,7 +513,6 @@ and Mike Green have strong years, this may be the best team in the NFL. GM Eric 
       NB: "Jalen Pitre",
     },
     backups: [
-      { position: "WR", name: "Tank Dell" },
       { position: "WR", name: "Jaylin Noel (R)" },
       { position: "WR", name: "Justin Watson" },
       { position: "WR", name: "John Metchie" },
@@ -527,6 +526,7 @@ and Mike Green have strong years, this may be the best team in the NFL. GM Eric 
       { position: "CB", name: "Ronald Darby" },
       { position: "CB", name: "Jaylin Smith (R)" },
       { position: "S", name: "Jimmie Ward" },
+      { position: "IR", name: "Tank Dell" },
     ],
     draftPreview: `
   Picks: 25, 58, 79, 89, 166, 236, 241
@@ -2086,10 +2086,10 @@ Sample Mock Draft:
     { position: "DT", name: "Shelby Harris" },
     { position: "EDGE", name: "Joe Tryon-Shoyinka" },
     { position: "EDGE", name: "Ogbo Okoronkwo" },
-    { position: "ILB", name: "Jeremiah Owusu-Koramoah" },
     { position: "ILB", name: "Mohamoud Diabate" },
     { position: "ILB", name: "Jerome Baker" },
     { position: "CB", name: "Cameron Mitchell" },
+    { position: "IR", name: "Jeremiah Owusu-Koramoah" },
   ],
   draftReview: `
 To begin the draft, the Browns traded picks #2, #104, and #200 for picks #5, #36, #126, and the Jaguars’ 2026 First Round pick. Fantastic. WR/CB Travis Hunter will likely be a great player, but this
