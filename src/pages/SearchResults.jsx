@@ -6,9 +6,8 @@ import { awardsData } from "./Awards"; //
 const YEARS = ["2021", "2022", "2023", "2024"];
 const POSITIONS = ["QB", "RB", "WR", "TE", "DI", "EDGE", "ILB", "CB", "S"];
 
-const handleCopyTableImage = async () => {
+const handleDownloadTableImage = async () => {
   const tableElement = document.querySelector("table");
-
   if (!tableElement) return;
 
   const { default: html2canvas } = await import("html2canvas");
@@ -20,13 +19,18 @@ const handleCopyTableImage = async () => {
 
   canvas.toBlob((blob) => {
     if (blob) {
-      const item = new ClipboardItem({ "image/png": blob });
-      navigator.clipboard.write([item]).then(() => {
-        alert("📋 Table copied as image!");
-      });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "player-table.png";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
     }
   });
 };
+
 
 const findPlayerHonors = (name, year) => {
   const data = awardsData[year];
@@ -206,6 +210,16 @@ export default function SearchResults() {
     </h2>
     <div className="w-full flex justify-center">
       <div className="overflow-x-auto w-full">
+
+        <div className="mb-4 flex justify-center">
+          <button
+            onClick={handleDownloadTableImage}
+            className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+          >
+            ⬇️ Download Table as Image
+          </button>
+        </div>
+
         <table className="table-auto w-full text-sm border border-gray-300">
           <thead>
             <tr>
