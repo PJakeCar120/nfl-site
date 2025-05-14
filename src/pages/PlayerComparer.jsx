@@ -325,7 +325,7 @@ export default function WhoBetta() {
   </div>
 )}
 
-{p1 && p2 && (
+{selected1 && selected2 && (
   <div className="mt-12">
     <h3 className="text-lg font-bold mb-4 text-center">Analytical Score by Year</h3>
     <div className="w-full mx-auto h-[300px] md:h-[400px] max-w-full md:max-w-[800px] px-4">
