@@ -102,13 +102,23 @@ export default function WhoBetta() {
   const allYears2 = selected2
     ? YEARS.filter((y) => allData.some((p) => p.Name === selected2 && p.year === y))
     : [];
-  const allYearsCombined = Array.from(new Set([...allYears1, ...allYears2])).sort();
+    const allYearsCombined = YEARS.filter((year) =>
+      allData.some((p) =>
+        (p.Name === selected1 || p.Name === selected2) &&
+        p.year === year &&
+        !isNaN(parseFloat(p["Analytical " + position + " Score"]))
+      )
+    );
+    
+
 
   const getAnalyticsByYear = (name, years) =>
     years.map((y) => {
       const p = allData.find((row) => row.Name === name && row.year === y);
-      return p ? parseFloat(p["Analytical " + position + " Score"]) : null;
-  });
+      const val = p ? parseFloat(p["Analytical " + position + " Score"]) : null;
+      return isNaN(val) ? null : val;
+    });
+  
 
 
   
