@@ -8,7 +8,7 @@ const POSITIONS = ["QB", "RB", "WR", "TE", "DI", "EDGE", "ILB", "CB", "S"];
 
 const handleDownloadTableImage = async () => {
   const tableElement = document.querySelector("table");
-  if (!tableElement) return;
+  if (!tableElement || results.length === 0) return;
 
   const { default: html2canvas } = await import("html2canvas");
 
@@ -17,12 +17,14 @@ const handleDownloadTableImage = async () => {
     scale: 2,
   });
 
+  const playerName = results[0].name.replace(/\s+/g, "-"); // e.g. Jane Doe → Jane-Doe
+
   canvas.toBlob((blob) => {
     if (blob) {
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = url;
-      link.download = "player-table.png";
+      link.download = `${playerName}-Analytics.png`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -30,6 +32,7 @@ const handleDownloadTableImage = async () => {
     }
   });
 };
+
 
 
 const findPlayerHonors = (name, year) => {
