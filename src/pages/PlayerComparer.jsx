@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Line } from "react-chartjs-2";
 import Papa from "papaparse";
 import { Radar } from "react-chartjs-2";
 import {
@@ -96,38 +95,6 @@ export default function WhoBetta() {
     const green = Math.round(255 * pct);
     return `rgb(${red}, ${green}, 100)`;
   };
-  const allYears1 = selected1
-    ? YEARS.filter((y) => allData.some((p) => p.Name === selected1 && p.year === y))
-    : [];
-  const allYears2 = selected2
-    ? YEARS.filter((y) => allData.some((p) => p.Name === selected2 && p.year === y))
-    : [];
-    const allYearsCombined = YEARS.filter((year) => {
-      const p1 = allData.find(
-        (p) => p.Name === selected1 && p.year === year && !isNaN(parseFloat(p["Analytical " + position + " Score"]))
-      );
-      const p2 = allData.find(
-        (p) => p.Name === selected2 && p.year === year && !isNaN(parseFloat(p["Analytical " + position + " Score"]))
-      );
-      return p1 || p2;
-    });
-    
-    
-
-
-    const getAnalyticsByYear = (name, years) =>
-      years.map((y) => {
-        const p = allData.find((row) => row.Name === name && row.year === y);
-        if (!p) return null;
-        const raw = p["Analytical " + position + " Score"];
-        const val = typeof raw === "string" ? parseFloat(raw.trim()) : raw;
-        return isNaN(val) ? null : val;
-      });
-    
-  
-
-
-  
 
   return (
     <div className="w-full px-6 py-8 box-border">
@@ -341,67 +308,11 @@ export default function WhoBetta() {
   </div>
 )}
 
-{selected1 && selected2 && (
-  <div className="mt-12">
-    <h3 className="text-lg font-bold mb-4 text-center">Analytical Score by Year</h3>
-    <div className="w-full mx-auto h-[300px] md:h-[400px] max-w-full md:max-w-[800px] px-4">
-      <Line
-        data={{
-          labels: allYearsCombined,
-          datasets: [
-            {
-              label: selected1,
-              data: getAnalyticsByYear(selected1, allYearsCombined),
-              borderColor: "rgba(59, 130, 246, 1)",
-              backgroundColor: "rgba(59, 130, 246, 0.2)",
-              spanGaps: true,
-            },
-            {
-              label: selected2,
-              data: getAnalyticsByYear(selected2, allYearsCombined),
-              borderColor: "rgba(16, 185, 129, 1)",
-              backgroundColor: "rgba(16, 185, 129, 0.2)",
-              spanGaps: true,
-            },
-          ],
-        }}
-        options={{
-          maintainAspectRatio: false,
-          responsive: true,
-          plugins: {
-            legend: {
-              labels: {
-                color: "#000",
-                font: { weight: "bold" },
-              },
-            },
-          },
-          scales: {
-            y: {
-              beginAtZero: true,
-              title: {
-                display: true,
-                text: "Analytical Score",
-              },
-              ticks: {
-                color: "#000",
-              },
-            },
-            x: {
-              title: {
-                display: true,
-                text: "Year",
-              },
-              ticks: {
-                color: "#000",
-              },
-            },
-          },
-        }}
-      />
+      {!p1 || !p2 ? (
+        <p className="text-gray-500 mt-6 text-center">
+          Search two players and pick a year to compare.
+        </p>
+      ) : null}
     </div>
-  </div>
-)}
-    </div> 
   );
 }
