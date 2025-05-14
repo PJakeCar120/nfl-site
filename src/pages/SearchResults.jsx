@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import Papa from "papaparse";
 import { useLocation } from "react-router-dom";
 import { awardsData } from "./Awards"; // 
+import html2canvas from "html2canvas";
+import { useRef } from "react";
+
 
 const YEARS = ["2021", "2022", "2023", "2024"];
 const POSITIONS = ["QB", "RB", "WR", "TE", "DI", "EDGE", "ILB", "CB", "S"];
@@ -53,6 +56,7 @@ const findPlayerHonors = (name, year) => {
 
 export default function SearchResults() {
   const location = useLocation();
+  const tableRef = useRef();
   const [searchTerm, setSearchTerm] = useState("");
   const [allData, setAllData] = useState([]);
   const [results, setResults] = useState([]);
@@ -147,6 +151,24 @@ export default function SearchResults() {
     const green = Math.round(255 * pct);
     return `rgb(${red}, ${green}, 100)`;
   };
+  const copyTableAsImage = async () => {
+    if (!tableRef.current) return;
+  
+    const canvas = await html2canvas(tableRef.current, {
+      backgroundColor: "#ffffff",
+      scale: 3, // higher resolution
+    });
+  
+    canvas.toBlob((blob) => {
+      if (blob) {
+        const item = new ClipboardItem({ "image/png": blob });
+        navigator.clipboard.write([item]).then(() => {
+          alert("📋 Table copied as image!");
+        });
+      }
+    });
+  };
+  
   return (
     <div className="px-4 py-6 w-full">
       <div className="w-full flex justify-center mb-10">
@@ -171,81 +193,87 @@ export default function SearchResults() {
       </div>
   
       {results.length === 0 ? (
-        <div className="text-center mt-10">
-          <h2 className="text-2xl font-bold mb-2">🔍 Search Players</h2>
-          <p className="text-gray-600 text-base">
-            Use the search bar above to look up a player and view their stats.
-          </p>
-        </div>
-      ) : (
-        <>
-          <h2 className="text-2xl font-bold mb-6 text-center">
-            🔍 Results for "{searchTerm}"
-          </h2>
-          <div className="w-full flex justify-center">
-            <div className="overflow-x-auto w-full">
-
-              <table className="table-auto w-full text-sm border border-gray-300">
-                <thead>
-                  <tr>
-                    <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Position</th>
-                    <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Year</th>
-                    <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Name</th>
-                    <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Rank</th>
-                    {sortedResults.length > 0 &&
-                      Object.keys(sortedResults[0])
-                        .filter(
-                          (key) =>
-                            !["year", "position", "rank", "name", "honors"].includes(key)
-                        )
-                        .map((key) => (
-                          <th
-                            key={key}
-                            className="p-2 bg-gray-100 border border-gray-300 text-center"
-                          >
-                            {key}
-                          </th>
-                        ))}
-                    <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">
-                      Football Analytics Nerd Awards
+  <div className="text-center mt-10">
+    <h2 className="text-2xl font-bold mb-2">🔍 Search Players</h2>
+    <p className="text-gray-600 text-base">
+      Use the search bar above to look up a player and view their stats.
+    </p>
+  </div>
+) : (
+  <>
+    <h2 className="text-2xl font-bold mb-6 text-center">
+      🔍 Results for "{searchTerm}"
+    </h2>
+    <div className="w-full flex flex-col items-center">
+      <div className="mb-4">
+        <button
+          onClick={copyTableAsImage}
+          className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+        >
+          📸 Copy Table as Image
+        </button>
+      </div>
+      <div className="overflow-x-auto w-full" ref={tableRef}>
+        <table className="table-auto w-full text-sm border border-gray-300">
+          <thead>
+            <tr>
+              <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Position</th>
+              <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Year</th>
+              <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Name</th>
+              <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Rank</th>
+              {sortedResults.length > 0 &&
+                Object.keys(sortedResults[0])
+                  .filter(
+                    (key) =>
+                      !["year", "position", "rank", "name", "honors"].includes(key)
+                  )
+                  .map((key) => (
+                    <th
+                      key={key}
+                      className="p-2 bg-gray-100 border border-gray-300 text-center"
+                    >
+                      {key}
                     </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {sortedResults.map((player, index) => {
-                    const { year, position, rank, name, honors, ...stats } = player;
+                  ))}
+              <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">
+                Football Analytics Nerd Awards
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {sortedResults.map((player, index) => {
+              const { year, position, rank, name, honors, ...stats } = player;
+              return (
+                <tr key={index}>
+                  <td className="p-2 px-8 border border-gray-300 text-center">{position}</td>
+                  <td className="p-2 px-8 border border-gray-300 text-center">{year}</td>
+                  <td className="p-2 px-8 border border-gray-300 text-center">{name}</td>
+                  <td className="p-2 px-8 border border-gray-300 text-center">{rank}</td>
+                  {Object.entries(stats).map(([key, val]) => {
+                    const style = getColor(key, val)
+                      ? { backgroundColor: getColor(key, val) }
+                      : {};
                     return (
-                      <tr key={index}>
-                        <td className="p-2 px-8 border border-gray-300 text-center">{position}</td>
-                        <td className="p-2 px-8 border border-gray-300 text-center">{year}</td>
-                        <td className="p-2 px-8 border border-gray-300 text-center">{name}</td>
-                        <td className="p-2 px-8 border border-gray-300 text-center">{rank}</td>
-                        {Object.entries(stats).map(([key, val]) => {
-                          const style = getColor(key, val)
-                            ? { backgroundColor: getColor(key, val) }
-                            : {};
-                          return (
-                            <td
-                              key={key}
-                              className="p-2 border border-gray-300 text-center"
-                              style={style}
-                            >
-                              {val}
-                            </td>
-                          );
-                        })}
-                        <td className="p-2 px-8 border border-gray-300 text-center">
-                          {honors || "-"}
-                        </td>
-                      </tr>
+                      <td
+                        key={key}
+                        className="p-2 border border-gray-300 text-center"
+                        style={style}
+                      >
+                        {val}
+                      </td>
                     );
                   })}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </>
-      )}
+                  <td className="p-2 px-8 border border-gray-300 text-center">
+                    {honors || "-"}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
-  );
-}  
+  </>
+)}</div> 
+);
+}
