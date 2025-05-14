@@ -1387,29 +1387,48 @@ Sample Mock Draft:
       { position: "CB", name: "Shavon Revel Jr (R)" },
       { position: "CB", name: "Kaiir Elam" },
     ],
-    draftPreview: `NFL Draft Preview: Cowboys
-Picks: 12, 44, 76, 149, 174, 204, 211, 217, 239, 247
+    draftReview: `
+I felt coming into the draft that the Cowboys’ biggest needs were WR, OG, and EDGE, with secondary needs at NB and RB. With the 12th pick, Dallas selected OG Tyler Booker. I’m slightly disappointed
+because EDGE Jalon Walker was still on the board and I would’ve loved to see the fit with Parsons on one side and Walker on the other. Still, I’m very on board with this pick. The Cowboys have 
+always made it a priority to have a strong Offensive Line, so they follow suit here. Booker was ranked #28 on MockDraftDatabase’s consensus board, so it’s a bit of a reach. However, Dallas has such 
+a strong history selecting this position that it’s hard to criticize their choice. With pick #44, they selected EDGE Donovan Ezeiruaku. Ezeiruaku was ranked #29 on MockDraftDatabase’s consensus 
+board, so they in theory got some nice value here. He is a very interesting prospect after ranking second in the FBS in sacks (16.5) but measuring very poorly in the combine (7.98 RAS). 
+Regardless, it’s hard not to love Dallas going OLine and then DLine in the first two rounds, especially when both guys were consensus top-30 players and both positions were needs. After the draft, 
+Dallas traded 3rd and 5th round picks for WR George Pickens (my 2024 #23 WR) and a 6th round pick. I really like this trade for two reasons. One, my model is very high on Pickens. Two, if the fit 
+doesn’t work (I think it will) Dallas can simply let Pickens walk in the offseason and collect a 4th or even 3rd round compensatory pick. Essentially, the Cowboys spent 1st, 2nd, and 3rd round picks 
+on the 3 positions that I wanted them to improve at. How about that! With pick #76, Dallas selected CB Shavon Revel Jr. Revel Jr. was actually #42 on MockDraftDatabase, so Dallas went with the 
+consensus value again here. I’m very intrigued by Dallas taking a CB high. In an ideal world with all healthy players, I think Dallas would want to play Revel Jr. on the outside with Trevon Diggs 
+and push DaRon Bland back into the Slot. Thus, they’d solve the need at Nickel. Dallas had 6 selections in rounds 5-7. Most notable for 2025 playing time are probably the two Running Backs, 
+Jaydon Blue and Phil Mafah. With Javonte Williams and Miles Sanders the top two RBs currently on the roster, Blue and Mafah will both have a chance to push for immediate playing time. Overall, I 
+think this was a fantastic draft for Dallas. Booker and Ezeiruaku are two very good players at valuable positions that were both needs. I really like the Revel Jr. pick as well and think it sets 
+the CB room up very well for the future. Taking a couple of RBs late in a deep RB draft class is a clever way of going about the need. It happened a couple of weeks after, but I really like the 
+Pickens trade too. This has been a really strong offseason for Dallas (not mentioned yet was a very team-friendly contract with Osa Odighizuwa).
 
-Needs: RB, WR, OG, EDGE, NB
+Looking towards next year, I think this offense will be really good. QB Dak Prescott gets a lot of flack, but he was my #4 QB in 2023. He should be surrounded with the correct weapons to get back 
+to that level. The Offensive Tackles will be 2024 First-Round pick Tyler Guyton and Terence Steele, who has struggled a bit recently. The Interior Offensive Line will be a big strength of this 
+offense. The Offensive Guards will be 2024 Pro-Bowler Tyler Smith and 2025 12th pick Tyler Booker. Center Cooper Beebe was very strong as a rookie last season. At Wide Receiver, they’ve put together 
+a dangerous duo of CeeDee Lamb (my 2024 #19 WR, 2023 #8 WR) and George Pickens (2024 #23 WR). Jalen Tolbert (2024 #77 WR) will be the #3, with KaVontae Turpin (2024 #66 WR) likely mixing in a bit 
+in the Slot. The starting Tight End will be Jake Ferguson (2024 #26 TE, 2023 #10 TE) with Luke Schoonmaker as the #2. The RBs will be a combo of Javonte Williams (2024 #39 RB) and Miles Sanders 
+(2024 #58 RB) with the late-round rookies possibly mixing in. If the OTs have a good year, I think we’ll see a very explosive offense given the strengths at QB, WR, and IOL.
 
-RB: It’s hard to imagine the Cowboys without a star RB, but the truth is they haven’t invested in this position quite as strongly as the general sentiment holds. They’ll probably add at some 
-point, but I don’t think it’s a major concern.
+On defense, I expect a lot of improvement from last season. On the Interior, Osa Odighizuwa (2024 #7 IDL) continues to be one of the most underrated players in the league. The second IDL spot may 
+be an issue, with Mazi Smith (2024 #92 IDL) really struggling last season. If he continues to struggle, they may opt for Solomon Thomas (2024 #48 IDL). On the EDGE, the Cowboys have a really 
+exciting group. The defense runs through superstar Micah Parsons (2024 #2 EDGE). Next to him will likely be a combo of Dante Fowler Jr. (2024 #36 EDGE) and rookie Donovan Ezeiruaku. The Linebackers 
+will be DeMarvion Overshown (2024 #40 ILB) and Kenneth Murray Jr. (2024 #52 ILB) with backups Marist Liufau (2024 #80 ILB) and 5th-round pick Shemar James. The Cornerbacks will be banged up to start 
+the season, but even at full-strength I am skeptical. Dallas has a preference for “ball-hawk” CBs and I think this has been a big issue for them. Trevon Diggs (2024 #40 CB) is signed to a big 
+contract, while DaRon Bland (2024 #60 CB) is likely about to be as well. They aren’t bad players, I just don’t think they’re worth the contracts that they’re signed to / expected to sign. Nickel is 
+a big need after Jourdan Lewis departed in Free Agency. The starting Nickel will likely be Israel Mukuamu, though at full strength I’d like to eventually see Bland move to the Nickel with Diggs and 
+Revel Jr. on the outside. The starting Safeties will be Donovan Wilson (2024 #41 S) and Malik Hooker (2024 #42 S).
 
-WR: Outside of CeeDee Lamb, it’s pretty bleak. KaVontae Turpin actually had a pretty good year (my #66 WR) but regardless they’ll want to add.
+I think this is a good football team. If the OTs have good years, the offense will be really good with Prescott, Lamb, Pickens, and the IOL all being strengths. The Running Backs are a concern, 
+but with a strong passing game and a really good IOL I think they’ll be more successful than expected. They also have the best Kicker in the NFL, so that will certainly help. On defense, the pass 
+rush should be really good with Odighizuwa, Parsons, Fowler Jr, and Ezeiruaku. They were atrocious against the run last season and I do still have some concerns there with Mazi Smith struggling. 
+I’m not really sure how the Secondary will look this season. I think Diggs and Bland form a pretty average starting duo on the Outside, and right now they have no solution at Nickel. The Safeties 
+and Linebackers will both be around average groups.
 
-OG: Zack Martin retired and leaves a hall-of-fame sized hole. As of now, I have Robert Jones projected to start at that spot.
-
-EDGE: Dante Fowler Jr. graded out very well for me last season as my #36 ranked EDGE. Still, he’s 31 years-old and only signed for one year.
-
-NB: Nickel Jourdan Lewis walked for a huge payday this offseason. They’ll need a replacement at some point.
-
-First Round Pick History Since 2017: EDGE, ILB, WR, EDGE, OG, IDL, OT  
-Second Round Pick History Since 2017: CB, C, IDL, CB, CB, EDGE, TE, EDGE
-
-Sample Mock Draft:
-12. Jalon Walker, ILB/EDGE, Georgia  
-44. Jonah Savaiinaea, OG, Arizona  
-76. Damien Martinez, RB, Miami`,
+This is a good team, but they do play in a very difficult division with Philadelphia and Washington. I think the offense will have a lot of success, but I see the defense as a pretty average group. 
+If they want to be a Super Bowl contender, I think we need to see really good years out of both OTs, Mazi Smith, Donovan Ezeiruaku, and both outside CBs. That seems like a lot to ask, so I’m going 
+to say this is a lower-tier playoff team that may cut it close given the strength of the division.`,
 
   },
   '49ers': {

@@ -13,6 +13,21 @@ const chartData = {
         "How Cam Ward, Shedeur Sanders, Jaxson Dart, Jalen Milroe, and Tyler Shough Stack Up Analytically Against Past First-Round Picks.",
     },
     {
+      src: "/assets/charts/DraftP2S.jpeg",
+      caption:
+        "Pressure to Sack Rate is an important trait for NFL quarterbacks. But how well does college P2S predict it? The answer: not well. College P2S has very little correlation with NFL performance. By around Year 3, though, the metric starts to stabilize. That’s when we begin to get a clear picture of how a quarterback handles pressure.",
+    },
+    {
+      src: "/assets/charts/DraftP2S2.jpeg",
+      caption:
+        "However, when we focus on the quarterbacks who struggled the most with Pressure to Sack Rate in college, we see those issues often carry over into their first couple of years in the NFL.",
+    },
+    {
+      src: "/assets/charts/TWP%.jpeg",
+      caption:
+        "Just like with Pressure to Sack Rate, Turnover-Worthy Play % in college doesn’t translate well to the NFL. Outside of Year 1, college TWP% has little to no predictive power for future performance.",
+    },
+    {
       src: "/assets/charts/2024Draft.jpeg",
       caption:
         "Color-Coded Final Top-50 Positional Strength Chart per @GrindingMocks Data",
