@@ -102,22 +102,28 @@ export default function WhoBetta() {
   const allYears2 = selected2
     ? YEARS.filter((y) => allData.some((p) => p.Name === selected2 && p.year === y))
     : [];
-    const allYearsCombined = YEARS.filter((year) =>
-      allData.some((p) =>
-        (p.Name === selected1 || p.Name === selected2) &&
-        p.year === year &&
-        !isNaN(parseFloat(p["Analytical " + position + " Score"]))
-      )
-    );
+    const allYearsCombined = YEARS.filter((year) => {
+      const p1 = allData.find(
+        (p) => p.Name === selected1 && p.year === year && !isNaN(parseFloat(p["Analytical " + position + " Score"]))
+      );
+      const p2 = allData.find(
+        (p) => p.Name === selected2 && p.year === year && !isNaN(parseFloat(p["Analytical " + position + " Score"]))
+      );
+      return p1 || p2;
+    });
+    
     
 
 
-  const getAnalyticsByYear = (name, years) =>
-    years.map((y) => {
-      const p = allData.find((row) => row.Name === name && row.year === y);
-      const val = p ? parseFloat(p["Analytical " + position + " Score"]) : null;
-      return isNaN(val) ? null : val;
-    });
+    const getAnalyticsByYear = (name, years) =>
+      years.map((y) => {
+        const p = allData.find((row) => row.Name === name && row.year === y);
+        if (!p) return null;
+        const raw = p["Analytical " + position + " Score"];
+        const val = typeof raw === "string" ? parseFloat(raw.trim()) : raw;
+        return isNaN(val) ? null : val;
+      });
+    
   
 
 
