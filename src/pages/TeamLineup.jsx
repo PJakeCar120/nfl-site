@@ -366,11 +366,11 @@ Sample mock draft:
       ILB1: "Roquan Smith",
       ILB2: "Trenton Simpson",
       EDGE2: "Odafe Oweh",
-      CB1: "Marlon Humphrey",
-      FS: "Ar'Darius Washington",
+      CB1: "Nate Wiggins",
+      FS: "Malaki Starks (R)",
       SS: "Kyle Hamilton",
-      CB2: "Nate Wiggins",
-      NB: "Malaki Starks (R)",
+      CB2: "Chidobe Awuzie",
+      NB: "Marlon Humphrey",
     },
     backups: [
       { position: "QB", name: "Cooper Rush" },
@@ -386,7 +386,7 @@ Sample mock draft:
       { position: "EDGE", name: "Tavius Robinson" },
       { position: "EDGE", name: "David Ojabo" },
       { position: "ILB", name: "Teddye Buchanan (R)" },
-      { position: "CB", name: "Chidobe Awuzie" },
+      { position: "IR", name: "Ar'Darius Washington" },
     ],
     draftReview: `
 I wanted the Ravens to improve at OG, DLine, and CB. With pick #27, they selected S Malaki Starks. It’s an interesting pick with Starks having experience at Nickel. The secondary now includes 
