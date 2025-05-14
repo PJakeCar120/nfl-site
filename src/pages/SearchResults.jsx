@@ -6,6 +6,28 @@ import { awardsData } from "./Awards"; //
 const YEARS = ["2021", "2022", "2023", "2024"];
 const POSITIONS = ["QB", "RB", "WR", "TE", "DI", "EDGE", "ILB", "CB", "S"];
 
+const handleCopyTableImage = async () => {
+  const tableElement = document.querySelector("table");
+
+  if (!tableElement) return;
+
+  const { default: html2canvas } = await import("html2canvas");
+
+  const canvas = await html2canvas(tableElement, {
+    backgroundColor: "#ffffff",
+    scale: 2,
+  });
+
+  canvas.toBlob((blob) => {
+    if (blob) {
+      const item = new ClipboardItem({ "image/png": blob });
+      navigator.clipboard.write([item]).then(() => {
+        alert("📋 Table copied as image!");
+      });
+    }
+  });
+};
+
 const findPlayerHonors = (name, year) => {
   const data = awardsData[year];
   if (!data) return "";
@@ -171,81 +193,80 @@ export default function SearchResults() {
       </div>
   
       {results.length === 0 ? (
-        <div className="text-center mt-10">
-          <h2 className="text-2xl font-bold mb-2">🔍 Search Players</h2>
-          <p className="text-gray-600 text-base">
-            Use the search bar above to look up a player and view their stats.
-          </p>
-        </div>
-      ) : (
-        <>
-          <h2 className="text-2xl font-bold mb-6 text-center">
-            🔍 Results for "{searchTerm}"
-          </h2>
-          <div className="w-full flex justify-center">
-            <div className="overflow-x-auto w-full">
-
-              <table className="table-auto w-full text-sm border border-gray-300">
-                <thead>
-                  <tr>
-                    <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Position</th>
-                    <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Year</th>
-                    <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Name</th>
-                    <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Rank</th>
-                    {sortedResults.length > 0 &&
-                      Object.keys(sortedResults[0])
-                        .filter(
-                          (key) =>
-                            !["year", "position", "rank", "name", "honors"].includes(key)
-                        )
-                        .map((key) => (
-                          <th
-                            key={key}
-                            className="p-2 bg-gray-100 border border-gray-300 text-center"
-                          >
-                            {key}
-                          </th>
-                        ))}
-                    <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">
-                      Football Analytics Nerd Awards
+  <div className="text-center mt-10">
+    <h2 className="text-2xl font-bold mb-2">🔍 Search Players</h2>
+    <p className="text-gray-600 text-base">
+      Use the search bar above to look up a player and view their stats.
+    </p>
+  </div>
+) : (
+  <>
+    <h2 className="text-2xl font-bold mb-6 text-center">
+      🔍 Results for "{searchTerm}"
+    </h2>
+    <div className="w-full flex justify-center">
+      <div className="overflow-x-auto w-full">
+        <table className="table-auto w-full text-sm border border-gray-300">
+          <thead>
+            <tr>
+              <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Position</th>
+              <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Year</th>
+              <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Name</th>
+              <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">Rank</th>
+              {sortedResults.length > 0 &&
+                Object.keys(sortedResults[0])
+                  .filter(
+                    (key) =>
+                      !["year", "position", "rank", "name", "honors"].includes(key)
+                  )
+                  .map((key) => (
+                    <th
+                      key={key}
+                      className="p-2 bg-gray-100 border border-gray-300 text-center"
+                    >
+                      {key}
                     </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {sortedResults.map((player, index) => {
-                    const { year, position, rank, name, honors, ...stats } = player;
+                  ))}
+              <th className="p-2 px-8 bg-gray-100 border border-gray-300 text-center">
+                Football Analytics Nerd Awards
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {sortedResults.map((player, index) => {
+              const { year, position, rank, name, honors, ...stats } = player;
+              return (
+                <tr key={index}>
+                  <td className="p-2 px-8 border border-gray-300 text-center">{position}</td>
+                  <td className="p-2 px-8 border border-gray-300 text-center">{year}</td>
+                  <td className="p-2 px-8 border border-gray-300 text-center">{name}</td>
+                  <td className="p-2 px-8 border border-gray-300 text-center">{rank}</td>
+                  {Object.entries(stats).map(([key, val]) => {
+                    const style = getColor(key, val)
+                      ? { backgroundColor: getColor(key, val) }
+                      : {};
                     return (
-                      <tr key={index}>
-                        <td className="p-2 px-8 border border-gray-300 text-center">{position}</td>
-                        <td className="p-2 px-8 border border-gray-300 text-center">{year}</td>
-                        <td className="p-2 px-8 border border-gray-300 text-center">{name}</td>
-                        <td className="p-2 px-8 border border-gray-300 text-center">{rank}</td>
-                        {Object.entries(stats).map(([key, val]) => {
-                          const style = getColor(key, val)
-                            ? { backgroundColor: getColor(key, val) }
-                            : {};
-                          return (
-                            <td
-                              key={key}
-                              className="p-2 border border-gray-300 text-center"
-                              style={style}
-                            >
-                              {val}
-                            </td>
-                          );
-                        })}
-                        <td className="p-2 px-8 border border-gray-300 text-center">
-                          {honors || "-"}
-                        </td>
-                      </tr>
+                      <td
+                        key={key}
+                        className="p-2 border border-gray-300 text-center"
+                        style={style}
+                      >
+                        {val}
+                      </td>
                     );
                   })}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </>
-      )}
+                  <td className="p-2 px-8 border border-gray-300 text-center">
+                    {honors || "-"}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
-  );
-}  
+  </>
+)}
+</div>
+);
+}
