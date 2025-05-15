@@ -24,7 +24,7 @@ const teams = {
       DT2: "Mario Ojomo",
       EDGE1: "Nolan Smith",
       ILB1: "Zack Baun",
-      ILB2: "Nakobe Dean",
+      ILB2: "Jihaad Campbell (R)",
       EDGE2: "Jalyx Hunt",
       CB1: "Quinyon Mitchell",
       FS: "Reed Blankenship",
@@ -35,11 +35,11 @@ const teams = {
     backups: [
       { position: "RB", name: "A.J. Dillon" },
       { position: "OG", name: "Kenyon Green" },
-      { position: "EDGE/ILB", name: "Jihaad Campbell (R)" },
       { position: "EDGE", name: "Bryce Huff" },
       { position: "EDGE", name: "Azeez Ojulari" },
       { position: "CB", name: "Adoree' Jackson" },
       { position: "S", name: "Sydney Brown" },
+      { position: "IR", name: "Nakobe Dean" },
     ],
     draftPreview: `
 Draft Picks: 32, 64, 96, 134, 161, 164, 165, 168
