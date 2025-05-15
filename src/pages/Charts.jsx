@@ -3,16 +3,6 @@ import { useState } from "react";
 const chartData = {
   Draft: [
     {
-      src: "/assets/charts/2026QBs.png",
-      caption:
-        "My early look at the top projected 2026 QB Draft Prospects.",
-    },
-    {
-      src: "/assets/charts/2024QBDraft.png",
-      caption:
-        "How Cam Ward, Shedeur Sanders, Jaxson Dart, Jalen Milroe, and Tyler Shough Stack Up Analytically Against Past First-Round Picks.",
-    },
-    {
       src: "/assets/charts/DraftP2S.jpeg",
       caption:
         "Pressure to Sack Rate is an important trait for NFL quarterbacks. But how well does college P2S predict it? The answer: not well. College P2S has very little correlation with NFL performance. By around Year 3, though, the metric starts to stabilize. That’s when we begin to get a clear picture of how a quarterback handles pressure.",
@@ -26,6 +16,26 @@ const chartData = {
       src: "/assets/charts/TWP%.jpeg",
       caption:
         "Just like with Pressure to Sack Rate, Turnover-Worthy Play % in college doesn’t translate well to the NFL. Outside of Year 1, college TWP% has little to no predictive power for future performance.",
+    },
+    {
+      src: "/assets/charts/DeepBall.jpeg",
+      caption:
+        "How much can we learn from first-round QBs throwing the deep ball in college? This chart suggests a clear 'danger zone' for quarterbacks who either failed to create big time throws or struggled to avoid turnover worthy plays on deep throws. Most of the QBs who fell into these 'danger zones' have gone on to find limited success in the NFL.",
+    },
+    {
+      src: "/assets/charts/DeepBall2.jpeg",
+      caption:
+        "Added here are the top projected 2026 QB draft prospects using their 2024 seasons.",
+    },
+    {
+      src: "/assets/charts/2026QBs.png",
+      caption:
+        "My early look at the top projected 2026 QB Draft Prospects.",
+    },
+    {
+      src: "/assets/charts/2024QBDraft.png",
+      caption:
+        "How Cam Ward, Shedeur Sanders, Jaxson Dart, Jalen Milroe, and Tyler Shough Stack Up Analytically Against Past First-Round Picks.",
     },
     {
       src: "/assets/charts/2024Draft.jpeg",
