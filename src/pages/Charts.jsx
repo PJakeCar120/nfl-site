@@ -13,7 +13,7 @@ const chartData = {
         "However, when we focus on the quarterbacks who struggled the most with Pressure to Sack Rate in college, we see those issues often carry over into their first couple of years in the NFL.",
     },
     {
-      src: "/assets/charts/TWP%.jpeg",
+      src: "/assets/charts/TWP.jpeg",
       caption:
         "Just like with Pressure to Sack Rate, Turnover-Worthy Play % in college doesn’t translate well to the NFL. Outside of Year 1, college TWP% has little to no predictive power for future performance.",
     },
@@ -47,7 +47,7 @@ const chartData = {
   "Free Agency": [
     {src: "/assets/charts/PFFFAS.png",
       caption:
-        "Free Agency Positional Strengh",
+        "2025 Free Agency Positional Strengh",
     }
 
   ],
