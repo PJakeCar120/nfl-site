@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import Papa from "papaparse";
 import { useLocation } from "react-router-dom";
 import { awardsData } from "./Awards"; // 
+import StatVectorChart from "./StatVectorChart";
+
 
 const YEARS = ["2021", "2022", "2023", "2024"];
 const POSITIONS = ["QB", "RB", "WR", "TE", "DI", "EDGE", "ILB", "CB", "S"];
@@ -173,6 +175,7 @@ export default function SearchResults() {
     const green = Math.round(255 * pct);
     return `rgb(${red}, ${green}, 100)`;
   };
+  const selectedPlayer = sortedResults.length > 0 ? sortedResults[0] : null;
   return (
     <div className="px-4 py-6 w-full">
       <div className="w-full flex justify-center mb-10">
@@ -279,8 +282,17 @@ export default function SearchResults() {
         </table>
       </div>
     </div>
-  </>
+        {/* Stat Vector Comparison Chart */}
+        {selectedPlayer && (
+  <StatVectorChart
+    name={selectedPlayer.name}
+    year={selectedPlayer.year}
+    position={selectedPlayer.position}
+  />
 )}
-</div>
+
+      </>
+    )}
+  </div>
 );
 }
