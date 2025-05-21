@@ -1860,8 +1860,8 @@ Sample Mock Draft:
     QB: "Trevor Lawrence",
     RB: "Travis Etienne",
     WR1: "Brian Thomas",
-    WR2: "Travis Hunter (R)",
-    SWR: "Parker Washington",
+    WR2: "Dyami Brown",
+    SWR: "Travis Hunter (R)",
     TE1: "Brenton Strange",
     TE2: "Johnny Mundt",
     LT: "Walker Little",
@@ -1885,8 +1885,8 @@ Sample Mock Draft:
   },
   backups: [
     { position: "RB", name: "Tank Bigsby" },
-    { position: "WR", name: "Dyami Brown" },
-    { position: "WR", name: "Gabe Davis" },
+    { position: "RB", name: "Bhayshul Tuten (R)" },
+    { position: "WR", name: "Parker Washington" },
     { position: "TE", name: "Hunter Long" },
     { position: "OG", name: "Wyatt Milum (R)" },
     { position: "DT", name: "DaVon Hamilton" },
@@ -2066,7 +2066,7 @@ Sample Mock Draft:
 },
 'Browns': {
   offense: {
-    QB: "Joe Flacco",
+    QB: "Kenny Pickett",
     RB: "Quinshon Judkins (R)",
     WR1: "Jerry Jeudy",
     WR2: "Cedric Tillman",
@@ -2094,8 +2094,8 @@ Sample Mock Draft:
   },
   backups: [
     { position: "QB", name: "Dillon Gabriel (R)" },
+    { position: "QB", name: "Joe Flacco" },
     { position: "QB", name: "Shedeur Sanders (R)" },
-    { position: "QB", name: "Kenny Pickett" },
     { position: "RB", name: "Jerome Ford" },
     { position: "RB", name: "Dylan Sampson (R)" },
     { position: "WR", name: "Diontae Johnson" },
