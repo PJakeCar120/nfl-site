@@ -144,15 +144,30 @@ export default function SearchResults() {
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const nameParam = params.get("name");
+  
     if (nameParam && allData.length > 0) {
       setSearchTerm(nameParam);
       const term = nameParam.toLowerCase().trim();
       const matches = allData.filter((p) =>
         p.name.toLowerCase().includes(term)
       );
-      setResults(matches);
+  
+      if (matches.length === 1) {
+        const player = matches[0];
+        const formattedName = player.name
+          .toLowerCase()
+          .replace(/\./g, "")     // remove periods
+          .replace(/\s+/g, "-");   // replace spaces with hyphens
+  
+        const formattedPosition = player.position.toLowerCase();
+        window.location.href = `/players/${formattedPosition}/${formattedName}`;
+      } else {
+        setResults(matches);
+      }
     }
   }, [location.search, allData]);
+  
+  
 
   const handleSearch = () => {
     const term = searchTerm.toLowerCase().trim();
