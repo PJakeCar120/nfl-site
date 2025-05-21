@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import Papa from "papaparse";
-import { useLocation } from "react-router-dom";
 import { awardsData } from "./Awards"; // 
 import StatVectorChart from "./StatVectorChart";
+import { useLocation, useNavigate } from "react-router-dom";
+
 
 
 const YEARS = ["2021", "2022", "2023", "2024"];
@@ -81,6 +82,7 @@ const findPlayerHonors = (name, year) => {
 
 export default function SearchResults() {
   const location = useLocation();
+  const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
   const [allData, setAllData] = useState([]);
   const [results, setResults] = useState([]);
@@ -156,16 +158,17 @@ export default function SearchResults() {
         const player = matches[0];
         const formattedName = player.name
           .toLowerCase()
-          .replace(/\./g, "")     // remove periods
-          .replace(/\s+/g, "-");   // replace spaces with hyphens
+          .replace(/\./g, "")
+          .replace(/\s+/g, "-");
   
         const formattedPosition = player.position.toLowerCase();
-        window.location.href = `/players/${formattedPosition}/${formattedName}`;
+        navigate(`/players/${formattedPosition}/${formattedName}`);
       } else {
         setResults(matches);
       }
     }
-  }, [location.search, allData]);
+  }, [location.search, allData, navigate]);
+  
   
   
 
