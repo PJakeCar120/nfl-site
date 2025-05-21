@@ -94,7 +94,7 @@ export default function StatVectorChart({ name, year, position }) {
   return (
     <div className="mt-10 max-w-5xl mx-auto">
       <h3 className="text-xl font-semibold text-center mb-6">
-        Most Similar Player Comparison
+        Most Similar Season
       </h3>
       <div className="relative h-[500px]">
         <Radar
