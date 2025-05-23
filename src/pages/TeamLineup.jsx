@@ -1122,10 +1122,10 @@ Sample Mock Draft:
       ILB1: "Akeem Davis-Gaither",
       ILB2: "Mack Wilson Sr.",
       EDGE2: "Zaven Collins",
-      CB1: "Sean Murphy-Bunting",
+      CB1: "Will Johnson (R)",
       FS: "Budda Baker",
       SS: "Jalen Thompson",
-      CB2: "Will Johnson (R)",
+      CB2: "Starling Thomas V",
       NB: "Garrett Williams",
     },
     backups: [
@@ -1139,10 +1139,10 @@ Sample Mock Draft:
       { position: "EDGE", name: "Baron Browning" },
       { position: "EDGE", name: "Jordan Burch (R)" },
       { position: "ILB", name: "Cody Simon (R)" },
-      { position: "CB", name: "Starling Thomas V" },
       { position: "CB", name: "Max Melton" },
       { position: "CB", name: "Denzel Burke (R)" },
       { position: "S", name: "Dadrion Taylor-Demerson" },
+      { position: "IR", name: "Sean Murphy-Bunting" },
     ],
     draftReview: `
 A couple weeks ago, I talked about how underrated I felt this roster was. Well, I think they nailed the draft. I wanted them to improve the defensive line; they went out and took 
