@@ -154,20 +154,11 @@ export default function SearchResults() {
         p.name.toLowerCase().includes(term)
       );
   
-      if (matches.length === 1) {
-        const player = matches[0];
-        const formattedName = player.name
-          .toLowerCase()
-          .replace(/\./g, "")
-          .replace(/\s+/g, "-");
-  
-        const formattedPosition = player.position.toLowerCase();
-        navigate(`/players/${formattedPosition}/${formattedName}`);
-      } else {
-        setResults(matches);
-      }
+      // 🚫 Remove the redirect to /players/... entirely
+      setResults(matches);
     }
-  }, [location.search, allData, navigate]);
+  }, [location.search, allData]);
+  
   
   
   
