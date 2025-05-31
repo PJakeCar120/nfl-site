@@ -28,15 +28,15 @@ export default function CombinedRankingsPage() {
   const [sortOrder, setSortOrder] = useState("asc");
 
   const scoreColMap = {
-    qb: "Analytical Quarterback Score",
-    rb: "Analytical Running Back Score (ARBS)",
-    wr: "Analytical Wide Receiver Score (AWRS)",
-    te: "Analytical Tight End Score (ATES)",
-    idl: "Analytical Interior Defensive Lineman Score (AIS)",
-    edge: "Analytical EDGE Score (AES)",
-    ilb: "Analytical ILB Score (ILS)",
-    cb: "Analytical Cornerback Score (ACS)",
-    s: "Analytical Safety Score (ASS)",
+    qb: "Analytical Score",
+    rb: "Analytical Score",
+    wr: "Analytical Score",
+    te: "Analytical Score",
+    idl: "Analytical Score",
+    edge: "Analytical Score",
+    ilb: "Analytical Score",
+    cb: "Analytical Score",
+    s: "Analytical Score",
   };
 
   const getColorScale = (value, colMin, colMax, key) => {
