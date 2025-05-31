@@ -16,6 +16,8 @@ import WhoBetta from "./pages/PlayerComparer";
 import TeamLineup from "./pages/TeamLineup"; // ✅ NEW IMPORT
 import TopFreeAgents from "./pages/TopFreeAgents"; // ✅ Add this
 import ChartsPage from "./pages/Charts"; // adjust if your path is different
+import CombinedRankingsPage from "./pages/CombinedRankingsPage";
+
 
 
 
@@ -44,6 +46,7 @@ function App() {
           <Route path="/whobetta" element={<WhoBetta />} />
           <Route path="/lineup" element={<TeamLineup />} />
           <Route path="/charts" element={<ChartsPage />} />
+          <Route path="/projects/:pos/combined" element={<CombinedRankingsPage />} />
         </Routes>
       </div>
     </Router>

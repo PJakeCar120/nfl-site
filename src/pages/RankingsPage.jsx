@@ -19,6 +19,7 @@ export default function RankingsPage() {
             <li><Link to="/projects/qb2023">2023 QB Rankings</Link></li>
             <li><Link to="/projects/qb2022">2022 QB Rankings</Link></li>
             <li><Link to="/projects/qb2021">2021 QB Rankings</Link></li>
+            <li><Link to="/projects/qb/combined">Combined QB Rankings</Link></li>
           </ul>
         </div>
 
@@ -30,6 +31,7 @@ export default function RankingsPage() {
             <li><Link to="/projects/rb2023">2023 RB Rankings</Link></li>
             <li><Link to="/projects/rb2022">2022 RB Rankings</Link></li>
             <li><Link to="/projects/rb2021">2021 RB Rankings</Link></li>
+            <li><Link to="/projects/rb/combined">Combined RB Rankings</Link></li>
           </ul>
         </div>
 
@@ -41,6 +43,7 @@ export default function RankingsPage() {
             <li><Link to="/projects/wr2023">2023 WR Rankings</Link></li>
             <li><Link to="/projects/wr2022">2022 WR Rankings</Link></li>
             <li><Link to="/projects/wr2021">2021 WR Rankings</Link></li>
+            <li><Link to="/projects/wr/combined">Combined WR Rankings</Link></li>
           </ul>
         </div>
 
@@ -52,6 +55,7 @@ export default function RankingsPage() {
             <li><Link to="/projects/te2023">2023 TE Rankings</Link></li>
             <li><Link to="/projects/te2022">2022 TE Rankings</Link></li>
             <li><Link to="/projects/te2021">2021 TE Rankings</Link></li>
+            <li><Link to="/projects/te/combined">Combined TE Rankings</Link></li>
           </ul>
         </div>
 
@@ -63,6 +67,7 @@ export default function RankingsPage() {
             <li><Link to="/projects/idl2023">2023 IDL Rankings</Link></li>
             <li><Link to="/projects/idl2022">2022 IDL Rankings</Link></li>
             <li><Link to="/projects/idl2021">2021 IDL Rankings</Link></li>
+            <li><Link to="/projects/idl/combined">Combined IDL Rankings</Link></li>
           </ul>
         </div>
 
@@ -74,6 +79,7 @@ export default function RankingsPage() {
             <li><Link to="/projects/edge2023">2023 EDGE Rankings</Link></li>
             <li><Link to="/projects/edge2022">2022 EDGE Rankings</Link></li>
             <li><Link to="/projects/edge2021">2021 EDGE Rankings</Link></li>
+            <li><Link to="/projects/edge/combined">Combined EDGE Rankings</Link></li>
           </ul>
         </div>
 
@@ -85,6 +91,7 @@ export default function RankingsPage() {
             <li><Link to="/projects/ilb2023">2023 ILB Rankings</Link></li>
             <li><Link to="/projects/ilb2022">2022 ILB Rankings</Link></li>
             <li><Link to="/projects/ilb2021">2021 ILB Rankings</Link></li>
+            <li><Link to="/projects/ilb/combined">Combined ILB Rankings</Link></li>
           </ul>
         </div>
 
@@ -96,6 +103,7 @@ export default function RankingsPage() {
             <li><Link to="/projects/cb2023">2023 CB Rankings</Link></li>
             <li><Link to="/projects/cb2022">2022 CB Rankings</Link></li>
             <li><Link to="/projects/cb2021">2021 CB Rankings</Link></li>
+            <li><Link to="/projects/cb/combined">Combined CB Rankings</Link></li>
           </ul>
         </div>
 
@@ -107,6 +115,7 @@ export default function RankingsPage() {
             <li><Link to="/projects/s2023">2023 S Rankings</Link></li>
             <li><Link to="/projects/s2022">2022 S Rankings</Link></li>
             <li><Link to="/projects/s2021">2021 S Rankings</Link></li>
+            <li><Link to="/projects/s/combined">Combined S Rankings</Link></li>
           </ul>
         </div>
       </div>
