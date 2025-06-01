@@ -39,6 +39,8 @@ export default function GuessSimilarityGame() {
   const [correctGuesses, setCorrectGuesses] = useState([]);
   const [strikes, setStrikes] = useState(0);
   const [feedback, setFeedback] = useState("");
+  const [showHint, setShowHint] = useState(false);
+  const [revealAll, setRevealAll] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -99,6 +101,8 @@ export default function GuessSimilarityGame() {
     setStrikes(0);
     setFeedback("");
     setGuess(null);
+    setShowHint(false);
+    setRevealAll(false);
   };
 
   const handleGuessSubmit = () => {
@@ -133,9 +137,11 @@ export default function GuessSimilarityGame() {
     setCorrectGuesses([]);
     setStrikes(0);
     setFeedback("");
+    setShowHint(false);
+    setRevealAll(false);
   };
 
-  const isGameOver = strikes >= 3 || correctGuesses.length === 5;
+  const isGameOver = revealAll || strikes >= 10 || correctGuesses.length === 5;
 
   const getRevealAtIndex = (i) => {
     const correct = correctGuesses.find(
@@ -143,6 +149,9 @@ export default function GuessSimilarityGame() {
     );
     if (correct || isGameOver) {
       return `${top5[i].name} (${top5[i].year}) — ${top5[i].sim.toFixed(1)}`;
+    }
+    if (showHint) {
+      return `(${top5[i].year})`;
     }
     return "";
   };
@@ -154,20 +163,17 @@ export default function GuessSimilarityGame() {
       <div className="mb-4">
         <label className="block mb-2 font-medium">Select Position:</label>
         <select
-  value={position}
-  onChange={(e) => resetGame() || setPosition(e.target.value)}
-  className="p-2 border rounded"
->
-  <option value="Choose Position" disabled>
-    
-  </option>
-  {POSITIONS.map((pos) => (
-    <option key={pos} value={pos}>
-      {pos}
-    </option>
-  ))}
-</select>
-
+          value={position}
+          onChange={(e) => resetGame() || setPosition(e.target.value)}
+          className="p-2 border rounded"
+        >
+          <option value="Choose Position" disabled></option>
+          {POSITIONS.map((pos) => (
+            <option key={pos} value={pos}>
+              {pos}
+            </option>
+          ))}
+        </select>
       </div>
 
       <div className="mb-6">
@@ -200,12 +206,26 @@ export default function GuessSimilarityGame() {
             placeholder="Enter a guess"
             className="mb-4"
           />
-          <button
-            onClick={handleGuessSubmit}
-            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-          >
-            Submit Guess
-          </button>
+          <div className="flex gap-2 mb-4">
+            <button
+              onClick={handleGuessSubmit}
+              className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+            >
+              Submit Guess
+            </button>
+            <button
+              onClick={() => setShowHint(true)}
+              className="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
+            >
+              Hint
+            </button>
+            <button
+              onClick={() => setRevealAll(true)}
+              className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+            >
+              Reveal Answers
+            </button>
+          </div>
         </>
       )}
 
