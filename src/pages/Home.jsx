@@ -82,77 +82,49 @@ const Home = () => {
         <div className="mt-10">
           <h2 className="text-base font-semibold mb-2 text-gray-800">📌 Featured Projects</h2>
           <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-          <li>
-              <Link to="/lineup" className="underline text-blue-600 hover:text-blue-800 transition">
-                Team Pages
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects/similarity" className="underline text-blue-600 hover:text-blue-800 transition">
-                Player Similarity Tool
-              </Link>
-            </li>
-            <li>
-              <Link to="/whobetta" className="underline text-blue-600 hover:text-blue-800 transition">
-                Head2Head
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects/contract-market" className="underline text-blue-600 hover:text-blue-800 transition">
-                Positional Contract Markets
-              </Link>
-            </li>
-            <li>
-              <Link to="/contracts" className="underline text-blue-600 hover:text-blue-800 transition">
-                Extension Projections
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects/qb2024" className="underline text-blue-600 hover:text-blue-800 transition">
-                2024 QB Rankings
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects/rb2024" className="underline text-blue-600 hover:text-blue-800 transition">
-                2024 RB Rankings
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects/wr2024" className="underline text-blue-600 hover:text-blue-800 transition">
-                2024 WR Rankings
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects/te2024" className="underline text-blue-600 hover:text-blue-800 transition">
-                2024 TE Rankings
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects/idl2024" className="underline text-blue-600 hover:text-blue-800 transition">
-                2024 IDL Rankings
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects/edge2024" className="underline text-blue-600 hover:text-blue-800 transition">
-                2024 EDGE Rankings
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects/ilb2024" className="underline text-blue-600 hover:text-blue-800 transition">
-                2024 ILB Rankings
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects/cb2024" className="underline text-blue-600 hover:text-blue-800 transition">
-                2024 CB Rankings
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects/s2024" className="underline text-blue-600 hover:text-blue-800 transition">
-                2024 S Rankings
-              </Link>
-            </li>
-          </ul>
+  <li>
+    <Link to="/lineup" className="underline text-blue-600 hover:text-blue-800 transition">
+      Team Pages
+    </Link>
+  </li>
+  <li>
+    <Link to="/guess-similarity" className="underline text-blue-600 hover:text-blue-800 transition">
+      Player Similarity Game
+    </Link>
+  </li>
+  <li>
+    <Link to="/rankings" className="underline text-blue-600 hover:text-blue-800 transition">
+      2021–2024 Analytical Rankings
+    </Link>
+  </li>
+  <li>
+    <Link to="/awards" className="underline text-blue-600 hover:text-blue-800 transition">
+      Awards
+    </Link>
+  </li>
+  <li>
+    <Link to="/whobetta" className="underline text-blue-600 hover:text-blue-800 transition">
+      Player Comparison
+    </Link>
+  </li>
+  <li>
+    <Link to="/charts" className="underline text-blue-600 hover:text-blue-800 transition">
+      Analytics Charts
+    </Link>
+  </li>
+  <li>
+    <Link to="/projects/contract-market" className="underline text-blue-600 hover:text-blue-800 transition">
+      Positional Contract Markets
+    </Link>
+  </li>
+  <li>
+    <Link to="/contracts" className="underline text-blue-600 hover:text-blue-800 transition">
+      Extension Projections
+    </Link>
+  </li>
+</ul>
+
+
         </div>
 
         {/* Philosophy */}

@@ -17,6 +17,8 @@ import TeamLineup from "./pages/TeamLineup"; // ✅ NEW IMPORT
 import TopFreeAgents from "./pages/TopFreeAgents"; // ✅ Add this
 import ChartsPage from "./pages/Charts"; // adjust if your path is different
 import CombinedRankingsPage from "./pages/CombinedRankingsPage";
+import GuessSimilarityGame from "./pages/GuessSimilarityGame"; // ⬅️ Add this line
+
 
 
 
@@ -47,6 +49,7 @@ function App() {
           <Route path="/lineup" element={<TeamLineup />} />
           <Route path="/charts" element={<ChartsPage />} />
           <Route path="/projects/:pos/combined" element={<CombinedRankingsPage />} />
+          <Route path="/guess-similarity" element={<GuessSimilarityGame />} /> // ⬅️ Add this line
         </Routes>
       </div>
     </Router>

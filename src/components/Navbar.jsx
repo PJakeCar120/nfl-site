@@ -78,6 +78,7 @@ export default function Navbar() {
                   links: [
                     { to: "/compare", text: "Similarity Scores" },
                     { to: "/whobetta", text: "Player Comparison" },
+                    { to: "/guess-similarity", text: "Similarity Game" }, // ⬅️ Add this line
                   ],
                 },
                 {
