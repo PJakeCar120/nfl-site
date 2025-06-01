@@ -31,7 +31,7 @@ const STAT_WEIGHTS = {
 };
 
 export default function GuessSimilarityGame() {
-  const [position, setPosition] = useState("QB");
+  const [position, setPosition] = useState("Choose Position");
   const [dataByYear, setDataByYear] = useState({});
   const [basePlayer, setBasePlayer] = useState(null);
   const [top5, setTop5] = useState([]);
@@ -154,24 +154,28 @@ export default function GuessSimilarityGame() {
       <div className="mb-4">
         <label className="block mb-2 font-medium">Select Position:</label>
         <select
-          value={position}
-          onChange={(e) => resetGame() || setPosition(e.target.value)}
-          className="p-2 border rounded"
-        >
-          {POSITIONS.map((pos) => (
-            <option key={pos} value={pos}>
-              {pos}
-            </option>
-          ))}
-        </select>
+  value={position}
+  onChange={(e) => resetGame() || setPosition(e.target.value)}
+  className="p-2 border rounded"
+>
+  <option value="Choose Position" disabled>
+    
+  </option>
+  {POSITIONS.map((pos) => (
+    <option key={pos} value={pos}>
+      {pos}
+    </option>
+  ))}
+</select>
+
       </div>
 
       <div className="mb-6">
-        <label className="block mb-2 font-medium">Select Base Player-Season:</label>
+        <label className="block mb-2 font-medium">Select Player Season:</label>
         <Select
           options={allPlayers}
           onChange={handleBasePlayerSelect}
-          placeholder="Choose a player-season"
+          placeholder=""
         />
       </div>
 
