@@ -35,7 +35,6 @@ const teams = {
     backups: [
       { position: "RB", name: "A.J. Dillon" },
       { position: "OG", name: "Kenyon Green" },
-      { position: "EDGE", name: "Bryce Huff" },
       { position: "EDGE", name: "Azeez Ojulari" },
       { position: "CB", name: "Adoree' Jackson" },
       { position: "S", name: "Sydney Brown" },
@@ -1466,6 +1465,7 @@ to say this is a lower-tier playoff team that may cut it close given the strengt
     { position: "WR", name: "Demarcus Robinson" },
     { position: "DT", name: "Kevin Givens" },
     { position: "DT", name: "Evan Anderson" },
+    { position: "EDGE", name: "Bryce Huff" },
     { position: "EDGE", name: "Yetur Gross-Matos" },
     { position: "EDGE", name: "Sam Okuayinonu" },
     { position: "ILB", name: "Nick Martin (R)" },
