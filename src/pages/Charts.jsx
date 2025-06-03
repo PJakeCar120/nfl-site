@@ -3,31 +3,6 @@ import { useState } from "react";
 const chartData = {
   Draft: [
     {
-      src: "/assets/charts/IDLModel.jpeg",
-      caption:
-        "This chart shows which First-Round IDL from 2015–2025 met a baseline of ten simple college performance metrics. I won’t share the exact thresholds, but the goal is to flag missed benchmarks that often pointed to flaws that carried into the NFL. In my opinion, this should be the easiest position to draft correctly in the First Round. There are clear trends to follow.",
-    },
-    {
-      src: "/assets/charts/IDLModel2.png",
-      caption:
-        "And here is how my model compares to the actual draft outcomes:",
-    },
-    {
-      src: "/assets/charts/EDGEModel.jpeg",
-      caption:
-        "This chart shows which First-Round EDGEs from 2015–2025 met a baseline of seven simple college performance metrics. I won’t share the exact thresholds, but the goal is to flag missed benchmarks that often pointed to flaws that carried into the NFL.",
-    },
-    {
-      src: "/assets/charts/EDGEModel2.png",
-      caption:
-      "And here's how the model stacks up against where each player was actually drafted:",
-    },
-    {
-      src: "/assets/charts/QBModel.jpeg",
-      caption:
-      "This chart shows which first-round QBs from 2015–2025 met a baseline of six simple college performance metrics. I won’t share the exact thresholds, but the goal is to flag missed benchmarks that often pointed to flaws that carried into the NFL.",
-    },
-    {
       src: "/assets/charts/DraftP2S.jpeg",
       caption:
         "Pressure to Sack Rate is an important trait for NFL quarterbacks. But how well does college P2S predict it? The answer: not well. College P2S has very little correlation with NFL performance. By around Year 3, though, the metric starts to stabilize. That’s when we begin to get a clear picture of how a quarterback handles pressure.",
@@ -53,14 +28,49 @@ const chartData = {
         "Added here are the top projected 2026 QB draft prospects using their 2024 seasons.",
     },
     {
+      src: "/assets/charts/2024QBDraft.png",
+      caption:
+        "How Cam Ward, Shedeur Sanders, Jaxson Dart, Jalen Milroe, and Tyler Shough Stack Up Analytically Against Past First-Round Picks.",
+    },
+    {
       src: "/assets/charts/2026QBs.png",
       caption:
         "My early look at the top projected 2026 QB Draft Prospects.",
     },
     {
-      src: "/assets/charts/2024QBDraft.png",
+      src: "/assets/charts/QBModel.jpeg",
       caption:
-        "How Cam Ward, Shedeur Sanders, Jaxson Dart, Jalen Milroe, and Tyler Shough Stack Up Analytically Against Past First-Round Picks.",
+      "This chart shows which first-round QBs from 2015–2025 met a baseline of six simple college performance metrics. I won’t share the exact thresholds, but the goal is to flag missed benchmarks that often pointed to flaws that carried into the NFL.",
+    },
+    {
+      src: "/assets/charts/IDLModel.jpeg",
+      caption:
+        "This chart shows which First-Round IDL from 2015–2025 met a baseline of ten simple college performance metrics. I won’t share the exact thresholds, but the goal is to flag missed benchmarks that often pointed to flaws that carried into the NFL. In my opinion, this should be the easiest position to draft correctly in the First Round. There are clear trends to follow.",
+    },
+    {
+      src: "/assets/charts/IDLModel2.png",
+      caption:
+        "And here is how my model compares to the actual draft outcomes:",
+    },
+    {
+      src: "/assets/charts/EDGEModel.jpeg",
+      caption:
+        "This chart shows which First-Round EDGEs from 2015–2025 met a baseline of seven simple college performance metrics. I won’t share the exact thresholds, but the goal is to flag missed benchmarks that often pointed to flaws that carried into the NFL.",
+    },
+    {
+      src: "/assets/charts/EDGEModel2.png",
+      caption:
+      "And here's how the model stacks up against where each player was actually drafted:",
+    },
+    {
+      src: "/assets/charts/CB2024.jpeg",
+      caption: 
+      "This chart shows which First-Round CBs from 2015–2025 met a baseline of eleven simple college performance metrics. I won’t share the exact thresholds, but the goal is to flag missed benchmarks that often pointed to flaws that carried into the NFL.",
+    },
+    {
+    src: "/assets/charts/CB20242.png",
+      caption: 
+      "And here is how the model compares to the actual draft outcomes:",     
     },
     {
       src: "/assets/charts/2024Draft.jpeg",
