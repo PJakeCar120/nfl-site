@@ -762,7 +762,7 @@ and Mike Green have strong years, this may be the best team in the NFL. GM Eric 
 
   Steelers: {
     offense: {
-      QB: "Mason Rudolph",
+      QB: "Aaron Rodgers",
       RB: "Jaylen Warren",
       WR1: "DK Metcalf",
       WR2: "Robert Woods",
@@ -790,6 +790,7 @@ and Mike Green have strong years, this may be the best team in the NFL. GM Eric 
       NB: "Beanie Bishop Jr.",
     },
     backups: [
+      { position: "QB", name: "Mason Rudolph" },
       { position: "RB", name: "Kaleb Johnson (R)" },
       { position: "NT", name: "Montravious Adams" },
       { position: "DT", name: "Isaiahh Loudermilk" },

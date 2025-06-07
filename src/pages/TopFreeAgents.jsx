@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 
 const freeAgents = [
-  { name: "Aaron Rodgers", position: "QB" },
   { name: "J.K. Dobbins", position: "RB" },
   { name: "Gus Edwards", position: "RB" },
   { name: "Amari Cooper", position: "WR" },
