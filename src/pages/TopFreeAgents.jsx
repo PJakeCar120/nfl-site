@@ -23,6 +23,7 @@ const freeAgents = [
   { name: "Kyzir White", position: "ILB" },
   { name: "Eric Kendricks", position: "ILB" },
   { name: "De'Vondre Campbell", position: "ILB" },
+  { name: "Jaire Alexander", position: "CB" },
   { name: "Asante Samuel Jr.", position: "CB" },
   { name: "Rasul Douglas", position: "CB" },
   { name: "Stephon Gilmore", position: "CB" },
